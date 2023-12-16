@@ -1,0 +1,128 @@
+@media screen and (max-width: 1000px) {
+  .menu-main-content {
+    background-color: #f9ede6;
+    height: 100vh;
+    padding: 50px 15px 0px 15px;
+  }
+
+  .menu-title-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-title-container hr {
+    flex-grow: 1;
+    height: 1px;
+    margin: 0 10px;
+    border: none;
+    background-color: #000;
+  }
+  .menu-title-container > h2 {
+    color: #81b0b0;
+    font-family: "trajan-pro-3";
+    font-size: 26px;
+  }
+  .menu-title-span > span {
+    color: #e1a304;
+    font-size: 12px;
+    font-family: "trajan-pro-3";
+  }
+  .menu-title-span {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .menu-container-h2 > h2 {
+    font-family: "trajan-pro-3";
+    font-size: 15px;
+    color: #000;
+  }
+  .menu-container {
+    margin-top: 45px;
+  }
+  .menu-container-h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-card-title > div {
+    font-size: 15px;
+    font-family: "trajan-pro-3";
+    color: #000;
+    font-weight: 100;
+  }
+  .menu-card-img > img {
+    width: 175px;
+    height: 246px;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-box-shadow: 13px 13px 20px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 13px 13px 20px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 13px 13px 20px 2px rgba(34, 60, 80, 0.2);
+  }
+
+  .white-block {
+    position: absolute;
+    // top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 291px;
+    background: linear-gradient(
+        183deg,
+        rgba(242, 219, 202, 0) 44.95%,
+        rgba(242, 219, 202, 0.1) 69.39%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(255, 246, 246, 0) 51.72%,
+        rgba(255, 250, 250, 0.74) 62.75%,
+        #fffafa 74.12%
+      );
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  .menu-card-title > span {
+    font-size: 8px;
+    font-family: "trajan-pro-3";
+    color: #81b0b0;
+    font-weight: 400;
+  }
+  .menu-card-title > p {
+    font-size: 8px;
+    font-family: "open-sans";
+    color: #323232;
+    margin-top: 10px;
+    font-weight: 250;
+  }
+  .card-utils-wrapper-right > span {
+    font-size: 14px;
+    color: #81b0b0;
+    font-family: "trajan-pro-3";
+  }
+  .menu-card-utils {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+  }
+  .menu-card-absolute {
+    position: absolute;
+    top: 125px;
+    width: 165px;
+    left: 5px;
+    z-index: 2;
+  }
+  .card-utils-wrapper-right {
+    margin-top: 5px;
+  }
+  .menu-card-main {
+    // margin: 10px 20px 0px 20px;
+    position: relative;
+  }
+  .main-card-break {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "trajan-pro-3";
+  src: url("../fonts/Trajan\ Pro\ 3\ Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "trajan-pro-reg";
+  src: url("../fonts/TrajanPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "monsterrat";
+  src: url("../fonts/Montserrat/static/Montserrat-Medium.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "open-sans";
+  src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+}
+
+@media screen and (max-width: 1000px) {
+  .home-main-content {
+    background-image: url("../images/homemain.png");
+  }
+
+  .homeLoader {
+    width: 50px;
+    height: 50px;
+    border-width: 4px;
+  }
+  .home-main-content {
+    background-size: cover;
+    background-position: center;
+    height: 100.05vh;
+  }
+
+  .awd {
+    background-color: #3498db;
+  }
+
+  .homeLoader {
+    width: 100px;
+    height: 100px;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .home-title {
+    font-family: "trajan-pro-3";
+    color: #f3f3f3;
+    position: absolute;
+    bottom: 50px;
+  }
+  .container {
+    --uib-size: 100px;
+    --uib-color: white;
+    --uib-speed: 1.5s;
+    --dot-size: calc(var(--uib-size) * 0.17);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: var(--uib-size);
+    width: var(--uib-size);
+    animation: smoothRotate calc(var(--uib-speed) * 1.8) linear infinite;
+  }
+
+  .dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    animation: rotate var(--uib-speed) ease-in-out infinite;
+  }
+
+  .dot::before {
+    content: "";
+    height: var(--dot-size);
+    width: var(--dot-size);
+    border-radius: 50%;
+    background-color: var(--uib-color);
+    transition: background-color 0.3s ease;
+  }
+
+  .dot:nth-child(2),
+  .dot:nth-child(2)::before {
+    animation-delay: calc(var(--uib-speed) * -0.835 * 0.5);
+  }
+
+  .dot:nth-child(3),
+  .dot:nth-child(3)::before {
+    animation-delay: calc(var(--uib-speed) * -0.668 * 0.5);
+  }
+
+  .dot:nth-child(4),
+  .dot:nth-child(4)::before {
+    animation-delay: calc(var(--uib-speed) * -0.501 * 0.5);
+  }
+
+  .dot:nth-child(5),
+  .dot:nth-child(5)::before {
+    animation-delay: calc(var(--uib-speed) * -0.334 * 0.5);
+  }
+
+  .dot:nth-child(6),
+  .dot:nth-child(6)::before {
+    animation-delay: calc(var(--uib-speed) * -0.167 * 0.5);
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    65%,
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes smoothRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .home-loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .home-title-container > h2 {
+    font-size: 20px;
+    color: #f3f3f3;
+    font-family: "trajan-pro-bold";
+  }
+  .home-header {
+    display: flex;
+    justify-content: center;
+  }
+  .home-header > img {
+    margin-top: 50px;
+  }
+  .image-home-page {
+    filter: brightness(50%);
+  }
+  .home-titles {
+    color: #f3f3f3;
+    font-family: "trajan-pro-3";
+    display: flex;
+    flex-direction: column;
+    margin-top: 67vh;
+    text-align: center;
+  }
+  .home-titles > span {
+    font-size: 52px;
+    margin-bottom: 22px;
+    filter: brightness(50%);
+  }
+  .home-titles > p {
+    font-size: 32px;
+  }
+  .home-titles-1 {
+    color: #f3f3f3;
+    font-family: "trajan-pro-3";
+    display: flex;
+    flex-direction: column;
+    margin-top: 51vh;
+    text-align: center;
+  }
+  .home-titles-1 > span {
+    font-size: 52px;
+    margin-bottom: 22px;
+    // filter: brightness(50%);
+  }
+  .home-titles-1 > p {
+    font-size: 32px;
+  }
+  .home-main-content-special {
+    background-image: url("../images/fuckme.jpg");
+    // filter: brightness(50%);
+    background-size: cover;
+    background-position: center;
+    height: 100.05vh;
+  }
+  .home-lang-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    // right: 50vh;
+    top: 40vh;
+    margin-left: 12vh;
+    font-size: 25px;
+  }
+  .home-lang-container > h2 {
+    color: #fff;
+    font-family: "monsterrat";
+  }
+}
