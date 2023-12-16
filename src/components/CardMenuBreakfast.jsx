@@ -34,6 +34,7 @@ import blin from "../images/blin.png";
 import "../css/menu.scss";
 
 function CardMenuBreakfast() {
+  let islam = "urs";
   return (
     <>
       <div className="main-card-break">
