@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../css/home.scss";
 import logoHome from "../images/Michelle Vector.svg";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -94,7 +94,7 @@ function HomePage() {
             <img src={logoHome} alt="Logo" />
           </header>
           <div className="home-titles-1">
-            <span onClick={() => navigate("/menu")}>МЕНЮ</span>
+            <span onClick={() => navigate("/categories")}>МЕНЮ</span>
             <p>О НАС</p>
             <p>ᨆ</p>
           </div>

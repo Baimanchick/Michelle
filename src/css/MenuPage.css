@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@font-face {
+  font-family: "trajan-pro-3";
+  src: url("../fonts/Trajan\ Pro\ 3\ Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "trajan-pro-reg";
+  src: url("../fonts/TrajanPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "monsterrat";
+  src: url("../fonts/Montserrat/static/Montserrat-Medium.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "open-sans";
+  src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+}
+
+body{
+    background-color: #F9EDE6;
+    font-family: "trajan-pro-3";
+}
+
+.block-breakfast {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+  
+.breakfast-img {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+}
+
+.white-block-up{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(180deg, #F9EDE6 28.14%, rgba(249, 237, 230, 0.00) 100%);
+  z-index: 3;
+}
+
+.white-block-down {
+    position: absolute;
+    top: 495px;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(180deg, #F9EDE6 1.56%, rgba(249, 237, 230, 0.00) 100%);
+    z-index: 3;
+    transform: rotate(180deg);
+}  
+
+
+.body-breakfast{
+    position: absolute;
+    top: 10px;
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.breakfast-title{
+    color: #323232;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    animation: fadeInOut 2.5s ease;
+    transition-duration: 0.5s;
+}
+
+.breakfast-category{
+    color: #81B0B0;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    animation: fadeInOut 3s ease;
+}
+
+.breakfast-text{
+    color: #E1A304;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    animation: fadeInOut 3.5s ease;
+}
+
+.logo-br{
+    width: 150px;
+    height: 63.857px;
+    flex-shrink: 0;
+    animation: fadeInOut 3.5s ease;
+}
+
+.menu-burger{
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    top: 650px;
+    animation: fadeInOut 3.5s ease;
+}
+
+.slider{
+    position: relative;
+    z-index: 4;
+    margin-top: 470px;
+}
+
+.slider-items{
+    width: 107px;
+    height: 33px;   
+    animation: fadeInOut 3.5s ease;
+}
+
+.slider-items > h3{
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    animation: fadeInOut 3.5s ease;
+}
+
+.bold-text {
+    font-weight: bold !important;
+}
+
+.btn-more{
+    width: 250px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #F2CF11;
+    background: #F2CF11;
+    box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.25);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.fullscreen-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F2CF11;
+    z-index: 1000;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .fullscreen-menu.active {
+    transform: translateY(0);
+  }
+  
+  .fullscreen-menu.closing {
+    transform: translateY(100%);
+  }
+
+  .menu-block-f{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 44px 0px;
+    gap: 28px;
+  }
+
+  .category-name{
+    color: #323232;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 242px;
+    height: 17px;
+    transition-duration: 0.3s;
+  }
+
+  .category-name:hover{
+    color: #ffffff;
+  }
+
+  .main-menu{
+    color: #323232;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition-duration: 0.3s;
+}
+
+.main-menu:hover{
+    color: #ffffff;
+}
+
+.fade-animation {
+    animation: fadeInOut 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
