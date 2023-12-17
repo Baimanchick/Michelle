@@ -127,15 +127,15 @@ body {
   gap: 50px;
   justify-content: center;
   align-items: center;
-  top: 67vh;
+  top: 415px;
   animation: fadeInOut 3.5s ease;
 }
 
 .slider {
   position: relative;
   z-index: 4;
-  margin-top: 269px;
-  top: 17vh;
+  margin-top: 222px;
+
 }
 
 .slider-items {
