@@ -67,6 +67,7 @@ function MenuPage() {
         }}
       >
         <button className="btn-more" onClick={() => navigate("/menu")}>
+
           ПОДРОБНЕЕ
         </button>
       </div>
