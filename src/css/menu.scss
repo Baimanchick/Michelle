@@ -55,15 +55,15 @@
 
   .menu-card-img {
     overflow: hidden;
-    border-radius: 5px 
+    border-radius: 5px;
   }
 
   .menu-card-img > img {
-      width: 185px;
-      height: 256px;
-      object-fit: cover;
-      position: relative;
-      top: -60px;
+    width: 185px;
+    height: 256px;
+    object-fit: cover;
+    position: relative;
+    top: -60px;
   }
 
   .white-block {
@@ -124,9 +124,9 @@
     width: 185px;
     height: 256px;
     border-radius: 5px;
-      -webkit-box-shadow: 13px 13px 20px 2px rgba(34, 60, 80, 0.2);
-      -moz-box-shadow: 13px 13px 20px 2px rgba(34, 60, 80, 0.2);
-      box-shadow: 13px 13px 20px 2px rgba(34, 60, 80, 0.2);
+    -webkit-box-shadow: 13px 13px 20px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 13px 13px 20px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 13px 13px 20px 2px rgba(34, 60, 80, 0.2);
     position: relative;
     margin-bottom: 30px;
   }
@@ -139,16 +139,38 @@
   }
 }
 
+@media screen and (max-width: 415px) {
+  .menu-card-absolute {
+    width: 160px;
+  }
+  .menu-card-main {
+    width: 165px;
+  }
+}
 
-.title-2{
+@media screen and (max-width: 365px) {
+  .menu-card-absolute {
+    width: 180px;
+  }
+  .menu-card-main {
+    width: 185px;
+  }
+  .main-card-break {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.title-2 {
   font-size: 17px;
   font-weight: 400;
   text-align: center;
   margin-top: 20px;
 }
 
-.text-2{
-  color: #E1A304;
+.text-2 {
+  color: #e1a304;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -165,8 +187,7 @@
   padding: 20px;
 }
 
-
-.notf{
+.notf {
   width: 100%;
   height: 100%;
   display: flex;
@@ -176,19 +197,19 @@
   flex-direction: column;
 }
 
-.notf > h1{
+.notf > h1 {
   margin-top: 350px;
   margin-bottom: 15px;
 }
 
-.notf > button{
-    width: 250px;
-    height: 60px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    border: 1px solid #F2CF11;
-    background: #F2CF11;
-    box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.25);
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+.notf > button {
+  width: 250px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #f2cf11;
+  background: #f2cf11;
+  box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
