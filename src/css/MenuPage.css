@@ -169,6 +169,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   z-index: 4;
+  color: #000;
 }
 
 .fullscreen-menu {
