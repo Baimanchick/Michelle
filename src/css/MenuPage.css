@@ -56,7 +56,7 @@ body {
 
 .white-block-down {
   position: absolute;
-  top: 53vh;
+  top: 495px;
   width: 100%;
   height: 250px;
   background: linear-gradient(
@@ -151,7 +151,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   animation: fadeInOut 3.5s ease;
-  color: #fff;
+  color: black;
 }
 
 .bold-text {
