@@ -11,7 +11,7 @@ function MainRoutes() {
     <Routes>
       <Route element={<MainLayout />}></Route>
       <Route path="/" element={<HomePage />} />
-      <Route path="/categories" element={<MenuPage/>} />
+      <Route path="/categories" element={<MenuPage />} />
       <Route path="/menu" element={<MenuDishes />} />
       <Route path="/notf" element={<NotF />} />
     </Routes>
