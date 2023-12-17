@@ -20,6 +20,7 @@ import img18 from "../images/salad/card-18.png";
 import img19 from "../images/salad/card-19.png";
 
 function CardMenuSalad() {
+  let awd = "awd";
   return <div>CardMenuSalad</div>;
 }
 
