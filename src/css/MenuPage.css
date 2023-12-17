@@ -38,6 +38,8 @@ body {
   position: absolute;
   top: 50px;
   z-index: 2;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .white-block-up {
@@ -127,14 +129,14 @@ body {
   gap: 50px;
   justify-content: center;
   align-items: center;
-  top: 453px;
+  top: 415px;
   animation: fadeInOut 3.5s ease;
 }
 
 .slider {
   position: relative;
   z-index: 4;
-  margin-top: 269px;
+  margin-top: 222px;
 }
 
 .slider-items {
@@ -167,6 +169,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   z-index: 4;
+  color: #000;
 }
 
 .fullscreen-menu {
