@@ -28,7 +28,7 @@ function MenuDishes() {
         </div>
       ) : (
         <>
-          <header className="menu-header">
+          {/* <header className="menu-header">
             <div className="menu-title-container">
               <hr />
               <h2>КЛАССИЧЕСКИЕ</h2>
@@ -43,7 +43,13 @@ function MenuDishes() {
               <h2>КАША</h2>
             </div>
             <CardMenuBreakfast />
-          </div>
+          </div> */}
+          <header className="menu-salad-header">
+            <div className="menu-salad-title-container">
+              <div>САЛАТЫ</div>
+              <span>НЕ ЕДА, ЭТО СТИЛЬ</span>
+            </div>
+          </header>
         </>
       )}
     </div>
