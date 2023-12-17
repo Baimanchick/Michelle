@@ -54,7 +54,7 @@ body {
 
 .white-block-down {
   position: absolute;
-  top: 53vh;
+  top: 495px;
   width: 100%;
   height: 250px;
   background: linear-gradient(
@@ -127,7 +127,7 @@ body {
   gap: 50px;
   justify-content: center;
   align-items: center;
-  top: 67vh;
+  top: 453px;
   animation: fadeInOut 3.5s ease;
 }
 
@@ -135,7 +135,6 @@ body {
   position: relative;
   z-index: 4;
   margin-top: 269px;
-  top: 17vh;
 }
 
 .slider-items {

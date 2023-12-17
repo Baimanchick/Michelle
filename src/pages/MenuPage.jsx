@@ -50,7 +50,7 @@ function MenuPage() {
       <div className='slider'>
         <SliderMenu onSelectCategory={handleSelectCategory} />
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '18vh' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '30px' }}>
         <button className='btn-more' onClick={() => navigate("/menu")}>
           ПОДРОБНЕЕ
         </button>
