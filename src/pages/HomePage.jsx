@@ -88,18 +88,10 @@ function HomePage() {
           </div>
         </div>
       ) : null}
-      {selectedLanguage === "Русский" ? (
-        <div className="home-main-content">
-          <header className="home-header">
-            <img src={logoHome} alt="Logo" />
-          </header>
-          <div className="home-titles-1">
-            <span onClick={() => navigate("/categories")}>МЕНЮ</span>
-            <p>О НАС</p>
-            <p>ᨆ</p>
-          </div>
-        </div>
-      ) : null}
+      {selectedLanguage === "Русский" ? navigate("/categories") : null}
+      {selectedLanguage === "Кыргызча" ? navigate("/categories") : null}
+      {selectedLanguage === "English" ? navigate("/categories") : null}
+      {selectedLanguage === "Turkce" ? navigate("/categories") : null}
     </div>
   );
 }
