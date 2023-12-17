@@ -71,7 +71,7 @@ function MenuPage() {
           ПОДРОБНЕЕ
         </button>
       </div>
-      <div className="white-block-down"></div>
+      {/* <div className="white-block-down"></div> */}
       {isMenuOpen && (
         <FullscreenMenu
           onCloseMenu={handleCloseMenu}
