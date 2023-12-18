@@ -11,8 +11,8 @@ import icon6 from "../images/iconSalad/icon-4.svg";
 import icon7 from "../images/iconSalad/icon-7.svg";
 import icon8 from "../images/iconSalad/icon-8.svg";
 import icon9 from "../images/iconSalad/icon-9.svg";
-import img1 from "../images/baget/Хумус с Багетом на закваске.jpg";
-import img2 from "../images/baget/Куриный паштет с Багетом на закваске.jpg";
+import img1 from "../images/baget/1.jpg";
+import img2 from "../images/baget/2.jpg";
 
 import CardSalad from "../components/CardSalad";
 
