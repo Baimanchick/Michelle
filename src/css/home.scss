@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 1000px) {
   .home-main-content {
-    background-image: url("../images/homemain.png");
+    background-image: url("../images/else/homemain.png");
   }
 
   .homeLoader {
@@ -202,7 +202,7 @@
     font-size: 32px;
   }
   .home-main-content-special {
-    background-image: url("../images/fuckme.jpg");
+    background-image: url("../images/else/fuckme.jpg");
     // filter: brightness(50%);
     background-size: cover;
     background-position: center;

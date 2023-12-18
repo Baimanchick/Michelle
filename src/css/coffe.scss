@@ -1,0 +1,101 @@
+@media screen and (max-width: 1000px) {
+  .coffe-main-content {
+    background-color: #f9ede6;
+    height: 100vh;
+    padding: 50px 15px 0px 15px;
+  }
+  .square-main {
+    width: 165px;
+    height: auto;
+    background-color: #fffae680;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 250, 230, 0.5) 0%,
+        rgba(255, 250, 230, 0.5) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(255, 246, 246, 0) 51.72%,
+        rgba(255, 250, 250, 0.74) 62.75%,
+        #fffafa 74.12%
+      ),
+      #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  .square-title {
+    color: #323232;
+    font-family: "trajan-pro-3";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 100% */
+  }
+  .square-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .square-weight {
+    color: #e1a304;
+    font-family: "trajan-pro-3";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px; /* 125% */
+  }
+  .square-price {
+    // margin-top: 15px;
+    color: #81b0b0;
+    font-family: "trajan-pro-3";
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .square-utils-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .square-main-content {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // padding-bottom: 200px;
+  }
+  .coffe-img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    // margin-bottom: 200px;
+    margin-top: 20px;
+    object-fit: cover;
+  }
+  .coffe-img-2 {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 200px;
+    margin-top: 40px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .square-main {
+    width: 145px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .square-main-content {
+    display: flex;
+    flex-direction: column;
+    // margin-bottom: 100px;
+  }
+  .square-main {
+    width: 100%;
+  }
+}

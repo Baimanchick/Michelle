@@ -11,7 +11,7 @@ function MenuSalad() {
             <span>НЕ ЕДА, ЭТО СТИЛЬ</span>
           </div>
         </header>
-        <CardMenuSalad />=
+        <CardMenuSalad />
       </div>
     </>
   );
