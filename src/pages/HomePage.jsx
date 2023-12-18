@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/home.scss";
-import logoHome from "../images/Michelle Vector.svg";
+import logoHome from "../images/else/Michelle Vector.svg";
 import { useNavigate } from "react-router-dom";
 
 function HomePage() {

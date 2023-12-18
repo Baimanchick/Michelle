@@ -7,6 +7,7 @@ function CardSalad({
   title,
   text,
   price,
+  weight,
   icon1,
   icon2,
   icon3,
@@ -29,7 +30,7 @@ function CardSalad({
             <div className="salad-card-absolute" style={style}>
               <div className="salad-card-title">
                 <div>{title}</div>
-                <span>250 г</span>
+                <span>{weight}</span>
                 <p>{text}</p>
               </div>
               <div className="salad-card-utils">

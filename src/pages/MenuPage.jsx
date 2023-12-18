@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../css/MenuPage.css";
-import logo from "../images/Michelle Vector.svg";
-import burger from "../images/Group 115.svg";
-import arrowleft from "../images/Group 118.svg";
-import arrowright from "../images/Group 117.svg";
+import logo from "../images/else/Michelle Vector.svg";
+import burger from "../images/else/Group 115.svg";
+import arrowleft from "../images/else/Group 118.svg";
+import arrowright from "../images/else/Group 117.svg";
 import SliderMenu, { categories } from "../components/SliderMenu";
 import FullscreenMenu from "../components/FullscreenMenu";
 import { useNavigate } from "react-router-dom";
@@ -33,7 +33,7 @@ function MenuPage() {
       <div className="white-block-up"></div>
       <img
         className={`breakfast-img ${categoryChange ? "fade-animation" : ""}`}
-        src={require(`../images/${
+        src={require(`../images/else/${
           selectedCategory.img ? selectedCategory.img : "zavtrak"
         }.png`)}
       />
