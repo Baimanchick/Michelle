@@ -12,7 +12,7 @@ function CardMenu({ style, img, title, text, price, weight }) {
             <img src={img} alt="" />
             <div className="white-block"></div>
 
-            <div className="menu-card-absolute">
+            <div className="menu-card-absolute" style={style}>
               <div className="menu-card-title">
                 <div>{title}</div>
                 <span>{weight}</span>

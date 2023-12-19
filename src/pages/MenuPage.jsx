@@ -35,15 +35,17 @@ function MenuPage() {
         МЕНЮ
       </div>
       <div className="block-nav-menu">
-        {categories.map((category) => (
-          <div
+        {categories.map((category) => {
+          console.log(typeof category.img)
+          return(
+            <div
             className="menu-card-main"
             onClick={() => navigate(category.link)}
           >
             <div className="menu-card-container">
               <div className="menu-card">
                 <div className="menu-card-img">
-                  <img src={category.img} alt="" />
+                  <img src={`../images/else/${category.img}`} alt="lol" />
                   <div className="white-block"></div>
 
                   <div className="menu-card-absolute">
@@ -56,7 +58,8 @@ function MenuPage() {
               </div>
             </div>
           </div>
-        ))}
+          )
+        })}
       </div>
     </>
   );
