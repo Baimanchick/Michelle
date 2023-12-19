@@ -9,6 +9,10 @@ import MenuSalad from "../pages/MenuSalad";
 import MenuPlat from "../pages/MenuPlat";
 import MenuBaget from "../pages/MenuBaget";
 import MenuCoffe from "../pages/MenuCoffe";
+import MenuSoap from "../pages/MenuSoap";
+import MenuDinner from "../pages/MenuDinner";
+import MenuHotMeal from "../pages/MenuHotMeal";
+import MenuPizza from "../pages/MenuPizza";
 
 function MainRoutes() {
   return (
@@ -22,6 +26,10 @@ function MainRoutes() {
       <Route path="/plat" element={<MenuPlat />} />
       <Route path="/baget" element={<MenuBaget />} />
       <Route path="/coffe" element={<MenuCoffe />} />
+      <Route path="/soap" element={<MenuSoap />} />
+      <Route path="/dinner" element={<MenuDinner />} />
+      <Route path="/hot" element={<MenuHotMeal />} />
+      <Route path="/pizza" element={<MenuPizza />} />
     </Routes>
   );
 }

@@ -1,0 +1,66 @@
+@media screen and (max-width: 1000px) {
+  .soap-title-container > h3 {
+    color: #323232;
+    font-family: "trajan-pro-3";
+    font-size: 36px;
+    font-weight: 400;
+  }
+  .soap-title-container {
+    text-align: center;
+  }
+
+  .soap-title-container > h2 {
+    color: #81b0b0;
+    font-family: "trajan-pro-3";
+    font-size: 16px;
+  }
+  .dinner-title > span {
+    color: #323232;
+    font-family: "trajan-pro-3";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+  .soap-title-container > h4 {
+    color: #e1a304;
+    font-family: "trajan-pro-3";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .dinner-title > p {
+    color: #81b0b0;
+    font-family: "trajan-pro-3";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .dinner-title {
+    margin: 45px 0px 45px 0px;
+    display: block;
+  }
+  .dinner-image {
+    -webkit-box-shadow: 13px 13px 20px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 13px 13px 20px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 13px 13px 20px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .dinner-title > span {
+    color: #323232;
+    font-family: "trajan-pro-3";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+}

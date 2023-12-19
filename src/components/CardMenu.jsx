@@ -3,7 +3,7 @@ import "../css/menu.scss";
 import cardIcon1 from "../images/iconSalad/card-icon-1.svg";
 import cardIcon2 from "../images/iconSalad/card-icon-2.svg";
 
-function CardMenu({ style, img, title, text, price }) {
+function CardMenu({ style, img, title, text, price, weight }) {
   return (
     <div className="menu-card-main">
       <div className="menu-card-container">
@@ -15,7 +15,7 @@ function CardMenu({ style, img, title, text, price }) {
             <div className="menu-card-absolute" style={style}>
               <div className="menu-card-title">
                 <div>{title}</div>
-                <span>250 г</span>
+                <span>{weight}</span>
                 <p>{text}</p>
               </div>
               <div className="menu-card-utils">
