@@ -140,6 +140,7 @@ function CardMenuBreakfast() {
           weight={"200 г"}
         />
         <CardMenu
+          style={{ top: '-140px' }}
           img={img9}
           title={"C малосольной сёмгой"}
           text={
