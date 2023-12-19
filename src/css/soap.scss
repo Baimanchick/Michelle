@@ -51,6 +51,12 @@
     box-shadow: 13px 13px 20px 2px rgba(34, 60, 80, 0.2);
     border-radius: 5px;
   }
+  .child-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 372px) {
@@ -62,5 +68,14 @@
     font-weight: 400;
     line-height: normal;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  .child-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
   }
 }
