@@ -7,6 +7,7 @@ import arrowright from "../images/else/Group 117.svg";
 import SliderMenu, { categories } from "../components/SliderMenu";
 import FullscreenMenu from "../components/FullscreenMenu";
 import { useNavigate } from "react-router-dom";
+import CardMenu from "../components/CardMenu";
 
 function MenuPage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -29,56 +30,31 @@ function MenuPage() {
   const navigate = useNavigate();
 
   return (
-    <div className={`block-breakfast`}>
-      <div className="white-block-up"></div>
-      <img
-        className={`breakfast-img ${categoryChange ? "fade-animation" : ""}`}
-        src={require(`../images/else/${
-          selectedCategory.img ? selectedCategory.img : "zavtrak"
-        }.png`)}
-      />
-      <div className="body-breakfast">
-        <h1
-          className={`breakfast-title ${
-            categoryChange ? "fade-animation" : ""
-          } `}
-        >
-          {selectedCategory.name}
-        </h1>
-        <div className="breakfast-category">
-          КЛАССИЧЕСКИЕ <span className="breakfast-text">НА НОВЫЙ ЛАД</span>
-        </div>
-        <img src={logo} className="logo-br" />
+    <>
+      <div style={{ fontSize: '38px', textAlign: 'center', marginTop: '50px' }}>МЕНЮ</div>
+      <div className="block-nav-menu">
+        { categories.map((category) => (
+          <div className="menu-card-main" onClick={() => navigate(category.link)}>
+            <div className="menu-card-container">
+              <div className="menu-card">
+                <div className="menu-card-img">
+                  <img src={require("../images/breakfast/card-1.png")} alt="" />
+                  <div className="white-block"></div>
+      
+                  <div className="menu-card-absolute">
+                    <div className="menu-card-title">
+                      <div>{category.name}</div>
+                    </div>
+                    <div className="menu-card-utils">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )) }
       </div>
-      <div className="menu-burger" onClick={handleOpenMenu}>
-        <img src={arrowleft} className="arrow-l" />
-        <img src={burger} className="menu-br" />
-        <img src={arrowright} className="arrow-r" />
-      </div>
-      <div className="slider">
-        <SliderMenu onSelectCategory={handleSelectCategory} />
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: "30px",
-        }}
-      >
-        <button className="btn-more" onClick={() => navigate("/menu")}>
-          ПОДРОБНЕЕ
-        </button>
-      </div>
-      {/* <div className="white-block-down"></div> */}
-      {isMenuOpen && (
-        <FullscreenMenu
-          onCloseMenu={handleCloseMenu}
-          onSelectCategory={handleSelectCategory}
-          selectedCategory={selectedCategory}
-        />
-      )}
-    </div>
+    </>
   );
 }
 
