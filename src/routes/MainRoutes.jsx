@@ -13,6 +13,9 @@ import MenuSoap from "../pages/MenuSoap";
 import MenuDinner from "../pages/MenuDinner";
 import MenuHotMeal from "../pages/MenuHotMeal";
 import MenuPizza from "../pages/MenuPizza";
+import MenuBoul from "../pages/MenuBoul";
+import MenuGar from "../pages/MenuGar";
+import MenuChild from "../pages/MenuChild";
 
 function MainRoutes() {
   return (
@@ -30,6 +33,9 @@ function MainRoutes() {
       <Route path="/dinner" element={<MenuDinner />} />
       <Route path="/hot" element={<MenuHotMeal />} />
       <Route path="/pizza" element={<MenuPizza />} />
+      <Route path="/boul" element={<MenuBoul />} />
+      <Route path="/gar" element={<MenuGar />} />
+      <Route path="/child" element={<MenuChild />} />
     </Routes>
   );
 }
