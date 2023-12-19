@@ -16,6 +16,8 @@ import MenuPizza from "../pages/MenuPizza";
 import MenuBoul from "../pages/MenuBoul";
 import MenuGar from "../pages/MenuGar";
 import MenuChild from "../pages/MenuChild";
+import NotFounedPage from "../pages/NotFounedPage";
+import Image from "../pages/Image";
 
 function MainRoutes() {
   return (
@@ -36,6 +38,8 @@ function MainRoutes() {
       <Route path="/boul" element={<MenuBoul />} />
       <Route path="/gar" element={<MenuGar />} />
       <Route path="/child" element={<MenuChild />} />
+      <Route path="*" element={<NotFounedPage />} />
+      <Route path="/img" element={<Image />} />
     </Routes>
   );
 }

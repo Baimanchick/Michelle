@@ -31,28 +31,32 @@ function MenuPage() {
 
   return (
     <>
-      <div style={{ fontSize: '38px', textAlign: 'center', marginTop: '50px' }}>МЕНЮ</div>
+      <div style={{ fontSize: "38px", textAlign: "center", marginTop: "50px" }}>
+        МЕНЮ
+      </div>
       <div className="block-nav-menu">
-        { categories.map((category) => (
-          <div className="menu-card-main" onClick={() => navigate(category.link)}>
+        {categories.map((category) => (
+          <div
+            className="menu-card-main"
+            onClick={() => navigate(category.link)}
+          >
             <div className="menu-card-container">
               <div className="menu-card">
                 <div className="menu-card-img">
-                  <img src={require("../images/breakfast/card-1.png")} alt="" />
+                  <img src={category.img} alt="" />
                   <div className="white-block"></div>
-      
+
                   <div className="menu-card-absolute">
                     <div className="menu-card-title">
                       <div>{category.name}</div>
                     </div>
-                    <div className="menu-card-utils">
-                    </div>
+                    <div className="menu-card-utils"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        )) }
+        ))}
       </div>
     </>
   );

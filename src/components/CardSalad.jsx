@@ -26,7 +26,6 @@ function CardSalad({
           <div className="salad-card-img">
             <img src={img} alt="" />
             <div className="white-block"></div>
-
             <div className="salad-card-absolute" style={style}>
               <div className="salad-card-title">
                 <div>{title}</div>

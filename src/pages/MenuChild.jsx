@@ -49,7 +49,7 @@ function MenuChild() {
   useEffect(() => {
     const delay = setTimeout(() => {
       setIsLoading(false);
-    }, 4000);
+    }, 1000);
 
     return () => clearTimeout(delay);
   }, []);

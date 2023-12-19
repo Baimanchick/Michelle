@@ -65,8 +65,7 @@ function CardMenuSalad() {
             justifyContent: "center",
             alignItems: "center",
           }}
-        >
-        </div>
+        ></div>
       </div>
       <div className="main-card-break">
         <CardSalad
@@ -300,7 +299,7 @@ function CardMenuSalad() {
           <h1>УПС) Скоро все добавим : - )</h1>
         </div>
       )}
-      <div style={{ marginBottom: "180px" }}></div>
+      <div style={{ paddingBottom: "180px" }}></div>
     </>
   );
 }
