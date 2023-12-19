@@ -12,14 +12,14 @@ import icon6 from "../images/iconSalad/icon-4.svg";
 import icon7 from "../images/iconSalad/icon-7.svg";
 import icon8 from "../images/iconSalad/icon-8.svg";
 import icon9 from "../images/iconSalad/icon-9.svg";
-import img1 from "../images/child/1.svg";
-import img2 from "../images/child/2.svg";
-import img3 from "../images/child/3.svg";
-import img4 from "../images/child/4.svg";
-import img5 from "../images/child/5.svg";
-import img6 from "../images/child/6.svg";
-import img7 from "../images/child/7.svg";
-import img8 from "../images/child/8.svg";
+import img1 from "../images/child/1.jpg";
+import img2 from "../images/child/2.jpg";
+import img3 from "../images/child/3.jpg";
+import img4 from "../images/child/4.jpg";
+import img5 from "../images/child/5.jpg";
+import img6 from "../images/child/6.jpg";
+import img7 from "../images/child/7.jpg";
+import img8 from "../images/child/8.jpg";
 import Advice from "../components/Advice";
 
 function MenuChild() {
@@ -96,14 +96,48 @@ function MenuChild() {
             </div>
           ) : (
             <>
-              <img src={img1} alt="" />
-              <img src={img2} alt="" />
-              <img src={img3} alt="" />
-              <img src={img4} alt="" />
-              <img src={img5} alt="" />
-              <img src={img6} alt="" />
-              <img src={img7} alt="" />
-              <img src={img8} alt="" />
+              <div className="child-img-container">
+                <img
+                  style={{ borderRadius: "15px", objectFit: "cover" }}
+                  src={img1}
+                  alt=""
+                />
+                <img
+                  style={{ borderRadius: "15px", objectFit: "cover" }}
+                  src={img2}
+                  alt=""
+                />
+                <img
+                  style={{ borderRadius: "15px", objectFit: "cover" }}
+                  src={img3}
+                  alt=""
+                />
+                <img
+                  style={{ borderRadius: "15px", objectFit: "cover" }}
+                  src={img4}
+                  alt=""
+                />
+                <img
+                  style={{ borderRadius: "15px", objectFit: "cover" }}
+                  src={img5}
+                  alt=""
+                />
+                <img
+                  style={{ borderRadius: "15px", objectFit: "cover" }}
+                  src={img6}
+                  alt=""
+                />
+                <img
+                  style={{ borderRadius: "15px", objectFit: "cover" }}
+                  src={img7}
+                  alt=""
+                />
+                <img
+                  style={{ borderRadius: "15px", objectFit: "cover" }}
+                  src={img8}
+                  alt=""
+                />
+              </div>
             </>
           )}
         </div>
