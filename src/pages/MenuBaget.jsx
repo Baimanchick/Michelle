@@ -15,6 +15,7 @@ import img1 from "../images/baget/1.jpg";
 import img2 from "../images/baget/2.jpg";
 
 import CardSalad from "../components/CardSalad";
+import Advice from "../components/Advice";
 
 function MenuBaget() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -104,6 +105,11 @@ function MenuBaget() {
             //   icon9={icon9} старбакс
           />
         </div>
+        <Advice
+          text={
+            "Мы готовим паштет из нежного мяса курицы с добавлением ароматных трав"
+          }
+        />
       </div>
     </>
   );

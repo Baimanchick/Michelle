@@ -89,6 +89,7 @@ function CardMenuBreakfast() {
             "Состав: рис, молоко, сливки, сгущённое молоко, банан, смородина, фисташки, миндаль"
           }
           price={"230 С"}
+          weight={"250 г"}
         />
         <CardMenu
           img={img2}
@@ -97,6 +98,7 @@ function CardMenuBreakfast() {
             "Состав: рис, молоко, сливки, сгущённое молоко, банан, смородина, фисташки, миндаль"
           }
           price={"230 С"}
+          weight={"250 г"}
         />
         <CardMenu
           img={img3}
@@ -105,6 +107,7 @@ function CardMenuBreakfast() {
             "Состав: овсяные хлопья, молоко, сливки, сгущённое молоко, банан, смородина, фисташки, миндаль"
           }
           price={"230 С"}
+          weight={"250 г"}
         />
         <div className="category-mini-blocks">
           <div className="category-mini-block">
@@ -123,6 +126,7 @@ function CardMenuBreakfast() {
           title={"Со сметаной"}
           text={"Состав: пшеничная мука, гречневая мука, яйцо, молоко, сметана"}
           price={"200 с"}
+          weight={"210 г"}
         />
         <CardMenu
           img={img7}
@@ -131,6 +135,7 @@ function CardMenuBreakfast() {
             "Состав: пшеничная мука, гречневая мука, яйцо, молоко, творог, сметана"
           }
           price={"330 с"}
+          weight={"310 г"}
         />
         <CardMenu
           img={img8}
@@ -139,6 +144,7 @@ function CardMenuBreakfast() {
             "Состав: пшеничная мука, гречневая мука, яйцо, молоко, куриный паштет"
           }
           price={"200 с"}
+          weight={"200 г"}
         />
         <CardMenu
           img={img9}
@@ -147,6 +153,7 @@ function CardMenuBreakfast() {
             "Состав: пшеничная мука, гречневая мука, яйцо, молоко, малосольная сёмга, творожный сыр"
           }
           price={"200 с"}
+          weight={"240 г"}
         />
       </div>
       <div className="title-2">Мясные яичницы</div>
@@ -156,12 +163,14 @@ function CardMenuBreakfast() {
           title={"Яичница с языком"}
           text={"Состав: яйца, говяжий язык, зелёный лук"}
           price={"300 с"}
+          weight={"220 г"}
         />
         <CardMenu
           img={img11}
           title={"Яичница с курицей"}
           text={"Состав: яйца, куриная грудка"}
           price={"200 с"}
+          weight={"310 г"}
         />
         <CardMenu
           img={img12}
@@ -170,6 +179,7 @@ function CardMenuBreakfast() {
             "Состав: яйца, говяжьи колбаски , картофель, томаты , болгарский перец, руккола"
           }
           price={"330 с"}
+          weight={"440 г"}
         />
         <CardMenu
           img={img13}
@@ -178,6 +188,7 @@ function CardMenuBreakfast() {
             "Состав: яйца, греческий йогурт, томаты черри, шампиньоны, шпинат, багет на закваске"
           }
           price={"330 с"}
+          weight={"510 г"}
         />
         <CardMenu
           img={img14}
@@ -186,6 +197,7 @@ function CardMenuBreakfast() {
             "Состав: яйцо пашот, малосольная сёмга, авокадо, картофель , томаты черри, соус Голландез "
           }
           price={"595 с"}
+          weight={"530 г"}
         />
         <CardMenu
           img={img15}
@@ -194,12 +206,14 @@ function CardMenuBreakfast() {
             "Состав: яйцо, блин, малосольная сёмга, творожный сыр, авокадо, микрозелень"
           }
           price={"465 с"}
+          weight={"195 г"}
         />
         <CardMenu
           img={img16}
           title={"Японский омлет"}
           text={"Состав: яйца, малосольная сёмга, микрозелень, соевый соус"}
           price={"465 с"}
+          weight={"220 г"}
         />
       </div>
       <header className="menu-header">
@@ -220,6 +234,7 @@ function CardMenuBreakfast() {
             "Состав: овсяные хлопья, малосольная сёмга, творожный сыр, яйцо, кабачки, микрозелень"
           }
           price={"400 с"}
+          weight={"300 г"}
         />
         <CardMenu
           img={img18}
@@ -228,6 +243,7 @@ function CardMenuBreakfast() {
             "Состав: тигровые креветки, авокадо , томаты черри, огурцы , фиолетовый лук, нут, микс салатов, бальзамический крем-соус"
           }
           price={"505 с"}
+          weight={"300 г"}
         />
         <CardMenu
           img={img19}
@@ -236,6 +252,7 @@ function CardMenuBreakfast() {
             "Состав: яйца, творог, томаты черри, оливки, маслины, микс салатов, клубника, смородина, грецкий орех, йогурт"
           }
           price={"595 с"}
+          weight={"750 г"}
         />
         <CardMenu
           img={img20}
@@ -244,6 +261,7 @@ function CardMenuBreakfast() {
             "Состав: яйцо пашот, малосольная сёмга, творожный сыр, авокадо, томаты черри, огурцы, микс салатов, кедровый орех"
           }
           price={"545 с"}
+          weight={"270 г"}
         />
         <CardMenu
           img={img21}
@@ -252,6 +270,7 @@ function CardMenuBreakfast() {
             "Состав: яйца-скрэмбл, тигровые креветки, творожный сыр, авокадо, томаты черри, огурцы, микс салатов, кедровый орех"
           }
           price={"545 с"}
+          weight={"270 г"}
         />
         <CardMenu
           img={img22}
@@ -260,6 +279,7 @@ function CardMenuBreakfast() {
             "Состав: яйца, сыр, авокадо, томаты черри, огурцы, микс салатов, зелёный лук"
           }
           price={"545 с"}
+          weight={"350 г"}
         />
       </div>
       <header style={{ margin: "20px 0px" }} className="menu-header">
@@ -280,6 +300,7 @@ function CardMenuBreakfast() {
             "Состав: творог, сметана, клубника, смородина, фисташки, миндаль"
           }
           price={"435 с"}
+          weight={"350 г"}
         />
         <CardMenu
           img={img24}
@@ -288,6 +309,7 @@ function CardMenuBreakfast() {
             "Состав: яйца, творог, сметана, смородина, фисташки, миндаль, джем на выбор"
           }
           price={"435 с"}
+          weight={"360 г"}
         />
         <CardMenu
           img={img25}
@@ -296,6 +318,7 @@ function CardMenuBreakfast() {
             "Состав: бельгийские вафли, сгущённое молоко, смородина, фисташки, миндаль"
           }
           price={"270 с"}
+          weight={"350 г"}
         />
         <CardMenu
           style={{ top: "125px" }}
@@ -305,6 +328,7 @@ function CardMenuBreakfast() {
             "Состав: бельгийские вафли, сливочное мороженое, шоколад, фисташки, миндаль"
           }
           price={"545 с"}
+          weight={"300 г"}
         />
       </div>
       <header style={{ margin: "20px 0px" }} className="menu-header">
@@ -325,6 +349,7 @@ function CardMenuBreakfast() {
             "Состав: яйца, говяжьи колбаски , фасоль в томате, корнишоны, перец халапеньо, руккола, тостерный хлеб"
           }
           price={"380 с"}
+          weight={"410 г"}
         />
         <CardMenu
           img={img28}
@@ -333,6 +358,7 @@ function CardMenuBreakfast() {
             "Состав: яйца, говяжьи колбаски, картофель, томаты, шампиньоны, тостерный хлеб"
           }
           price={"380 с"}
+          weight={"380 г"}
         />
         <CardMenu
           img={img29}
@@ -341,6 +367,7 @@ function CardMenuBreakfast() {
             "Состав: бельгийские вафли, малосольная сёмга, творожный сыр, микрозелень"
           }
           price={"435 с"}
+          weight={"290 г"}
         />
         <CardMenu
           img={img30}
@@ -349,6 +376,7 @@ function CardMenuBreakfast() {
             "Состав: яйца, говяжьи колбаски, сузьма, сыр, сливочное масло, томаты, огурцы, оливки, маслины, зелень, лаваш, багет на закваске, мёд, джем"
           }
           price={"505 с"}
+          weight={"700 г"}
         />
       </div>
       {notF && (
