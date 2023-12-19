@@ -66,13 +66,6 @@ function CardMenuSalad() {
             alignItems: "center",
           }}
         >
-          <button
-            style={{ marginTop: "10px" }}
-            className="btn-more"
-            onClick={() => navigate("/categories")}
-          >
-            ВЕРНУТЬСЯ
-          </button>
         </div>
       </div>
       <div className="main-card-break">

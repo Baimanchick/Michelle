@@ -3,17 +3,17 @@ import Slider from "react-slick";
 import "../css/MenuPage.css";
 
 export const categories = [
-  { id: 2, name: "ЗАВТРАКИ", img: "zavtrak" },
-  { id: 3, name: "САЛАТЫ", img: "salads" },
-  { id: 4, name: "ПЛЭТТЕРЫ", img: "platters" },
-  { id: 5, name: "БАГЕТЫ", img: "bagets" },
+  { id: 2, name: "ЗАВТРАКИ", img: "zavtrak", link: '/menu' },
+  { id: 3, name: "САЛАТЫ", img: "salads", link: '/salad' },
+  { id: 4, name: "ПЛЭТТЕРЫ", img: "platters", link: '/plat' },
+  { id: 5, name: "БАГЕТЫ", img: "bagets", link: '/baget' },
   { id: 6, name: "РОЛЛЫ / БАГЕТ / БУТЕРБРОДЫ", img: "rolls" },
   { id: 7, name: "ГОРЯЧИЕ БЛЮДА", img: "gor" },
   { id: 8, name: "ПИЦЦА", img: "pizza" },
   { id: 9, name: "ПОКЕ-БОУЛ", img: "poke" },
   { id: 10, name: "ГАРНИРЫ" },
   { id: 11, name: "ДЕТСКОЕ МЕНЮ" },
-  { id: 12, name: "КОФЕ", img: "coffee" },
+  { id: 12, name: "КОФЕ", img: "coffee", link: '/coffe' },
   { id: 13, name: "ЧАЙ", img: "tea" },
   { id: 14, name: "СМУЗИ-ПАЗЛ", img: "smuzi" },
   { id: 15, name: "БАР", img: "bar" },
