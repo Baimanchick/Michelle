@@ -80,13 +80,13 @@ export const categories = [
     id: 14,
     name: "ЧАЙ",
     img: "tea",
-    link: "/*",
+    link: "/tea",
   },
   {
     id: 15,
-    name: "СМУЗИ-ПАЗЛ",
-    img: "smuzi",
-    link: "/*",
+    name: "НАПИТКИ",
+    img: "napitki",
+    link: "/drinks",
   },
   {
     id: 16,
@@ -96,6 +96,12 @@ export const categories = [
   },
   {
     id: 17,
+    name: "СМУЗИ-ПАЗЛ",
+    img: "smuzi",
+    link: "/*",
+  },
+  {
+    id: 18,
     name: "ВИННАЯ КАРТА",
     img: "wine",
     link: "/*",
