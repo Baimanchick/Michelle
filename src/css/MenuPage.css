@@ -251,12 +251,39 @@ body {
 
 
 .block-nav-menu{
-  display: flex;
   width: 100%;
   height: auto;
+  margin-top: 30px;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  gap: 20px;
+  gap: 10px;
+}
+
+.card-menu-nav-block{
+  width: 125px;
+  height: 175px;
+  background-color: white;
+  font-size: 7px;
+  /* padding: 15px; */
+  border-radius: 10px;
+}
+
+.card-menu-img{
+  width: 125px;
+  height: 135px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-menu-nav-block-title{
+  max-width: 90px;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
