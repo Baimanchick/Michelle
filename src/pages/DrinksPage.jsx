@@ -318,16 +318,16 @@ function DrinksPage() {
             </header>
             <TeaSquare
               style={{ backgroundColor: "#FED5CAB2 " }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Клубничная фантазия"}
+              weight={"300 мл"}
+              price={"360 с"}
               extra={""}
             />
             <TeaSquare
               style={{ backgroundColor: "#FED5CAB2 " }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Банановый бум"}
+              weight={"300 мл"}
+              price={"360 с"}
               extra={""}
             />
             <header
@@ -340,16 +340,16 @@ function DrinksPage() {
             </header>
             <TeaSquare
               style={{ backgroundColor: "#E6EBDC99" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Шпинат-киви"}
+              weight={"250 мл"}
+              price={"170 с"}
               extra={""}
             />
             <TeaSquare
               style={{ backgroundColor: "#E6EBDC99" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Тропический"}
+              weight={"250 мл"}
+              price={"280 с"}
               extra={""}
             />
             <img className="tea-img" src={img1} alt="" />
@@ -363,37 +363,37 @@ function DrinksPage() {
             </header>
             <TeaSquare
               style={{ backgroundColor: "#FED5CAB2" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Клубничный крекер"}
+              weight={"300 мл"}
+              price={"300 с"}
               extra={""}
             />
             <TeaSquare
               style={{ backgroundColor: "#FED5CAB2" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Манго"}
+              weight={"300 мл"}
+              price={"300 с"}
               extra={""}
             />
             <TeaSquare
               style={{ backgroundColor: "#FED5CAB2" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Банан"}
+              weight={"300 мл"}
+              price={"300 с"}
               extra={""}
             />
             <TeaSquare
               style={{ backgroundColor: "#FED5CAB2" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Шоколад"}
+              weight={"300 мл"}
+              price={"300 с"}
               extra={""}
             />
             <TeaSquare
               style={{ backgroundColor: "#FED5CAB2" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Шоколад и банан"}
+              weight={"300 мл"}
+              price={"300 с"}
               extra={""}
             />
             <header
@@ -406,23 +406,23 @@ function DrinksPage() {
             </header>
             <TeaSquare
               style={{ backgroundColor: "#FEEABCE5" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Манго"}
+              weight={"300 мл"}
+              price={"310 с"}
               extra={""}
             />
             <TeaSquare
               style={{ backgroundColor: "#FEEABCE5" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Ореховый"}
+              weight={"300 мл"}
+              price={"310 с"}
               extra={""}
             />
             <TeaSquare
               style={{ backgroundColor: "#FEEABCE5" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Кокос и клубника"}
+              weight={"300 мл"}
+              price={"310 с"}
               extra={""}
             />
             <header
@@ -435,37 +435,37 @@ function DrinksPage() {
             </header>
             <TeaSquare
               style={{ backgroundColor: "#E6EBDC99" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Сок Gracio"}
+              weight={"250 мл/1 л"}
+              price={"90/310 с"}
               extra={""}
             />
             <TeaSquare
               style={{ backgroundColor: "#E6EBDC99" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Кока-Кола/Фанта"}
+              weight={"250 мл"}
+              price={"130 с"}
+              extra={"стекло"}
+            />
+            <TeaSquare
+              style={{ backgroundColor: "#E6EBDC99" }}
+              title={"Кока-Кола"}
+              weight={"250 мл/1 л"}
+              price={"90/170 с"}
+              extra={"розлив"}
+            />
+            <TeaSquare
+              style={{ backgroundColor: "#E6EBDC99" }}
+              title={"Швепс"}
+              weight={"330 мл"}
+              price={"105 с"}
               extra={""}
             />
             <TeaSquare
               style={{ backgroundColor: "#E6EBDC99" }}
-              title={""}
-              weight={""}
-              price={""}
-              extra={""}
-            />
-            <TeaSquare
-              style={{ backgroundColor: "#E6EBDC99" }}
-              title={""}
-              weight={""}
-              price={""}
-              extra={""}
-            />
-            <TeaSquare
-              style={{ backgroundColor: "#E6EBDC99" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Red Bull"}
+              weight={"250 мл"}
+              price={"260 с"}
               extra={""}
             />
 
@@ -479,23 +479,23 @@ function DrinksPage() {
             </header>
             <TeaSquare
               style={{ backgroundColor: "#FED5CAB2" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Ягодный"}
+              weight={"300 мл"}
+              price={"240 C"}
               extra={""}
             />
             <TeaSquare
               style={{ backgroundColor: "#FED5CAB2" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Манго и апельсин"}
+              weight={"300 мл"}
+              price={"290 с"}
               extra={""}
             />
             <TeaSquare
               style={{ backgroundColor: "#FED5CAB2" }}
-              title={""}
-              weight={""}
-              price={""}
+              title={"Бифидо"}
+              weight={"250 мл"}
+              price={"260 C"}
               extra={""}
             />
           </>
