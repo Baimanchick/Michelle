@@ -18,6 +18,8 @@ import MenuGar from "../pages/MenuGar";
 import MenuChild from "../pages/MenuChild";
 import NotFounedPage from "../pages/NotFounedPage";
 import Image from "../pages/Image";
+import CollagenPage from "../pages/CollagenPage";
+import TeaPage from "../pages/TeaPage";
 
 function MainRoutes() {
   return (
@@ -40,6 +42,8 @@ function MainRoutes() {
       <Route path="/child" element={<MenuChild />} />
       <Route path="*" element={<NotFounedPage />} />
       <Route path="/img" element={<Image />} />
+      <Route path="/collagen" element={<CollagenPage />} />
+      <Route path="/tea" element={<TeaPage />} />
     </Routes>
   );
 }
