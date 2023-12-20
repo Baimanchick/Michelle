@@ -42,6 +42,7 @@ function MenuPage() {
               title={category.name}
               img={category.img}
               link={category.link}
+              key={category}
             />
           );
         })}
