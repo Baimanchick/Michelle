@@ -183,6 +183,7 @@ function MenuDinner() {
             weight={"250 г"}
             // icon1={icon1} // пщеница
             //   icon3={icon3} лук
+            style={{ top: '115px' }}
             //   icon4={icon4} повар
             // icon5={icon5} // докрашенный листок
             //   icon6={icon6} бицепс

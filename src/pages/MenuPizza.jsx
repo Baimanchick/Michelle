@@ -150,6 +150,7 @@ function MenuPizza() {
             text={"Состав: колбаса Пепперони, сыр Моцарелла, томатный соус"}
             price={"465 с"}
             weight={""}
+            style={{ top: '175px' }}
             // icon1={icon1} // пщеницa
             // icon2={icon2} // листок
             //   icon3={icon3}// лук
@@ -168,6 +169,7 @@ function MenuPizza() {
             }
             price={"865 C"}
             weight={""}
+            style={{ top: '150px' }}
             // icon1={icon1} // пщеницa
             // icon2={icon2} // листок
             //   icon3={icon3}// лук
@@ -194,6 +196,7 @@ function MenuPizza() {
             }
             price={"765 с"}
             weight={""}
+            style={{ top: '170px' }}
             icon1={icon1} // пщеницa
             // icon2={icon2} // листок
             //   icon3={icon3}// лук
@@ -208,6 +211,7 @@ function MenuPizza() {
           <CardSalad
             img={img8}
             title={"Мексика"}
+            style={{ top: '160px' }}
             text={
               "Состав: куриная грудка, сыр Моцарелла, Фета, цветная капуста, болгарский перец, халапеньо, красный лук, томатный соус"
             }
@@ -226,6 +230,7 @@ function MenuPizza() {
           <CardSalad
             img={img9}
             title={"Курица-шпинат"}
+            style={{ top: '160px' }}
             text={
               "Состав: куриная грудка, сыр Моцарелла, цветная капуста, шпинат, сливочный соус"
             }
@@ -252,6 +257,7 @@ function MenuPizza() {
               "Состав: паста фетучини, куриная грудка, сыр Пармезан, шампиньоны, сливочный соус "
             }
             price={"555 с"}
+            style={{ top: '120px' }}
             weight={"350 г"}
             // icon1={icon1} // пщеницa
             // icon2={icon2} // листок
@@ -330,6 +336,7 @@ function MenuPizza() {
             }
             price={"340 с"}
             weight={"350 г"}
+            style={{ top: '160px' }}
             // icon1={icon1} // пщеницa
             icon2={icon2} // листок
             //   icon3={icon3}// лук

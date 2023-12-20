@@ -104,10 +104,10 @@ export const categories = [
     id: 18,
     name: "ВИННАЯ КАРТА",
     img: "wine",
-    link: "/*",
+    link: "/wine",
   },
   {
-    id: 18,
+    id: 19,
     name: "НОВОГОДНЕЕ МЕНЮ",
     img: "new",
     link: "/new",

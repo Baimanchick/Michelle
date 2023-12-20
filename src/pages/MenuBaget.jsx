@@ -87,6 +87,7 @@ function MenuBaget() {
             // icon7={icon7} // без молока
             //   icon8={icon8} // авакадо
             //   icon9={icon9} старбакс
+            style={{ top: '119px' }}
           />
         </div>
         <Advice
