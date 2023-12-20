@@ -60,6 +60,8 @@ function MenuCoffe() {
             <span>БОДРЯЩИЙ КОФЕ</span>
           </div>
         </header>
+        <img className="coffe-img-2" src={img2} alt="" />
+
         <div className="square-main-content">
           <Square title={"Эспрессо"} weight={"40 мл"} price={"175 с"} />
           <Square
@@ -130,8 +132,8 @@ function MenuCoffe() {
         </div>
         <div className="menu-coffe-images">
           <img className="coffe-img" src={img1} alt="" />
-          <img className="coffe-img-2" src={img2} alt="" />
         </div>
+        <div style={{ paddingBottom: "200px" }}></div>
       </div>
     </>
   );
