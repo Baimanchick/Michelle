@@ -8,6 +8,7 @@ import SliderMenu, { categories } from "../components/SliderMenu";
 import FullscreenMenu from "../components/FullscreenMenu";
 import { useNavigate } from "react-router-dom";
 import CardMenu from "../components/CardMenu";
+import CardMenuNav from "../components/CardMenuNav";
 
 function MenuPage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -35,28 +36,12 @@ function MenuPage() {
         МЕНЮ
       </div>
       <div className="block-nav-menu">
-        {categories.map((category) => (
-          <div
-            className="menu-card-main"
-            onClick={() => navigate(category.link)}
-          >
-            <div className="menu-card-container">
-              <div className="menu-card">
-                <div className="menu-card-img">
-                  <img src={category.img} alt="" />
-                  <div className="white-block"></div>
-
-                  <div className="menu-card-absolute">
-                    <div className="menu-card-title">
-                      <div>{category.name}</div>
-                    </div>
-                    <div className="menu-card-utils"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
+        {categories.map((category) => {
+          console.log(typeof category.img)
+          return(
+            <CardMenuNav title={category.name} img={category.img} link={category.link} />
+          )
+        })}
       </div>
     </>
   );
