@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import "../css/MenuPage.css";
+import { useNavigate } from "react-router-dom";
 
 export const categories = [
   {
@@ -53,7 +54,7 @@ export const categories = [
   },
   {
     id: 10,
-    name: "poke",
+    name: "ПОКЕ БОУЛ",
     img: "poke",
     link: "/boul",
   },
@@ -118,18 +119,27 @@ export default function SliderMenu({ onSelectCategory }) {
     },
   };
 
+  const navigate = useNavigate();
+
+  const handleSelect = (category) => {
+    onSelectCategory(category);
+    navigate(category.link);
+  }
+
+  console.log(selectedCategory)
+
   return (
     <div>
       <Slider {...settings}>
-        {categories.map((category) => (
+        {categories.map((category, index) => (
           <div
             key={category.id}
             className={`slider-items ${
               selectedCategory.id === category.id ? "bold-text" : ""
             }`}
-            onClick={() => onSelectCategory(category)}
+            onClick={() => handleSelect(category)}
           >
-            {category.name}
+            <h3>{category.name}</h3>
           </div>
         ))}
       </Slider>

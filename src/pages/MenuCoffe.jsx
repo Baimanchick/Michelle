@@ -23,21 +23,12 @@ function MenuCoffe() {
     setCategoryChange(true);
   };
 
-  const handleNotF = (category) => {
-    if (category.name !== "ЗАВТРАКИ") {
-      setNotF(true);
-      navigate("/notf");
-    } else {
-      setNotF(false);
-    }
-  };
-
   const navigate = useNavigate();
   return (
     <>
       <div className="coffe-main-content">
         <div className="menu-stick">
-          <SliderMenu onSelectCategory={handleNotF} />
+          <SliderMenu onSelectCategory={handleSelectCategory} />
           <div
             style={{
               display: "flex",
@@ -45,13 +36,6 @@ function MenuCoffe() {
               alignItems: "center",
             }}
           >
-            <button
-              style={{ marginTop: "10px" }}
-              className="btn-more"
-              onClick={() => navigate("/categories")}
-            >
-              ВЕРНУТЬСЯ
-            </button>
           </div>
         </div>
         <header className="menu-salad-header">
