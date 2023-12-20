@@ -79,6 +79,7 @@ function MenuHotMeal() {
             // icon1={icon1} // пщеница
             // icon2={icon2} // листок
             //   icon3={icon3} //лук
+            style={{ top: '145px' }}
             icon4={icon4} //повар
             // icon5={icon5} // докрашенный листок
             //   icon6={icon6} бицепс
@@ -97,7 +98,7 @@ function MenuHotMeal() {
             icon1={icon1} // пщеница
             icon3={icon3}
             icon7={icon7} // без молока
-            style={{ top: '115px' }}
+            style={{ top: '118px' }}
           />
           <CardSalad
             img={img3}
@@ -131,7 +132,7 @@ function MenuHotMeal() {
             // icon7={icon7} // без молока
             // icon8={icon8} // авакадо
             //   icon9={icon9} старбакс
-            style={{ top: '115px' }}
+            style={{ top: '114px' }}
           />
           <CardSalad
             img={img5}
@@ -149,6 +150,7 @@ function MenuHotMeal() {
             //   icon6={icon6} бицепс
             // icon7={icon7} // без молока
             // icon8={icon8} // авакадо
+            style={{ top: '135px' }}
             //   icon9={icon9} старбакс
           />
           <CardSalad
@@ -168,6 +170,7 @@ function MenuHotMeal() {
             // icon7={icon7} // без молока
             // icon8={icon8} // авакадо
             //   icon9={icon9} старбакс
+            style={{ top: '150px' }}
           />
           <CardSalad
             img={img7}
@@ -185,6 +188,7 @@ function MenuHotMeal() {
             icon7={icon7} // без молока
             icon8={icon8} // авакадо
             //   icon9={icon9} старбакс
+            style={{ top: '125px' }}
           />
           <CardSalad
             img={img8}
@@ -221,7 +225,7 @@ function MenuHotMeal() {
             //   icon6={icon6} бицепс
             // icon7={icon7} // без молока
             // icon8={icon8} // авакадо
-            style={{ top: '115px' }}
+            style={{ top: '110px' }}
             icon9={icon9}
           />
           <img src={img10} alt="" className="dinner-image" />
@@ -242,7 +246,7 @@ function MenuHotMeal() {
             icon7={icon7} // без молока
             // icon8={icon8} // авакадо
             //   icon9={icon9} старбакс
-            style={{ top: '115px' }}
+            style={{ top: '110px' }}
           />
           <CardSalad
             img={img12}
@@ -261,6 +265,7 @@ function MenuHotMeal() {
             // icon7={icon7} // без молока
             // icon8={icon8} // авакадо
             //   icon9={icon9} старбакс
+            style={{ top: '128px' }}
           />
           <CardSalad
             img={img13}
@@ -271,6 +276,7 @@ function MenuHotMeal() {
             icon1={icon1} // пщеница
             // icon2={icon2} // листок
             //   icon3={icon3} лук
+            style={{ top: '145px' }}
             //   icon4={icon4} повар
             // icon5={icon5} // докрашенный листок
             icon6={icon6}
@@ -286,6 +292,7 @@ function MenuHotMeal() {
             weight={"340 г"}
             icon1={icon1} // пщеница
             // icon2={icon2} // листок
+            style={{ top: '130px' }}
             //   icon3={icon3} лук
             //   icon4={icon4} повар
             // icon5={icon5} // докрашенный листок
@@ -321,6 +328,7 @@ function MenuHotMeal() {
             }
             price={"390 С"}
             weight={"300 г"}
+            style={{ top: '105px' }}
             // icon1={icon1} // пщеница
             icon2={icon2} // листок
             //   icon3={icon3} лук
@@ -330,7 +338,6 @@ function MenuHotMeal() {
             // icon7={icon7} // без молока
             // icon8={icon8} // авакадо
             //   icon9={icon9} старбакс
-            style={{ top: '115px' }}
           />
           <CardSalad
             img={img17}
@@ -346,6 +353,7 @@ function MenuHotMeal() {
             //   icon6={icon6} бицепс
             // icon7={icon7} // без молока
             // icon8={icon8} // авакадо
+            style={{ top: '125px' }}
             icon9={icon9}
           />
           <CardSalad
@@ -363,6 +371,7 @@ function MenuHotMeal() {
             // icon7={icon7} // без молока
             // icon8={icon8} // авакадо
             //   icon9={icon9} старбакс
+            style={{ top: '155px' }}
           />
           <Advice
             text={
