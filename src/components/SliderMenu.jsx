@@ -92,13 +92,13 @@ export const categories = [
     id: 16,
     name: "БАР",
     img: "bar",
-    link: "/*",
+    link: "/bar",
   },
   {
     id: 17,
     name: "СМУЗИ-ПАЗЛ",
     img: "smuzi",
-    link: "/*",
+    link: "/smuzi",
   },
   {
     id: 18,
