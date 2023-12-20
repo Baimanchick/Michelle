@@ -5,6 +5,12 @@ import { useNavigate } from "react-router-dom";
 
 export const categories = [
   {
+    id: 1,
+    name: "НОВОГОДНЕЕ МЕНЮ",
+    img: "new",
+    link: "/new",
+  },
+  {
     id: 2,
     name: "ЗАВТРАКИ",
     img: "zavtrak",
@@ -105,13 +111,7 @@ export const categories = [
     name: "ВИННАЯ КАРТА",
     img: "wine",
     link: "/wine",
-  },
-  {
-    id: 19,
-    name: "НОВОГОДНЕЕ МЕНЮ",
-    img: "new",
-    link: "/new",
-  },
+  }
 ];
 
 export default function SliderMenu({ onSelectCategory }) {
