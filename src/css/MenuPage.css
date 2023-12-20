@@ -154,9 +154,8 @@ body {
   color: #000;
 }
 
-.bold-text {
-  font-weight: bold; /* сделать текст жирным */
-  font-size: 1.2em; /* увеличить размер шрифта (вы можете настроить это значение под свои требования) */
+.bold-text > h3 {
+  font-weight: bold;
 }
 
 .btn-more {
