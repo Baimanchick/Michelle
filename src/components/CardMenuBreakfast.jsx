@@ -75,6 +75,7 @@ function CardMenuBreakfast() {
           }
           price={"230 С"}
           weight={"250 г"}
+          style={{ top: '-95px' }}
         />
         <CardMenu
           img={img2}
@@ -84,6 +85,7 @@ function CardMenuBreakfast() {
           }
           price={"230 С"}
           weight={"250 г"}
+          style={{ top: '-115px' }}
         />
         <CardMenu
           img={img3}
@@ -92,6 +94,7 @@ function CardMenuBreakfast() {
             "Состав: овсяные хлопья, молоко, сливки, сгущённое молоко, банан, смородина, фисташки, миндаль"
           }
           price={"230 С"}
+          style={{ top: '-95px' }}
           weight={"250 г"}
         />
         <div className="category-mini-blocks">
@@ -112,6 +115,7 @@ function CardMenuBreakfast() {
           text={"Состав: пшеничная мука, гречневая мука, яйцо, молоко, сметана"}
           price={"200 с"}
           weight={"210 г"}
+          style={{ top: '-85px' }}
         />
         <CardMenu
           img={img7}
@@ -121,6 +125,7 @@ function CardMenuBreakfast() {
           }
           price={"330 с"}
           weight={"310 г"}
+          style={{ top: '-85px' }}
         />
         <CardMenu
           img={img8}
@@ -130,9 +135,10 @@ function CardMenuBreakfast() {
           }
           price={"200 с"}
           weight={"200 г"}
+          style={{ top: '-105px' }}
         />
         <CardMenu
-          style={{ top: '-140px' }}
+          style={{ top: '-135px' }}
           img={img9}
           title={"C малосольной сёмгой"}
           text={
@@ -150,6 +156,7 @@ function CardMenuBreakfast() {
           text={"Состав: яйца, говяжий язык, зелёный лук"}
           price={"300 с"}
           weight={"220 г"}
+          style={{ top: '-105px' }}
         />
         <CardMenu
           img={img11}
@@ -157,6 +164,7 @@ function CardMenuBreakfast() {
           text={"Состав: яйца, куриная грудка"}
           price={"200 с"}
           weight={"310 г"}
+          style={{ top: '-95px' }}
         />
         <CardMenu
           img={img12}
@@ -193,6 +201,7 @@ function CardMenuBreakfast() {
           }
           price={"465 с"}
           weight={"195 г"}
+          style={{ top: '-105px' }}
         />
         <CardMenu
           img={img16}
@@ -200,6 +209,7 @@ function CardMenuBreakfast() {
           text={"Состав: яйца, малосольная сёмга, микрозелень, соевый соус"}
           price={"465 с"}
           weight={"220 г"}
+          style={{ top: '-105px' }}
         />
       </div>
       <header className="menu-header">
@@ -230,6 +240,7 @@ function CardMenuBreakfast() {
           }
           price={"505 с"}
           weight={"300 г"}
+          style={{ top: '-105px' }}
         />
         <CardMenu
           img={img19}
@@ -266,6 +277,7 @@ function CardMenuBreakfast() {
           }
           price={"545 с"}
           weight={"350 г"}
+          style={{ top: '-105px' }}
         />
       </div>
       <header style={{ margin: "20px 0px" }} className="menu-header">
@@ -296,6 +308,7 @@ function CardMenuBreakfast() {
           }
           price={"435 с"}
           weight={"360 г"}
+          style={{ top: '-115px' }}
         />
         <CardMenu
           img={img25}
@@ -305,9 +318,10 @@ function CardMenuBreakfast() {
           }
           price={"270 с"}
           weight={"350 г"}
+          style={{ top: '-135px' }}
         />
         <CardMenu
-          style={{ top: "125px" }}
+          style={{ top: "-135px" }}
           img={img26}
           title={"Вафли с мороженым и шоколадом"}
           text={
@@ -363,6 +377,7 @@ function CardMenuBreakfast() {
           }
           price={"505 с"}
           weight={"700 г"}
+          style={{ top: '-130px' }}
         />
       </div>
       {notF && (

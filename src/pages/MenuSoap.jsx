@@ -105,6 +105,7 @@ function MenuSoap() {
             }
             price={"555 с"}
             weight={"300 г"}
+            style={{ top: '120px' }}
             icon1={icon1} // пщеница
             // icon2={icon2} // листок
             //   icon3={icon3}// лук

@@ -118,6 +118,7 @@ function MenuBoul() {
             }
             price={"665 с"}
             weight={"450 г"}
+            style={{ top: '115px' }}
             // icon1={icon1} // пщеница
             // icon2={icon2} // листок
             //   icon3={icon3}// лук
@@ -144,6 +145,7 @@ function MenuBoul() {
             icon6={icon6} // бицепс
             // icon7={icon7} // без молока
             // icon8={icon8} // авакадо
+            style={{ top: '115px' }}
             //   icon9={icon9} старбакс
           />
         </div>

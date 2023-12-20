@@ -75,6 +75,7 @@ function MenuDinner() {
             text={
               "Состав: блинчик, яйцо, сёмга малосольная, авокадо, сыр творожный, кунжут"
             }
+            style={{ top: '145px' }}
             price={"370 С"}
             // icon1={icon1} // пщеница
             // icon2={icon2} // листок
@@ -93,6 +94,7 @@ function MenuDinner() {
               "Состав: куриная грудка, томаты, салат Айсберг, соус Цезарь, фри, кетчуп  "
             }
             price={"370 С"}
+            style={{ top: '145px' }}
             // weight={"150 г"}
             // icon1={icon1} // пщеница
             // icon2={icon2} // листок
@@ -127,6 +129,7 @@ function MenuDinner() {
               "Состав: малосольная сёмга, томаты, салат Айсберг, соус Цезарь, фри, кетчуп"
             }
             price={"535 С"}
+            style={{ top: '145px' }}
             // icon1={icon1} // пщеница
             //   icon3={icon3} лук
             //   icon4={icon4} повар
@@ -143,6 +146,7 @@ function MenuDinner() {
               "Состав: малосольная сёмга, томаты, шпинат, творожный соус, фри, кетчуп"
             }
             price={"565 С"}
+            style={{ top: '145px' }}
             // icon1={icon1} // пщеница
             //   icon3={icon3} лук
             //   icon4={icon4} повар
@@ -159,6 +163,7 @@ function MenuDinner() {
               "Состав: малосольная сёмга, томаты, шпинат, творожный соус, фри, кетчуп"
             }
             price={"565 С"}
+            style={{ top: '145px' }}
             // icon1={icon1} // пщеница
             //   icon3={icon3} лук
             //   icon4={icon4} повар
@@ -210,6 +215,7 @@ function MenuDinner() {
             }
             price={"435 С"}
             weight={"250 г"}
+            style={{ top: '125px' }}
             // icon1={icon1} // пщеница
             // icon2={icon2} // листок
             //   icon3={icon3} лук
@@ -331,6 +337,7 @@ function MenuDinner() {
             // icon1={icon1} // пщеница
             // icon2={icon2} // листок
             icon3={icon3} //
+            style={{ top: '125px' }}
             //   icon4={icon4} повар
             // icon5={icon5} // докрашенный листок
             //   icon6={icon6} бицепс

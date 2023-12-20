@@ -196,6 +196,7 @@ function CardMenuSalad() {
           }
           price={"485 с"}
           weight={"350 г"}
+          style={{ top: '125px' }}
         />
         <CardSalad
           img={img10}
@@ -232,6 +233,7 @@ function CardMenuSalad() {
           //   icon7={icon7} // без молока
           //   icon8={icon8} // авакадо
           //   icon9={icon9} старбакс
+          style={{ top: '115px' }}
         />
         <CardSalad
           img={img12}
@@ -268,6 +270,7 @@ function CardMenuSalad() {
           //   icon7={icon7} // без молока
           //   icon8={icon8} // авакадо
           //   icon9={icon9} старбакс
+          style={{ top: '115px' }}
         />
         <CardSalad
           img={img14}
