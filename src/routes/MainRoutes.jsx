@@ -21,6 +21,9 @@ import Image from "../pages/Image";
 import CollagenPage from "../pages/CollagenPage";
 import TeaPage from "../pages/TeaPage";
 import DrinksPage from "../pages/DrinksPage";
+import SmuziPage from "../pages/SmuziPage";
+import BarPage from "../pages/BarPage";
+import WinePage from "../pages/WinePage";
 
 function MainRoutes() {
   return (
@@ -46,6 +49,9 @@ function MainRoutes() {
       <Route path="/collagen" element={<CollagenPage />} />
       <Route path="/tea" element={<TeaPage />} />
       <Route path="/drinks" element={<DrinksPage />} />
+      <Route path="/smuzi" element={<SmuziPage />} />
+      <Route path="/bar" element={<BarPage />} />
+      <Route path="/wine" element={<WinePage />} />
     </Routes>
   );
 }

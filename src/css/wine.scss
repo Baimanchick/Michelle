@@ -1,0 +1,79 @@
+@media screen and (max-width: 1000px) {
+  .wine-main {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+    margin: 20px 0px 20px 0px;
+  }
+  .wine-container {
+    padding: 15px;
+  }
+  .wine-title-container > div {
+    color: #323232;
+    font-family: Trajan Pro 3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+  }
+  .wine-title-container > span {
+    color: #81b0b0;
+    text-align: right;
+    font-family: Trajan Pro 3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .wine-title-container > h2 {
+    color: #e1a304;
+    font-family: Trajan Pro 3;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 8px; /* 88.889% */
+  }
+  .wine-title-container > h3 {
+    color: #e1a304;
+    font-family: Trajan Pro 3;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 8px; /* 88.889% */
+  }
+  .wine-title-container > h4 {
+    color: #e1a304;
+    font-family: Trajan Pro 3;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 8px; /* 88.889% */
+  }
+  .wine-text > div {
+    color: #323232;
+    font-family: Museo Sans Cyrl;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: 10.476px; /* 130.952% */
+  }
+  .wine-title-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .wine {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .wine-title-container > h3::before {
+    content: url("../images/wine/bokal.svg");
+  }
+  .wine-title-container > h4::before {
+    content: url("../images/wine/wino.svg");
+  }
+  .emoji {
+    display: none;
+  }
+}
