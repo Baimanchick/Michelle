@@ -84,8 +84,8 @@ function MenuPizza() {
             //   icon6={icon6}// бицепс
             // icon7={icon7} // без молока
             // icon8={icon8} // авакадо
+            style={{ top: '170px' }}
             icon9={icon9}
-            старбакс
           />
           <CardSalad
             img={img2}
@@ -94,6 +94,7 @@ function MenuPizza() {
               "Состав: сыр Моцарелла, Чеддер, Пармезан, груша, мёд, сливочный соус"
             }
             price={"665 с"}
+            style={{ top: '160px' }}
             weight={""}
             // icon1={icon1} // пщеницa
             icon2={icon2} // листок
@@ -111,7 +112,8 @@ function MenuPizza() {
             text={
               "Состав: куриная грудка, сыр Моцарелла, Фета, болгарский перец, халапеньо, красный лук, томатный соус"
             }
-            price={"465 С"}
+            price={"465 С"}v
+            style={{ top: '160px' }}
             weight={""}
             // icon1={icon1} // пщеницa
             // icon2={icon2} // листок
@@ -126,6 +128,7 @@ function MenuPizza() {
           <CardSalad
             img={img4}
             title={"Курица-шпинат"}
+            style={{ top: '170px' }}
             text={
               "Состав: куриная грудка, сыр Моцарелла, шпинат, сливочный соус"
             }
