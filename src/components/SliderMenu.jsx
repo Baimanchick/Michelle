@@ -129,7 +129,7 @@ export default function SliderMenu({ onSelectCategory }) {
             }`}
             onClick={() => onSelectCategory(category)}
           >
-            <h3>{category.name}</h3>
+            {category.name}
           </div>
         ))}
       </Slider>
