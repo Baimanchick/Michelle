@@ -20,6 +20,7 @@ import NotFounedPage from "../pages/NotFounedPage";
 import Image from "../pages/Image";
 import CollagenPage from "../pages/CollagenPage";
 import TeaPage from "../pages/TeaPage";
+import DrinksPage from "../pages/DrinksPage";
 
 function MainRoutes() {
   return (
@@ -44,6 +45,7 @@ function MainRoutes() {
       <Route path="/img" element={<Image />} />
       <Route path="/collagen" element={<CollagenPage />} />
       <Route path="/tea" element={<TeaPage />} />
+      <Route path="/drinks" element={<DrinksPage />} />
     </Routes>
   );
 }
