@@ -75,7 +75,7 @@ function MenuDinner() {
             text={
               "Состав: блинчик, яйцо, сёмга малосольная, авокадо, сыр творожный, кунжут"
             }
-            style={{ top: '145px' }}
+            style={{ top: '155px' }}
             price={"370 С"}
             // icon1={icon1} // пщеница
             // icon2={icon2} // листок
@@ -94,7 +94,7 @@ function MenuDinner() {
               "Состав: куриная грудка, томаты, салат Айсберг, соус Цезарь, фри, кетчуп  "
             }
             price={"370 С"}
-            style={{ top: '145px' }}
+            style={{ top: '160px' }}
             // weight={"150 г"}
             // icon1={icon1} // пщеница
             // icon2={icon2} // листок
@@ -121,6 +121,7 @@ function MenuDinner() {
             // icon7={icon7} // без молока
             // icon8={icon8} // авакадо
             //   icon9={icon9} старбакс
+            style={{ top: '155px' }}
           />
           <CardSalad
             img={img4}
@@ -129,7 +130,7 @@ function MenuDinner() {
               "Состав: малосольная сёмга, томаты, салат Айсберг, соус Цезарь, фри, кетчуп"
             }
             price={"535 С"}
-            style={{ top: '145px' }}
+            style={{ top: '155px' }}
             // icon1={icon1} // пщеница
             //   icon3={icon3} лук
             //   icon4={icon4} повар
