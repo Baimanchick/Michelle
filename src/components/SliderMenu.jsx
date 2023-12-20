@@ -100,6 +100,12 @@ export const categories = [
     img: "wine",
     link: "/*",
   },
+  {
+    id: 18,
+    name: "НОВОГОДНЕЕ МЕНЮ",
+    img: "new",
+    link: "/new",
+  },
 ];
 
 export default function SliderMenu({ onSelectCategory }) {

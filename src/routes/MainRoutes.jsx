@@ -24,6 +24,7 @@ import DrinksPage from "../pages/DrinksPage";
 import SmuziPage from "../pages/SmuziPage";
 import BarPage from "../pages/BarPage";
 import WinePage from "../pages/WinePage";
+import MenuNewYear from "../pages/MenuNewYear";
 
 function MainRoutes() {
   return (
@@ -52,6 +53,7 @@ function MainRoutes() {
       <Route path="/smuzi" element={<SmuziPage />} />
       <Route path="/bar" element={<BarPage />} />
       <Route path="/wine" element={<WinePage />} />
+      <Route path="/new" element={<MenuNewYear />} />
     </Routes>
   );
 }
