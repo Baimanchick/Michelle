@@ -136,9 +136,7 @@ export default function SliderMenu({ onSelectCategory }) {
   const handleSelect = (category) => {
     onSelectCategory(category);
     navigate(category.link);
-  }
-
-  console.log(selectedCategory)
+  };
 
   return (
     <div>
