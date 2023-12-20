@@ -37,10 +37,13 @@ function MenuPage() {
       </div>
       <div className="block-nav-menu">
         {categories.map((category) => {
-          console.log(typeof category.img)
-          return(
-            <CardMenuNav title={category.name} img={category.img} link={category.link} />
-          )
+          return (
+            <CardMenuNav
+              title={category.name}
+              img={category.img}
+              link={category.link}
+            />
+          );
         })}
       </div>
     </>
