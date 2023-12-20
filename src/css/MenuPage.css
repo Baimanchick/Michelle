@@ -155,7 +155,8 @@ body {
 }
 
 .bold-text {
-  font-weight: bold !important;
+  font-weight: bold; /* сделать текст жирным */
+  font-size: 1.2em; /* увеличить размер шрифта (вы можете настроить это значение под свои требования) */
 }
 
 .btn-more {
@@ -251,18 +252,23 @@ body {
 
 
 .block-nav-menu{
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  margin-top: 30px;
-  display: flex;
+  margin: 30px 5px;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 10px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 15px;
 }
 
 .card-menu-nav-block{
-  width: 125px;
+  width: 30vw;
   height: 175px;
   background-color: white;
   font-size: 7px;
@@ -271,7 +277,7 @@ body {
 }
 
 .card-menu-img{
-  width: 125px;
+  width: 30vw;
   height: 135px;
   object-fit: cover;
   border-top-left-radius: 10px;
