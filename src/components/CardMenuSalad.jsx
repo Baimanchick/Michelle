@@ -76,6 +76,7 @@ function CardMenuSalad() {
           //   icon6={icon6} бицепс
           icon7={icon7} // без молока
           icon8={icon8} // авакадо
+          style={{ top: '160px' }}
           //   icon9={icon9} старбакс
         />
         <CardSalad
@@ -92,7 +93,7 @@ function CardMenuSalad() {
           //   icon4={icon4} повар
           icon5={icon5} // докрашенный листок
           icon6={icon6}
-          бицепс
+          style={{ top: '160px' }}
           //   icon7={icon7} // без молока
           //   icon8={icon8} // авакадо
           //   icon9={icon9} старбакс
@@ -105,6 +106,7 @@ function CardMenuSalad() {
           }
           price={"795 С"}
           weight={"300 г"}
+          style={{ top: '130px' }}
         />
         <CardSalad
           img={img4}
@@ -113,6 +115,7 @@ function CardMenuSalad() {
             "Состав: куриная грудка, сыр Пармезан, томаты черри, салат Айсберг, сухари, соус Цезарь"
           }
           price={"505 С"}
+          style={{ top: '150px' }}
           weight={"300 г"}
         />
         <CardSalad
@@ -210,6 +213,7 @@ function CardMenuSalad() {
           //   icon2={icon2} // листок
           //   icon3={icon3} // лук
           icon4={icon4} // повар
+          style={{ top: '145px' }}
           //   icon5={icon5} // докрашенный листок
           //   icon6={icon6}  // бицепс
           icon7={icon7} // без молока
@@ -233,7 +237,7 @@ function CardMenuSalad() {
           //   icon7={icon7} // без молока
           //   icon8={icon8} // авакадо
           //   icon9={icon9} старбакс
-          style={{ top: '115px' }}
+          style={{ top: '127px' }}
         />
         <CardSalad
           img={img12}
@@ -243,6 +247,7 @@ function CardMenuSalad() {
           }
           price={"435 с"}
           weight={"300 г"}
+          style={{ top: '155px' }}
           icon1={icon1} // пщеница
           icon2={icon2} // листок
           //   icon3={icon3} // лук
@@ -278,6 +283,7 @@ function CardMenuSalad() {
           text={"Состав: форель, авокадо, каперсы, фиолетовый лук, лимон "}
           price={"865 с"}
           weight={"250 г"}
+          style={{ top: '155px' }}
           icon1={icon1} // пщеница
           //   icon2={icon2} // листок
           //   icon3={icon3} // лук
