@@ -55,8 +55,7 @@ function MenuGar() {
               justifyContent: "center",
               alignItems: "center",
             }}
-          >
-          </div>
+          ></div>
         </div>
         <header className="soap-header">
           <div className="soap-title-container">
@@ -70,7 +69,7 @@ function MenuGar() {
             text={""}
             price={"100 С"}
             weight={"150 г"}
-            style={{ top: '170px' }}
+            style={{ top: "170px" }}
             // icon1={icon1} // пщеница
             icon2={icon2} // листок
             //   icon3={icon3}// лук
@@ -85,7 +84,7 @@ function MenuGar() {
             img={img2}
             title={"Припущенные овощи"}
             text={""}
-            style={{ top: '155px' }}
+            style={{ top: "155px" }}
             price={"230 с"}
             weight={"150 г"}
             // icon1={icon1} // пщеница
@@ -102,7 +101,7 @@ function MenuGar() {
             img={img3}
             title={"Оладьи кабачково-овсяные"}
             text={""}
-            style={{ top: '145px' }}
+            style={{ top: "145px" }}
             price={"240 с"}
             weight={"150 г"}
             // icon1={icon1} // пщеница
@@ -119,7 +118,7 @@ function MenuGar() {
             img={img4}
             title={"Картофель по-деревенски"}
             text={""}
-            style={{ top: '155px' }}
+            style={{ top: "155px" }}
             price={"120 с"}
             weight={"150 г"}
             // icon1={icon1} // пщеница
@@ -137,7 +136,7 @@ function MenuGar() {
             title={"Картофельное пюре"}
             text={""}
             price={"100 с"}
-            style={{ top: '155px' }}
+            style={{ top: "155px" }}
             weight={"150 г"}
             // icon1={icon1} // пщеница
             // icon2={icon2} // листок
@@ -154,7 +153,7 @@ function MenuGar() {
             title={"Гречка"}
             text={""}
             price={"100 с"}
-            style={{ top: '165px' }}
+            style={{ top: "165px" }}
             weight={"150 г"}
             // icon1={icon1} // пщеница
             icon2={icon2} // листок
@@ -172,7 +171,7 @@ function MenuGar() {
             text={""}
             price={"140 с"}
             weight={"150 г"}
-            style={{ top: '165px' }}
+            style={{ top: "165px" }}
             // icon1={icon1} // пщеница
             icon2={icon2} // листок
             //   icon3={icon3}// лук
@@ -187,7 +186,7 @@ function MenuGar() {
             img={img8}
             title={"Цветная капуста"}
             text={""}
-            style={{ top: '165px' }}
+            style={{ top: "165px" }}
             price={"130 с"}
             weight={"150 г"}
             // icon1={icon1} // пщеница
@@ -206,7 +205,7 @@ function MenuGar() {
             text={""}
             price={"200 с"}
             weight={"150 г"}
-            style={{ top: '165px' }}
+            style={{ top: "165px" }}
             // icon1={icon1} // пщеница
             icon2={icon2} // листок
             //   icon3={icon3}// лук
@@ -223,7 +222,7 @@ function MenuGar() {
             text={""}
             price={"200 с"}
             weight={"150 г"}
-            style={{ top: '165px' }}
+            style={{ top: "165px" }}
             // icon1={icon1} // пщеница
             icon2={icon2} // листок
             // icon3={icon3} // лук
@@ -240,7 +239,7 @@ function MenuGar() {
             text={""}
             price={"130 с"}
             weight={"150 г"}
-            style={{ top: '165px' }}
+            style={{ top: "165px" }}
             // icon1={icon1} // пщеница
             icon2={icon2} // листок
             //   icon3={icon3}// лук
@@ -256,7 +255,7 @@ function MenuGar() {
             title={"Шампиньоны"}
             text={""}
             price={"160 с"}
-            style={{ top: '165px' }}
+            style={{ top: "165px" }}
             weight={"150 г"}
             // icon1={icon1} // пщеница
             icon2={icon2} // листок
@@ -273,7 +272,7 @@ function MenuGar() {
             title={"Багет на закваске"}
             text={""}
             price={"110 С"}
-            style={{ top: '175px' }}
+            style={{ top: "175px" }}
             weight={""}
             // icon1={icon1} // пщеница
             // icon2={icon2} // листок
@@ -289,7 +288,7 @@ function MenuGar() {
             img={img14}
             title={"Тостерный хлеб"}
             text={""}
-            style={{ top: '175px' }}
+            style={{ top: "175px" }}
             price={"30 с"}
             weight={""}
             // icon1={icon1} // пщеница
@@ -307,7 +306,7 @@ function MenuGar() {
             title={"Чёрный хлеб"}
             text={""}
             price={"80 с"}
-            style={{ top: '175px' }}
+            style={{ top: "175px" }}
             weight={""}
             // icon1={icon1} // пщеница
             // icon2={icon2} // листок

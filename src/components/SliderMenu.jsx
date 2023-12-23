@@ -111,7 +111,7 @@ export const categories = [
     name: "ВИННАЯ КАРТА",
     img: "wine",
     link: "/wine",
-  }
+  },
 ];
 
 export default function SliderMenu({ onSelectCategory }) {
