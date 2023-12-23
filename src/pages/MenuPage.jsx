@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../css/MenuPage.css";
 import logo from "../images/else/Michelle Vector.svg";
 import burger from "../images/else/Group 115.svg";
@@ -14,6 +14,7 @@ function MenuPage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
   const [categoryChange, setCategoryChange] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleOpenMenu = () => {
     setMenuOpen(true);
@@ -30,23 +31,50 @@ function MenuPage() {
 
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
-      <div style={{ fontSize: "38px", textAlign: "center", marginTop: "50px" }}>
-        МЕНЮ
-      </div>
-      <div className="block-nav-menu">
-        {categories.map((category) => {
-          return (
-            <CardMenuNav
-              title={category.name}
-              img={category.img}
-              link={category.link}
-              key={category}
-            />
-          );
-        })}
-      </div>
+      {windowWidth <= 1000 ? (
+        <>
+          <div
+            style={{ fontSize: "38px", textAlign: "center", marginTop: "50px" }}
+          >
+            МЕНЮ
+          </div>
+          <div className="block-nav-menu">
+            {categories.map((category) => {
+              return (
+                <CardMenuNav
+                  title={category.name}
+                  img={category.img}
+                  link={category.link}
+                  key={category}
+                />
+              );
+            })}
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="thousand-px">
+            <h2>
+              Данный сайт не потдерживает экраны больше 1000 px, пожалуйста
+              уменьшите ваш экран, либо зайдите через мобильное устройство
+            </h2>
+          </div>
+        </>
+      )}
     </>
   );
 }

@@ -17,7 +17,6 @@ import MenuBoul from "../pages/MenuBoul";
 import MenuGar from "../pages/MenuGar";
 import MenuChild from "../pages/MenuChild";
 import NotFounedPage from "../pages/NotFounedPage";
-import Image from "../pages/Image";
 import CollagenPage from "../pages/CollagenPage";
 import TeaPage from "../pages/TeaPage";
 import DrinksPage from "../pages/DrinksPage";
@@ -46,7 +45,6 @@ function MainRoutes() {
       <Route path="/gar" element={<MenuGar />} />
       <Route path="/child" element={<MenuChild />} />
       <Route path="*" element={<NotFounedPage />} />
-      <Route path="/img" element={<Image />} />
       <Route path="/collagen" element={<CollagenPage />} />
       <Route path="/tea" element={<TeaPage />} />
       <Route path="/drinks" element={<DrinksPage />} />

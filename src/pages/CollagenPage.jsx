@@ -9,6 +9,7 @@ function CollagenPage() {
   const [categoryChange, setCategoryChange] = useState(false);
   const [notF, setNotF] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleOpenMenu = () => {
     setMenuOpen(true);
@@ -29,89 +30,111 @@ function CollagenPage() {
   };
 
   const navigate = useNavigate();
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
-      <div className="menu-main-content">
-        <div className="menu-stick">
-          <SliderMenu onSelectCategory={handleNotF} />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <button
-              style={{ marginTop: "10px" }}
-              className="btn-more"
-              onClick={() => navigate("/categories")}
+      {windowWidth <= 1000 ? (
+        <div className="menu-main-content">
+          <div className="menu-stick">
+            <SliderMenu onSelectCategory={handleNotF} />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
             >
-              ВЕРНУТЬСЯ
-            </button>
+              <button
+                style={{ marginTop: "10px" }}
+                className="btn-more"
+                onClick={() => navigate("/categories")}
+              >
+                ВЕРНУТЬСЯ
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="collagen-main">
-          <header className="collagen-header">
-            <h2>КОЛЛАГЕН</h2>
-            <p>
-              для всех ценителей <br /> здорового образа жизни и красоты!
-            </p>
-          </header>
-          <div className="collagen-container">
-            <div className="collagen-rectangle-main">
-              <div className="collagen-rectangle-container">
-                <div className="collagen-rectangle-title">
-                  <p>
-                    Коллаген — это белок, который играет ключевую роль в нашем
-                    организме.
-                  </p>
+          <div className="collagen-main">
+            <header className="collagen-header">
+              <h2>КОЛЛАГЕН</h2>
+              <p>
+                для всех ценителей <br /> здорового образа жизни и красоты!
+              </p>
+            </header>
+            <div className="collagen-container">
+              <div className="collagen-rectangle-main">
+                <div className="collagen-rectangle-container">
+                  <div className="collagen-rectangle-title">
+                    <p>
+                      Коллаген — это белок, который играет ключевую роль в нашем
+                      организме.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="collagen-rectangle-main">
+                <div className="collagen-rectangle-container">
+                  <div className="collagen-rectangle-title">
+                    <p>
+                      Главная сила коллагена — его свойство поддерживать тонус и
+                      молодость кожи, а также здоровье суставов
+                      и опорно-двигательного аппарата .
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="collagen-rectangle-main">
+                <div className="collagen-rectangle-container">
+                  <div className="collagen-rectangle-title">
+                    <p>
+                      Благодаря коллагену сохраняется оптимальный уровень воды
+                      в организме, ускоряются процессы регенерации кожи,
+                      уменьшается болевой синдром, снижается ломкость волос,
+                      ногтей и многое другое!
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="collagen-rectangle-main">
-              <div className="collagen-rectangle-container">
-                <div className="collagen-rectangle-title">
-                  <p>
-                    Главная сила коллагена — его свойство поддерживать тонус и
-                    молодость кожи, а также здоровье суставов
-                    и опорно-двигательного аппарата .
-                  </p>
-                </div>
-              </div>
+          </div>
+          <div className="collagen-title">
+            <div>
+              Ощути всю пользу <br /> коллагена!
             </div>
-            <div className="collagen-rectangle-main">
-              <div className="collagen-rectangle-container">
-                <div className="collagen-rectangle-title">
-                  <p>
-                    Благодаря коллагену сохраняется оптимальный уровень воды
-                    в организме, ускоряются процессы регенерации кожи,
-                    уменьшается болевой синдром, снижается ломкость волос,
-                    ногтей и многое другое!
-                  </p>
+          </div>
+          <div style={{ paddingBottom: "300px" }}>
+            <div className="collagen-main-2">
+              <div className="collagen-container-2">
+                <div className="collagen-wrapper-left">
+                  + добавить коллаген для красоты, молодости и здоровья
+                </div>
+                <div className="collagen-wrapper-right">
+                  <span>20г</span>
+                  <h5>150c</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="collagen-title">
-          <div>
-            Ощути всю пользу <br /> коллагена!
+      ) : (
+        <>
+          <div className="thousand-px">
+            <h2>
+              Данный сайт не потдерживает экраны больше 1000 px, пожалуйста
+              уменьшите ваш экран, либо зайдите через мобильное устройство
+            </h2>
           </div>
-        </div>
-        <div style={{ paddingBottom: "300px" }}>
-          <div className="collagen-main-2">
-            <div className="collagen-container-2">
-              <div className="collagen-wrapper-left">
-                + добавить коллаген для красоты, молодости и здоровья
-              </div>
-              <div className="collagen-wrapper-right">
-                <span>20г</span>
-                <h5>150c</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </>
+      )}
     </>
   );
 }

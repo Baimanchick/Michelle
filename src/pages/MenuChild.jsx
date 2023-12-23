@@ -28,6 +28,8 @@ function MenuChild() {
   const [categoryChange, setCategoryChange] = useState(false);
   const [notF, setNotF] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const navigate = useNavigate();
 
   const handleOpenMenu = () => {
     setMenuOpen(true);
@@ -46,40 +48,39 @@ function MenuChild() {
     return () => clearTimeout(delay);
   }, []);
 
-  const navigate = useNavigate();
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
-      <div className="menu-main-content">
-        <div className="menu-stick">
-          <SliderMenu onSelectCategory={handleSelectCategory} />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+      {windowWidth <= 1000 ? (
+        <div className="menu-main-content">
+          <div className="menu-stick">
+            <SliderMenu onSelectCategory={handleSelectCategory} />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            ></div>
           </div>
-        </div>
-        <header className="soap-header">
-          <div className="soap-title-container">
-            <h3>ДЕТСКОЕ МЕНЮ</h3>
-          </div>
-        </header>
-        <div className="main-card-break"></div>
-        <div style={{ paddingBottom: "200px" }}>
-          {isLoading ? (
-            <div className="loading-indicator">
-              <div class="container">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-              </div>
+          <header className="soap-header">
+            <div className="soap-title-container">
+              <h3>ДЕТСКОЕ МЕНЮ</h3>
             </div>
-          ) : (
+          </header>
+          <div className="main-card-break"></div>
+          <div style={{ paddingBottom: "200px" }}>
             <>
               <div className="child-img-container">
                 <img
@@ -124,9 +125,18 @@ function MenuChild() {
                 />
               </div>
             </>
-          )}
+          </div>
         </div>
-      </div>
+      ) : (
+        <>
+          <div className="thousand-px">
+            <h2>
+              Данный сайт не потдерживает экраны больше 1000 px, пожалуйста
+              уменьшите ваш экран, либо зайдите через мобильное устройство
+            </h2>
+          </div>
+        </>
+      )}
     </>
   );
 }

@@ -1,14 +1,16 @@
-.not-container {
-  margin-top: 30vh;
-}
-.not-container > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-}
-.not-container > div > h3 {
-  margin-top: 19px;
-  color: orange;
+@media screen and (max-width: 1000px) {
+  .not-container {
+    margin-top: 30vh;
+  }
+  .not-container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .not-container > div > h3 {
+    margin-top: 19px;
+    color: orange;
+  }
 }

@@ -223,3 +223,19 @@
     font-family: "monsterrat";
   }
 }
+.thousand-px {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.thousand-px h2 {
+  max-width: 80%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: "trajan-pro-3";
+}

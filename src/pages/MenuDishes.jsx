@@ -4,6 +4,7 @@ import CardMenuBreakfast from "../components/CardMenuBreakfast";
 
 function MenuDishes() {
   const [isLoading, setIsLoading] = useState(true);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const delay = setTimeout(() => {
@@ -13,21 +14,22 @@ function MenuDishes() {
     return () => clearTimeout(delay);
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className="menu-main-content">
-      {isLoading ? (
-        <div className="loading-indicator">
-          <div class="container">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-        </div>
-      ) : (
-        <>
+    <>
+      {windowWidth <= 1000 ? (
+        <div className="menu-main-content">
           <header className="menu-header">
             <div className="menu-title-container">
               <hr />
@@ -44,9 +46,18 @@ function MenuDishes() {
             </div>
             <CardMenuBreakfast />
           </div>
+        </div>
+      ) : (
+        <>
+          <div className="thousand-px">
+            <h2>
+              Данный сайт не потдерживает экраны больше 1000 px, пожалуйста
+              уменьшите ваш экран, либо зайдите через мобильное устройство
+            </h2>
+          </div>
         </>
       )}
-    </div>
+    </>
   );
 }
 
