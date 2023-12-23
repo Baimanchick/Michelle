@@ -14,6 +14,7 @@ function WinePage() {
   const [notF, setNotF] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleOpenMenu = () => {
     setMenuOpen(true);
@@ -24,33 +25,55 @@ function WinePage() {
     setCategoryChange(true);
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
-      <div className="menu-main-content">
-        <div className="menu-stick">
-          <SliderMenu onSelectCategory={handleSelectCategory} />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+      {windowWidth <= 1000 ? (
+        <div className="menu-main-content">
+          <div className="menu-stick">
+            <SliderMenu onSelectCategory={handleSelectCategory} />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            ></div>
           </div>
+          <div className="drinks-main">
+            <header
+              style={{ margin: "30px 0px 30px 0px" }}
+              className="tea-header"
+            >
+              <div className="tea-header-title">
+                <h2 style={{ fontSize: "19px" }}>НОВОГОДНЕЕ МЕНЮ</h2>
+              </div>
+            </header>
+            <img src={img1} className="new-img" alt="" />
+          </div>
+          <div style={{ paddingBottom: "200px" }}></div>
         </div>
-        <div className="drinks-main">
-          <header
-            style={{ margin: "30px 0px 30px 0px" }}
-            className="tea-header"
-          >
-            <div className="tea-header-title">
-              <h2 style={{ fontSize: '19px' }}>НОВОГОДНЕЕ МЕНЮ</h2>
-            </div>
-          </header>
-          <img src={img1} className="new-img" alt="" />
-        </div>
-        <div style={{ paddingBottom: "200px" }}></div>
-      </div>
+      ) : (
+        <>
+          <div className="thousand-px">
+            <h2>
+              Данный сайт не потдерживает экраны больше 1000 px, пожалуйста
+              уменьшите ваш экран, либо зайдите через мобильное устройство
+            </h2>
+          </div>
+        </>
+      )}
     </>
   );
 }
