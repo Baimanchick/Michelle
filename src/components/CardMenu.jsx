@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/menu.scss";
-import cardIcon1 from "../images/iconSalad/card-icon-1.svg";
-import cardIcon2 from "../images/iconSalad/card-icon-2.svg";
+import cardIcon1 from "../images/svgs/Пшеница.svg";
+import cardIcon2 from "../images/svgs/Листок.svg";
 
 function CardMenu({ style, img, title, text, price, weight }) {
   return (
