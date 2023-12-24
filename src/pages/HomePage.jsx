@@ -31,7 +31,11 @@ function HomePage() {
   };
 
   return (
-    <div className={`home-main-content ${isLoading ? "loading" : ""}`}>
+    <div
+      className={`home-main-content ${isLoading ? "loading" : ""} ${
+        !isLoading ? "home-main-content-special" : ""
+      } `}
+    >
       {isLoading ? (
         <div className="home-loading-container">
           <div className="home-loading-container">
