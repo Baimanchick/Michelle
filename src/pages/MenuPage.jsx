@@ -28,6 +28,8 @@ function MenuPage() {
     fetchCategory();
   }, [])
 
+
+  
   const navigate = useNavigate();
 
   useEffect(() => {
