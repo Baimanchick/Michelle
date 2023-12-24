@@ -9,25 +9,24 @@ import FullscreenMenu from "../components/FullscreenMenu";
 import { useNavigate } from "react-router-dom";
 import CardMenu from "../components/CardMenu";
 import CardMenuNav from "../components/CardMenuNav";
+import axios from "axios";
 
 function MenuPage() {
-  const [isMenuOpen, setMenuOpen] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState(categories[0]);
-  const [categoryChange, setCategoryChange] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [ categoriesFetched, setCategoriesFetched ] = useState([]);
 
-  const handleOpenMenu = () => {
-    setMenuOpen(true);
-  };
+  useEffect(() => {
+    const fetchCategory = async () => {
+      try {
+        const res = await axios.get('https://sanjiks.pythonanywhere.com/categories/');
+        setCategoriesFetched(res.data);
+      } catch (error) {
+        console.log(error)
+      }
+    }
 
-  const handleSelectCategory = (category) => {
-    setSelectedCategory(category);
-    setCategoryChange(true);
-  };
-
-  const handleCloseMenu = () => {
-    setMenuOpen(false);
-  };
+    fetchCategory();
+  }, [])
 
   const navigate = useNavigate();
 
@@ -53,11 +52,11 @@ function MenuPage() {
             МЕНЮ
           </div>
           <div className="block-nav-menu">
-            {categories.map((category) => {
+            {categoriesFetched.map((category) => {
               return (
                 <CardMenuNav
-                  title={category.name}
-                  img={category.img}
+                  title={category.title}
+                  img={category.image}
                   link={category.link}
                   key={category}
                 />
