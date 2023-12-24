@@ -19,15 +19,15 @@ import img13 from "../images/salat/card-13.jpg";
 import img14 from "../images/salat/card-14.jpg";
 import CardSalad from "./CardSalad";
 
-import icon1 from "../images/iconSalad/card-icon-1.svg";
-import icon2 from "../images/iconSalad/card-icon-2.svg";
-import icon3 from "../images/iconSalad/icon 5.svg";
-import icon4 from "../images/iconSalad/icon-13.svg";
-import icon5 from "../images/iconSalad/icon-14.svg";
-import icon6 from "../images/iconSalad/icon-4.svg";
-import icon7 from "../images/iconSalad/icon-7.svg";
-import icon8 from "../images/iconSalad/icon-8.svg";
-import icon9 from "../images/iconSalad/icon-9.svg";
+import icon1 from "../images/svgs/Пшеница.svg";
+import icon2 from "../images/svgs/Листок.svg";
+import icon3 from "../images/svgs/Лук.svg";
+import icon4 from "../images/svgs/Повар.svg";
+import icon5 from "../images/svgs/докрашенный листок.svg";
+import icon6 from "../images/svgs/бицепс.svg";
+import icon7 from "../images/svgs/без молока.svg";
+import icon8 from "../images/svgs/авакадо.svg";
+import icon9 from "../images/svgs/старбакс.svg";
 
 function CardMenuSalad() {
   const [isMenuOpen, setMenuOpen] = useState(false);
