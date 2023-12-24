@@ -45,30 +45,31 @@ function MainRoutes() {
             <MainLayout />
           </>
         }
-      ></Route>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/categories" element={<MenuPage />} />
-      <Route path="/menu" element={<MenuDishes />} />
-      <Route path="/notf" element={<NotF />} />
-      <Route path="/salad" element={<MenuSalad />} />
-      <Route path="/plat" element={<MenuPlat />} />
-      <Route path="/baget" element={<MenuBaget />} />
-      <Route path="/coffe" element={<MenuCoffe />} />
-      <Route path="/soap" element={<MenuSoap />} />
-      <Route path="/dinner" element={<MenuDinner />} />
-      <Route path="/hot" element={<MenuHotMeal />} />
-      <Route path="/pizza" element={<MenuPizza />} />
-      <Route path="/boul" element={<MenuBoul />} />
-      <Route path="/gar" element={<MenuGar />} />
-      <Route path="/child" element={<MenuChild />} />
-      <Route path="*" element={<NotFounedPage />} />
-      <Route path="/collagen" element={<CollagenPage />} />
-      <Route path="/tea" element={<TeaPage />} />
-      <Route path="/drinks" element={<DrinksPage />} />
-      <Route path="/smuzi" element={<SmuziPage />} />
-      <Route path="/bar" element={<BarPage />} />
-      <Route path="/wine" element={<WinePage />} />
-      <Route path="/new" element={<MenuNewYear />} />
+      >
+        <Route path="/" element={<HomePage />} />
+        <Route path="/categories" element={<MenuPage />} />
+        <Route path="/menu" element={<MenuDishes />} />
+        <Route path="/notf" element={<NotF />} />
+        <Route path="/salad" element={<MenuSalad />} />
+        <Route path="/plat" element={<MenuPlat />} />
+        <Route path="/baget" element={<MenuBaget />} />
+        <Route path="/coffe" element={<MenuCoffe />} />
+        <Route path="/soap" element={<MenuSoap />} />
+        <Route path="/dinner" element={<MenuDinner />} />
+        <Route path="/hot" element={<MenuHotMeal />} />
+        <Route path="/pizza" element={<MenuPizza />} />
+        <Route path="/boul" element={<MenuBoul />} />
+        <Route path="/gar" element={<MenuGar />} />
+        <Route path="/child" element={<MenuChild />} />
+        <Route path="*" element={<NotFounedPage />} />
+        <Route path="/collagen" element={<CollagenPage />} />
+        <Route path="/tea" element={<TeaPage />} />
+        <Route path="/drinks" element={<DrinksPage />} />
+        <Route path="/smuzi" element={<SmuziPage />} />
+        <Route path="/bar" element={<BarPage />} />
+        <Route path="/wine" element={<WinePage />} />
+        <Route path="/new" element={<MenuNewYear />} />
+      </Route>
     </Routes>
   );
 }
