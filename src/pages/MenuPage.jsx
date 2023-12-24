@@ -18,7 +18,7 @@ function MenuPage() {
   useEffect(() => {
     const fetchCategory = async () => {
       try {
-        const res = await axios.get('https://sanjiks.pythonanywhere.com/categories/');
+        const res = await axios.get('http://167.71.33.221/categories/');
         setCategoriesFetched(res.data);
       } catch (error) {
         console.log(error)
