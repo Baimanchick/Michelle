@@ -1,8 +1,38 @@
 import React, { useEffect, useState } from "react";
 import CardMenuSalad from "../components/CardMenuSalad";
+import axios from "axios";
+import CardSalad from "../components/CardSalad";
 
 function MenuSalad() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [categoriesFetched, setCategoriesFetched] = useState([]);
+
+  useEffect(() => {
+    const fetchCategory = async () => {
+      try {
+        const res = await axios.get("http://167.71.33.221/dishes/");
+        setCategoriesFetched(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchCategory();
+  }, []);
+
+  useEffect(() => {
+    const fetchSvg = async () => {
+      try {
+        const res = await axios.get("http://167.71.33.221/svgs/");
+        setCategoriesFetched(res.data);
+        console.log(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchSvg();
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -15,6 +45,10 @@ function MenuSalad() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  // Filter items with category 3
+  const filteredData = categoriesFetched.filter((item) => item.category === 3);
+
   return (
     <>
       {windowWidth <= 1000 ? (
@@ -25,13 +59,28 @@ function MenuSalad() {
               <span>НЕ ЕДА, ЭТО СТИЛЬ</span>
             </div>
           </header>
-          <CardMenuSalad />
+          {filteredData.map((item) => (
+            <>
+              <div className="main-card-break">
+                <CardSalad
+                  key={item.id}
+                  data={item}
+                  title={item.title}
+                  img={item.image}
+                  text={item.text}
+                  weight={item.weight}
+                  price={item.price}
+                  icon={item.svgs}
+                />
+              </div>
+            </>
+          ))}
         </div>
       ) : (
         <>
           <div className="thousand-px">
             <h2>
-              Данный сайт не потдерживает экраны больше 1000 px, пожалуйста
+              Данный сайт не поддерживает экраны больше 1000 px, пожалуйста
               уменьшите ваш экран, либо зайдите через мобильное устройство
             </h2>
           </div>

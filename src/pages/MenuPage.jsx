@@ -13,23 +13,21 @@ import axios from "axios";
 
 function MenuPage() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [ categoriesFetched, setCategoriesFetched ] = useState([]);
+  const [categoriesFetched, setCategoriesFetched] = useState([]);
 
   useEffect(() => {
     const fetchCategory = async () => {
       try {
-        const res = await axios.get('http://167.71.33.221/categories/');
+        const res = await axios.get("http://167.71.33.221/categories/");
         setCategoriesFetched(res.data);
       } catch (error) {
-        console.log(error)
+        console.log(error);
       }
-    }
+    };
 
     fetchCategory();
-  }, [])
+  }, []);
 
-
-  
   const navigate = useNavigate();
 
   useEffect(() => {
