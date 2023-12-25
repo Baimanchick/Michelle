@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/menu.scss";
 import cardIcon1 from "../images/svgs/Пшеница.svg";
 import cardIcon2 from "../images/svgs/Листок.svg";
 
+
 function CardMenu({ style, img, title, text, price, weight }) {
+  // const apiKey = 'AIzaSyAst05fMAnCcrrwYWXULEMrvvcsIG28goQ';
+
   return (
     <div className="menu-card-main">
       <div className="menu-card-container">
