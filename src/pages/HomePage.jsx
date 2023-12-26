@@ -27,6 +27,12 @@ function HomePage() {
     };
   }, []);
 
+  useEffect(() => {
+    if (selectedLanguage) {
+      navigate("/categories");
+    }
+  }, [selectedLanguage, navigate]);
+
   const handleLanguageClick = (language) => {
     setSelectedLanguage(language);
   };
@@ -106,7 +112,6 @@ function HomePage() {
               </div>
             </>
           )}
-          {selectedLanguage && navigate("/categories")}
         </>
       )}
     </div>
