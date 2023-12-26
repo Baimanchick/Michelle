@@ -4,12 +4,15 @@ import CardMenuBreakfast from "../components/CardMenuBreakfast";
 import axios from "axios";
 import { useLanguage } from "../functions/languageContext";
 import Test from "../routes/Test";
+import SliderMenu, { categories } from "../components/SliderMenu";
 
 function MenuDishes() {
   const [isLoading, setIsLoading] = useState(true);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [dishes, setDishes] = useState([]);
   const { selectedLanguage, setSelectedLanguage } = useLanguage();
+  const [selectedCategory, setSelectedCategory] = useState(categories[0]);
+  const [categoryChange, setCategoryChange] = useState(false);
   useEffect(() => {
     const fetchDishes = async () => {
       try {
@@ -70,10 +73,25 @@ function MenuDishes() {
     };
   }, []);
 
+  const handleSelectCategory = (category) => {
+    setSelectedCategory(category);
+    setCategoryChange(true);
+  };
+
   return (
     <>
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
+          <div className="menu-stick">
+            <SliderMenu onSelectCategory={handleSelectCategory} />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            ></div>
+          </div>
           <header className="menu-header">
             <div className="menu-title-container">
               <hr />
@@ -103,6 +121,7 @@ function MenuDishes() {
               ))}
             </div>
           </div>
+          <div style={{ paddingBottom: "200px" }}></div>
         </div>
       ) : (
         <>

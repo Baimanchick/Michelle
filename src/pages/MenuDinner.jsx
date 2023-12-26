@@ -138,6 +138,8 @@ function MenuDinner() {
                 icon={item.svgs}
               />
             ))}
+            <img src={img13} alt="" />
+            <img src={img17} alt="" />
           </div>
 
           <div style={{ marginTop: "200px" }}>.</div>
