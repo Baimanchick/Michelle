@@ -46,18 +46,20 @@ function MenuSalad() {
               <span>НЕ ЕДА, ЭТО СТИЛЬ</span>
             </div>
           </header>
-          {filteredData.map((item) => (
-            <Test
-              key={item.id}
-              data={item}
-              title={item.title}
-              img={item.image}
-              text={item.text}
-              weight={item.weight}
-              price={item.price}
-              icon={item.svgs}
-            />
-          ))}
+          <div className="salad-flex">
+            {filteredData.map((item) => (
+              <Test
+                key={item.id}
+                data={item}
+                title={item.title}
+                img={item.image}
+                text={item.text}
+                weight={item.weight}
+                price={item.price}
+                icon={item.svgs}
+              />
+            ))}
+          </div>
         </div>
       ) : (
         <>
