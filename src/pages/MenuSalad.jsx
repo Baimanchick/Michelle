@@ -5,33 +5,19 @@ import CardSalad from "../components/CardSalad";
 
 function MenuSalad() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [categoriesFetched, setCategoriesFetched] = useState([]);
+  const [dishes, setDishes] = useState([]);
 
   useEffect(() => {
-    const fetchCategory = async () => {
+    const fetchDishes = async () => {
       try {
         const res = await axios.get("http://167.71.33.221/dishes/");
-        setCategoriesFetched(res.data);
+        setDishes(res.data);
       } catch (error) {
         console.log(error);
       }
     };
 
-    fetchCategory();
-  }, []);
-
-  useEffect(() => {
-    const fetchSvg = async () => {
-      try {
-        const res = await axios.get("http://167.71.33.221/svgs/");
-        setCategoriesFetched(res.data);
-        console.log(res.data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    fetchSvg();
+    fetchDishes();
   }, []);
 
   useEffect(() => {
@@ -47,7 +33,7 @@ function MenuSalad() {
   }, []);
 
   // Filter items with category 3
-  const filteredData = categoriesFetched.filter((item) => item.category === 3);
+  const filteredData = dishes.filter((item) => item.category === 3);
 
   return (
     <>

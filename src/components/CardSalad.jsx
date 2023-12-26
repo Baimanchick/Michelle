@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../css/salad.scss";
+import axios from "axios";
 
 function CardSalad({ style, img, title, text, price, weight, icon }) {
+  const [ svgs, setSvgs ] = useState([]);
+
+  useEffect(() => {
+    const fetchSvg = async () => {
+      try {
+        const res = await axios.get("http://167.71.33.221/svgs/");
+        setSvgs(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchSvg();
+  }, []);
+
+  const filterSvgsByIds = (ids) => {
+    return svgs.filter((svg) => ids?.includes(svg.id));
+  };
+
+  const filteredSvgs = filterSvgsByIds(icon)
+
   return (
     <div className="salad-card-main">
       <div className="salad-card-container">
@@ -17,7 +39,9 @@ function CardSalad({ style, img, title, text, price, weight, icon }) {
               </div>
               <div className="salad-card-utils">
                 <div className="salad-card-utils-wrapper-left">
-                  <img style={{ marginTop: "5px" }} src={icon} alt="" />
+                  {filteredSvgs.map((svg) => (
+                    <img key={svg.id} src={svg.svg_file} alt={`SVG ${svg.id}`} />
+                  ))}
                 </div>
                 <div className="salad-card-utils-wrapper-right">
                   <span>{price} С</span>
