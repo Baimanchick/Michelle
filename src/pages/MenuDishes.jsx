@@ -1,10 +1,54 @@
 import React, { useState, useEffect } from "react";
 import "../css/menu.scss";
 import CardMenuBreakfast from "../components/CardMenuBreakfast";
+import axios from "axios";
+import { useLanguage } from "../functions/languageContext";
+import Test from "../routes/Test";
 
 function MenuDishes() {
   const [isLoading, setIsLoading] = useState(true);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [dishes, setDishes] = useState([]);
+  const { selectedLanguage, setSelectedLanguage } = useLanguage();
+  useEffect(() => {
+    const fetchDishes = async () => {
+      try {
+        const res = await axios.get(
+          `${
+            selectedLanguage === "Русский"
+              ? "http://167.71.33.221/dishes/"
+              : selectedLanguage === "English"
+              ? "http://167.71.33.221/englishdishes/"
+              : selectedLanguage === "Кыргызча"
+              ? ""
+              : selectedLanguage === "Turkce"
+              ? ""
+              : null
+          }
+          `
+        );
+        setDishes(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchDishes();
+  }, []);
+  const filteredData = dishes.filter((item) => {
+    switch (selectedLanguage) {
+      case "Русский":
+        return item.category === null;
+      case "English":
+        return item.category === null;
+      case "Кыргызча":
+        return item.category === null;
+      case "Turkce":
+        return item.category === null;
+      default:
+        return false;
+    }
+  });
 
   useEffect(() => {
     const delay = setTimeout(() => {
@@ -44,7 +88,20 @@ function MenuDishes() {
             <div className="menu-container-h2">
               <h2>КАША</h2>
             </div>
-            <CardMenuBreakfast />
+            <div className="salad-flex">
+              {filteredData.map((item) => (
+                <Test
+                  key={item.id}
+                  data={item}
+                  title={item.title}
+                  img={item.image}
+                  text={item.text}
+                  weight={item.weight}
+                  price={item.price}
+                  icon={item.svgs}
+                />
+              ))}
+            </div>
           </div>
         </div>
       ) : (

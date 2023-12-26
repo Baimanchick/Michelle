@@ -1,10 +1,10 @@
 import React from "react";
 import "../css/advice.scss";
 
-function Advice({ text }) {
+function Advice({ text, style }) {
   return (
     <>
-      <div className="advice-main">
+      <div style={style} className="advice-main">
         <div className="advice-container">
           <div className="advice">
             <div className="advice-title-container">

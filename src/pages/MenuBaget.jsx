@@ -16,6 +16,9 @@ import img2 from "../images/baget/2.jpg";
 
 import CardSalad from "../components/CardSalad";
 import Advice from "../components/Advice";
+import axios from "axios";
+import Test from "../routes/Test";
+import { useLanguage } from "../functions/languageContext";
 
 function MenuBaget() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -23,6 +26,47 @@ function MenuBaget() {
   const [categoryChange, setCategoryChange] = useState(false);
   const [notF, setNotF] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [dishes, setDishes] = useState([]);
+  const { selectedLanguage, setSelectedLanguage } = useLanguage();
+  useEffect(() => {
+    const fetchDishes = async () => {
+      try {
+        const res = await axios.get(
+          `${
+            selectedLanguage === "Русский"
+              ? "http://167.71.33.221/dishes/"
+              : selectedLanguage === "English"
+              ? "http://167.71.33.221/englishdishes/"
+              : selectedLanguage === "Кыргызча"
+              ? ""
+              : selectedLanguage === "Turkce"
+              ? ""
+              : null
+          }
+          `
+        );
+        setDishes(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchDishes();
+  }, []);
+  const filteredData = dishes.filter((item) => {
+    switch (selectedLanguage) {
+      case "Русский":
+        return item.category === 5;
+      case "English":
+        return item.category === null;
+      case "Кыргызча":
+        return item.category === null;
+      case "Turkce":
+        return item.category === null;
+      default:
+        return false;
+    }
+  });
 
   const handleOpenMenu = () => {
     setMenuOpen(true);
@@ -45,6 +89,7 @@ function MenuBaget() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <>
       {windowWidth <= 1000 ? (
@@ -65,47 +110,25 @@ function MenuBaget() {
               <p>НА ЗАКВАСКЕ</p>
             </div>
           </header>
-          <div className="main-card-break">
-            <CardSalad
-              img={img1}
-              title={"Хумус с багетом на закваске"}
-              text={"Состав: хумус, багет на закваске, паприка"}
-              price={"160 С"}
-              weight={"150 г"}
-              // icon1={icon1} // пщеница
-              icon2={icon2} // листок
-              //   icon3={icon3} лук
-              //   icon4={icon4} повар
-              // icon5={icon5} // докрашенный листок
-              //   icon6={icon6} бицепс
-              // icon7={icon7} // без молока
-              // icon8={icon8} // авакадо
-              //   icon9={icon9} старбакс
-            />
-            <CardSalad
-              img={img2}
-              title={"Куриный паштет с багетом на закваске"}
-              text={
-                "Состав: куриный паштет, багет на закваске, семена подсолнуха "
-              }
-              price={"160 С"}
-              weight={"150 г"}
-              // icon1={icon1} // пщеница
-              // icon2={icon2} // листок
-              //   icon3={icon3} // лук
-              //   icon4={icon4} повар
-              // icon5={icon5} // докрашенный листок
-              // icon6={icon6} // бицепс
-              // icon7={icon7} // без молока
-              //   icon8={icon8} // авакадо
-              //   icon9={icon9} старбакс
-              style={{ top: "119px" }}
-            />
+          <div className="salad-flex">
+            {filteredData.map((item) => (
+              <Test
+                key={item.id}
+                data={item}
+                title={item.title}
+                img={item.image}
+                text={item.text}
+                weight={item.weight}
+                price={item.price}
+                icon={item.svgs}
+              />
+            ))}
           </div>
           <Advice
             text={
               "Мы готовим паштет из нежного мяса курицы с добавлением ароматных трав"
             }
+            style={{ marginTop: "20px" }}
           />
         </div>
       ) : (

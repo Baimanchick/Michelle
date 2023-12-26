@@ -3,7 +3,7 @@ import "../css/drinks.scss";
 import { useNavigate } from "react-router-dom";
 import SliderMenu, { categories } from "../components/SliderMenu";
 import TeaSquare from "../components/TeaSquare";
-import img1 from "../images/else/new.png";
+import img1 from "../images/else/Новогоднее меню.jpg";
 import SmuziSquaer from "../components/SmuziSquaer";
 import WineSquare from "../components/WineSquare";
 

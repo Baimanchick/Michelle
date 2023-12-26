@@ -18,6 +18,8 @@ import img3 from "../images/boul/3.jpg";
 import img4 from "../images/boul/4.jpg";
 import img5 from "../images/boul/5.jpg";
 import Advice from "../components/Advice";
+import { useLanguage } from "../functions/languageContext";
+import axios from "axios";
 
 function MenuBoul() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -25,6 +27,47 @@ function MenuBoul() {
   const [categoryChange, setCategoryChange] = useState(false);
   const [notF, setNotF] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [dishes, setDishes] = useState([]);
+  const { selectedLanguage, setSelectedLanguage } = useLanguage();
+  useEffect(() => {
+    const fetchDishes = async () => {
+      try {
+        const res = await axios.get(
+          `${
+            selectedLanguage === "Русский"
+              ? "http://167.71.33.221/dishes/"
+              : selectedLanguage === "English"
+              ? "http://167.71.33.221/englishdishes/"
+              : selectedLanguage === "Кыргызча"
+              ? ""
+              : selectedLanguage === "Turkce"
+              ? ""
+              : null
+          }
+          `
+        );
+        setDishes(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchDishes();
+  }, []);
+  const filteredData = dishes.filter((item) => {
+    switch (selectedLanguage) {
+      case "Русский":
+        return item.category === null;
+      case "English":
+        return item.category === null;
+      case "Кыргызча":
+        return item.category === null;
+      case "Turkce":
+        return item.category === null;
+      default:
+        return false;
+    }
+  });
 
   const handleOpenMenu = () => {
     setMenuOpen(true);
