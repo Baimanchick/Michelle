@@ -40,13 +40,13 @@ function HomePage() {
       {isLoading ? (
         <div className="home-loading-container">
           <div className="home-loading-container">
-            <div class="container">
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
+            <div className="container">
+              <div className="dot"></div>
+              <div className="dot"></div>
+              <div className="dot"></div>
+              <div className="dot"></div>
+              <div className="dot"></div>
+              <div className="dot"></div>
             </div>
             <div className="home-title">ОСНОВАНО В 1993</div>
           </div>
