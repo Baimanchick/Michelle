@@ -22,6 +22,9 @@ import img7 from "../images/soap/7.jpg";
 import img8 from "../images/soap/8.jpg";
 import img9 from "../images/soap/9.jpg";
 import Advice from "../components/Advice";
+import axios from "axios";
+import Test from "../routes/Test";
+import { useLanguage } from "../functions/languageContext";
 
 function MenuSoap() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -29,6 +32,47 @@ function MenuSoap() {
   const [categoryChange, setCategoryChange] = useState(false);
   const [notF, setNotF] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [dishes, setDishes] = useState([]);
+  const { selectedLanguage, setSelectedLanguage } = useLanguage();
+  useEffect(() => {
+    const fetchDishes = async () => {
+      try {
+        const res = await axios.get(
+          `${
+            selectedLanguage === "Русский"
+              ? "http://167.71.33.221/dishes/"
+              : selectedLanguage === "English"
+              ? "http://167.71.33.221/englishdishes/"
+              : selectedLanguage === "Кыргызча"
+              ? ""
+              : selectedLanguage === "Turkce"
+              ? ""
+              : null
+          }
+          `
+        );
+        setDishes(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchDishes();
+  }, []);
+  const filteredData = dishes.filter((item) => {
+    switch (selectedLanguage) {
+      case "Русский":
+        return item.category === null;
+      case "English":
+        return item.category === null;
+      case "Кыргызча":
+        return item.category === null;
+      case "Turkce":
+        return item.category === null;
+      default:
+        return false;
+    }
+  });
 
   const handleOpenMenu = () => {
     setMenuOpen(true);
@@ -72,177 +116,19 @@ function MenuSoap() {
               <h2>КЛАССИЧЕСКИЕ</h2>
             </div>
           </header>
-          <div className="main-card-break">
-            <CardSalad
-              img={img1}
-              title={"Грибной суп"}
-              text={
-                "Состав: шампиньоны, вёшенки, морковь, репчатый лук / сливки "
-              }
-              price={"230 С"}
-              weight={"300 г"}
-              icon1={icon1} // пщеница
-              icon2={icon2} // листок
-              //   icon3={icon3}// лук
-              //   icon4={icon4}// повар
-              // icon5={icon5} // докрашенный листок
-              icon6={icon6} // бицепс
-              // icon7={icon7} // без молока
-              // icon8={icon8} // авакадо
-              //   icon9={icon9} старбакс
-            />
-            <CardSalad
-              img={img2}
-              title={"Чечевичный суп"}
-              text={
-                "Состав: чечевица, морковь , репчатый лук, лимон, мята / сливки "
-              }
-              price={"230 С"}
-              weight={"300 г"}
-              icon1={icon1} // пщеница
-              icon2={icon2} // листок
-              //   icon3={icon3}// лук
-              //   icon4={icon4}// повар
-              // icon5={icon5} // докрашенный листок
-              icon6={icon6} // бицепс
-              // icon7={icon7} // без молока
-              // icon8={icon8} // авакадо
-              //   icon9={icon9} старбакс
-            />
-            <Advice text={"Крем-супы мы можем подавать без сливок"} />
-            <CardSalad
-              img={img3}
-              title={"Броккольный с малосольной сёмгой"}
-              text={
-                "Состав: малосольная сёмга, брокколи, картофель, морковь, репчатый лук, сливки "
-              }
-              price={"555 с"}
-              weight={"300 г"}
-              style={{ top: "120px" }}
-              icon1={icon1} // пщеница
-              // icon2={icon2} // листок
-              //   icon3={icon3}// лук
-              //   icon4={icon4}// повар
-              // icon5={icon5} // докрашенный листок
-              icon6={icon6} // бицепс
-              // icon7={icon7} // без молока
-              // icon8={icon8} // авакадо
-              //   icon9={icon9} старбакс
-            />
-            <div className="dinner-title">
-              <span>НА БУЛЬОНЕ ㅤ</span>
-            </div>
-            <CardSalad
-              img={img4}
-              title={"Уха по-норвежски"}
-              text={
-                "Состав: форель, картофель, морковь, лимонный сок, сливки, зелень"
-              }
-              price={"380 с"}
-              weight={"300 г"}
-              icon1={icon1} // пщеница
-              // icon2={icon2} // листок
-              //   icon3={icon3}// лук
-              //   icon4={icon4}// повар
-              // icon5={icon5} // докрашенный листок
-              //   icon6={icon6}// бицепс
-              // icon7={icon7} // без молока
-              // icon8={icon8} // авакадо
-              //   icon9={icon9} старбакс
-            />
-            <CardSalad
-              img={img5}
-              title={"Похмельный суп"}
-              text={
-                "Состав: говядина, фунчоза, древесные грибы, болгарский перец, репчатый лук, зелень  "
-              }
-              price={"400 с"}
-              weight={"700 г"}
-              icon1={icon1} // пщеница
-              // icon2={icon2} // листок
-              //   icon3={icon3}// лук
-              //   icon4={icon4}// повар
-              // icon5={icon5} // докрашенный листок
-              //   icon6={icon6}// бицепс
-              icon7={icon7} // без молока
-              // icon8={icon8} // авакадо
-              //   icon9={icon9} старбакс
-            />
-            <CardSalad
-              img={img6}
-              title={"Том Ям"}
-              text={
-                "Состав: тигровые креветки, рис, кокосовое молоко, Том ям паста, шампиньоны, зелень"
-              }
-              price={"615 с"}
-              weight={"350 г"}
-              icon1={icon1} // пщеница
-              // icon2={icon2} // листок
-              //   icon3={icon3}// лук
-              //   icon4={icon4}// повар
-              // icon5={icon5} // докрашенный листок
-              //   icon6={icon6}// бицепс
-              icon7={icon7} // без молока
-              // icon8={icon8} // авакадо
-              //   icon9={icon9} старбакс
-            />
-            <CardSalad
-              img={img7}
-              title={"Фо бо"}
-              text={
-                "Состав: говядина, рисовая лапша, древесные грибы, морковь, фиолетовый лук, петрушка, мята, шпинат"
-              }
-              price={"505 с"}
-              weight={"350 г"}
-              icon1={icon1} // пщеница
-              // icon2={icon2} // листок
-              icon3={icon3} // лук≈
-              //   icon4={icon4}// повар
-              // icon5={icon5} // докрашенный листок
-              //   icon6={icon6}// бицепс
-              // icon7={icon7} // без молока
-              // icon8={icon8} // авакадо
-              //   icon9={icon9} старбакс
-            />
-            <CardSalad
-              img={img8}
-              title={"С машем"}
-              text={
-                "Состав: говядина, маш, картофель, болгарский перец, репчатый лук, зелень   "
-              }
-              price={"300 с"}
-              weight={"300 г"}
-              icon1={icon1} // пщеница
-              // icon2={icon2} // листок
-              //   icon3={icon3}// лук
-              //   icon4={icon4}// повар
-              // icon5={icon5} // докрашенный листок
-              //   icon6={icon6}// бицепс
-              icon7={icon7} // без молока
-              // icon8={icon8} // авакадо
-              //   icon9={icon9} старбакс
-            />
-            <CardSalad
-              img={img9}
-              title={"Суп куриный со звёздочками"}
-              text={"Состав: куриная грудка, макароны, зелень "}
-              price={"350 с"}
-              weight={"500 г"}
-              icon1={icon1} // пщеницa
-              // icon2={icon2} // листок
-              //   icon3={icon3}// лук
-              //   icon4={icon4}// повар
-              // icon5={icon5} // докрашенный листок
-              //   icon6={icon6}// бицепс
-              // icon7={icon7} // без молока
-              // icon8={icon8} // авакадо
-              //   icon9={icon9} старбакс
-            />
-            <Advice
-              text={
-                "Все наши супы подаются с гриссини собственного приготовления"
-              }
-            />
+          <div className="salad-flex">
+            {filteredData.map((item) => (
+              <Test
+                key={item.id}
+                data={item}
+                title={item.title}
+                img={item.image}
+                text={item.text}
+                weight={item.weight}
+                price={item.price}
+                icon={item.svgs}
+              />
+            ))}
           </div>
           <div style={{ paddingBottom: "200px" }}></div>
         </div>

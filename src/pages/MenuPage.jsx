@@ -10,15 +10,29 @@ import { useNavigate } from "react-router-dom";
 import CardMenu from "../components/CardMenu";
 import CardMenuNav from "../components/CardMenuNav";
 import axios from "axios";
+import { useLanguage } from "../functions/languageContext";
 
 function MenuPage() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [categoriesFetched, setCategoriesFetched] = useState([]);
+  const { selectedLanguage, setSelectedLanguage } = useLanguage();
 
   useEffect(() => {
     const fetchCategory = async () => {
       try {
-        const res = await axios.get("http://167.71.33.221/categories/");
+        const res = await axios.get(
+          ` ${
+            selectedLanguage === "Русский"
+              ? "http://167.71.33.221/categories/"
+              : selectedLanguage === "English"
+              ? "http://167.71.33.221/englishcategories/"
+              : selectedLanguage === "Кыргызча"
+              ? ""
+              : selectedLanguage === "Turkce"
+              ? ""
+              : null
+          }`
+        );
         setCategoriesFetched(res.data);
       } catch (error) {
         console.log(error);

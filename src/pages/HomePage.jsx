@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import "../css/home.scss";
 import logoHome from "../images/else/Michelle Vector.svg";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "../functions/languageContext";
 
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
-  const [selectedLanguage, setSelectedLanguage] = useState("");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const navigate = useNavigate();
+  const { selectedLanguage, setSelectedLanguage } = useLanguage();
 
   useEffect(() => {
     const fakeApiCall = setTimeout(() => {

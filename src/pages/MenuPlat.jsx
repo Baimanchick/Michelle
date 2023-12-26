@@ -15,6 +15,9 @@ import img1 from "../images/plat/Сырная тарелка.jpg";
 import img2 from "../images/plat/Фруктовая нарезка.jpg";
 
 import CardSalad from "../components/CardSalad";
+import axios from "axios";
+import Test from "../routes/Test";
+import { useLanguage } from "../functions/languageContext";
 
 function MenuPlat() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -22,6 +25,47 @@ function MenuPlat() {
   const [categoryChange, setCategoryChange] = useState(false);
   const [notF, setNotF] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [dishes, setDishes] = useState([]);
+  const { selectedLanguage, setSelectedLanguage } = useLanguage();
+  useEffect(() => {
+    const fetchDishes = async () => {
+      try {
+        const res = await axios.get(
+          `${
+            selectedLanguage === "Русский"
+              ? "http://167.71.33.221/dishes/"
+              : selectedLanguage === "English"
+              ? "http://167.71.33.221/englishdishes/"
+              : selectedLanguage === "Кыргызча"
+              ? ""
+              : selectedLanguage === "Turkce"
+              ? ""
+              : null
+          }
+          `
+        );
+        setDishes(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchDishes();
+  }, []);
+  const filteredData = dishes.filter((item) => {
+    switch (selectedLanguage) {
+      case "Русский":
+        return item.category === 4;
+      case "English":
+        return item.category === null;
+      case "Кыргызча":
+        return item.category === null;
+      case "Turkce":
+        return item.category === null;
+      default:
+        return false;
+    }
+  });
 
   const handleOpenMenu = () => {
     setMenuOpen(true);
@@ -45,6 +89,7 @@ function MenuPlat() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <>
       {windowWidth <= 1000 ? (
@@ -64,41 +109,19 @@ function MenuPlat() {
               <div>ПЛЭТТЕРЫ</div>
             </div>
           </header>
-          <div className="main-card-break">
-            <CardSalad
-              img={img1}
-              title={"Сырная тарелка"}
-              text={
-                "Состав: Сыр Дор блю, Пармезан, Тильзитский, Чеддер, груша, ягоды, грецкий орех, фисташки, мёд"
-              }
-              price={"705 С"}
-              weight={"150 г"}
-              icon1={icon1} // пщеница
-              icon2={icon2} // листок
-              //   icon3={icon3} лук
-              //   icon4={icon4} повар
-              // icon5={icon5} // докрашенный листок
-              //   icon6={icon6} бицепс
-              // icon7={icon7} // без молока
-              // icon8={icon8} // авакадо
-              //   icon9={icon9} старбакс
-            />
-            <CardSalad
-              img={img2}
-              title={"Фруктовая нарезка"}
-              text={"Состав: апельсин, банан, яблоко, киви, виноград"}
-              price={"390 С"}
-              weight={"350 г"}
-              icon1={icon1} // пщеница
-              // icon2={icon2} // листок
-              //   icon3={icon3} // лук
-              //   icon4={icon4} повар
-              // icon5={icon5} // докрашенный листок
-              icon6={icon6} // бицепс
-              icon7={icon7} // без молока
-              //   icon8={icon8} // авакадо
-              //   icon9={icon9} старбакс
-            />
+          <div className="salad-flex">
+            {filteredData.map((item) => (
+              <Test
+                key={item.id}
+                data={item}
+                title={item.title}
+                img={item.image}
+                text={item.text}
+                weight={item.weight}
+                price={item.price}
+                icon={item.svgs}
+              />
+            ))}
           </div>
         </div>
       ) : (
