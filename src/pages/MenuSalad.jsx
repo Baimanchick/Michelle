@@ -104,6 +104,7 @@ function MenuSalad() {
               />
             ))}
           </div>
+          <div style={{ paddingBottom: "200px" }}></div>
         </div>
       ) : (
         <>

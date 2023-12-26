@@ -140,7 +140,14 @@ function MenuHotMeal() {
                 icon={item.svgs}
               />
             ))}
+            <img src={img10} alt="" />
+            <Advice
+              text={
+                "В наших рецептах мы используем только натуральные сливки жирностью 33%"
+              }
+            />
           </div>
+
           <div style={{ paddingBottom: "200px" }}></div>
         </div>
       ) : (
