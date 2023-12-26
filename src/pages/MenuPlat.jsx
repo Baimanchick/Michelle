@@ -57,7 +57,7 @@ function MenuPlat() {
       case "Русский":
         return item.category === 4;
       case "English":
-        return item.category === null;
+        return item.category === 3;
       case "Кыргызча":
         return item.category === null;
       case "Turkce":

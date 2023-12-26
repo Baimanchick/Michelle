@@ -58,7 +58,7 @@ function MenuBaget() {
       case "Русский":
         return item.category === 5;
       case "English":
-        return item.category === null;
+        return item.category === 4;
       case "Кыргызча":
         return item.category === null;
       case "Turkce":
