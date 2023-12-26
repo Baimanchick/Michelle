@@ -21,7 +21,7 @@ function MenuPage() {
     const fetchCategory = async () => {
       try {
         const res = await axios.get(
-          ` ${
+          `${
             selectedLanguage === "Русский"
               ? "http://167.71.33.221/categories/"
               : selectedLanguage === "English"
@@ -33,7 +33,14 @@ function MenuPage() {
               : null
           }`
         );
-        setCategoriesFetched(res.data);
+
+        const sortedCategories = res.data.sort((a, b) => {
+          if (a.title === "Новогоднее Меню") return -1;
+          if (b.title === "Новогоднее Меню") return 1;
+          return 0;
+        });
+
+        setCategoriesFetched(sortedCategories);
       } catch (error) {
         console.log(error);
       }
@@ -72,7 +79,7 @@ function MenuPage() {
                   title={category.title}
                   img={category.image}
                   link={category.link}
-                  key={category}
+                  key={category.id} // Use a unique key, e.g., category.id
                 />
               );
             })}
@@ -82,7 +89,7 @@ function MenuPage() {
         <>
           <div className="thousand-px">
             <h2>
-              Данный сайт не потдерживает экраны больше 1000 px, пожалуйста
+              Данный сайт не поддерживает экраны больше 1000 px, пожалуйста
               уменьшите ваш экран, либо зайдите через мобильное устройство
             </h2>
           </div>
