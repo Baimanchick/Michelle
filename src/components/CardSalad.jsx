@@ -3,7 +3,7 @@ import "../css/salad.scss";
 import axios from "axios";
 
 function CardSalad({ style, img, title, text, price, weight, icon }) {
-  const [ svgs, setSvgs ] = useState([]);
+  const [svgs, setSvgs] = useState([]);
 
   useEffect(() => {
     const fetchSvg = async () => {
@@ -22,7 +22,7 @@ function CardSalad({ style, img, title, text, price, weight, icon }) {
     return svgs.filter((svg) => ids?.includes(svg.id));
   };
 
-  const filteredSvgs = filterSvgsByIds(icon)
+  const filteredSvgs = filterSvgsByIds(icon);
 
   return (
     <div className="salad-card-main">
@@ -34,17 +34,21 @@ function CardSalad({ style, img, title, text, price, weight, icon }) {
             <div className="salad-card-absolute" style={style}>
               <div className="salad-card-title">
                 <div>{title}</div>
-                <span>{weight} г</span>
+                <span>{Number(weight).toFixed().toString()} г</span>
                 <p>{text}</p>
               </div>
               <div className="salad-card-utils">
                 <div className="salad-card-utils-wrapper-left">
                   {filteredSvgs.map((svg) => (
-                    <img key={svg.id} src={svg.svg_file} alt={`SVG ${svg.id}`} />
+                    <img
+                      key={svg.id}
+                      src={svg.svg_file}
+                      alt={`SVG ${svg.id}`}
+                    />
                   ))}
                 </div>
                 <div className="salad-card-utils-wrapper-right">
-                  <span>{price} С</span>
+                  <span>{Number(price).toFixed().toString()} С</span>
                 </div>
               </div>
             </div>

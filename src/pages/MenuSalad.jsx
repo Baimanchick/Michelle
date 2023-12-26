@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import CardMenuSalad from "../components/CardMenuSalad";
 import axios from "axios";
 import CardSalad from "../components/CardSalad";
+import Test from "../routes/Test";
 
 function MenuSalad() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -46,20 +47,16 @@ function MenuSalad() {
             </div>
           </header>
           {filteredData.map((item) => (
-            <>
-              <div className="main-card-break">
-                <CardSalad
-                  key={item.id}
-                  data={item}
-                  title={item.title}
-                  img={item.image}
-                  text={item.text}
-                  weight={item.weight}
-                  price={item.price}
-                  icon={item.svgs}
-                />
-              </div>
-            </>
+            <Test
+              key={item.id}
+              data={item}
+              title={item.title}
+              img={item.image}
+              text={item.text}
+              weight={item.weight}
+              price={item.price}
+              icon={item.svgs}
+            />
           ))}
         </div>
       ) : (
