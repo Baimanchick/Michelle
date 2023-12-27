@@ -84,12 +84,26 @@ function MenuSalad() {
               }}
             ></div>
           </div>
-          <header className="menu-salad-header">
-            <div className="menu-salad-title-container">
-              <div>САЛАТЫ</div>
-              <span>НЕ ЕДА, ЭТО СТИЛЬ</span>
-            </div>
-          </header>
+          <>
+            {selectedLanguage === "Русский" ||
+            selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>САЛАТЫ</div>
+                  <span>НЕ ЕДА, ЭТО СТИЛЬ</span>
+                </div>
+              </header>
+            ) : selectedLanguage === "English" ||
+              selectedLanguage === "Turkce" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>SALAD BAR</div>
+                  <span>EAT YOUR GREENS TO FIT INTO YOUR JEANS</span>
+                </div>
+              </header>
+            ) : null}
+          </>
+
           <div className="salad-flex">
             {filteredData.map((item) => (
               <Test

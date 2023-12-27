@@ -74,7 +74,7 @@ function MenuHotMeal() {
       case "Русский":
         return item.category === 7;
       case "English":
-        return item.category === null;
+        return item.category === 7;
       case "Кыргызча":
         return item.category === null;
       case "Turkce":
@@ -121,11 +121,26 @@ function MenuHotMeal() {
               }}
             ></div>
           </div>
+          <>
+            {selectedLanguage === "Русский" ||
+            selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>ГОРЯЧИЕ БЛЮДА</div>
+                  <p>ИЗЫСКАННЫЕ</p>
+                </div>
+              </header>
+            ) : selectedLanguage === "English" ||
+              selectedLanguage === "Turkce" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>MAIN DISHES EXQUISITE</div>
+                </div>
+              </header>
+            ) : null}
+          </>
           <header className="menu-salad-header">
-            <div className="menu-salad-title-container">
-              <div>ГОРЯЧИЕ БЛЮДА</div>
-              <p>ИЗЫСКАННЫЕ</p>
-            </div>
+            <div className="menu-salad-title-container"></div>
           </header>
           <div className="salad-flex">
             {filteredData.map((item) => (
@@ -140,12 +155,38 @@ function MenuHotMeal() {
                 icon={item.svgs}
               />
             ))}
-            <img src={img10} alt="" />
-            <Advice
-              text={
-                "В наших рецептах мы используем только натуральные сливки жирностью 33%"
-              }
-            />
+
+            {selectedLanguage === "Русский" ? (
+              <>
+                <Advice
+                  text={
+                    "В наших рецептах мы используем только натуральные сливки жирностью 33%"
+                  }
+                />
+                <img src={img10} alt="" />
+              </>
+            ) : selectedLanguage === "English" ? (
+              <Advice
+                text={
+                  "In our recipes, we use natural liquid cream with 35% fat."
+                }
+              />
+            ) : selectedLanguage === "Turkce" ? (
+              <Advice
+                text={
+                  "In our recipes, we use natural liquid cream with 35% fat."
+                }
+              />
+            ) : selectedLanguage === "Кыргзча" ? (
+              <>
+                <Advice
+                  text={
+                    "В наших рецептах мы используем только натуральные сливки жирностью 33%"
+                  }
+                />
+                <img src={img10} alt="" />
+              </>
+            ) : null}
           </div>
 
           <div style={{ paddingBottom: "200px" }}></div>

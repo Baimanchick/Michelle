@@ -4,8 +4,11 @@ import { useNavigate } from "react-router-dom";
 import SliderMenu, { categories } from "../components/SliderMenu";
 import TeaSquare from "../components/TeaSquare";
 import img1 from "../images/else/Новогоднее меню.jpg";
+import img2 from "../images/else/New Years MENU.jpg";
+
 import SmuziSquaer from "../components/SmuziSquaer";
 import WineSquare from "../components/WineSquare";
+import { useLanguage } from "../functions/languageContext";
 
 function WinePage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -15,6 +18,7 @@ function WinePage() {
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const { selectedLanguage, setSelectedLanguage } = useLanguage();
 
   const handleOpenMenu = () => {
     setMenuOpen(true);
@@ -57,10 +61,26 @@ function WinePage() {
               className="tea-header"
             >
               <div className="tea-header-title">
-                <h2 style={{ fontSize: "19px" }}>НОВОГОДНЕЕ МЕНЮ</h2>
+                <h2 style={{ fontSize: "19px" }}>
+                  {selectedLanguage === "Русский" ||
+                  selectedLanguage === "Кыргызча"
+                    ? "НОВОГОДНЕЕ МЕНЮ"
+                    : selectedLanguage === "English" ||
+                      selectedLanguage === "Turkce"
+                    ? "NEW YEAR DISH"
+                    : null}
+                </h2>
               </div>
             </header>
-            <img src={img1} className="new-img" alt="" />
+            <>
+              {selectedLanguage === "Русский" ||
+              selectedLanguage === "Кыргызча" ? (
+                <img src={img1} className="new-img" alt="" />
+              ) : selectedLanguage === "English" ||
+                selectedLanguage === "Turkce" ? (
+                <img src={img2} className="new-img" alt="" />
+              ) : null}
+            </>
           </div>
           <div style={{ paddingBottom: "200px" }}></div>
         </div>

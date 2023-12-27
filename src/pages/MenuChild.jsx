@@ -21,6 +21,9 @@ import img6 from "../images/child/6.jpg";
 import img7 from "../images/child/7.jpg";
 import img8 from "../images/child/8.jpg";
 import Advice from "../components/Advice";
+import { useLanguage } from "../functions/languageContext";
+import axios from "axios";
+import Test from "../routes/Test";
 
 function MenuChild() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -30,6 +33,48 @@ function MenuChild() {
   const [isLoading, setIsLoading] = useState(true);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const navigate = useNavigate();
+  const { selectedLanguage, setSelectedLanguage } = useLanguage();
+  const [dishes, setDishes] = useState([]);
+  useEffect(() => {
+    const fetchDishes = async () => {
+      try {
+        const res = await axios.get(
+          `${
+            selectedLanguage === "Русский"
+              ? "http://167.71.33.221/dishes/"
+              : selectedLanguage === "English"
+              ? "http://167.71.33.221/englishdishes/"
+              : selectedLanguage === "Кыргызча"
+              ? ""
+              : selectedLanguage === "Turkce"
+              ? ""
+              : null
+          }
+          `
+        );
+        setDishes(res.data);
+        console.log(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchDishes();
+  }, []);
+  const filteredData = dishes.filter((item) => {
+    switch (selectedLanguage) {
+      case "Русский":
+        return item.category === 8;
+      case "English":
+        return item.category === 11;
+      case "Кыргызча":
+        return item.category === null;
+      case "Turkce":
+        return item.category === null;
+      default:
+        return false;
+    }
+  });
 
   const handleOpenMenu = () => {
     setMenuOpen(true);
@@ -74,56 +119,86 @@ function MenuChild() {
               }}
             ></div>
           </div>
-          <header className="soap-header">
-            <div className="soap-title-container">
-              <h3>ДЕТСКОЕ МЕНЮ</h3>
-            </div>
-          </header>
+
+          <>
+            {selectedLanguage === "Русский" ||
+            selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>ДЕТСКОЕ МЕНЮ</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "English" ||
+              selectedLanguage === "Turkce" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>KID'S MENU</div>
+                </div>
+              </header>
+            ) : null}
+          </>
           <div className="main-card-break"></div>
           <div style={{ paddingBottom: "200px" }}>
             <>
-              <div className="child-img-container">
-                <img
-                  style={{ borderRadius: "15px", objectFit: "cover" }}
-                  src={img1}
-                  alt=""
-                />
-                <img
-                  style={{ borderRadius: "15px", objectFit: "cover" }}
-                  src={img2}
-                  alt=""
-                />
-                <img
-                  style={{ borderRadius: "15px", objectFit: "cover" }}
-                  src={img3}
-                  alt=""
-                />
-                <img
-                  style={{ borderRadius: "15px", objectFit: "cover" }}
-                  src={img4}
-                  alt=""
-                />
-                <img
-                  style={{ borderRadius: "15px", objectFit: "cover" }}
-                  src={img5}
-                  alt=""
-                />
-                <img
-                  style={{ borderRadius: "15px", objectFit: "cover" }}
-                  src={img6}
-                  alt=""
-                />
-                <img
-                  style={{ borderRadius: "15px", objectFit: "cover" }}
-                  src={img7}
-                  alt=""
-                />
-                <img
-                  style={{ borderRadius: "15px", objectFit: "cover" }}
-                  src={img8}
-                  alt=""
-                />
-              </div>
+              {selectedLanguage === "Русский" ? (
+                <div className="child-img-container">
+                  <img
+                    style={{ borderRadius: "15px", objectFit: "cover" }}
+                    src={img1}
+                    alt=""
+                  />
+                  <img
+                    style={{ borderRadius: "15px", objectFit: "cover" }}
+                    src={img2}
+                    alt=""
+                  />
+                  <img
+                    style={{ borderRadius: "15px", objectFit: "cover" }}
+                    src={img3}
+                    alt=""
+                  />
+                  <img
+                    style={{ borderRadius: "15px", objectFit: "cover" }}
+                    src={img4}
+                    alt=""
+                  />
+                  <img
+                    style={{ borderRadius: "15px", objectFit: "cover" }}
+                    src={img5}
+                    alt=""
+                  />
+                  <img
+                    style={{ borderRadius: "15px", objectFit: "cover" }}
+                    src={img6}
+                    alt=""
+                  />
+                  <img
+                    style={{ borderRadius: "15px", objectFit: "cover" }}
+                    src={img7}
+                    alt=""
+                  />
+                  <img
+                    style={{ borderRadius: "15px", objectFit: "cover" }}
+                    src={img8}
+                    alt=""
+                  />
+                </div>
+              ) : (
+                <div className="salad-flex">
+                  {filteredData.map((item) => (
+                    <Test
+                      key={item.id}
+                      data={item}
+                      title={item.title}
+                      img={item.image}
+                      text={item.text}
+                      weight={item.weight}
+                      price={item.price}
+                      icon={item.svgs}
+                    />
+                  ))}
+                </div>
+              )}
             </>
           </div>
         </div>

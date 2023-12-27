@@ -104,11 +104,24 @@ function MenuPlat() {
               }}
             ></div>
           </div>
-          <header className="menu-salad-header">
-            <div className="menu-salad-title-container">
-              <div>ПЛЭТТЕРЫ</div>
-            </div>
-          </header>
+          <>
+            {selectedLanguage === "Русский" ||
+            selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>ПЛЭТТЕРЫ</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "English" ||
+              selectedLanguage === "Turkce" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>PLATTERS</div>
+                </div>
+              </header>
+            ) : null}
+          </>
+
           <div className="salad-flex">
             {filteredData.map((item) => (
               <Test

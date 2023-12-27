@@ -64,7 +64,7 @@ function MenuSoap() {
       case "Русский":
         return item.category === 8;
       case "English":
-        return item.category === null;
+        return item.category === 5;
       case "Кыргызча":
         return item.category === null;
       case "Turkce":
@@ -110,12 +110,24 @@ function MenuSoap() {
               }}
             ></div>
           </div>
-          <header className="soap-header">
-            <div className="soap-title-container">
-              <h3>СУПЫ</h3>
-              <h2>КЛАССИЧЕСКИЕ</h2>
-            </div>
-          </header>
+          <>
+            {selectedLanguage === "Русский" ||
+            selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>СУПЫ</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "English" ||
+              selectedLanguage === "Turkce" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>SOUP</div>
+                  <span>CREAM SOUP</span>
+                </div>
+              </header>
+            ) : null}
+          </>
           <div className="salad-flex">
             {filteredData.map((item) => (
               <Test

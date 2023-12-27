@@ -37,6 +37,8 @@ function MenuPage() {
         const sortedCategories = res.data.sort((a, b) => {
           if (a.title === "Новогоднее Меню") return -1;
           if (b.title === "Новогоднее Меню") return 1;
+          if (a.title === "NEW YEAR DISH") return -1;
+          if (b.title === "NEW YEAR DISH") return 1;
           return 0;
         });
 
@@ -67,11 +69,56 @@ function MenuPage() {
     <>
       {windowWidth <= 1000 ? (
         <>
-          <div
-            style={{ fontSize: "38px", textAlign: "center", marginTop: "50px" }}
-          >
-            МЕНЮ
-          </div>
+          {selectedLanguage === "Русский" ? (
+            <>
+              <div
+                style={{
+                  fontSize: "38px",
+                  textAlign: "center",
+                  marginTop: "50px",
+                }}
+              >
+                МЕНЮ
+              </div>
+            </>
+          ) : selectedLanguage === "English" ? (
+            <>
+              <div
+                style={{
+                  fontSize: "38px",
+                  textAlign: "center",
+                  marginTop: "50px",
+                }}
+              >
+                MENU
+              </div>
+            </>
+          ) : selectedLanguage === "Turkce" ? (
+            <>
+              <div
+                style={{
+                  fontSize: "38px",
+                  textAlign: "center",
+                  marginTop: "50px",
+                }}
+              >
+                MENU
+              </div>
+            </>
+          ) : selectedLanguage === "Кыргзча" ? (
+            <>
+              <div
+                style={{
+                  fontSize: "38px",
+                  textAlign: "center",
+                  marginTop: "50px",
+                }}
+              >
+                МЕНЮ
+              </div>
+            </>
+          ) : null}
+
           <div className="block-nav-menu">
             {categoriesFetched.map((category) => {
               return (

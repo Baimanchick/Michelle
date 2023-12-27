@@ -104,12 +104,24 @@ function MenuBaget() {
               }}
             ></div>
           </div>
-          <header className="menu-salad-header">
-            <div className="menu-salad-title-container">
-              <div>БАГЕТЫ</div>
-              <p>НА ЗАКВАСКЕ</p>
-            </div>
-          </header>
+
+          <>
+            {selectedLanguage === "Русский" ||
+            selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>БАГЕТ</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "English" ||
+              selectedLanguage === "Turkce" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>BAGUETTES</div>
+                </div>
+              </header>
+            ) : null}
+          </>
           <div className="salad-flex">
             {filteredData.map((item) => (
               <Test
@@ -124,12 +136,36 @@ function MenuBaget() {
               />
             ))}
           </div>
-          <Advice
-            text={
-              "Мы готовим паштет из нежного мяса курицы с добавлением ароматных трав"
-            }
-            style={{ marginTop: "20px" }}
-          />
+
+          {selectedLanguage === "Русский" ? (
+            <Advice
+              text={
+                "Мы готовим паштет из нежного мяса курицы с добавлением ароматных трав"
+              }
+              style={{ marginTop: "20px" }}
+            />
+          ) : selectedLanguage === "English" ? (
+            <Advice
+              text={
+                "Our pate is made of tender chicken meat with the addition of herbs."
+              }
+              style={{ marginTop: "20px" }}
+            />
+          ) : selectedLanguage === "Turkce" ? (
+            <Advice
+              text={
+                "Our pate is made of tender chicken meat with the addition of herbs."
+              }
+              style={{ marginTop: "20px" }}
+            />
+          ) : selectedLanguage === "Кыргзча" ? (
+            <Advice
+              text={
+                "Мы готовим паштет из нежного мяса курицы с добавлением ароматных трав"
+              }
+              style={{ marginTop: "20px" }}
+            />
+          ) : null}
         </div>
       ) : (
         <>

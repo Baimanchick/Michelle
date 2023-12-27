@@ -70,7 +70,7 @@ function MenuGar() {
       case "Русский":
         return item.category === 11;
       case "English":
-        return item.category === null;
+        return item.category === 10;
       case "Кыргызча":
         return item.category === null;
       case "Turkce":
@@ -116,11 +116,23 @@ function MenuGar() {
               }}
             ></div>
           </div>
-          <header className="soap-header">
-            <div className="soap-title-container">
-              <h3>ГАРНИРЫ</h3>
-            </div>
-          </header>
+          <>
+            {selectedLanguage === "Русский" ||
+            selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>ГАРНИРЫ</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "English" ||
+              selectedLanguage === "Turkce" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>SIDE DISHES</div>
+                </div>
+              </header>
+            ) : null}
+          </>
           <div className="salad-flex">
             {filteredData.map((item) => (
               <Test
