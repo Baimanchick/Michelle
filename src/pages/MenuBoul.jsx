@@ -60,7 +60,7 @@ function MenuBoul() {
       case "Русский":
         return item.category === 10;
       case "English":
-        return item.category === null;
+        return item.category === 9;
       case "Кыргызча":
         return item.category === null;
       case "Turkce":
@@ -107,12 +107,25 @@ function MenuBoul() {
               }}
             ></div>
           </div>
-          <header className="soap-header">
-            <div className="soap-title-container">
-              <h3>ПОКЕ-БОУЛ</h3>
-              <h2>СБАЛАНСИРОВАННОЕ ПИТАНИЕ</h2>
-            </div>
-          </header>
+
+          <>
+            {selectedLanguage === "Русский" ||
+            selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>ПОКЕ-БОУЛ</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "English" ||
+              selectedLanguage === "Turkce" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>BOWLS</div>
+                  <span>BALANCED DIET</span>
+                </div>
+              </header>
+            ) : null}
+          </>
           <div className="salad-flex">
             {filteredData.map((item) => (
               <Test

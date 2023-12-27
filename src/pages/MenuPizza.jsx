@@ -71,7 +71,7 @@ function MenuPizza() {
       case "Русский":
         return item.category === 9;
       case "English":
-        return item.category === null;
+        return item.category === 8;
       case "Кыргызча":
         return item.category === null;
       case "Turkce":
@@ -118,13 +118,23 @@ function MenuPizza() {
               }}
             ></div>
           </div>
-          <header className="soap-header">
-            <div className="soap-title-container">
-              <h3>ПИЦЦА</h3>
-              <h2>ИТАЛЬЯНСКАЯ</h2>
-              <h4>30 см на тонком тесте</h4>
-            </div>
-          </header>
+          <>
+            {selectedLanguage === "Русский" ||
+            selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>ПИЦЦА</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "English" ||
+              selectedLanguage === "Turkce" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>PIZZA</div>
+                </div>
+              </header>
+            ) : null}
+          </>
           <div className="salad-flex">
             {filteredData.map((item) => (
               <Test
@@ -139,30 +149,108 @@ function MenuPizza() {
               />
             ))}
           </div>
-          <Advice
-            text={
-              "Спагетти мы можем приготовить из безглютеновой лапши. Глютен (содержится в пшенице) мешает работе ворсинок кишечника, отвечающих за функцию всасывания витаминов и полезных минералов из пищи! Приготовление безглютеновых позиций занимает больше стандартного времени."
-            }
-            style={{ marginTop: "20px" }}
-          />
-          <Advice
-            text={"Ко всем пиццам мы подаём наш фирменный бейби перчик"}
-          />
-          <Advice
-            text={
-              "Пиццу в Италии готовят по Римскому и Неаполитанскому рецептам. Между этими двуми стилями существуют явные отличия: неаполитанскую пиццу готовят на более толстом тесте с выраженными бортами и томатным вкусом, тогда как римская пицца, которую мы подаём, использует меньшее содержание дрожжей, в результате чего она получается тонкой и хрустящей. Оба рецепта по-своему восхитительны, и их выбирают ценители пиццы во всём мире.  Приятного аппетита!"
-            }
-          />
-          <Advice
-            text={
-              "Нашу пасту мы готовим Al Dente — дословный перевод с итальянского «на зубок», что подразумевает лёгкое прилипание пасты к зубам. Правильно сваренная паста Al Dente сохраняет внутреннюю твёрдость, а снаружи она мягкая."
-            }
-          />
-          <Advice
-            text={
-              "Спагетти мы можем приготовить из безглютеновой лапши. Глютен (содержится в пшенице) мешает работе ворсинок кишечника, отвечающих за функцию всасывания витаминов и полезных минералов из пищи! Приготовление безглютеновых позиций занимает больше стандартного времени."
-            }
-          />
+          {selectedLanguage === "Русский" ? (
+            <>
+              <Advice
+                text={
+                  "Спагетти мы можем приготовить из безглютеновой лапши. Глютен (содержится в пшенице) мешает работе ворсинок кишечника, отвечающих за функцию всасывания витаминов и полезных минералов из пищи! Приготовление безглютеновых позиций занимает больше стандартного времени."
+                }
+                style={{ marginTop: "20px" }}
+              />
+              <Advice
+                text={"Ко всем пиццам мы подаём наш фирменный бейби перчик"}
+              />
+              <Advice
+                text={
+                  "Пиццу в Италии готовят по Римскому и Неаполитанскому рецептам. Между этими двуми стилями существуют явные отличия: неаполитанскую пиццу готовят на более толстом тесте с выраженными бортами и томатным вкусом, тогда как римская пицца, которую мы подаём, использует меньшее содержание дрожжей, в результате чего она получается тонкой и хрустящей. Оба рецепта по-своему восхитительны, и их выбирают ценители пиццы во всём мире.  Приятного аппетита!"
+                }
+              />
+              <Advice
+                text={
+                  "Нашу пасту мы готовим Al Dente — дословный перевод с итальянского «на зубок», что подразумевает лёгкое прилипание пасты к зубам. Правильно сваренная паста Al Dente сохраняет внутреннюю твёрдость, а снаружи она мягкая."
+                }
+              />
+              <Advice
+                text={
+                  "Спагетти мы можем приготовить из безглютеновой лапши. Глютен (содержится в пшенице) мешает работе ворсинок кишечника, отвечающих за функцию всасывания витаминов и полезных минералов из пищи! Приготовление безглютеновых позиций занимает больше стандартного времени."
+                }
+              />
+            </>
+          ) : selectedLanguage === "English" ? (
+            <>
+              <Advice
+                text={"Tüm pizzalarımızı özel baby bíberímízle servís edíyoruz"}
+                style={{ marginTop: "20px" }}
+              />
+
+              <Advice
+                text={
+                  "Pizza in Italy is prepared using either Roman or Neapolitan recipes. There are distinct differences between the two styles, with Neapolitan pizza featuring a thicker crust and a more pronounced tomato flavor, while Roman pizza that we serve typically uses less yeast, resulting in a thin and crispy crust. Both are delicious in their way and are enjoyed by pizza lovers all over the world. Buon appetito!"
+                }
+              />
+              <Advice
+                text={
+                  "Our pasta is cooked al dente, retaining its inner hardness while being soft on the outside."
+                }
+              />
+              <Advice
+                text={
+                  "We can prepare gluten-free spaghetti for you. However, please note that it will take longer to prepare."
+                }
+              />
+            </>
+          ) : selectedLanguage === "Turkce" ? (
+            <>
+              <Advice
+                text={"Tüm pizzalarımızı özel baby bíberímízle servís edíyoruz"}
+                style={{ marginTop: "20px" }}
+              />
+
+              <Advice
+                text={
+                  "Pizza in Italy is prepared using either Roman or Neapolitan recipes. There are distinct differences between the two styles, with Neapolitan pizza featuring a thicker crust and a more pronounced tomato flavor, while Roman pizza that we serve typically uses less yeast, resulting in a thin and crispy crust. Both are delicious in their way and are enjoyed by pizza lovers all over the world. Buon appetito!"
+                }
+              />
+              <Advice
+                text={
+                  "Our pasta is cooked al dente, retaining its inner hardness while being soft on the outside."
+                }
+              />
+              <Advice
+                text={
+                  "We can prepare gluten-free spaghetti for you. However, please note that it will take longer to prepare."
+                }
+              />
+            </>
+          ) : selectedLanguage === "Кыргзча" ? (
+            <>
+              <Advice
+                text={
+                  "Спагетти мы можем приготовить из безглютеновой лапши. Глютен (содержится в пшенице) мешает работе ворсинок кишечника, отвечающих за функцию всасывания витаминов и полезных минералов из пищи! Приготовление безглютеновых позиций занимает больше стандартного времени."
+                }
+                style={{ marginTop: "20px" }}
+              />
+              <Advice
+                text={"Ко всем пиццам мы подаём наш фирменный бейби перчик"}
+              />
+              <Advice
+                text={
+                  "Пиццу в Италии готовят по Римскому и Неаполитанскому рецептам. Между этими двуми стилями существуют явные отличия: неаполитанскую пиццу готовят на более толстом тесте с выраженными бортами и томатным вкусом, тогда как римская пицца, которую мы подаём, использует меньшее содержание дрожжей, в результате чего она получается тонкой и хрустящей. Оба рецепта по-своему восхитительны, и их выбирают ценители пиццы во всём мире.  Приятного аппетита!"
+                }
+              />
+              <Advice
+                text={
+                  "Нашу пасту мы готовим Al Dente — дословный перевод с итальянского «на зубок», что подразумевает лёгкое прилипание пасты к зубам. Правильно сваренная паста Al Dente сохраняет внутреннюю твёрдость, а снаружи она мягкая."
+                }
+              />
+              <Advice
+                text={
+                  "Спагетти мы можем приготовить из безглютеновой лапши. Глютен (содержится в пшенице) мешает работе ворсинок кишечника, отвечающих за функцию всасывания витаминов и полезных минералов из пищи! Приготовление безглютеновых позиций занимает больше стандартного времени."
+                }
+              />
+            </>
+          ) : null}
+
           <div style={{ paddingBottom: "200px" }}></div>
         </div>
       ) : (

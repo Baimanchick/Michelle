@@ -43,7 +43,7 @@ function MenuDishes() {
       case "Русский":
         return item.category === 2;
       case "English":
-        return item.category === null;
+        return item.category === 1;
       case "Кыргызча":
         return item.category === null;
       case "Turkce":
@@ -92,20 +92,32 @@ function MenuDishes() {
               }}
             ></div>
           </div>
-          <header className="menu-header">
-            <div className="menu-title-container">
-              <hr />
-              <h2>КЛАССИЧЕСКИЕ</h2>
-              <hr />
-            </div>
-            <div className="menu-title-span">
-              <span>НА НОВЫЙ ЛАД</span>
-            </div>
-          </header>
+          <>
+            {selectedLanguage === "Русский" ||
+            selectedLanguage === "Кыргызча" ? (
+              <header className="menu-header">
+                <div className="menu-title-container">
+                  <hr />
+                  <h2>КЛАССИЧЕСКИЕ</h2>
+                  <hr />
+                </div>
+                <div className="menu-title-span">
+                  <span>НА НОВЫЙ ЛАД</span>
+                </div>
+              </header>
+            ) : selectedLanguage === "English" ||
+              selectedLanguage === "Turkce" ? (
+              <header className="menu-header">
+                <div className="menu-title-container">
+                  <hr />
+                  <h2>Classic</h2>
+                  <hr />
+                </div>
+              </header>
+            ) : null}
+          </>
+
           <div className="menu-container">
-            <div className="menu-container-h2">
-              <h2>КАША</h2>
-            </div>
             <div className="salad-flex">
               {filteredData.map((item) => (
                 <Test

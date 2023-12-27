@@ -73,7 +73,7 @@ function MenuDinner() {
       case "Русский":
         return item.category === 6;
       case "English":
-        return item.category === null;
+        return item.category === 6;
       case "Кыргызча":
         return item.category === null;
       case "Turkce":
@@ -118,12 +118,24 @@ function MenuDinner() {
               }}
             ></div>
           </div>
-          <header className="soap-header">
-            <div className="soap-title-container">
-              <h3>РОЛЛЫ / БАГЕТ / БУТЕРБРОДЫ</h3>
-              <h2>ПАЛЬЧИКИ ОБЛИЖЕШЬ</h2>
-            </div>
-          </header>
+          <>
+            {selectedLanguage === "Русский" ||
+            selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>РОЛЛЫ / БАГЕТ / БУТЕРБРОДЫ</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "English" ||
+              selectedLanguage === "Turkce" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>ROLLS / BAGUETTE / SANDWICHES</div>
+                  <span>Finger licking good</span>
+                </div>
+              </header>
+            ) : null}
+          </>
 
           <div className="salad-flex">
             {filteredData.map((item) => (
@@ -138,8 +150,19 @@ function MenuDinner() {
                 icon={item.svgs}
               />
             ))}
-            <img src={img13} alt="" />
-            <img src={img17} alt="" />
+
+            {selectedLanguage === "Русский" ? (
+              <>
+                <img src={img13} alt="" />
+                <img src={img17} alt="" />
+              </>
+            ) : selectedLanguage === "English" ? null : selectedLanguage ===
+              "Turkce" ? null : selectedLanguage === "Кыргзча" ? (
+              <>
+                <img src={img13} alt="" />
+                <img src={img17} alt="" />
+              </>
+            ) : null}
           </div>
 
           <div style={{ marginTop: "200px" }}>.</div>
