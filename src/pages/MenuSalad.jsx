@@ -38,6 +38,7 @@ function MenuSalad() {
 
     fetchDishes();
   }, []);
+  
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
