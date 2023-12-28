@@ -5,6 +5,8 @@ import SliderMenu, { categories } from "../components/SliderMenu";
 import TeaSquare from "../components/TeaSquare";
 import img1 from "../images/else/Новогоднее меню.jpg";
 import img2 from "../images/else/New Years MENU.jpg";
+import img3 from "../images/else/Жаны Жылдык менюсу.jpg";
+import img4 from "../images/else/Yilbasi Menusu.jpg";
 
 import SmuziSquaer from "../components/SmuziSquaer";
 import WineSquare from "../components/WineSquare";
@@ -73,12 +75,14 @@ function WinePage() {
               </div>
             </header>
             <>
-              {selectedLanguage === "Русский" ||
-              selectedLanguage === "Кыргызча" ? (
-                <img src={img1} className="new-img" alt="" />
-              ) : selectedLanguage === "English" ||
-                selectedLanguage === "Turkce" ? (
-                <img src={img2} className="new-img" alt="" />
+              {selectedLanguage === "Русский" ? (
+                <img src={img1} alt="" />
+              ) : selectedLanguage === "English" ? (
+                <img src={img2} alt="" />
+              ) : selectedLanguage === "Turkce" ? (
+                <img src={img4} alt="" />
+              ) : selectedLanguage === "Кыргзча" ? (
+                <img src={img3} alt="" />
               ) : null}
             </>
           </div>
