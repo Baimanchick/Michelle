@@ -32,7 +32,7 @@ function MenuPage() {
               ? ""
               : null
           }`
-        );
+        );           
 
         const sortedCategories = res.data.sort((a, b) => {
           if (a.title === "Новогоднее Меню") return -1;
