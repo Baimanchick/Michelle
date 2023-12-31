@@ -40,9 +40,9 @@ function MenuSoap() {
         const res = await axios.get(
           `${
             selectedLanguage === "Русский"
-              ? "http://167.71.33.221/dishes/"
+              ? "https://michelle-kg.ru/dishes/"
               : selectedLanguage === "English"
-              ? "http://167.71.33.221/englishdishes/"
+              ? "https://michelle-kg.ru/englishdishes/"
               : selectedLanguage === "Кыргызча"
               ? ""
               : selectedLanguage === "Turkce"

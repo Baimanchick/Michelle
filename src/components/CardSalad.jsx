@@ -8,7 +8,7 @@ function CardSalad({ style, img, title, text, price, weight, icon }) {
   useEffect(() => {
     const fetchSvg = async () => {
       try {
-        const res = await axios.get("http://167.71.33.221/svgs/");
+        const res = await axios.get("https://michelle-kg.ru/svgs/");
         setSvgs(res.data);
       } catch (error) {
         console.log(error);
