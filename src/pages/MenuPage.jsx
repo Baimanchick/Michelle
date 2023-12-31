@@ -23,9 +23,9 @@ function MenuPage() {
         const res = await axios.get(
           `${
             selectedLanguage === "Русский"
-              ? "http://167.71.33.221/categories/"
+              ? "https://michelle-kg.ru/categories/"
               : selectedLanguage === "English"
-              ? "http://167.71.33.221/englishcategories/"
+              ? "https://michelle-kg.ru/englishcategories/"
               : selectedLanguage === "Кыргызча"
               ? ""
               : selectedLanguage === "Turkce"
