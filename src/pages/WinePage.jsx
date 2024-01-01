@@ -359,8 +359,8 @@ function WinePage() {
                 className="tea-header"
               >
                 <div className="tea-header-title">
-                  <h2>ВИННАЯ КАРТА</h2>
-                  <span>КРАСНОЕ ВИНО</span>
+                  <h2>Wine</h2>
+                  <span>Red Wine</span>
                 </div>
               </header>
               <>
@@ -657,8 +657,8 @@ function WinePage() {
                 className="tea-header"
               >
                 <div className="tea-header-title">
-                  <h2>ВИННАЯ КАРТА</h2>
-                  <span>КРАСНОЕ ВИНО</span>
+                  <h2>Sarap</h2>
+                  <span>Kırmızı şarap</span>
                 </div>
               </header>
               <>
@@ -955,8 +955,8 @@ function WinePage() {
                 className="tea-header"
               >
                 <div className="tea-header-title">
-                  <h2>ВИННАЯ КАРТА</h2>
-                  <span>КРАСНОЕ ВИНО</span>
+                  <h2>Шарап</h2>
+                  <span>Кызыл Шарап</span>
                 </div>
               </header>
               <>
