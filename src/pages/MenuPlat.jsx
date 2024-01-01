@@ -37,9 +37,9 @@ function MenuPlat() {
               : selectedLanguage === "English"
               ? "https://michelle-kg.ru/englishdishes/"
               : selectedLanguage === "Кыргызча"
-              ? ""
+              ? "https://167.71.33.221/kyrgyzdishes/"
               : selectedLanguage === "Turkce"
-              ? ""
+              ? "https://167.71.33.221/turkishdishes/"
               : null
           }
           `
@@ -59,9 +59,9 @@ function MenuPlat() {
       case "English":
         return item.category === 3;
       case "Кыргызча":
-        return item.category === null;
+        return item.category === 3;
       case "Turkce":
-        return item.category === null;
+        return item.category === 3;
       default:
         return false;
     }

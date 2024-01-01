@@ -50,9 +50,9 @@ function MenuGar() {
               : selectedLanguage === "English"
               ? "https://michelle-kg.ru/englishdishes/"
               : selectedLanguage === "Кыргызча"
-              ? ""
+              ? "https://167.71.33.221/kyrgyzdishes/"
               : selectedLanguage === "Turkce"
-              ? ""
+              ? "https://167.71.33.221/turkishdishes/"
               : null
           }
           `
@@ -72,9 +72,9 @@ function MenuGar() {
       case "English":
         return item.category === 10;
       case "Кыргызча":
-        return item.category === null;
+        return item.category === 10;
       case "Turkce":
-        return item.category === null;
+        return item.category === 10;
       default:
         return false;
     }
