@@ -76,14 +76,14 @@ function WinePage() {
             </header>
             <>
               {selectedLanguage === "Русский" ? (
-                <img src={img1} alt="" />
+                <img src={img1} alt="" className="new-img" />
               ) : selectedLanguage === "English" ? (
-                <img src={img2} alt="" />
+                <img src={img2} alt="" className="new-img" />
               ) : selectedLanguage === "Turkce" ? (
-                <img src={img4} alt="" />
+                <img src={img4} alt="" className="new-img" />
               ) : selectedLanguage === "Кыргзча" ? (
-                <img src={img3} alt="" />
-              ) : null}
+                <img src={img3} alt="" className="new-img" />
+              ) : <img src={img1} alt="" className="new-img" />}
             </>
           </div>
           <div style={{ paddingBottom: "200px" }}></div>
