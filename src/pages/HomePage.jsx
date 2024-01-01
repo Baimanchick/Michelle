@@ -27,11 +27,11 @@ function HomePage() {
     };
   }, []);
 
-  useEffect(() => {
-    if (selectedLanguage) {
-      navigate("/categories");
-    }
-  }, [selectedLanguage, navigate]);
+  // useEffect(() => {
+  //   if (selectedLanguage) {
+  //     navigate("/categories");
+  //   }
+  // }, [selectedLanguage, navigate]);
 
   const handleLanguageClick = (language) => {
     setSelectedLanguage(language);
@@ -72,7 +72,10 @@ function HomePage() {
                   style={{
                     color: selectedLanguage === "Русский" ? "#f2cf11" : "#fff",
                   }}
-                  onClick={() => handleLanguageClick("Русский")}
+                  onClick={() => {
+                    handleLanguageClick("Русский")
+                    navigate("/categories")
+                  }}
                 >
                   Русский
                 </h2>
@@ -80,7 +83,10 @@ function HomePage() {
                   style={{
                     color: selectedLanguage === "Кыргызча" ? "#f2cf11" : "#fff",
                   }}
-                  onClick={() => handleLanguageClick("Кыргызча")}
+                  onClick={() => {
+                    handleLanguageClick("Кыргызча")
+                    navigate("/categories")
+                  }}
                 >
                   Кыргызча
                 </h2>
@@ -88,7 +94,10 @@ function HomePage() {
                   style={{
                     color: selectedLanguage === "English" ? "#f2cf11" : "#fff",
                   }}
-                  onClick={() => handleLanguageClick("English")}
+                  onClick={() => {
+                    handleLanguageClick("English")
+                    navigate("/categories")
+                  }}
                 >
                   English
                 </h2>
@@ -96,7 +105,10 @@ function HomePage() {
                   style={{
                     color: selectedLanguage === "Turkce" ? "#f2cf11" : "#fff",
                   }}
-                  onClick={() => handleLanguageClick("Turkce")}
+                  onClick={() => {
+                    handleLanguageClick("Turkce")
+                    navigate("/categories")
+                  }}
                 >
                   Turkce
                 </h2>
