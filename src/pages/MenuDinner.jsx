@@ -53,14 +53,15 @@ function MenuDinner() {
               : selectedLanguage === "English"
               ? "https://michelle-kg.ru/englishdishes/"
               : selectedLanguage === "Кыргызча"
-              ? "https://167.71.33.221/kyrgyzdishes/"
+              ? "https://michelle-kg.ru/kyrgyzdishes/"
               : selectedLanguage === "Turkce"
-              ? "https://167.71.33.221/turkishdishes/"
+              ? "https://michelle-kg.ru/turkishdishes/"
               : null
           }
           `
         );
         setDishes(res.data);
+        console.log(res.data);
       } catch (error) {
         console.log(error);
       }
