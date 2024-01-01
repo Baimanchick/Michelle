@@ -23,9 +23,9 @@ function MenuSalad() {
               : selectedLanguage === "English"
               ? "https://michelle-kg.ru/englishdishes/"
               : selectedLanguage === "Кыргызча"
-              ? ""
+              ? "https://167.71.33.221/kyrgyzdishes/"
               : selectedLanguage === "Turkce"
-              ? ""
+              ? "https://167.71.33.221/turkishdishes/"
               : null
           }
           `
@@ -38,7 +38,7 @@ function MenuSalad() {
 
     fetchDishes();
   }, []);
-  
+
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
@@ -46,9 +46,9 @@ function MenuSalad() {
       case "English":
         return item.category === 2;
       case "Кыргызча":
-        return item.category === null;
+        return item.category === 2;
       case "Turkce":
-        return item.category === null;
+        return item.category === 2;
       default:
         return false;
     }

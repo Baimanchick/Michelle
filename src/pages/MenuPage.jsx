@@ -27,12 +27,12 @@ function MenuPage() {
               : selectedLanguage === "English"
               ? "https://michelle-kg.ru/englishcategories/"
               : selectedLanguage === "Кыргызча"
-              ? ""
+              ? "https://167.71.33.221/kyrgyzcategories/"
               : selectedLanguage === "Turkce"
-              ? ""
+              ? "https://167.71.33.221/turkishcategories/"
               : null
           }`
-        );           
+        );
 
         const sortedCategories = res.data.sort((a, b) => {
           if (a.title === "Новогоднее Меню") return -1;
@@ -105,7 +105,7 @@ function MenuPage() {
                 MENU
               </div>
             </>
-          ) : selectedLanguage === "Кыргзча" ? (
+          ) : selectedLanguage === "Кыргызча" ? (
             <>
               <div
                 style={{
