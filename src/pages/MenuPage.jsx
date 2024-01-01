@@ -27,9 +27,9 @@ function MenuPage() {
               : selectedLanguage === "English"
               ? "https://michelle-kg.ru/englishcategories/"
               : selectedLanguage === "Кыргызча"
-              ? "https://167.71.33.221/kyrgyzcategories/"
+              ? "https://michelle-kg.ru/kyrgyzcategories/"
               : selectedLanguage === "Turkce"
-              ? "https://167.71.33.221/turkishcategories/"
+              ? "https://michelle-kg.ru/turkishcategories/"
               : null
           }`
         );
