@@ -64,7 +64,7 @@ function MenuChild() {
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
-        return item.category === 8;
+        return item.category === 12;
       case "English":
         return item.category === 11;
       case "Кыргызча":
@@ -140,65 +140,20 @@ function MenuChild() {
           <div className="main-card-break"></div>
           <div style={{ paddingBottom: "200px" }}>
             <>
-              {selectedLanguage === "Русский" ? (
-                <div className="child-img-container">
-                  <img
-                    style={{ borderRadius: "15px", objectFit: "cover" }}
-                    src={img1}
-                    alt=""
+              <div className="salad-flex">
+                {filteredData.map((item) => (
+                  <Test
+                    key={item.id}
+                    data={item}
+                    title={item.title}
+                    img={item.image}
+                    text={item.text}
+                    weight={item.weight}
+                    price={item.price}
+                    icon={item.svgs}
                   />
-                  <img
-                    style={{ borderRadius: "15px", objectFit: "cover" }}
-                    src={img2}
-                    alt=""
-                  />
-                  <img
-                    style={{ borderRadius: "15px", objectFit: "cover" }}
-                    src={img3}
-                    alt=""
-                  />
-                  <img
-                    style={{ borderRadius: "15px", objectFit: "cover" }}
-                    src={img4}
-                    alt=""
-                  />
-                  <img
-                    style={{ borderRadius: "15px", objectFit: "cover" }}
-                    src={img5}
-                    alt=""
-                  />
-                  <img
-                    style={{ borderRadius: "15px", objectFit: "cover" }}
-                    src={img6}
-                    alt=""
-                  />
-                  <img
-                    style={{ borderRadius: "15px", objectFit: "cover" }}
-                    src={img7}
-                    alt=""
-                  />
-                  <img
-                    style={{ borderRadius: "15px", objectFit: "cover" }}
-                    src={img8}
-                    alt=""
-                  />
-                </div>
-              ) : (
-                <div className="salad-flex">
-                  {filteredData.map((item) => (
-                    <Test
-                      key={item.id}
-                      data={item}
-                      title={item.title}
-                      img={item.image}
-                      text={item.text}
-                      weight={item.weight}
-                      price={item.price}
-                      icon={item.svgs}
-                    />
-                  ))}
-                </div>
-              )}
+                ))}
+              </div>
             </>
           </div>
         </div>
