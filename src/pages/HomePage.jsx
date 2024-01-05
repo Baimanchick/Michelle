@@ -103,14 +103,15 @@ function HomePage() {
                 </h2>
                 <h2
                   style={{
-                    color: selectedLanguage === "Turkce" ? "#f2cf11" : "#fff",
+                    color: selectedLanguage === "Türkçe" ? "#f2cf11" : "#fff",
                   }}
+
                   onClick={() => {
-                    handleLanguageClick("Turkce")
+                    handleLanguageClick("Türkçe")
                     navigate("/categories")
                   }}
                 >
-                  Turkce
+                  Türkçe
                 </h2>
               </div>
             </div>

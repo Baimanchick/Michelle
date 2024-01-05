@@ -38,7 +38,7 @@ function MenuPlat() {
               ? "https://michelle-kg.ru/englishdishes/"
               : selectedLanguage === "Кыргызча"
               ? "https://michelle-kg.ru/kyrgyzdishes/"
-              : selectedLanguage === "Turkce"
+              : selectedLanguage === "Türkçe"
               ? "https://michelle-kg.ru/turkishdishes/"
               : null
           }
@@ -61,7 +61,7 @@ function MenuPlat() {
         return item.category === 3;
       case "Кыргызча":
         return item.category === 3;
-      case "Turkce":
+      case "Türkçe":
         return item.category === 3;
       default:
         return false;
@@ -114,7 +114,7 @@ function MenuPlat() {
                 </div>
               </header>
             ) : selectedLanguage === "English" ||
-              selectedLanguage === "Turkce" ? (
+              selectedLanguage === "Türkçe" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>PLATTERS</div>

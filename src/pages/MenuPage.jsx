@@ -28,7 +28,7 @@ function MenuPage() {
               ? "https://michelle-kg.ru/englishcategories/"
               : selectedLanguage === "Кыргызча"
               ? "https://michelle-kg.ru/kyrgyzcategories/"
-              : selectedLanguage === "Turkce"
+              : selectedLanguage === "Türkçe"
               ? "https://michelle-kg.ru/turkishcategories/"
               : null
           }`
@@ -36,10 +36,9 @@ function MenuPage() {
 
         const sortedCategories = res.data.sort((a, b) => {
           if (a.title === "Новогоднее Меню") return -1;
-          if (b.title === "Новогоднее Меню") return 1;
           if (a.title === "NEW YEAR DISH") return -1;
-          if (b.title === "NEW YEAR DISH") return 1;
-          return 0;
+          if (a.title === "Жаны Жылдык менюсу") return -1;
+          if (a.title === "Yilbasi Menusu") return -1;
         });
 
         setCategoriesFetched(sortedCategories);
@@ -93,7 +92,7 @@ function MenuPage() {
                 MENU
               </div>
             </>
-          ) : selectedLanguage === "Turkce" ? (
+          ) : selectedLanguage === "Türkçe" ? (
             <>
               <div
                 style={{

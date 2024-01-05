@@ -1,0 +1,40 @@
+.about-first > div > p {
+  color: #000;
+  font-size: 11.5px;
+  margin-top: 20px;
+}
+.about-first > div > h2 {
+  color: #81b0b0;
+  font-size: 23px;
+}
+.about-first {
+  border-radius: 5px;
+  background: #fff6e2;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 20px 0px;
+}
+.about-first > div {
+  margin-left: 2.5vh;
+}
+.about-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+.about-second > div > p {
+  color: #000;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  object-fit: cover;
+}

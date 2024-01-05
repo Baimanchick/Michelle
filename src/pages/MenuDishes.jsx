@@ -24,14 +24,13 @@ function MenuDishes() {
               ? "https://michelle-kg.ru/englishdishes/"
               : selectedLanguage === "Кыргызча"
               ? "https://michelle-kg.ru/kyrgyzdishes/"
-              : selectedLanguage === "Turkce"
+              : selectedLanguage === "Türkçe"
               ? "https://michelle-kg.ru/turkishdishes/"
               : null
           }
           `
         );
         setDishes(res.data);
-        console.log(res.data);
       } catch (error) {
         console.log(error);
       }
@@ -47,7 +46,7 @@ function MenuDishes() {
         return item.category === 1;
       case "Кыргызча":
         return item.category === 1;
-      case "Turkce":
+      case "Türkçe":
         return item.category === 1;
       default:
         return false;
@@ -107,7 +106,7 @@ function MenuDishes() {
                 </div>
               </header>
             ) : selectedLanguage === "English" ||
-              selectedLanguage === "Turkce" ? (
+              selectedLanguage === "Türkçe" ? (
               <header className="menu-header">
                 <div className="menu-title-container">
                   <hr />

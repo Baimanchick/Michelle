@@ -55,7 +55,7 @@ function MenuHotMeal() {
               ? "https://michelle-kg.ru/englishdishes/"
               : selectedLanguage === "Кыргызча"
               ? "https://michelle-kg.ru/kyrgyzdishes/"
-              : selectedLanguage === "Turkce"
+              : selectedLanguage === "Türkçe"
               ? "https://michelle-kg.ru/turkishdishes/"
               : null
           }
@@ -78,7 +78,7 @@ function MenuHotMeal() {
         return item.category === 7;
       case "Кыргызча":
         return item.category === 7;
-      case "Turkce":
+      case "Türkçe":
         return item.category === 7;
       default:
         return false;
@@ -132,7 +132,7 @@ function MenuHotMeal() {
                 </div>
               </header>
             ) : selectedLanguage === "English" ||
-              selectedLanguage === "Turkce" ? (
+              selectedLanguage === "Türkçe" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>MAIN DISHES EXQUISITE</div>
@@ -172,7 +172,7 @@ function MenuHotMeal() {
                   "In our recipes, we use natural liquid cream with 35% fat."
                 }
               />
-            ) : selectedLanguage === "Turkce" ? (
+            ) : selectedLanguage === "Türkçe" ? (
               <Advice
                 text={
                   "In our recipes, we use natural liquid cream with 35% fat."
