@@ -16,6 +16,7 @@ function MenuPage() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [categoriesFetched, setCategoriesFetched] = useState([]);
   const { selectedLanguage, setSelectedLanguage } = useLanguage();
+  const [ selectCategory, setCategory ] = useState();
 
   useEffect(() => {
     const fetchCategory = async () => {
@@ -45,6 +46,8 @@ function MenuPage() {
       } catch (error) {
         console.log(error);
       }
+
+
     };
 
     fetchCategory();
@@ -63,6 +66,14 @@ function MenuPage() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const handleCategoryChange = (categoryId) => {
+    if (categoryId !== undefined) {
+      setCategory(categoryId);
+  
+      localStorage.setItem("category", JSON.stringify(categoryId));
+    }
+  };   
 
   return (
     <>
@@ -125,7 +136,8 @@ function MenuPage() {
                   title={category.title}
                   img={category.image}
                   link={category.link}
-                  key={category.id} // Use a unique key, e.g., category.id
+                  key={category.id}
+                  onClick={() => handleCategoryChange(category.id)}
                 />
               );
             })}

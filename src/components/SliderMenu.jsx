@@ -169,13 +169,14 @@ export const categories = [
   },
 ];
 
-export default function SliderMenu({ onSelectCategory }) {
-  const [selectedCategory, setSelectedCategory] = useState(categories[0]);
+export default function SliderMenu({ onSelectCategory, categoryI }) {
+  const [selectedCategory, setSelectedCategory] = useState(categories[categoryI - 1]);
   const { selectedLanguage } = useLanguage();
 
   const settings = {
     centerMode: true,
     infinite: true,
+    initialSlide: categories.findIndex(cat => cat.id === selectedCategory.id),
     centerPadding: "0",
     slidesToShow: 3,
     arrows: false,
@@ -197,22 +198,22 @@ export default function SliderMenu({ onSelectCategory }) {
   return (
     <div>
       <Slider {...settings}>
-        {categories.map((category, index) => (
+        {categories.map((categoryM, index) => (
           <div
-            key={category.id}
+            key={categoryM.id}
             className={`slider-items ${
-              selectedCategory.id === category.id ? "bold-text" : ""
+              selectedCategory.id === categoryM.id ? "bold-text" : ""
             }`}
-            onClick={() => handleSelect(category)}
+            onClick={() => handleSelect(categoryM)}
           >
             <h3>{ selectedLanguage === "Русский"
-              ? category.name
+              ? categoryM.name
               : selectedLanguage === "English"
-              ? category.nameng
+              ? categoryM.nameng
               : selectedLanguage === "Кыргызча"
-              ? category.namekg
+              ? categoryM.namekg
               : selectedLanguage === "Turkce"
-              ? category.nametk
+              ? categoryM.nametk
               : null }</h3>
           </div>
         ))}

@@ -37,12 +37,15 @@ import Test from "../routes/Test";
 
 function MenuDinner() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState(categories[0]);
+  const getCategory = localStorage.getItem("category");
+
+  let [selectedCategory, setSelectedCategory] = useState(categories[Number(getCategory)]);
   const [categoryChange, setCategoryChange] = useState(false);
   const [notF, setNotF] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [dishes, setDishes] = useState([]);
   const { selectedLanguage, setSelectedLanguage } = useLanguage();
+
   useEffect(() => {
     const fetchDishes = async () => {
       try {
@@ -90,6 +93,8 @@ function MenuDinner() {
 
   const handleSelectCategory = (category) => {
     setSelectedCategory(category);
+    getCategory = category.id
+    localStorage.setItem("category", category.id)
     setCategoryChange(true);
   };
 
@@ -110,7 +115,7 @@ function MenuDinner() {
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
           <div className="menu-stick">
-            <SliderMenu onSelectCategory={handleSelectCategory} />
+            <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
             <div
               style={{
                 display: "flex",
