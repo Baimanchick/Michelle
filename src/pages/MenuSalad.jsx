@@ -9,7 +9,10 @@ import { useLanguage } from "../functions/languageContext";
 function MenuSalad() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [dishes, setDishes] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState(categories[0]);
+
+  let getCategory = localStorage.getItem("category");
+
+  const [selectedCategory, setSelectedCategory] = useState(categories[Number(getCategory)]);
   const [categoryChange, setCategoryChange] = useState(false);
   const { selectedLanguage, setSelectedLanguage } = useLanguage();
 
@@ -31,7 +34,6 @@ function MenuSalad() {
           `
         );
         setDishes(res.data);
-        console.log(res.data);
       } catch (error) {
         console.log(error);
       }
@@ -57,6 +59,8 @@ function MenuSalad() {
 
   const handleSelectCategory = (category) => {
     setSelectedCategory(category);
+    getCategory = category.id
+    localStorage.setItem("category", category.id)
     setCategoryChange(true);
   };
 
@@ -77,7 +81,7 @@ function MenuSalad() {
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
           <div className="menu-stick">
-            <SliderMenu onSelectCategory={handleSelectCategory} />
+            <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
             <div
               style={{
                 display: "flex",

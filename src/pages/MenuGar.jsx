@@ -33,7 +33,9 @@ import Test from "../routes/Test";
 
 function MenuGar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState(categories[0]);
+  let getCategory = localStorage.getItem("category");
+
+  const [selectedCategory, setSelectedCategory] = useState(categories[Number(getCategory)]);
   const [categoryChange, setCategoryChange] = useState(false);
   const [notF, setNotF] = useState(false);
   const [dishes, setDishes] = useState([]);
@@ -87,6 +89,8 @@ function MenuGar() {
 
   const handleSelectCategory = (category) => {
     setSelectedCategory(category);
+    getCategory = category.id
+    localStorage.setItem("category", category.id)
     setCategoryChange(true);
   };
 
@@ -108,7 +112,7 @@ function MenuGar() {
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
           <div className="menu-stick">
-            <SliderMenu onSelectCategory={handleSelectCategory} />
+            <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
             <div
               style={{
                 display: "flex",

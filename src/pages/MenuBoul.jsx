@@ -24,7 +24,9 @@ import Test from "../routes/Test";
 
 function MenuBoul() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState(categories[0]);
+  let getCategory = localStorage.getItem("category");
+
+  const [selectedCategory, setSelectedCategory] = useState(categories[Number(getCategory)]);
   const [categoryChange, setCategoryChange] = useState(false);
   const [notF, setNotF] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -77,6 +79,8 @@ function MenuBoul() {
 
   const handleSelectCategory = (category) => {
     setSelectedCategory(category);
+    getCategory = category.id
+    localStorage.setItem("category", category.id)
     setCategoryChange(true);
   };
 
@@ -99,7 +103,7 @@ function MenuBoul() {
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
           <div className="menu-stick">
-            <SliderMenu onSelectCategory={handleSelectCategory} />
+            <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
             <div
               style={{
                 display: "flex",
