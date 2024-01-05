@@ -84,6 +84,7 @@ function WinePage() {
               ) : selectedLanguage === "Кыргзча" ? (
                 <img className="new-year-img" src={img3} alt="" />
               ) : null}
+
             </>
           </div>
           <div style={{ paddingBottom: "200px" }}></div>
