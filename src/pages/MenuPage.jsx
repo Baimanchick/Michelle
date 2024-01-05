@@ -40,9 +40,13 @@ function MenuPage() {
           if (a.title === "NEW YEAR DISH") return -1;
           if (a.title === "Жаны Жылдык менюсу") return -1;
           if (a.title === "Yilbasi Menusu") return -1;
+
+          return 0;
         });
 
         setCategoriesFetched(sortedCategories);
+        console.log(categories);
+
       } catch (error) {
         console.log(error);
       }
@@ -70,7 +74,7 @@ function MenuPage() {
   const handleCategoryChange = (categoryId) => {
     if (categoryId !== undefined) {
       setCategory(categoryId);
-  
+      
       localStorage.setItem("category", JSON.stringify(categoryId));
     }
   };   
@@ -130,6 +134,21 @@ function MenuPage() {
           ) : null}
 
           <div className="block-nav-menu">
+            <CardMenuNav
+              title={selectedLanguage === "Русский"
+              ? "О НАС"
+              : selectedLanguage === "English"
+              ? "ABOUT US"
+              : selectedLanguage === "Кыргызча"
+              ? "БИЗ ЖӨНҮНДӨ"
+              : selectedLanguage === "Türkçe"
+              ? "HAKKIMIZDA"
+              : null}
+              img={"https://nambafood.kg/image_by_id/152065"}
+              link={"/about"}
+              key={"234234"}
+              onClick={() => console.log("about us!")}
+            />
             {categoriesFetched.map((category) => {
               return (
                 <CardMenuNav

@@ -42,7 +42,7 @@ function AboutUsPage() {
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
           <div className="menu-stick">
-            <SliderMenu onSelectCategory={handleSelectCategory} />
+            {/* <SliderMenu onSelectCategory={handleSelectCategory} /> */}
             <div
               style={{
                 display: "flex",

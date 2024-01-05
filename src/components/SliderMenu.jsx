@@ -6,15 +6,6 @@ import { useLanguage } from "../functions/languageContext";
 
 export const categories = [
   {
-    id: 1,
-    name: "НОВОГОДНЕЕ МЕНЮ",
-    namekg: "ЖАНЫ ЖЫЛДЫК МЕНЮ",
-    nameng: "NEW-YEAR MENU",
-    nametk: "Yılbaşı menüsü",
-    img: "new",
-    link: "/new",
-  },
-  {
     id: 2,
     name: "ЗАВТРАКИ",
     namekg: "ЭРТЕ ТАМАК",
@@ -167,12 +158,39 @@ export const categories = [
     img: "wine",
     link: "/wine",
   },
+  {
+    id: 19,
+    name: "КОЛЛАГЕН",
+    namekg: "КОЛЛАГЕН",
+    nameng: "COLLAGEN",
+    nametk: "KOLAJEN",
+    img: "wine",
+    link: "/collagen",
+  },
+  {
+    id: 20,
+    name: "НОВОГОДНЕЕ МЕНЮ",
+    namekg: "ЖАНЫ ЖЫЛДЫК МЕНЮ",
+    nameng: "NEW-YEAR MENU",
+    nametk: "Yılbaşı menüsü",
+    img: "new",
+    link: "/new",
+  },
+  // {
+  //   id: 21,
+  //   name: "НОВОГОНЮ",
+  //   namekg: "ЖАНЫ ЖЫЛДЫК МЕНЮ",
+  //   nameng: "NEW-YEAR MENU",
+  //   nametk: "Yılbaşı menüsü",
+  //   img: "new",
+  //   link: "/new",
+  // }
 ];
 
 export default function SliderMenu({ onSelectCategory, categoryI }) {
-  const [selectedCategory, setSelectedCategory] = useState(categories[categoryI - 1]);
+  const [selectedCategory, setSelectedCategory] = useState(categories.find(category => category.id === categoryI));
   const { selectedLanguage } = useLanguage();
-
+  // categories.findIndex(cat => cat.id === selectedCategory.id)
   const settings = {
     centerMode: true,
     infinite: true,
