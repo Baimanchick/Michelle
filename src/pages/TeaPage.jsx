@@ -512,7 +512,7 @@ function TeaPage() {
                 />
               </>
             </div>
-          ) : selectedLanguage === "Turkce" ? (
+          ) : selectedLanguage === "Türkçe" ? (
             <div className="tea-main">
               <header className="tea-header">
                 <div className="tea-header-title">

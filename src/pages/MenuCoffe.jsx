@@ -65,7 +65,7 @@ function MenuCoffe() {
                 </div>
               </header>
             ) : selectedLanguage === "English" ||
-              selectedLanguage === "Turkce" ? (
+              selectedLanguage === "Türkçe" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>COFFE</div>
@@ -261,7 +261,7 @@ function MenuCoffe() {
               />
               <img src={img3} alt="" />
             </div>
-          ) : selectedLanguage === "Turkce" ? (
+          ) : selectedLanguage === "Türkçe" ? (
             <div className="square-main-content">
               <Square title={"Espresso"} weight={"40 ml"} price={"175 KGS"} />
               <Square

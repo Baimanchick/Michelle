@@ -196,7 +196,7 @@ function CollagenPage() {
                 </div>
               </div>
             </>
-          ) : selectedLanguage === "Turkce" ? (
+          ) : selectedLanguage === "Türkçe" ? (
             <>
               <div className="collagen-main">
                 <header className="collagen-header">

@@ -24,7 +24,7 @@ function MenuSalad() {
               ? "https://michelle-kg.ru/englishdishes/"
               : selectedLanguage === "Кыргызча"
               ? "https://michelle-kg.ru/kyrgyzdishes/"
-              : selectedLanguage === "Turkce"
+              : selectedLanguage === "Türkçe"
               ? "https://michelle-kg.ru/turkishdishes/"
               : null
           }
@@ -48,7 +48,7 @@ function MenuSalad() {
         return item.category === 2;
       case "Кыргызча":
         return item.category === 2;
-      case "Turkce":
+      case "Türkçe":
         return item.category === 2;
       default:
         return false;
@@ -96,7 +96,7 @@ function MenuSalad() {
                 </div>
               </header>
             ) : selectedLanguage === "English" ||
-              selectedLanguage === "Turkce" ? (
+              selectedLanguage === "Türkçe" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>SALAD BAR</div>

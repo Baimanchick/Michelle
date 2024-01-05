@@ -68,7 +68,7 @@ function WinePage() {
                   selectedLanguage === "Кыргызча"
                     ? "НОВОГОДНЕЕ МЕНЮ"
                     : selectedLanguage === "English" ||
-                      selectedLanguage === "Turkce"
+                      selectedLanguage === "Türkçe"
                     ? "NEW YEAR DISH"
                     : null}
                 </h2>
@@ -76,13 +76,13 @@ function WinePage() {
             </header>
             <>
               {selectedLanguage === "Русский" ? (
-                <img src={img1} alt="" />
+                <img className="new-year-img" src={img1} alt="" />
               ) : selectedLanguage === "English" ? (
-                <img src={img2} alt="" />
-              ) : selectedLanguage === "Turkce" ? (
-                <img src={img4} alt="" />
+                <img className="new-year-img" src={img2} alt="" />
+              ) : selectedLanguage === "Türkçe" ? (
+                <img className="new-year-img" src={img4} alt="" />
               ) : selectedLanguage === "Кыргзча" ? (
-                <img src={img3} alt="" />
+                <img className="new-year-img" src={img3} alt="" />
               ) : null}
             </>
           </div>

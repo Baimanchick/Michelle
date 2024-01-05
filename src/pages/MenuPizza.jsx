@@ -52,7 +52,7 @@ function MenuPizza() {
               ? "https://michelle-kg.ru/englishdishes/"
               : selectedLanguage === "Кыргызча"
               ? "https://michelle-kg.ru/kyrgyzdishes/"
-              : selectedLanguage === "Turkce"
+              : selectedLanguage === "Türkçe"
               ? "https://michelle-kg.ru/turkishdishes/"
               : null
           }
@@ -75,7 +75,7 @@ function MenuPizza() {
         return item.category === 8;
       case "Кыргызча":
         return item.category === 8;
-      case "Turkce":
+      case "Türkçe":
         return item.category === 8;
       default:
         return false;
@@ -128,7 +128,7 @@ function MenuPizza() {
                 </div>
               </header>
             ) : selectedLanguage === "English" ||
-              selectedLanguage === "Turkce" ? (
+              selectedLanguage === "Türkçe" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>PIZZA</div>
@@ -200,7 +200,7 @@ function MenuPizza() {
                 }
               />
             </>
-          ) : selectedLanguage === "Turkce" ? (
+          ) : selectedLanguage === "Türkçe" ? (
             <>
               <Advice
                 text={"Tüm pizzalarımızı özel baby bíberímízle servís edíyoruz"}

@@ -880,7 +880,7 @@ function BarPage() {
                 </div>
               </>
             </div>
-          ) : selectedLanguage === "Turkce" ? (
+          ) : selectedLanguage === "Türkçe" ? (
             <div className="drinks-main">
               <header
                 style={{ margin: "30px 0px 30px 0px" }}

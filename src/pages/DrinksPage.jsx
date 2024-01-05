@@ -956,7 +956,7 @@ function DrinksPage() {
                 </>
               </div>
             </>
-          ) : selectedLanguage === "Turkce" ? (
+          ) : selectedLanguage === "Türkçe" ? (
             <>
               <div className="drinks-main">
                 <header className="tea-header">

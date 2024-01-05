@@ -54,7 +54,7 @@ function MenuDinner() {
               ? "https://michelle-kg.ru/englishdishes/"
               : selectedLanguage === "Кыргызча"
               ? "https://michelle-kg.ru/kyrgyzdishes/"
-              : selectedLanguage === "Turkce"
+              : selectedLanguage === "Türkçe"
               ? "https://michelle-kg.ru/turkishdishes/"
               : null
           }
@@ -77,7 +77,7 @@ function MenuDinner() {
         return item.category === 6;
       case "Кыргызча":
         return item.category === 6;
-      case "Turkce":
+      case "Türkçe":
         return item.category === 6;
       default:
         return false;
@@ -128,7 +128,7 @@ function MenuDinner() {
                 </div>
               </header>
             ) : selectedLanguage === "English" ||
-              selectedLanguage === "Turkce" ? (
+              selectedLanguage === "Türkçe" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ROLLS / BAGUETTE / SANDWICHES</div>
@@ -158,7 +158,7 @@ function MenuDinner() {
                 <img src={img17} alt="" />
               </>
             ) : selectedLanguage === "English" ? null : selectedLanguage ===
-              "Turkce" ? null : selectedLanguage === "Кыргзча" ? (
+              "Türkçe" ? null : selectedLanguage === "Кыргзча" ? (
               <>
                 <img src={img13} alt="" />
                 <img src={img17} alt="" />

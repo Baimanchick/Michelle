@@ -39,7 +39,7 @@ function MenuBaget() {
               ? "https://michelle-kg.ru/englishdishes/"
               : selectedLanguage === "Кыргызча"
               ? "https://michelle-kg.ru/kyrgyzdishes/"
-              : selectedLanguage === "Turkce"
+              : selectedLanguage === "Türkçe"
               ? "https://michelle-kg.ru/turkishdishes/"
               : null
           }
@@ -62,7 +62,7 @@ function MenuBaget() {
         return item.category === 4;
       case "Кыргызча":
         return item.category === 4;
-      case "Turkce":
+      case "Türkçe":
         return item.category === 4;
       default:
         return false;
@@ -115,7 +115,7 @@ function MenuBaget() {
                 </div>
               </header>
             ) : selectedLanguage === "English" ||
-              selectedLanguage === "Turkce" ? (
+              selectedLanguage === "Türkçe" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>BAGUETTES</div>
@@ -152,7 +152,7 @@ function MenuBaget() {
               }
               style={{ marginTop: "20px" }}
             />
-          ) : selectedLanguage === "Turkce" ? (
+          ) : selectedLanguage === "Türkçe" ? (
             <Advice
               text={
                 "Our pate is made of tender chicken meat with the addition of herbs."
