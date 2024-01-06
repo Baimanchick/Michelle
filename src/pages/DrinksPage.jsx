@@ -1413,7 +1413,7 @@ function DrinksPage() {
                 </>
               </div>
             </>
-          ) : selectedLanguage === "Кыргзча" ? (
+          ) : selectedLanguage === "Кыргызча" ? (
             <>
               <div className="drinks-main">
                 <header className="tea-header">
