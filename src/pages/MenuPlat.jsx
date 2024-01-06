@@ -98,7 +98,7 @@ function MenuPlat() {
   return (
     <>
       {windowWidth <= 1000 ? (
-        <div className="menu-main-content">
+        <div className="menu-main-content" style={{ marginBottom: "100px" }}>
           <div className="menu-stick">
             <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
             <div
