@@ -3,9 +3,9 @@ import "../css/about.scss";
 import { useLanguage } from "../functions/languageContext";
 import SliderMenu, { categories } from "../components/SliderMenu";
 import { useNavigate } from "react-router-dom";
-import img1 from "../images/about/русский.png";
-import img2 from "../images/about/турецкий.png";
-import img3 from "../images/about/кырг.png";
+import img1 from "../images/about/ru.png";
+import img2 from "../images/about/tk.png";
+import img3 from "../images/about/kg.png";
 import img4 from "../images/about/english.png";
 
 function AboutUsPage() {
