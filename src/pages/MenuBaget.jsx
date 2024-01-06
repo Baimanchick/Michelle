@@ -98,7 +98,7 @@ function MenuBaget() {
   return (
     <>
       {windowWidth <= 1000 ? (
-        <div className="menu-main-content">
+        <div className="menu-main-content" style={{ marginBottom: "200px" }} >
           <div className="menu-stick">
             <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
             <div
