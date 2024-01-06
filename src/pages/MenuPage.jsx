@@ -35,17 +35,10 @@ function MenuPage() {
           }`
         );
 
-        const sortedCategories = res.data.sort((a, b) => {
-          if (a.title === "Новогоднее Меню") return -1;
-          if (a.title === "NEW YEAR DISH") return -1;
-          if (a.title === "Жаны Жылдык менюсу") return -1;
-          if (a.title === "Yilbasi Menusu") return -1;
-
-          return 0;
-        });
+        const sortedCategories = res.data.sort((a, b) => a.number - b.number);
 
         setCategoriesFetched(sortedCategories);
-        console.log(categories);
+        console.log(sortedCategories);
 
       } catch (error) {
         console.log(error);
