@@ -78,7 +78,7 @@ function MenuPizza() {
       case "Кыргызча":
         return item.category === 31;
       case "Türkçe":
-        return item.category === 8;
+        return item.category === 29;
       default:
         return false;
     }
