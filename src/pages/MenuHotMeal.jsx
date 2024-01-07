@@ -76,7 +76,7 @@ function MenuHotMeal() {
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
-        return item.category === 46;
+        return item.category === 47;
       case "English":
         return item.category === 27;
       case "Кыргызча":
