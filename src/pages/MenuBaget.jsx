@@ -59,13 +59,13 @@ function MenuBaget() {
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
-        return item.category === 5;
+        return item.category === 44;
       case "English":
-        return item.category === 4;
+        return item.category === 25;
       case "Кыргызча":
-        return item.category === 4;
+        return item.category === 27;
       case "Türkçe":
-        return item.category === 4;
+        return item.category === 25;
       default:
         return false;
     }

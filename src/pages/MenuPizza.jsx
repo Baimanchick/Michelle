@@ -72,11 +72,11 @@ function MenuPizza() {
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
-        return item.category === 9;
+        return item.category === 48;
       case "English":
-        return item.category === 8;
+        return item.category === 29;
       case "Кыргызча":
-        return item.category === 8;
+        return item.category === 31;
       case "Türkçe":
         return item.category === 8;
       default:

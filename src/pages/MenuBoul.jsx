@@ -61,13 +61,13 @@ function MenuBoul() {
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
-        return item.category === 10;
+        return item.category === 49;
       case "English":
-        return item.category === 9;
+        return item.category === 30;
       case "Кыргызча":
-        return item.category === 9;
+        return item.category === 32;
       case "Türkçe":
-        return item.category === 9;
+        return item.category === 30;
       default:
         return false;
     }

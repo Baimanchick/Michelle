@@ -67,13 +67,13 @@ function MenuSoap() {
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
-        return item.category === 8;
+        return item.category === 45;
       case "English":
-        return item.category === 5;
+        return item.category === 28;
       case "Кыргызча":
-        return item.category === 5;
+        return item.category === 28;
       case "Türkçe":
-        return item.category === 5;
+        return item.category === 28;
       default:
         return false;
     }

@@ -45,13 +45,13 @@ function MenuSalad() {
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
-        return item.category === 3;
+        return item.category === 42;
       case "English":
-        return item.category === 2;
+        return item.category === 23;
       case "Кыргызча":
-        return item.category === 2;
+        return item.category === 25;
       case "Türkçe":
-        return item.category === 2;
+        return item.category === 23;
       default:
         return false;
     }
