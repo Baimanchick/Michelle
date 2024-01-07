@@ -71,13 +71,13 @@ function MenuGar() {
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
-        return item.category === 11;
+        return item.category === 50;
       case "English":
-        return item.category === 10;
+        return item.category === 31;
       case "Кыргызча":
-        return item.category === 10;
+        return item.category === 33;
       case "Türkçe":
-        return item.category === 10;
+        return item.category === 31;
       default:
         return false;
     }

@@ -16,6 +16,7 @@ function MenuDishes() {
 
   const [selectedCategory, setSelectedCategory] = useState(categories[Number(getCategory)]);
   const [categoryChange, setCategoryChange] = useState(false);
+
   useEffect(() => {
     const fetchDishes = async () => {
       try {
@@ -41,16 +42,17 @@ function MenuDishes() {
 
     fetchDishes();
   }, []);
+  
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
-        return item.category === 2;
+        return item.category === 41;
       case "English":
-        return item.category === 1;
+        return item.category === 21;
       case "Кыргызча":
-        return item.category === 1;
+        return item.category === 24;
       case "Türkçe":
-        return item.category === 1;
+        return item.category === 22;
       default:
         return false;
     }
