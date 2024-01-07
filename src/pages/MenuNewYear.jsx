@@ -85,7 +85,7 @@ function WinePage() {
                 <img className="new-year-img" src={img2} alt="" />
               ) : selectedLanguage === "Türkçe" ? (
                 <img className="new-year-img" src={img4} alt="" />
-              ) : selectedLanguage === "Кыргзча" ? (
+              ) : selectedLanguage === "Кыргызчаа" ? (
                 <img className="new-year-img" src={img3} alt="" />
               ) : null}
 
