@@ -309,7 +309,7 @@ function AboutUsPage() {
                 </div>
               </div>
             </>
-          ) : selectedLanguage === "Кыргзча" ? (
+          ) : selectedLanguage === "Кыргызча" ? (
             <>
               <div className="about-main">
                 <div className="about-container">

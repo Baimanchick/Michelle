@@ -372,7 +372,7 @@ function SmuziPage() {
                 {/*  */}
               </div>
             </div>
-          ) : selectedLanguage === "Кыргзча" ? (
+          ) : selectedLanguage === "Кыргызчаа" ? (
             <div className="tea-main">
               <header className="tea-header">
                 <div className="tea-header-title">

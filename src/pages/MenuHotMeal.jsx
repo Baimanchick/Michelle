@@ -40,7 +40,9 @@ function MenuHotMeal() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   let getCategory = localStorage.getItem("category");
 
-  const [selectedCategory, setSelectedCategory] = useState(categories[Number(getCategory)]);
+  const [selectedCategory, setSelectedCategory] = useState(
+    categories[Number(getCategory)]
+  );
   const [categoryChange, setCategoryChange] = useState(false);
   const [notF, setNotF] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -94,8 +96,8 @@ function MenuHotMeal() {
 
   const handleSelectCategory = (category) => {
     setSelectedCategory(category);
-    getCategory = category.id
-    localStorage.setItem("category", category.id)
+    getCategory = category.id;
+    localStorage.setItem("category", category.id);
     setCategoryChange(true);
   };
 
@@ -118,7 +120,10 @@ function MenuHotMeal() {
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
           <div className="menu-stick">
-            <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
+            <SliderMenu
+              onSelectCategory={handleSelectCategory}
+              categoryI={Number(getCategory)}
+            />
             <div
               style={{
                 display: "flex",
@@ -196,7 +201,7 @@ function MenuHotMeal() {
                   "Tariflerimizde %35 yağlı doğal sıvı krema kullanıyoruz."
                 }
               />
-            ) : selectedLanguage === "Кыргзча" ? (
+            ) : selectedLanguage === "Кыргызча" ? (
               <>
                 <Advice
                   text={
