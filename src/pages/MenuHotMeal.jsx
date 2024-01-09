@@ -143,11 +143,17 @@ function MenuHotMeal() {
                   <p>ДАМДУУ</p>
                 </div>
               </header>
-            ) : selectedLanguage === "English" ||
-              selectedLanguage === "Türkçe" ? (
+            ) : selectedLanguage === "English"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>MAIN DISHES EXQUISITE</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "Türkçe" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>SICAK YEMEK</div>
                 </div>
               </header>
             ) : null}

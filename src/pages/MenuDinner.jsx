@@ -138,12 +138,19 @@ function MenuDinner() {
                   <div>РОЛЛ / БАГЕТ / БУТЕРБРОДТОР</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English" ||
-              selectedLanguage === "Türkçe" ? (
+            ) : selectedLanguage === "English"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ROLLS / BAGUETTE / SANDWICHES</div>
                   <span>Finger licking good</span>
+                </div>
+              </header>
+            ) : selectedLanguage === "Türkçe" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>RULO / BAGET / SANDVİÇ</div>
+                  <span>Parmak yalamak iyi</span>
                 </div>
               </header>
             ) : null}

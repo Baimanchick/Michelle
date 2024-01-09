@@ -121,12 +121,19 @@ function MenuBoul() {
                   <div>ПОКЕ-БОУЛ</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English" ||
-              selectedLanguage === "Türkçe" ? (
+            ) : selectedLanguage === "English"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>BOWLS</div>
                   <span>BALANCED DIET</span>
+                </div>
+              </header>
+            ) : selectedLanguage === "Türkçe" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>KASELER</div>
+                  <span>DENGELİ BESLENME</span>
                 </div>
               </header>
             ) : null}

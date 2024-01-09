@@ -965,8 +965,8 @@ function DrinksPage() {
               <div className="drinks-main">
                 <header className="tea-header">
                   <div className="tea-header-title">
-                    <h2>BEVERAGES</h2>
-                    <span>HOT MIX</span>
+                    <h2>İÇECEKLER</h2>
+                    <span>SICAK KARIŞIM</span>
                   </div>
                 </header>
                 <>
@@ -1018,7 +1018,7 @@ function DrinksPage() {
                   </div>
                   <header className="tea-header">
                     <div className="tea-header-title">
-                      <span>HANDMADE LEMONADES</span>
+                      <span>EL YAPIMI LİMONATALAR</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1084,8 +1084,7 @@ function DrinksPage() {
                     <div className="collagen-container-2">
                       <div className="collagen-wrapper-left">
                         <div>
-                          * The volume of the drink is specified with ice
-                          included.
+                          * İçeceğin hacmi buzla belirtilir dahil.
                         </div>
                       </div>
                       <div className="collagen-wrapper-right"></div>
@@ -1093,7 +1092,7 @@ function DrinksPage() {
                   </div>
                   <header className="tea-header">
                     <div className="tea-header-title">
-                      <span>HOT BELGIAN CHOCOLATE</span>
+                      <span>SICAK BELÇİKA ÇİKOLATA</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1117,8 +1116,8 @@ function DrinksPage() {
                     <div className="collagen-container-2">
                       <div className="collagen-wrapper-left">
                         <div>
-                          In our recipes, we use true Belgian chocolate, organic
-                          cream, and not a single drop of powder substitutes!
+                        Tariflerimizde gerçek Belçika çikolatası kullanıyoruz, organik
+                          krema ve tek bir damla toz ikamesi yok!
                         </div>
                       </div>
                       <div className="collagen-wrapper-right"></div>
@@ -1126,7 +1125,7 @@ function DrinksPage() {
                   </div>
                   <header className="tea-header">
                     <div className="tea-header-title">
-                      <span>LIVE-GIVING WATER</span>
+                      <span>CANLI SU</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1183,7 +1182,7 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>FRESH JUICES</span>
+                      <span>TAZE SULAR</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1226,7 +1225,7 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>FREAKSHAKES</span>
+                      <span>Ucube sallamalar</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1270,7 +1269,7 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>MILKSHAKES</span>
+                      <span>MİLSHAKELER</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1342,7 +1341,7 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>SOFT & ENERGY DRINKS</span>
+                      <span>MEŞRUBAT VE ENERJİ İÇECEKLERİ</span>
                     </div>
                   </header>
                   <TeaSquare

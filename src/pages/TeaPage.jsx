@@ -520,14 +520,14 @@ function TeaPage() {
             <div className="tea-main">
               <header className="tea-header">
                 <div className="tea-header-title">
-                  <h2>TEA</h2>
-                  <span>Special Recipes</span>
+                  <h2>ÇAY</h2>
+                  <span>Özel Tarifler</span>
                 </div>
               </header>
               <div className="collagen-main-2">
                 <div className="collagen-container-2">
                   <div className="collagen-wrapper-left">
-                    with natural additives sugar-free
+                  doğal katkılı şekersiz
                   </div>
                   <div className="collagen-wrapper-right"></div>
                 </div>
