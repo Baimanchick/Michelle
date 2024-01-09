@@ -100,18 +100,28 @@ function MenuDishes() {
             ></div>
           </div>
           <>
-            {selectedLanguage === "Русский" ||
-            selectedLanguage === "Кыргызча" ? (
+            { selectedLanguage === "Кыргызча" ? (
               <header className="menu-header">
                 <div className="menu-title-container">
                   <hr />
-                  <h2>КЛАССИЧЕСКИЕ</h2>
+                  <h2>КЛАССИКАЛЫК</h2>
                   <hr />
                 </div>
                 <div className="menu-title-span">
-                  <span>НА НОВЫЙ ЛАД</span>
+                  <span>ЖАНЫ ЖОЛ МЕНЕН</span>
                 </div>
               </header>
+            ) : selectedLanguage === "Русский" ? (
+                <header className="menu-header">
+                  <div className="menu-title-container">
+                    <hr />
+                    <h2>КЛАССИЧЕСКИЙ</h2>
+                    <hr />
+                  </div>
+                  <div className="menu-title-span">
+                    <span>НА НОВЫЙ ЛАД</span>
+                  </div>
+                </header>
             ) : selectedLanguage === "English" ||
               selectedLanguage === "Türkçe" ? (
               <header className="menu-header">

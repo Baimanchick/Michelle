@@ -70,7 +70,7 @@ function WinePage() {
                 <h2 style={{ fontSize: "19px" }}>
                   {selectedLanguage === "Русский" ||
                   selectedLanguage === "Кыргызча"
-                    ? "НОВОГОДНЕЕ МЕНЮ"
+                    ? "ЖАНЫ ЖЫЛДЫК ТАМАК"
                     : selectedLanguage === "English" ||
                       selectedLanguage === "Türkçe"
                     ? "NEW YEAR DISH"

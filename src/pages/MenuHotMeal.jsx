@@ -128,12 +128,19 @@ function MenuHotMeal() {
             ></div>
           </div>
           <>
-            {selectedLanguage === "Русский" ||
-            selectedLanguage === "Кыргызча" ? (
+            {selectedLanguage === "Русский"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ГОРЯЧИЕ БЛЮДА</div>
                   <p>ИЗЫСКАННЫЕ</p>
+                </div>
+              </header>
+            ) : selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>ЫСЫК ТАМАКТАР</div>
+                  <p>ДАМДУУ</p>
                 </div>
               </header>
             ) : selectedLanguage === "English" ||
