@@ -1418,8 +1418,8 @@ function DrinksPage() {
               <div className="drinks-main">
                 <header className="tea-header">
                   <div className="tea-header-title">
-                    <h2>НАПИТКИ</h2>
-                    <span>ГОРЯЧИЙ МИКС</span>
+                    <h2>СУУЛАР</h2>
+                    <span>ЫСЫК МИКС</span>
                   </div>
                 </header>
                 <>
@@ -1471,7 +1471,7 @@ function DrinksPage() {
                   </div>
                   <header className="tea-header">
                     <div className="tea-header-title">
-                      <span>ДОМАШНИЕ ЛИМОНАДЫ</span>
+                      <span>УЙ ЛИМОНАДЫ</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1536,14 +1536,14 @@ function DrinksPage() {
                   >
                     <div className="collagen-container-2">
                       <div className="collagen-wrapper-left">
-                        <div>*Объём напитка указан с учётом наличия льда</div>
+                        <div>*Суусундуктун көлөмү муздун болушун эске алуу менен көрсөтүлөт</div>
                       </div>
                       <div className="collagen-wrapper-right"></div>
                     </div>
                   </div>
                   <header className="tea-header">
                     <div className="tea-header-title">
-                      <span>ГОРЯЧИЙ БЕЛЬГИЙСКИЙ ШОКОЛАД</span>
+                      <span>ЫСЫК БЕЛГИЯЛЫК ШОКОЛАД</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1567,9 +1567,9 @@ function DrinksPage() {
                     <div className="collagen-container-2">
                       <div className="collagen-wrapper-left">
                         <div>
-                          В наших напитках мы используем исключительно
-                          натуральный бельгийский шоколад, натуральные 33%
-                          сливки и никаких порошковых заменителей!
+                        Суусундуктарыбызда биз эксклюзив колдонобуз
+                          табигый бельгиялык шоколад, табигый 33%
+                          крем жана порошок алмаштыргычтар жок!
                         </div>
                       </div>
                       <div className="collagen-wrapper-right"></div>
@@ -1577,7 +1577,7 @@ function DrinksPage() {
                   </div>
                   <header className="tea-header">
                     <div className="tea-header-title">
-                      <span>ЖИВИТЕЛЬНАЯ ВОДА</span>
+                      <span>ЖАШОО СУУСУ</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1722,7 +1722,7 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>МИЛКШЕЙКИ</span>
+                      <span>МИЛКШЕЙК</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1765,7 +1765,7 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>БЕЗЛАКТОЗНЫЕ МИЛКШЕЙКИ</span>
+                      <span>ЛАКТОЗАСЫ ЖОК СҮТКӨЛҮҮЛӨР</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1794,7 +1794,7 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>ПРОХЛАДИТЕЛЬНЫЕ НАПИТКИ</span>
+                      <span>МУЗДАК ИЧИМДИК</span>
                     </div>
                   </header>
                   <TeaSquare

@@ -130,11 +130,17 @@ function MenuDinner() {
             ></div>
           </div>
           <>
-            {selectedLanguage === "Русский" ||
-            selectedLanguage === "Кыргызча" ? (
+            {selectedLanguage === "Русский"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>РОЛЛЫ / БАГЕТ / БУТЕРБРОДЫ</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>РОЛЛ / БАГЕТ / БУТЕРБРОДТОР</div>
                 </div>
               </header>
             ) : selectedLanguage === "English" ||

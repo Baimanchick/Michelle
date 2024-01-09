@@ -377,7 +377,7 @@ function SmuziPage() {
               <header className="tea-header">
                 <div className="tea-header-title">
                   <h2>СМУЗИ-ПАЗЛ</h2>
-                  <span>Основа на выбор</span>
+                  <span>Тандоо үчүн негиз</span>
                 </div>
               </header>
               <div className="smuzi-main">
@@ -411,7 +411,7 @@ function SmuziPage() {
                 />
                 <header className="tea-header">
                   <div className="tea-header-title">
-                    <span>Добавить в свой смузи:</span>
+                    <span>Смоузиңизге кошуңуз:</span>
                   </div>
                 </header>
                 <SmuziSquaer
@@ -463,8 +463,8 @@ function SmuziPage() {
                   <div className="smuzi-s-container">
                     <div className="smuzi-s">
                       <div className="smuzi-wrapper-left">
-                        <div>Стоимость на воде:</div>
-                        <div>На любой другой основе:</div>
+                        <div>Суунун баасы:</div>
+                        <div>Башка негизде:</div>
                         <div>Объём:</div>
                       </div>
                       <div className="smuzi-wrapper-right">

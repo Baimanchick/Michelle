@@ -125,11 +125,17 @@ function MenuChild() {
           </div>
 
           <>
-            {selectedLanguage === "Русский" ||
-            selectedLanguage === "Кыргызча" ? (
+            {selectedLanguage === "Русский"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ДЕТСКОЕ МЕНЮ</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>БАЛДАР МЕНЮСУ</div>
                 </div>
               </header>
             ) : selectedLanguage === "English" ||

@@ -91,8 +91,14 @@ function MenuSalad() {
             ></div>
           </div>
           <>
-            {selectedLanguage === "Русский" ||
-            selectedLanguage === "Кыргызча" ? (
+            { selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>САЛАТТАР</div>
+                  <span>ТАМАК ЭМЕС, БУЛ СТИЛЬ</span>
+                </div>
+              </header>
+            ) : selectedLanguage === "Русский" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>САЛАТЫ</div>

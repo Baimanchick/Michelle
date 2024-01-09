@@ -1311,7 +1311,7 @@ function BarPage() {
               >
                 <div className="tea-header-title">
                   <h2>БАР</h2>
-                  <span>КОКТЕЙЛИ</span>
+                  <span>КОКТЕЙЛ</span>
                 </div>
               </header>
               <>
@@ -1426,7 +1426,7 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>ЛИКЕРЫ / БИТТЕРЫ / НАСТОЙКИ</span>
+                    <span>ЛИКËРЛОР / БИТТЕР / НАСТОЙКА</span>
                   </div>
                 </header>
                 <TeaSquare
