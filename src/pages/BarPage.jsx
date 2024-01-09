@@ -896,8 +896,8 @@ function BarPage() {
                 className="tea-header"
               >
                 <div className="tea-header-title">
-                  <h2>BAR</h2>
-                  <span>COCKTAILS</span>
+                  <h2>ÇUBUK</h2>
+                  <span>KOKTEYLLER</span>
                 </div>
               </header>
               <>
@@ -983,7 +983,7 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>Rum/ Cognac</span>
+                    <span>Rom / Konyak</span>
                   </div>
                 </header>
                 <TeaSquare
@@ -1012,7 +1012,7 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>LIQUEURS / BITTERS / TINCTURES</span>
+                    <span>LİKÖRLER / ACILAR / TENTÜRLER</span>
                   </div>
                 </header>
                 <TeaSquare
@@ -1048,7 +1048,7 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>BEER</span>
+                    <span>BİRA</span>
                   </div>
                 </header>
                 <TeaSquare
@@ -1091,7 +1091,7 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>WHISKEY</span>
+                    <span>VİSKİ</span>
                   </div>
                 </header>
                 <TeaSquare
@@ -1113,7 +1113,7 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>APERITIVES</span>
+                    <span>APERİTİFLER</span>
                   </div>
                 </header>
                 <TeaSquare
@@ -1135,7 +1135,7 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>TEQUILA</span>
+                    <span>TEKİLA</span>
                   </div>
                 </header>
                 <TeaSquare
@@ -1157,7 +1157,7 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>GIN</span>
+                    <span>ДЖИН</span>
                   </div>
                 </header>
                 <TeaSquare
@@ -1186,7 +1186,7 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>SNACKS</span>
+                    <span>ATIŞTIRMALIKLAR</span>
                   </div>
                 </header>
                 <div className="smuzi-main">
@@ -1236,7 +1236,7 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>CIGARETTES</span>
+                    <span>SİGARA</span>
                   </div>
                 </header>
                 <div className="smuzi-main">
@@ -1271,7 +1271,7 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>EXTRA</span>
+                    <span>EKSTRA</span>
                   </div>
                 </header>
                 <div className="smuzi-main">

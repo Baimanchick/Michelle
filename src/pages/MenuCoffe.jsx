@@ -65,19 +65,32 @@ function MenuCoffe() {
             ></div>
           </div>
           <>
-            {selectedLanguage === "Русский" ||
-            selectedLanguage === "Кыргызча" ? (
+            {selectedLanguage === "Русский"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>КОФЕ</div>
                   <span>БОДРЯЩИЙ КОФЕ</span>
                 </div>
               </header>
-            ) : selectedLanguage === "English" ||
-              selectedLanguage === "Türkçe" ? (
+            ) : selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>КОФЕ</div>
+                  <span>КАТЫШУУ КОФЕ</span>
+                </div>
+              </header>
+            ) : selectedLanguage === "English"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>COFFE</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "Türkçe" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>KAHVE</div>
                 </div>
               </header>
             ) : null}

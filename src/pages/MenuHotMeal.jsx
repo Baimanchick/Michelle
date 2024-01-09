@@ -148,11 +148,17 @@ function MenuHotMeal() {
                   <p>ДАМДУУ</p>
                 </div>
               </header>
-            ) : selectedLanguage === "English" ||
-              selectedLanguage === "Türkçe" ? (
+            ) : selectedLanguage === "English"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>MAIN DISHES EXQUISITE</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "Türkçe" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>SICAK YEMEK</div>
                 </div>
               </header>
             ) : null}
@@ -192,17 +198,17 @@ function MenuHotMeal() {
             ) : selectedLanguage === "Türkçe" ? (
               <Advice
                 text={
-                  "In our recipes, we use natural liquid cream with 35% fat."
+                  "Tariflerimizde %35 yağlı doğal sıvı krema kullanıyoruz."
                 }
               />
             ) : selectedLanguage === "Кыргызча" ? (
               <>
                 <Advice
                   text={
-                    "В наших рецептах мы используем только натуральные сливки жирностью 33%"
+                    "Биздин рецепттерде 35% майлуу табигый суюк кремди колдонобуз"
                   }
                 />
-                <img src={img10} alt="" />
+                {/* <img src={img10} alt="" /> */}
               </>
             ) : null}
           </div>

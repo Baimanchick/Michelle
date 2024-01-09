@@ -117,11 +117,17 @@ function MenuPlat() {
                   <div>ПЛЭТТЕРЫ</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English" ||
-              selectedLanguage === "Türkçe" ? (
+            ) : selectedLanguage === "English"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>PLATTERS</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "Türkçe" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>TABAKLAR</div>
                 </div>
               </header>
             ) : null}

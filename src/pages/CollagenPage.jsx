@@ -201,10 +201,10 @@ function CollagenPage() {
             <>
               <div className="collagen-main">
                 <header className="collagen-header">
-                  <h2>Exclusively at Michelle</h2>
+                  <h2>Yalnızca Michelle'de</h2>
                   <p>
-                    Collagen is a must-have for anyone who <br /> values a
-                    healthy lifestyle and beauty.
+                  Kolajen, <br /> değer veren herkesin sahip olması gereken bir maddedir
+                  sağlıklı yaşam tarzı ve güzellik.
                   </p>
                 </header>
                 <div className="collagen-container">
@@ -212,8 +212,8 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                          It is a vital protein that is crucial in maintaining
-                          the body's overall health.
+                        korunmasında çok önemli olan hayati bir proteindir.
+                        vücudun genel sağlığı.
                         </p>
                       </div>
                     </div>
@@ -222,9 +222,9 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                          Collagen's primary function is to keep the skin
-                          looking youthful and firm while also promoting joint
-                          and musculoskeletal system health.
+                        Kolajenin birincil işlevi cildi korumaktır.
+                        genç ve sağlam görünmenin yanı sıra eklemlenmeyi de teşvik ediyor
+                        ve kas-iskelet sistemi sağlığı.
                         </p>
                       </div>
                     </div>
@@ -233,10 +233,10 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                          It helps maintain the optimal water level in the body,
-                          accelerates skin regeneration, reduces pain, decreases
-                          hair and nail brittleness, and provides numerous other
-                          benefits.
+                        Vücuttaki optimum su seviyesinin korunmasına yardımcı olur,
+                        cilt yenilenmesini hızlandırır, ağrıyı azaltır, azaltır
+                        saç ve tırnakların kırılganlığını artırır ve diğer birçok
+                        faydalar.
                         </p>
                       </div>
                     </div>
@@ -245,16 +245,16 @@ function CollagenPage() {
               </div>
               <div className="collagen-title">
                 <div>
-                  Experience the advantages of <br /> collagen today and feel
-                  the <br />
-                  difference it can bring to your life!
+                Kolajenin avantajlarını bugün <br /> deneyimleyin ve hissedin
+                <br />
+                hayatınıza getirebileceği fark!
                 </div>
               </div>
               <div style={{ paddingBottom: "300px" }}>
                 <div className="collagen-main-2">
                   <div className="collagen-container-2">
                     <div className="collagen-wrapper-left">
-                      + add collagen for beauty and health
+                      + güzellik ve sağlık için kolajen ekleyin
                     </div>
                     <div className="collagen-wrapper-right">
                       <span>20 ml</span>
@@ -270,7 +270,7 @@ function CollagenPage() {
                 <header className="collagen-header">
                   <h2>КОЛЛАГЕН</h2>
                   <p>
-                    для всех ценителей <br /> здорового образа жизни и красоты!
+                    сергек жашоо жана сулуулук <br /> бардык билгендер үчүн!
                   </p>
                 </header>
                 <div className="collagen-container">
@@ -278,8 +278,7 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                          Коллаген — это белок, который играет ключевую роль в
-                          нашем организме.
+                        Коллаген негизги ролду ойнойт белок болуп саналат биздин денебиз.
                         </p>
                       </div>
                     </div>
@@ -288,9 +287,7 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                          Главная сила коллагена — его свойство поддерживать
-                          тонус и молодость кожи, а также здоровье суставов
-                          и опорно-двигательного аппарата .
+                        Коллагендин негизги күчү - анын колдоо жөндөмдүүлүгү теринин өңү жана жаштар, ошондой эле биргелешкен ден соолук жана таяныч-кыймыл аппараты.
                         </p>
                       </div>
                     </div>
@@ -299,10 +296,7 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                          Благодаря коллагену сохраняется оптимальный уровень
-                          воды в организме, ускоряются процессы регенерации
-                          кожи, уменьшается болевой синдром, снижается ломкость
-                          волос, ногтей и многое другое!
+                        Коллагендин аркасында организмдеги суунун оптималдуу деңгээли сакталат, теринин регенерация процесстери тездетет, оору азаят, чачтын жана тырмактардын морттугу азаят жана башка көптөгөн нерселер!
                         </p>
                       </div>
                     </div>
@@ -311,14 +305,14 @@ function CollagenPage() {
               </div>
               <div className="collagen-title">
                 <div>
-                  Ощути всю пользу <br /> коллагена!
+                Коллагендин <br /> бардык артыкчылыктарын сезиңиз!
                 </div>
               </div>
               <div style={{ paddingBottom: "300px" }}>
                 <div className="collagen-main-2">
                   <div className="collagen-container-2">
                     <div className="collagen-wrapper-left">
-                      + добавить коллаген для красоты, молодости и здоровья
+                      + сулуулук, жаштык жана ден соолук үчүн коллаген кошуу
                     </div>
                     <div className="collagen-wrapper-right">
                       <span>20г</span>

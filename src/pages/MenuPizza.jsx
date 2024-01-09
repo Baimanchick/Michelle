@@ -71,6 +71,7 @@ function MenuPizza() {
 
     fetchDishes();
   }, []);
+
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
@@ -218,17 +219,17 @@ function MenuPizza() {
 
               <Advice
                 text={
-                  "Pizza in Italy is prepared using either Roman or Neapolitan recipes. There are distinct differences between the two styles, with Neapolitan pizza featuring a thicker crust and a more pronounced tomato flavor, while Roman pizza that we serve typically uses less yeast, resulting in a thin and crispy crust. Both are delicious in their way and are enjoyed by pizza lovers all over the world. Buon appetito!"
+                  "İtalya'da pizza, Roma veya Napoliten tarifleri kullanılarak hazırlanır. İki tarz arasında bariz farklar var; Napoli pizzası daha kalın bir kabuğa ve daha belirgin bir domates aromasına sahipken, servis ettiğimiz Roma pizzası genellikle daha az maya kullanıyor ve bu da ince ve çıtır bir kabuğa neden oluyor. Her ikisi de kendi tarzlarında lezzetlidir ve dünyanın her yerindeki pizza severler tarafından beğenilmektedir. Afiyet olsun!"
                 }
               />
               <Advice
                 text={
-                  "Our pasta is cooked al dente, retaining its inner hardness while being soft on the outside."
+                  "Makarnamız al dente olarak pişirilir, içi yumuşak, dışı yumuşak olur.."
                 }
               />
               <Advice
                 text={
-                  "We can prepare gluten-free spaghetti for you. However, please note that it will take longer to prepare."
+                  "Sizin için glutensiz spagetti hazırlayabiliriz. Ancak hazırlanmanın daha uzun süreceğini lütfen unutmayın."
                 }
               />
             </>
@@ -236,26 +237,26 @@ function MenuPizza() {
             <>
               <Advice
                 text={
-                  "Спагетти мы можем приготовить из безглютеновой лапши. Глютен (содержится в пшенице) мешает работе ворсинок кишечника, отвечающих за функцию всасывания витаминов и полезных минералов из пищи! Приготовление безглютеновых позиций занимает больше стандартного времени."
+                  "Глютенсиз кесмеден спагетти жасай алабыз. Глютен (буудайда кездешет) тамак-аштан витаминдерди жана пайдалуу минералдарды сиңирүүгө жооп берген ичеги виллинин иштешине тоскоол болот! Глютенсиз азыктарды бышыруу үчүн адаттагыдан көп убакыт талап кылынат."
                 }
                 style={{ marginTop: "20px" }}
               />
               <Advice
-                text={"Ко всем пиццам мы подаём наш фирменный бейби перчик"}
+                text={"Биз бардык пиццаларга биздин кол тамга бала калемпирди беребиз"}
               />
               <Advice
                 text={
-                  "Пиццу в Италии готовят по Римскому и Неаполитанскому рецептам. Между этими двуми стилями существуют явные отличия: неаполитанскую пиццу готовят на более толстом тесте с выраженными бортами и томатным вкусом, тогда как римская пицца, которую мы подаём, использует меньшее содержание дрожжей, в результате чего она получается тонкой и хрустящей. Оба рецепта по-своему восхитительны, и их выбирают ценители пиццы во всём мире.  Приятного аппетита!"
+                  "Италияда пицца римдик жана неаполитандык рецепттер боюнча даярдалат. Эки стилдин ортосунда так айырмачылыктар бар: Неаполитан пиццасы айкын кыры жана помидор даамы менен коюу кабыгы менен жасалат, ал эми биз кызмат кылган Рим пиццасында ачыткы азыраак болуп, ичке жана кытырак кабык пайда болот. Эки рецепт тең өзүнчө даамдуу жана дүйнө жүзүндөгү пиццаны сүйүүчүлөрдүн тандоосу. Тамагыңыз таттуу болсун!"
                 }
               />
               <Advice
                 text={
-                  "Нашу пасту мы готовим Al Dente — дословный перевод с итальянского «на зубок», что подразумевает лёгкое прилипание пасты к зубам. Правильно сваренная паста Al Dente сохраняет внутреннюю твёрдость, а снаружи она мягкая."
+                  "Биз макаронубузду даярдайбыз Al Dente - италия тилинен 'тишке' сөзмө-сөз котормосу, паста тишке оңой жабышат дегенди билдирет. Туура бышырылган Al Dente макаронунун ичи катуу, бирок сырты жумшак бойдон калат."
                 }
               />
               <Advice
                 text={
-                  "Спагетти мы можем приготовить из безглютеновой лапши. Глютен (содержится в пшенице) мешает работе ворсинок кишечника, отвечающих за функцию всасывания витаминов и полезных минералов из пищи! Приготовление безглютеновых позиций занимает больше стандартного времени."
+                  "Глютенсиз кесмеден спагетти жасай алабыз. Глютен (буудайда кездешет) тамак-аштан витаминдерди жана пайдалуу минералдарды сиңирүүгө жооп берген ичеги виллинин иштешине тоскоол болот! Глютенсиз азыктарды бышыруу үчүн адаттагыдан көп убакыт талап кылынат."
                 }
               />
             </>

@@ -131,12 +131,19 @@ function MenuSoap() {
                   <div>ШОРПОЛОР</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English" ||
-              selectedLanguage === "Türkçe" ? (
+            ) : selectedLanguage === "English"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>SOUP</div>
                   <span>CREAM SOUP</span>
+                </div>
+              </header>
+            ) : selectedLanguage === "Türkçe" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>ÇORBA</div>
+                  <span>KREMALI ÇORBA</span>
                 </div>
               </header>
             ) : null}

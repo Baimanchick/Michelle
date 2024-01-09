@@ -271,7 +271,7 @@ function SmuziPage() {
             <div className="tea-main">
               <header className="tea-header">
                 <div className="tea-header-title">
-                  <h2>SMOTHY PUZZLE</h2>
+                  <h2>DÜZ BULMAC</h2>
                 </div>
               </header>
               <div className="smuzi-main">
@@ -305,7 +305,7 @@ function SmuziPage() {
                 />
                 <header className="tea-header">
                   <div className="tea-header-title">
-                    <span>Add to the smoothie:</span>
+                    <span>Smoothie'ye ekle:</span>
                   </div>
                 </header>
                 <SmuziSquaer
@@ -357,9 +357,9 @@ function SmuziPage() {
                   <div className="smuzi-s-container">
                     <div className="smuzi-s">
                       <div className="smuzi-wrapper-left">
-                        <div>Cost with water:</div>
-                        <div>Cost with any other base:</div>
-                        <div>Volume:</div>
+                        <div>Su ile maliyet:</div>
+                        <div>Başka herhangi bir tabanla maliyet:</div>
+                        <div>Hacim:</div>
                       </div>
                       <div className="smuzi-wrapper-right">
                         <div>210 KGS</div>

@@ -39,9 +39,7 @@ function MenuDinner() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const getCategory = localStorage.getItem("category");
 
-  let [selectedCategory, setSelectedCategory] = useState(
-    categories[Number(getCategory)]
-  );
+  let [selectedCategory, setSelectedCategory] = useState(categories[Number(getCategory)]);
   const [categoryChange, setCategoryChange] = useState(false);
   const [notF, setNotF] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -95,8 +93,8 @@ function MenuDinner() {
 
   const handleSelectCategory = (category) => {
     setSelectedCategory(category);
-    getCategory = category.id;
-    localStorage.setItem("category", category.id);
+    getCategory = category.id
+    localStorage.setItem("category", category.id)
     setCategoryChange(true);
   };
 
@@ -117,10 +115,7 @@ function MenuDinner() {
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
           <div className="menu-stick">
-            <SliderMenu
-              onSelectCategory={handleSelectCategory}
-              categoryI={Number(getCategory)}
-            />
+            <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
             <div
               style={{
                 display: "flex",
@@ -143,12 +138,19 @@ function MenuDinner() {
                   <div>РОЛЛ / БАГЕТ / БУТЕРБРОДТОР</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English" ||
-              selectedLanguage === "Türkçe" ? (
+            ) : selectedLanguage === "English"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ROLLS / BAGUETTE / SANDWICHES</div>
                   <span>Finger licking good</span>
+                </div>
+              </header>
+            ) : selectedLanguage === "Türkçe" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>RULO / BAGET / SANDVİÇ</div>
+                  <span>Parmak yalamak iyi</span>
                 </div>
               </header>
             ) : null}
@@ -174,12 +176,7 @@ function MenuDinner() {
                 <img src={img17} alt="" />
               </>
             ) : selectedLanguage === "English" ? null : selectedLanguage ===
-              "Türkçe" ? null : selectedLanguage === "Кыргызча" ? (
-              <>
-                <img src={img13} alt="" />
-                <img src={img17} alt="" />
-              </>
-            ) : null}
+              "Türkçe" ? null : selectedLanguage === "Кыргзча" ? null : null}
           </div>
 
           <div style={{ marginTop: "200px" }}>.</div>

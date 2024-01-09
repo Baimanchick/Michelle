@@ -135,11 +135,17 @@ function MenuGar() {
                   <div>ГАРНИРЛЕР</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English" ||
-              selectedLanguage === "Türkçe" ? (
+            ) : selectedLanguage === "English"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>SIDE DISHES</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "Türkçe" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>GARNİTÜRLER</div>
                 </div>
               </header>
             ) : null}

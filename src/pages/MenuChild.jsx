@@ -138,11 +138,17 @@ function MenuChild() {
                   <div>БАЛДАР МЕНЮСУ</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English" ||
-              selectedLanguage === "Türkçe" ? (
+            ) : selectedLanguage === "English"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>KID'S MENU</div>
+                </div>
+              </header>
+            ) : selectedLanguage === "Türkçe" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>ÇOCUK MENÜSÜ</div>
                 </div>
               </header>
             ) : null}

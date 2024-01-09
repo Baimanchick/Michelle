@@ -164,14 +164,14 @@ function MenuBaget() {
           ) : selectedLanguage === "Türkçe" ? (
             <Advice
               text={
-                "Our pate is made of tender chicken meat with the addition of herbs."
+                "Ezmemiz otlar ilavesiyle yumuşak tavuk etinden yapılır."
               }
               style={{ marginTop: "20px" }}
             />
           ) : selectedLanguage === "Кыргызча" ? (
             <Advice
               text={
-                "Мы готовим паштет из нежного мяса курицы с добавлением ароматных трав"
+                "Тооктун этинен жыпар жыттуу чөптөрдү кошуп, паста даярдайбыз"
               }
               style={{ marginTop: "20px" }}
             />

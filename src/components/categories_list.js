@@ -209,7 +209,7 @@ export const generateL = (language) => {
                   number: 10
                 },
                 {
-                  title: "ГАРНИРДЕР",
+                  title: "ГАРНИРЛЕР",
                   id: 33,
                   image: "https://michelle-kg.ru/media/kyrgyz_categories/garnier_NQETetn.png",
                   link: "/gar",

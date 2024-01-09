@@ -105,12 +105,19 @@ function MenuSalad() {
                   <span>НЕ ЕДА, ЭТО СТИЛЬ</span>
                 </div>
               </header>
-            ) : selectedLanguage === "English" ||
-              selectedLanguage === "Türkçe" ? (
+            ) : selectedLanguage === "English"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>SALAD BAR</div>
                   <span>EAT YOUR GREENS TO FIT INTO YOUR JEANS</span>
+                </div>
+              </header>
+            ) : selectedLanguage === "Türkçe" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>SALATA BARI</div>
+                  <span>KOTUNUZUN İÇİNE YEŞİLLERİ YİYİN</span>
                 </div>
               </header>
             ) : null}
