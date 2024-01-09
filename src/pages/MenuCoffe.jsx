@@ -60,12 +60,19 @@ function MenuCoffe() {
             ></div>
           </div>
           <>
-            {selectedLanguage === "Русский" ||
-            selectedLanguage === "Кыргызча" ? (
+            {selectedLanguage === "Русский"
+            ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>КОФЕ</div>
                   <span>БОДРЯЩИЙ КОФЕ</span>
+                </div>
+              </header>
+            ) : selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>КОФЕ</div>
+                  <span>КАТЫШУУ КОФЕ</span>
                 </div>
               </header>
             ) : selectedLanguage === "English" ||
@@ -367,7 +374,7 @@ function MenuCoffe() {
               />
               <img src={img3} alt="" />
             </div>
-          ) : selectedLanguage === "Кыргзча" ? (
+          ) : selectedLanguage === "Кыргызча" ? (
             <div className="square-main-content">
               <img className="coffe-img-2" src={img2} alt="" />
               <Square title={"Эспрессо"} weight={"40 мл"} price={"175 с"} />

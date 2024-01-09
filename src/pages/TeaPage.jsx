@@ -746,18 +746,18 @@ function TeaPage() {
                 />
               </>
             </div>
-          ) : selectedLanguage === "Кыргзча" ? (
+          ) : selectedLanguage === "Кыргызча" ? (
             <div className="tea-main">
               <header className="tea-header">
                 <div className="tea-header-title">
                   <h2>ЧАЙ</h2>
-                  <span>ФИРМЕННЫЕ</span>
+                  <span>ФИРМЕННЫЙ</span>
                 </div>
               </header>
               <div className="collagen-main-2">
                 <div className="collagen-container-2">
                   <div className="collagen-wrapper-left">
-                    С натуральными добавками без сахара и сиропов
+                  Шекерсиз жана сиропсуз табигый кошумчалар менен
                   </div>
                   <div className="collagen-wrapper-right"></div>
                 </div>
@@ -771,13 +771,13 @@ function TeaPage() {
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"С шиповником"}
+                  title={"Шиповник"}
                   weight={"400 мл/чайник"}
                   price={"160/300 с"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"С тимьяном"}
+                  title={"Тимьян"}
                   weight={"400 мл/чайник"}
                   price={"160/300 с"}
                 />
@@ -882,32 +882,32 @@ function TeaPage() {
                 </header>
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Успокоительный"}
+                  title={"Тынчтандыруучу"}
                   weight={"чайник"}
                   price={"190 с"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"От кашля и бронхита"}
+                  title={"Жөтөл жана бронхит үчүн"}
                   weight={"чайник"}
                   price={"190 с"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"При гипертонии"}
+                  title={"Гипертония үчүн"}
                   weight={"чайник"}
                   price={"190 с"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Для похудения (анчан)"}
+                  title={"Арыктоо үчүн (анчан)"}
                   weight={"чайник"}
                   price={"230 с"}
                 />
                 <header className="tea-header">
                   <div className="tea-header-title">
                     <span style={{ margin: "35px 0px 35px 0px" }}>
-                      ЧАЙНЫЙ ПЬЯНИЦА
+                      ЧАЙ Ичүүчү
                     </span>
                   </div>
                 </header>
@@ -951,19 +951,19 @@ function TeaPage() {
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Классический чай со льдом"}
+                  title={"Классикалык муздак чай"}
                   weight={"330 мл"}
                   price={"140 с"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Ягодный чай со льдом"}
+                  title={"Берри муздак чай"}
                   weight={"330 мл"}
                   price={"160 с"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Облепиховый чай со льдом"}
+                  title={"Чычырканак муздак чай"}
                   weight={"330 мл"}
                   price={"150 с"}
                 />

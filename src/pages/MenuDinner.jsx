@@ -169,12 +169,7 @@ function MenuDinner() {
                 <img src={img17} alt="" />
               </>
             ) : selectedLanguage === "English" ? null : selectedLanguage ===
-              "Türkçe" ? null : selectedLanguage === "Кыргзча" ? (
-              <>
-                <img src={img13} alt="" />
-                <img src={img17} alt="" />
-              </>
-            ) : null}
+              "Türkçe" ? null : selectedLanguage === "Кыргзча" ? null : null}
           </div>
 
           <div style={{ marginTop: "200px" }}>.</div>

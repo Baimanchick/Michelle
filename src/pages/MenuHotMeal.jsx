@@ -187,17 +187,17 @@ function MenuHotMeal() {
             ) : selectedLanguage === "Türkçe" ? (
               <Advice
                 text={
-                  "In our recipes, we use natural liquid cream with 35% fat."
+                  "Tariflerimizde %35 yağlı doğal sıvı krema kullanıyoruz."
                 }
               />
             ) : selectedLanguage === "Кыргзча" ? (
               <>
                 <Advice
                   text={
-                    "В наших рецептах мы используем только натуральные сливки жирностью 33%"
+                    "Биздин рецепттерде 35% майлуу табигый суюк кремди колдонобуз"
                   }
                 />
-                <img src={img10} alt="" />
+                {/* <img src={img10} alt="" /> */}
               </>
             ) : null}
           </div>
