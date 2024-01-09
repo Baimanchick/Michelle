@@ -316,7 +316,7 @@ function AboutUsPage() {
                   <div className="about">
                     <div className="about-first">
                       <div>
-                        <h2>О НАС</h2>
+                        <h2>БИЗ ЖӨНҮНДӨ</h2>
                         <p>
                           Мишель - кофе үйүнөн же коммерциялык уюмдан да артык.
                         </p>
