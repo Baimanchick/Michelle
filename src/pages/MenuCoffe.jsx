@@ -8,6 +8,9 @@ import LongSqaure from "../components/LongSquare";
 import img1 from "../images/coffe/image-1.png";
 import img2 from "../images/coffe/image-2.png";
 import img3 from "../images/coffe/card_1_breakfast.png";
+import imgTerKG from "../images/drinks/termos_kg.png"
+import imgTerTR from "../images/drinks/termos_TR.png"
+import imgTerEN from "../images/drinks/termos_mobile_EN.png"
 
 import { useLanguage } from "../functions/languageContext";
 
@@ -183,6 +186,7 @@ function MenuCoffe() {
             </div>
           ) : selectedLanguage === "English" ? (
             <div className="square-main-content">
+              <img className="coffe-img-2" src={imgTerEN} alt="" />
               <Square title={"Espresso"} weight={"40 ml"} price={"175 KGS"} />
               <Square
                 title={"Americano"}
@@ -285,6 +289,7 @@ function MenuCoffe() {
             </div>
           ) : selectedLanguage === "Türkçe" ? (
             <div className="square-main-content">
+              <img className="coffe-img-2" src={imgTerTR} alt="" />
               <Square title={"Espresso"} weight={"40 ml"} price={"175 KGS"} />
               <Square
                 title={"Americano"}
@@ -387,7 +392,7 @@ function MenuCoffe() {
             </div>
           ) : selectedLanguage === "Кыргызча" ? (
             <div className="square-main-content">
-              <img className="coffe-img-2" src={img2} alt="" />
+              <img className="coffe-img-2" src={imgTerKG} alt="" />
               <Square title={"Эспрессо"} weight={"40 мл"} price={"175 с"} />
               <Square
                 title={"Американо"}
