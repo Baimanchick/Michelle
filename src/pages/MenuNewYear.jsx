@@ -68,13 +68,15 @@ function WinePage() {
             >
               <div className="tea-header-title">
                 <h2 style={{ fontSize: "19px" }}>
-                  {selectedLanguage === "Русский" ||
-                  selectedLanguage === "Кыргызча"
-                    ? "ЖАНЫ ЖЫЛДЫК ТАМАК"
-                    : selectedLanguage === "English" ||
-                      selectedLanguage === "Türkçe"
+                  {selectedLanguage === "Русский"
+                    ? "НОВОГОДНИЙ МЕНЮ"
+                    : selectedLanguage === "Кыргызча" ? (
+                      "ЖАНЫ ЖЫЛ МЕНЮСУ"
+                    ) : selectedLanguage === "English"
                     ? "NEW YEAR DISH"
-                    : null}
+                    : selectedLanguage === "Türkçe" ? (
+                      "YENİ YIL MENÜSÜ"
+                    ) : null}
                 </h2>
               </div>
             </header>
