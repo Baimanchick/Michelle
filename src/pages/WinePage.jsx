@@ -952,7 +952,7 @@ function WinePage() {
                 />
               </>
             </div>
-          ) : selectedLanguage === "Кыргзча" ? (
+          ) : selectedLanguage === "Кыргызча" ? (
             <div className="drinks-main">
               <header
                 style={{ margin: "30px 0px 30px 0px" }}
