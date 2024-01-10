@@ -122,12 +122,20 @@ function MenuDishes() {
                     <span>НА НОВЫЙ ЛАД</span>
                   </div>
                 </header>
-            ) : selectedLanguage === "English" ||
-              selectedLanguage === "Türkçe" ? (
+            ) : selectedLanguage === "English"
+              ? (
               <header className="menu-header">
                 <div className="menu-title-container">
                   <hr />
                   <h2>Classic</h2>
+                  <hr />
+                </div>
+              </header>
+            ) : selectedLanguage === "Türkçe" ? (
+              <header className="menu-header">
+                <div className="menu-title-container">
+                  <hr />
+                  <h2>Kahvaltı</h2>
                   <hr />
                 </div>
               </header>
