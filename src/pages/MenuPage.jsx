@@ -16,7 +16,7 @@ function MenuPage() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [categoriesFetched, setCategoriesFetched] = useState([]);
   const { selectedLanguage, setSelectedLanguage } = useLanguage();
-  const [ selectCategory, setCategory ] = useState();
+  const [selectCategory, setCategory] = useState();
 
   useEffect(() => {
     const fetchCategory = async () => {
@@ -38,13 +38,9 @@ function MenuPage() {
         const sortedCategories = res.data.sort((a, b) => a.number - b.number);
 
         setCategoriesFetched(sortedCategories);
-        console.log(sortedCategories);
-
       } catch (error) {
         console.log(error);
       }
-
-
     };
 
     fetchCategory();
@@ -67,10 +63,10 @@ function MenuPage() {
   const handleCategoryChange = (categoryId) => {
     if (categoryId !== undefined) {
       setCategory(categoryId);
-      
+
       localStorage.setItem("category", JSON.stringify(categoryId));
     }
-  };   
+  };
 
   return (
     <>
@@ -128,15 +124,17 @@ function MenuPage() {
 
           <div className="block-nav-menu">
             <CardMenuNav
-              title={selectedLanguage === "Русский"
-              ? "О НАС"
-              : selectedLanguage === "English"
-              ? "ABOUT US"
-              : selectedLanguage === "Кыргызча"
-              ? "БИЗ ЖӨНҮНДӨ"
-              : selectedLanguage === "Türkçe"
-              ? "HAKKIMIZDA"
-              : null}
+              title={
+                selectedLanguage === "Русский"
+                  ? "О НАС"
+                  : selectedLanguage === "English"
+                  ? "ABOUT US"
+                  : selectedLanguage === "Кыргызча"
+                  ? "БИЗ ЖӨНҮНДӨ"
+                  : selectedLanguage === "Türkçe"
+                  ? "HAKKIMIZDA"
+                  : null
+              }
               img={"https://nambafood.kg/image_by_id/152065"}
               link={"/about"}
               key={"234234"}

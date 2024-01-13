@@ -11,7 +11,6 @@ const selectedL = localStorage.getItem("selectedLanguage");
 
 if (selectedL) {
   categories = generateL(selectedL);
-  console.log(categories);
 }
 
 export default function SliderMenu({ onSelectCategory, categoryI }) {
@@ -25,21 +24,24 @@ export default function SliderMenu({ onSelectCategory, categoryI }) {
 
       if (selectedL) {
         categories = generateL(selectedL);
-        console.log(categories);
       }
 
       // Assuming categoryI is a valid category id
-      setSelectedCategory(categories.find(category => category.id === categoryI));
-      setLoading(false);  // Update loading state
+      setSelectedCategory(
+        categories.find((category) => category.id === categoryI)
+      );
+      setLoading(false); // Update loading state
     };
 
     fetchData();
   }, [categoryI]);
-  
+
   const settings = {
     centerMode: true,
     infinite: true,
-    initialSlide: selectedCategory ? categories.findIndex(cat => cat.id === selectedCategory.id) : 0,
+    initialSlide: selectedCategory
+      ? categories.findIndex((cat) => cat.id === selectedCategory.id)
+      : 0,
     centerPadding: "0",
     slidesToShow: 3,
     arrows: false,
@@ -66,14 +68,17 @@ export default function SliderMenu({ onSelectCategory, categoryI }) {
     <div>
       <Slider {...settings}>
         {categories.map((categoryM, index) => (
-            <div
-              key={categoryM.id}
-              className={`slider-items ${
-                selectedCategory && selectedCategory.id === categoryM.id ? "bold-text" : ""
-              }`}
-              onClick={() => handleSelect(categoryM)}
-            >
-              <h3>{selectedLanguage === "Русский"
+          <div
+            key={categoryM.id}
+            className={`slider-items ${
+              selectedCategory && selectedCategory.id === categoryM.id
+                ? "bold-text"
+                : ""
+            }`}
+            onClick={() => handleSelect(categoryM)}
+          >
+            <h3>
+              {selectedLanguage === "Русский"
                 ? categoryM.title
                 : selectedLanguage === "English"
                 ? categoryM.title
@@ -81,9 +86,10 @@ export default function SliderMenu({ onSelectCategory, categoryI }) {
                 ? categoryM.title
                 : selectedLanguage === "Türkçe"
                 ? categoryM.title
-                : null}</h3>
-            </div>
-          ))}
+                : null}
+            </h3>
+          </div>
+        ))}
       </Slider>
     </div>
   );

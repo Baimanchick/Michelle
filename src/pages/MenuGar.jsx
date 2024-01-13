@@ -35,7 +35,9 @@ function MenuGar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   let getCategory = localStorage.getItem("category");
 
-  const [selectedCategory, setSelectedCategory] = useState(categories[Number(getCategory)]);
+  const [selectedCategory, setSelectedCategory] = useState(
+    categories[Number(getCategory)]
+  );
   const [categoryChange, setCategoryChange] = useState(false);
   const [notF, setNotF] = useState(false);
   const [dishes, setDishes] = useState([]);
@@ -60,7 +62,6 @@ function MenuGar() {
           `
         );
         setDishes(res.data);
-        console.log(res.data);
       } catch (error) {
         console.log(error);
       }
@@ -89,8 +90,8 @@ function MenuGar() {
 
   const handleSelectCategory = (category) => {
     setSelectedCategory(category);
-    getCategory = category.id
-    localStorage.setItem("category", category.id)
+    getCategory = category.id;
+    localStorage.setItem("category", category.id);
     setCategoryChange(true);
   };
 
@@ -112,7 +113,10 @@ function MenuGar() {
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
           <div className="menu-stick">
-            <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
+            <SliderMenu
+              onSelectCategory={handleSelectCategory}
+              categoryI={Number(getCategory)}
+            />
             <div
               style={{
                 display: "flex",
