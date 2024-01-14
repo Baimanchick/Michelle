@@ -10,11 +10,11 @@ export const generateL = (language) => {
           number: 0
         },
         {
-          title: "НОВОГОДНЕЕ МЕНЮ",
+          title: "КОНСТРУКТОР ЗАВТРАКА",
           id: 40,
           image:
             "https://michelle-kg.ru/media/categories/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%D0%B4%D0%BD%D0%B5%D0%B5_%D0%BC%D0%B5%D0%BD%D1%8E_RHR0V2p.jpg",
-          link: "/new",
+          link: "/construct",
           number: 1,
         },
         {
@@ -155,11 +155,11 @@ export const generateL = (language) => {
           number: 0
         },
         {
-          title: "Жаны Жылды",
+          title: "ЭртеҢки конструкция",
           id: 23,
           image:
             "https://michelle-kg.ru/media/kyrgyz_categories/%D0%96%D0%B0%D0%BD%D1%8B_%D0%96%D1%8B%D0%BB%D0%B4%D1%8B%D0%BA_%D0%BC%D0%B5%D0%BD%D1%8E%D1%81%D1%83_3quZDoZ.jpg",
-          link: "/new",
+          link: "/сonstruct",
           number: 1,
         },
         {
@@ -323,10 +323,10 @@ export const generateL = (language) => {
           number: 2,
         },
         {
-          title: "NEW YEARS MENU",
+          title: "BREAKFAST CONSTRUCTOR",
           id: 22,
           image: "https://michelle-kg.ru/media/categories/New_Years_MENU.jpg",
-          link: "/new",
+          link: "/construct",
           number: 1,
         },
         {
@@ -460,11 +460,11 @@ export const generateL = (language) => {
           number: 0
         },
         {
-          title: "Yılbaşı menüsü",
+          title: "KAHVALTI İNŞAATÇISI",
           id: 21,
           image:
             "https://michelle-kg.ru/media/turkish_categories/Yilbasi_Menusu_n3u2zOo.jpg",
-          link: "/new",
+          link: "/construct",
           number: 1,
         },
         {
