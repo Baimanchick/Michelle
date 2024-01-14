@@ -28,15 +28,6 @@ function CollagenPage() {
     setCategoryChange(true);
   };
 
-  const handleNotF = (category) => {
-    if (category.name !== "ЗАВТРАКИ") {
-      setNotF(true);
-      navigate("/notf");
-    } else {
-      setNotF(false);
-    }
-  };
-
   const navigate = useNavigate();
   useEffect(() => {
     const handleResize = () => {
@@ -55,7 +46,7 @@ function CollagenPage() {
         <div className="menu-main-content">
           <div className="menu-stick">
             <SliderMenu
-              onSelectCategory={handleNotF}
+              onSelectCategory={handleSelectCategory}
               categoryI={Number(getCategory)}
             />
             <div
