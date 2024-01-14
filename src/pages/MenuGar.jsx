@@ -149,7 +149,7 @@ function MenuGar() {
             ) : selectedLanguage === "Türkçe" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
-                  <div>GARNİTÜRLER</div>
+                  <div>GARNİTÜR</div>
                 </div>
               </header>
             ) : null}
