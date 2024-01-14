@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import SliderMenu, { categories } from "../components/SliderMenu";
 import TeaSquare from "../components/TeaSquare";
 import img1 from "../images/tea/1.png";
+import img2 from "../images/tea/EnBardak.png";
+
 import { useLanguage } from "../functions/languageContext";
 
 function TeaPage() {
@@ -417,7 +419,7 @@ function TeaPage() {
                   weight={"400 ml/tea pot"}
                   price={"100/180 KGS"}
                 />
-                <img className="tea-img" src={img1} alt="" />
+                <img className="tea-img" src={img2} alt="" />
                 <header className="tea-header">
                   <div className="tea-header-title">
                     <span style={{ margin: "35px 0px 35px 0px" }}>

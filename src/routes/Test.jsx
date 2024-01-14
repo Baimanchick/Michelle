@@ -34,7 +34,10 @@ function Test({ title, img, text, weight, price, icon }) {
         <div className="news-card-title">
           <div>{title}</div>
           <span className="news-date">
-            {Number(weight).toFixed().toString()} г
+            {Number(weight).toFixed().toString() === "0"
+              ? ""
+              : Number(weight).toFixed().toString()}
+            {Number(weight).toFixed().toString() === "0" ? "" : "г"}
           </span>
           <p className="news-paragraph">{text}</p>
           <div className="card-utils">
