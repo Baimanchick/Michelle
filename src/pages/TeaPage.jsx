@@ -9,6 +9,8 @@ import imgTerKG from "../images/drinks/termos_kg.png";
 import imgTerTR from "../images/drinks/termos_TR.png";
 import imgTerEN from "../images/drinks/termos_mobile_EN.png";
 import imgTerRU from "../images/coffe/image-2.png";
+import imgAdvice from "../images/else/advice-soup.png"
+import imgAdviceTR from "../images/tea/advice-soup (2).png"
 
 import { useLanguage } from "../functions/languageContext";
 
@@ -425,7 +427,7 @@ function TeaPage() {
                   weight={"400 ml/tea pot"}
                   price={"100/180 KGS"}
                 />
-                <img className="tea-img" src={img2} alt="" />
+                <img className="tea-img" src={imgAdvice} alt="" />
                 <header className="tea-header">
                   <div className="tea-header-title">
                     <span style={{ margin: "35px 0px 35px 0px" }}>
@@ -539,7 +541,16 @@ function TeaPage() {
               </header>
               <img className="coffe-img-2" src={imgTerTR} alt="" />
 
+              <header className="menu-header" style={{ paddingBottom: "30px" }}>
+                <div className="menu-title-container">
+                  <hr />
+                  <h2>SPESİYAL</h2>
+                  <hr />
+                </div>
+              </header>
+
               <div className="collagen-main-2">
+                  
                 <div className="collagen-container-2">
                   <div className="collagen-wrapper-left">
                     doğal katkılı şekersiz
@@ -550,38 +561,38 @@ function TeaPage() {
               <>
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Sea buckthorn"}
-                  weight={"400 ml/tea pot"}
+                  title={"Deníz topalaklı"}
+                  weight={"400 ml/çaydanlik"}
                   price={"160/300 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Rose hips"}
-                  weight={"400 ml/tea pot"}
+                  title={"Kuşburnu íle"}
+                  weight={"400 ml/çaydanlik"}
                   price={"160/300 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Thyme"}
-                  weight={"400 ml/tea pot"}
+                  title={"Kekík íle"}
+                  weight={"400 ml/çaydanlik"}
                   price={"160/300 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Fruit"}
-                  weight={"400 ml/tea pot"}
+                  title={"Meyvelí"}
+                  weight={"400 ml/çaydanlik"}
                   price={"160/300 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Nomad"}
-                  weight={"400 ml/tea pot"}
+                  title={"Göçebenín çayı"}
+                  weight={"400 ml/çaydanlik"}
                   price={"160/300 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Ginger"}
-                  weight={"400 ml/tea pot"}
+                  title={"Zencefíl íle"}
+                  weight={"400 ml/çaydanlik"}
                   price={"160/300 KGS"}
                 />
                 <div
@@ -598,161 +609,160 @@ function TeaPage() {
                 </div>
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Forest berry"}
-                  weight={"400 ml/tea pot"}
+                  title={"Orman meyvesí"}
+                  weight={"400 ml/çaydanlik"}
                   price={"160/300 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Coniferous"}
-                  weight={"400 ml/tea pot"}
+                  title={"Orman meyvesí"}
+                  weight={"400 ml/çaydanlik"}
                   price={"160/360 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Caramel peach "}
-                  weight={"400 ml/tea pot"}
+                  title={"Çam çayı"}
+                  weight={"400 ml/çaydanlik"}
                   price={"160/360 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Citrus"}
-                  weight={"400 ml/tea pot"}
+                  title={"Karamellí  şeftalí"}
+                  weight={"400 ml/çaydanlik"}
                   price={"160/360 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Apple"}
-                  weight={"tea pot"}
+                  title={"Elmali"}
+                  weight={"çaydanlik"}
                   price={"360 KGS"}
                 />
                 <header className="tea-header">
                   <div className="tea-header-title">
                     <span style={{ margin: "35px 0px 35px 0px" }}>
-                      LEAF TEA
+                      Yaprak çay
                     </span>
                   </div>
                 </header>
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
                   title={"“Greenfield”"}
-                  weight={"400 ml/tea pot"}
+                  weight={"400 ml/çaydanlik"}
                   price={"100/180 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
                   title={"Earl Grey"}
-                  weight={"400 ml/tea pot"}
+                  weight={"400 ml/çaydanlik"}
                   price={"100/180 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Jasmine"}
-                  weight={"400 ml/tea pot"}
+                  title={"Yasemín"}
+                  weight={"400 ml/çaydanlik"}
                   price={"100/180 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"English caramel"}
-                  weight={"400 ml/tea pot"}
+                  title={"İngílíz karamelí"}
+                  weight={"400 ml/çaydanlik"}
                   price={"100/180 KGS"}
                 />
-                <img className="tea-img" src={img1} alt="" />
-                <header className="tea-header">
-                  <div className="tea-header-title">
-                    <span style={{ margin: "35px 0px 35px 0px" }}>
-                      HERBAL TEA
-                    </span>
+                <img className="tea-img" src={imgAdviceTR} alt="" />
+                <header className="menu-header" style={{ paddingTop: "30px" }}>
+                  <div className="menu-title-container">
+                    <hr />
+                    <h2 style={{ textAlign: "center", fontSize: "17px" }}>OTLARLA TEDAVİ EDİYORUZ</h2>
+                    <hr />
                   </div>
                 </header>
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Relax"}
-                  weight={"tea pot"}
+                  title={"Yatıştırıcı"}
+                  weight={"çaydanlik"}
                   price={"190 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Cough tea"}
-                  weight={"tea pot"}
+                  title={"Öksürük ve bronşíte karşı"}
+                  weight={"çaydanlik"}
                   price={"190 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"For hypertension"}
-                  weight={"tea pot"}
+                  title={"Hípertansíyonda"}
+                  weight={"çaydanlik"}
                   price={"190 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"For weight loss "}
-                  weight={"tea pot"}
+                  title={"Zayıflama çayı (ançan)"}
+                  weight={"çaydanlik"}
                   price={"230 KGS"}
                 />
-                <header className="tea-header">
-                  <div className="tea-header-title">
-                    <span style={{ margin: "35px 0px 35px 0px" }}>
-                      TEA-DRUNKARD
-                    </span>
+                <header className="menu-header" style={{ paddingTop: "30px" }}>
+                  <div className="menu-title-container">
+                    <hr />
+                    <h2 style={{ textAlign: "center" }}>ÇAY SEVER</h2>
+                    <hr />
                   </div>
                 </header>
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
                   title={"Da Hong Pao"}
-                  weight={"400 ml/tea pot"}
+                  weight={"400 ml/çaydanlik"}
                   price={"100/180 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
                   title={"Tieguanyin"}
-                  weight={"400 ml/tea pot"}
+                  weight={"400 ml/çaydanlik"}
                   price={"100/180 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
                   title={"Oolong"}
-                  weight={"400 ml/tea pot"}
+                  weight={"400 ml/çaydanlik"}
                   price={"100/180 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
                   title={"Puerh"}
-                  weight={"400 ml/tea pot"}
+                  weight={"400 ml/çaydanlik"}
                   price={"110/200 KGS"}
                 />
-                <header className="tea-header">
-                  <div className="tea-header-title">
-                    <span style={{ margin: "35px 0px 35px 0px" }}>
-                      ICED MIX
-                    </span>
+                <header className="menu-header" style={{ paddingTop: "30px" }}>
+                  <div className="menu-title-container">
+                    <hr />
+                    <h2 style={{ textAlign: "center" }}>BUZ KARIŞIMI</h2>
+                    <hr />
                   </div>
                 </header>
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Iced matcha"}
+                  title={"Ice matcha"}
                   weight={"400 ml"}
                   price={"280 KGS"}
                   extra={"green / blue"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Classical iced tea"}
+                  title={"Klasík buzlu çay"}
                   weight={"330 ml"}
                   price={"140 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Berry iced tea"}
+                  title={"Meyvelí buzlu çay"}
                   weight={"330 ml"}
                   price={"160 KGS"}
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
-                  title={"Sea buckthorn iced tea"}
+                  title={"Deníz topalak buzlu çay"}
                   weight={"330 ml"}
                   price={"150 KGS"}
                 />
-
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC" }}
                   title={"Matcha tonic"}

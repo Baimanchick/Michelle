@@ -512,7 +512,7 @@ export const generateL = (language) => {
           number: 10,
         },
         {
-          title: "GARNİTÜRLER",
+          title: "GARNİTÜR",
           id: 31,
           image:
             "https://michelle-kg.ru/media/turkish_categories/garnier_bxqNqXY.png",
