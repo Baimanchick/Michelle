@@ -292,7 +292,7 @@ export const generateL = (language) => {
                 title: "SALADS",
                 id: 23,
                 image: "https://michelle-kg.ru/media/categories/salads_aYXKiMu.png",
-                link: "/salads",
+                link: "/salad",
                 number: 3
               },
               {
@@ -428,7 +428,7 @@ export const generateL = (language) => {
                 title: "Salatalar",
                 id: 23,
                 image: "https://michelle-kg.ru/media/turkish_categories/salads_G5kQV2J.png",
-                link: "/salads",
+                link: "/salad",
                 number: 3
               },
               {
