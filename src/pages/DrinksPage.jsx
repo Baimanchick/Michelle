@@ -5,6 +5,10 @@ import SliderMenu, { categories } from "../components/SliderMenu";
 import TeaSquare from "../components/TeaSquare";
 import img1 from "../images/drinks/1.png";
 import { useLanguage } from "../functions/languageContext";
+import imgTerKG from "../images/drinks/termos_kg.png";
+import imgTerTR from "../images/drinks/termos_TR.png";
+import imgTerEN from "../images/drinks/termos_mobile_EN.png";
+import imgTerRU from "../images/coffe/image-2.png";
 
 function DrinksPage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -69,6 +73,8 @@ function DrinksPage() {
                     <span>ГОРЯЧИЙ МИКС</span>
                   </div>
                 </header>
+                <img className="coffe-img-2" src={imgTerRU} alt="" />
+
                 <>
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
@@ -521,6 +527,8 @@ function DrinksPage() {
                     <span>HOT MIX</span>
                   </div>
                 </header>
+                <img className="coffe-img-2" src={imgTerEN} alt="" />
+
                 <>
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
@@ -974,6 +982,8 @@ function DrinksPage() {
                     <span>SICAK KARIŞIM</span>
                   </div>
                 </header>
+                <img className="coffe-img-2" src={imgTerTR} alt="" />
+
                 <>
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
@@ -1088,9 +1098,7 @@ function DrinksPage() {
                   >
                     <div className="collagen-container-2">
                       <div className="collagen-wrapper-left">
-                        <div>
-                          * İçeceğin hacmi buzla belirtilir dahil.
-                        </div>
+                        <div>* İçeceğin hacmi buzla belirtilir dahil.</div>
                       </div>
                       <div className="collagen-wrapper-right"></div>
                     </div>
@@ -1121,8 +1129,8 @@ function DrinksPage() {
                     <div className="collagen-container-2">
                       <div className="collagen-wrapper-left">
                         <div>
-                        Tariflerimizde gerçek Belçika çikolatası kullanıyoruz, organik
-                          krema ve tek bir damla toz ikamesi yok!
+                          Tariflerimizde gerçek Belçika çikolatası kullanıyoruz,
+                          organik krema ve tek bir damla toz ikamesi yok!
                         </div>
                       </div>
                       <div className="collagen-wrapper-right"></div>
@@ -1426,6 +1434,8 @@ function DrinksPage() {
                     <span>ЫСЫК МИКС</span>
                   </div>
                 </header>
+                <img className="coffe-img-2" src={imgTerKG} alt="" />
+
                 <>
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
@@ -1540,7 +1550,10 @@ function DrinksPage() {
                   >
                     <div className="collagen-container-2">
                       <div className="collagen-wrapper-left">
-                        <div>*Суусундуктун көлөмү муздун болушун эске алуу менен көрсөтүлөт</div>
+                        <div>
+                          *Суусундуктун көлөмү муздун болушун эске алуу менен
+                          көрсөтүлөт
+                        </div>
                       </div>
                       <div className="collagen-wrapper-right"></div>
                     </div>
@@ -1571,9 +1584,9 @@ function DrinksPage() {
                     <div className="collagen-container-2">
                       <div className="collagen-wrapper-left">
                         <div>
-                        Суусундуктарыбызда биз эксклюзив колдонобуз
-                          табигый бельгиялык шоколад, табигый 33%
-                          крем жана порошок алмаштыргычтар жок!
+                          Суусундуктарыбызда биз эксклюзив колдонобуз табигый
+                          бельгиялык шоколад, табигый 33% крем жана порошок
+                          алмаштыргычтар жок!
                         </div>
                       </div>
                       <div className="collagen-wrapper-right"></div>
