@@ -5,6 +5,10 @@ import SliderMenu, { categories } from "../components/SliderMenu";
 import TeaSquare from "../components/TeaSquare";
 import img1 from "../images/tea/1.png";
 import img2 from "../images/tea/EnBardak.png";
+import imgTerKG from "../images/drinks/termos_kg.png";
+import imgTerTR from "../images/drinks/termos_TR.png";
+import imgTerEN from "../images/drinks/termos_mobile_EN.png";
+import imgTerRU from "../images/coffe/image-2.png";
 
 import { useLanguage } from "../functions/languageContext";
 
@@ -71,6 +75,7 @@ function TeaPage() {
                   <span>ФИРМЕННЫЕ</span>
                 </div>
               </header>
+              <img className="coffe-img-2" src={imgTerRU} alt="" />
               <div className="collagen-main-2">
                 <div className="collagen-container-2">
                   <div className="collagen-wrapper-left">
@@ -301,6 +306,7 @@ function TeaPage() {
                   <span>Special Recipes</span>
                 </div>
               </header>
+              <img className="coffe-img-2" src={imgTerEN} alt="" />
               <div className="collagen-main-2">
                 <div className="collagen-container-2">
                   <div className="collagen-wrapper-left">
@@ -531,10 +537,12 @@ function TeaPage() {
                   <span>Özel Tarifler</span>
                 </div>
               </header>
+              <img className="coffe-img-2" src={imgTerTR} alt="" />
+
               <div className="collagen-main-2">
                 <div className="collagen-container-2">
                   <div className="collagen-wrapper-left">
-                  doğal katkılı şekersiz
+                    doğal katkılı şekersiz
                   </div>
                   <div className="collagen-wrapper-right"></div>
                 </div>
@@ -761,10 +769,12 @@ function TeaPage() {
                   <span>ФИРМЕННЫЙ</span>
                 </div>
               </header>
+              <img className="coffe-img-2" src={imgTerKG} alt="" />
+
               <div className="collagen-main-2">
                 <div className="collagen-container-2">
                   <div className="collagen-wrapper-left">
-                  Шекерсиз жана сиропсуз табигый кошумчалар менен
+                    Шекерсиз жана сиропсуз табигый кошумчалар менен
                   </div>
                   <div className="collagen-wrapper-right"></div>
                 </div>

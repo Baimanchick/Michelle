@@ -8,9 +8,10 @@ import LongSqaure from "../components/LongSquare";
 import img1 from "../images/coffe/image-1.png";
 import img2 from "../images/coffe/image-2.png";
 import img3 from "../images/coffe/card_1_breakfast.png";
-import imgTerKG from "../images/drinks/termos_kg.png"
-import imgTerTR from "../images/drinks/termos_TR.png"
-import imgTerEN from "../images/drinks/termos_mobile_EN.png"
+import imgTerKG from "../images/drinks/termos_kg.png";
+import imgTerTR from "../images/drinks/termos_TR.png";
+import imgTerEN from "../images/drinks/termos_mobile_EN.png";
+import imgTerRU from "../images/coffe/image-2.png";
 
 import { useLanguage } from "../functions/languageContext";
 
@@ -68,8 +69,7 @@ function MenuCoffe() {
             ></div>
           </div>
           <>
-            {selectedLanguage === "Русский"
-            ? (
+            {selectedLanguage === "Русский" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>КОФЕ</div>
@@ -83,8 +83,7 @@ function MenuCoffe() {
                   <span>КАТЫШУУ КОФЕ</span>
                 </div>
               </header>
-            ) : selectedLanguage === "English"
-            ? (
+            ) : selectedLanguage === "English" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>COFFE</div>

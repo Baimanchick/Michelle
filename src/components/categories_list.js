@@ -85,7 +85,7 @@ export const generateL = (language) => {
           id: 51,
           image:
             "https://michelle-kg.ru/media/categories/%D0%9C%D0%B0%D0%BA_%D1%8D%D0%BD%D0%B4_%D0%A7%D0%98%D0%97_5HryrXH.jpg",
-          link: "/gar",
+          link: "/child",
           number: 12,
         },
         {
