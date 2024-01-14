@@ -3,6 +3,13 @@ export const generateL = (language) => {
     case "Русский":
       return [
         {
+          title: "О нас",
+          id: 1,
+          image: "",
+          link: "/about",
+          number: 0
+        },
+        {
           title: "НОВОГОДНЕЕ МЕНЮ",
           id: 40,
           image:
@@ -140,6 +147,13 @@ export const generateL = (language) => {
       ];
     case "Кыргызча":
       return [
+        {
+          title: "БИЗ ЖӨНҮНДӨ",
+          id: 1,
+          image: "",
+          link: "/about",
+          number: 0
+        },
         {
           title: "Жаны Жылды",
           id: 23,
@@ -295,6 +309,13 @@ export const generateL = (language) => {
     case "English":
       return [
         {
+          title: "ABOUT US",
+          id: 1,
+          image: "",
+          link: "/about",
+          number: 0
+        },
+        {
           title: "BREAKFAST",
           id: 21,
           image: "https://michelle-kg.ru/media/categories/zavtrak_S1dZSZb.png",
@@ -432,6 +453,13 @@ export const generateL = (language) => {
     case "Türkçe":
       return [
         {
+          title: "HAKKIMIZDA",
+          id: 1,
+          image: "",
+          link: "/about",
+          number: 0
+        },
+        {
           title: "Yılbaşı menüsü",
           id: 21,
           image:
@@ -568,7 +596,7 @@ export const generateL = (language) => {
           number: 17,
         },
         {
-          title: "SMOOTHIE BULMACA",
+          title: "SMOOTHIE-PUZZLE",
           id: 38,
           image:
             "https://michelle-kg.ru/media/turkish_categories/smuzi_9YKO424.png",

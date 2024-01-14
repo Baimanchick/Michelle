@@ -271,7 +271,7 @@ function SmuziPage() {
             <div className="tea-main">
               <header className="tea-header">
                 <div className="tea-header-title">
-                  <h2>DÜZ BULMAC</h2>
+                  <h2>SMOOTHIE-PUZZLE</h2>
                 </div>
               </header>
               <div className="smuzi-main">

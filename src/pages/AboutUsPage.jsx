@@ -10,7 +10,11 @@ import img4 from "../images/about/english.png";
 
 function AboutUsPage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState(categories[0]);
+  let getCategory = localStorage.getItem("category");
+
+  const [selectedCategory, setSelectedCategory] = useState(
+    categories[Number(getCategory)]
+  );
   const [categoryChange, setCategoryChange] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [dishes, setDishes] = useState([]);
@@ -21,6 +25,8 @@ function AboutUsPage() {
 
   const handleSelectCategory = (category) => {
     setSelectedCategory(category);
+    getCategory = category.id;
+    localStorage.setItem("category", category.id);
     setCategoryChange(true);
   };
 
@@ -42,7 +48,7 @@ function AboutUsPage() {
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
           <div className="menu-stick">
-            {/* <SliderMenu onSelectCategory={handleSelectCategory} /> */}
+            <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
             <div
               style={{
                 display: "flex",
