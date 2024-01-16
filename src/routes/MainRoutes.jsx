@@ -72,7 +72,6 @@ function MainRoutes() {
         <Route path="/bar" element={<BarPage />} />
         <Route path="/wine" element={<WinePage />} />
         <Route path="/new" element={<MenuNewYear />} />
-        <Route path="/test" element={<Test />} />
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/construct" element={<MenuBreakContruct/>} />
       </Route>

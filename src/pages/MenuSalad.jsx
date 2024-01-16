@@ -5,6 +5,7 @@ import CardSalad from "../components/CardSalad";
 import Test from "../routes/Test";
 import SliderMenu, { categories } from "../components/SliderMenu";
 import { useLanguage } from "../functions/languageContext";
+import ArrowLeft from "../components/ArrowLeft";
 
 function MenuSalad() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -12,7 +13,9 @@ function MenuSalad() {
 
   let getCategory = localStorage.getItem("category");
 
-  const [selectedCategory, setSelectedCategory] = useState(categories[Number(getCategory)]);
+  const [selectedCategory, setSelectedCategory] = useState(
+    categories[Number(getCategory)]
+  );
   const [categoryChange, setCategoryChange] = useState(false);
   const { selectedLanguage, setSelectedLanguage } = useLanguage();
 
@@ -59,8 +62,8 @@ function MenuSalad() {
 
   const handleSelectCategory = (category) => {
     setSelectedCategory(category);
-    getCategory = category.id
-    localStorage.setItem("category", category.id)
+    getCategory = category.id;
+    localStorage.setItem("category", category.id);
     setCategoryChange(true);
   };
 
@@ -81,7 +84,10 @@ function MenuSalad() {
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
           <div className="menu-stick">
-            <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
+            <SliderMenu
+              onSelectCategory={handleSelectCategory}
+              categoryI={Number(getCategory)}
+            />
             <div
               style={{
                 display: "flex",
@@ -90,8 +96,10 @@ function MenuSalad() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
+
           <>
-            { selectedLanguage === "Кыргызча" ? (
+            {selectedLanguage === "Кыргызча" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>САЛАТТАР</div>
@@ -105,8 +113,7 @@ function MenuSalad() {
                   <span>НЕ ЕДА, ЭТО СТИЛЬ</span>
                 </div>
               </header>
-            ) : selectedLanguage === "English"
-            ? (
+            ) : selectedLanguage === "English" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>SALAD BAR</div>

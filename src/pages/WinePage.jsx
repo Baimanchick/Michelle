@@ -7,6 +7,7 @@ import img1 from "../images/drinks/1.png";
 import SmuziSquaer from "../components/SmuziSquaer";
 import WineSquare from "../components/WineSquare";
 import { useLanguage } from "../functions/languageContext";
+import ArrowLeft from "../components/ArrowLeft";
 
 function WinePage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -63,6 +64,8 @@ function WinePage() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
+
           {selectedLanguage === "Русский" ? (
             <div className="drinks-main">
               <header
