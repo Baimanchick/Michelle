@@ -32,6 +32,7 @@ import Advice from "../components/Advice";
 import axios from "axios";
 import Test from "../routes/Test";
 import { useLanguage } from "../functions/languageContext";
+import ArrowLeft from "../components/ArrowLeft";
 
 function MenuPizza() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -128,6 +129,7 @@ function MenuPizza() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
           <>
             {selectedLanguage === "Русский" ||
             selectedLanguage === "Кыргызча" ? (
@@ -241,7 +243,9 @@ function MenuPizza() {
                 style={{ marginTop: "20px" }}
               />
               <Advice
-                text={"Биз бардык пиццаларга биздин кол тамга бала калемпирди беребиз"}
+                text={
+                  "Биз бардык пиццаларга биздин кол тамга бала калемпирди беребиз"
+                }
               />
               <Advice
                 text={

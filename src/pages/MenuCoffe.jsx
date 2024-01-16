@@ -12,6 +12,7 @@ import imgTerKG from "../images/drinks/termos_kg.png";
 import imgTerTR from "../images/drinks/termos_TR.png";
 import imgTerEN from "../images/drinks/termos_mobile_EN.png";
 import imgTerRU from "../images/coffe/image-2.png";
+import ArrowLeft from "../components/ArrowLeft";
 
 import { useLanguage } from "../functions/languageContext";
 
@@ -68,6 +69,7 @@ function MenuCoffe() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
           <>
             {selectedLanguage === "Русский" ? (
               <header className="menu-salad-header">

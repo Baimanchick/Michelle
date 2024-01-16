@@ -6,13 +6,10 @@ import { useNavigate } from "react-router-dom";
 function ArrowLeft() {
   const navigate = useNavigate();
   return (
-    <div className="back-main">
+    <div className="back-main" onClick={() => navigate("/categories")}>
       <div className="back-container">
         <div className="back">
-          <FaArrowLeftLong
-            onClick={() => navigate("/menu")}
-            className="back-icon"
-          />
+          <FaArrowLeftLong className="back-icon" />
         </div>
       </div>
     </div>

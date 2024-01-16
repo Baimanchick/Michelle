@@ -30,6 +30,7 @@ import Advice from "../components/Advice";
 import { useLanguage } from "../functions/languageContext";
 import axios from "axios";
 import Test from "../routes/Test";
+import ArrowLeft from "../components/ArrowLeft";
 
 function MenuGar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -125,9 +126,9 @@ function MenuGar() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
           <>
-            {selectedLanguage === "Русский"
-            ? (
+            {selectedLanguage === "Русский" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ГАРНИРЫ</div>
@@ -139,8 +140,7 @@ function MenuGar() {
                   <div>ГАРНИРЛЕР</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English"
-            ? (
+            ) : selectedLanguage === "English" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>SIDE DISHES</div>
