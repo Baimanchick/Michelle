@@ -13,6 +13,7 @@ import imgTerTR from "../images/drinks/termos_TR.png";
 import imgTerEN from "../images/drinks/termos_mobile_EN.png";
 import imgTerRU from "../images/coffe/image-2.png";
 import ArrowLeft from "../components/ArrowLeft";
+import imgMilkTR from "../images/else/card_1_breakfast (2).png"
 
 import { useLanguage } from "../functions/languageContext";
 
@@ -389,7 +390,7 @@ function MenuCoffe() {
                 price={"360/550 KGS"}
                 squareI={squareI}
               />
-              <img src={img3} alt="" />
+              <img src={imgMilkTR} alt="" />
             </div>
           ) : selectedLanguage === "Кыргызча" ? (
             <div className="square-main-content">

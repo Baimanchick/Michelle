@@ -999,28 +999,28 @@ function DrinksPage() {
                     title={"Matcha"}
                     weight={"400 ml"}
                     price={"300 KGS"}
-                    extra={"green / blue"}
+                    extra={"yeşíl / maví"}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
-                    title={"Cacao"}
+                    title={"Какао"}
                     weight={"200 ml"}
                     price={"170/190 KGS"}
-                    extra={"classic / with Belgian chocolate"}
+                    extra={"klasík / temelí Belçíka çikolatalı"}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
-                    title={"Mulled wine"}
+                    title={"Sıcak şarap"}
                     weight={"200 ml"}
                     price={"380 KGS"}
-                    extra={"red / white"}
+                    extra={"kırmızı / beyaz"}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
-                    title={"Non-alcoholic mulled wine"}
+                    title={"Sıcak şarap alkolsüz"}
                     weight={"200 ml"}
                     price={"210 KGS"}
-                    extra={"cherry / apple / pomegranate"}
+                    extra={"kíraz / elma / nar"}
                   />
                   <div
                     style={{ margin: "35px 0px 35px 0px" }}
@@ -1033,63 +1033,65 @@ function DrinksPage() {
                       <div className="collagen-wrapper-right">+30 KGS</div>
                     </div>
                   </div>
-                  <header className="tea-header">
-                    <div className="tea-header-title">
-                      <span>EL YAPIMI LİMONATALAR</span>
+                  <header className="menu-header" style={{ paddingTop: "30px" }}>
+                    <div className="menu-title-container">
+                      <hr />
+                      <h2 style={{ textAlign: "center", fontSize: "17px" }}>EV YAPIMI LİMONATALAR</h2>
+                      <hr />
                     </div>
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Classic"}
+                    title={"Klasík"}
                     weight={"400 ml/1l"}
                     price={"190/290 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Tropical"}
+                    title={"Tropíkal"}
                     weight={"400 ml/1l"}
                     price={"230/400 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Pear-lemon"}
+                    title={"Armut-límon"}
                     weight={"400 ml/1l"}
                     price={"230/330 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Kiwi apple"}
+                    title={"Elma-kíví"}
                     weight={"400 ml/1l"}
                     price={"230/330 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Mojito"}
+                    title={"Mojíto"}
                     weight={"400 ml/1l"}
                     price={"230/330 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Michelle’s"}
+                    title={"Markalı Míşel"}
                     weight={"400 ml/1l"}
                     price={"280/450 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Raspberry"}
+                    title={"Ahududulu"}
                     weight={"400 ml/1l"}
                     price={"280/450 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Cherry"}
+                    title={"Kírazlı"}
                     weight={"400 ml/1l"}
                     price={"280/450 KGS"}
                     extra={"280/450 KGS"}
@@ -1112,7 +1114,7 @@ function DrinksPage() {
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
-                    title={"Classic"}
+                    title={"Klasík"}
                     weight={"200 ml"}
                     price={"260 KGS"}
                     extra={""}
@@ -1145,35 +1147,35 @@ function DrinksPage() {
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Spring water"}
+                    title={"Legend kaynak suyu"}
                     weight={"1 l"}
                     price={"70 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Lemon and cucumber water"}
+                    title={"Vítamín suyu límon-salatalık"}
                     weight={"1 l"}
                     price={"160 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Lime and mint water"}
+                    title={"Vítamín suyu límon-nane"}
                     weight={"1 l"}
                     price={"170 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Rosemary and ginger water"}
+                    title={"Vítamín suyu bíberíye-zencefíl"}
                     weight={"1 l"}
                     price={"170 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Lemon water"}
+                    title={"Límonlu su"}
                     weight={"1 l"}
                     price={"160 KGS"}
                     extra={""}
@@ -1197,40 +1199,40 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>TAZE SULAR</span>
+                      <span>FRESH</span>
                     </div>
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Carrot"}
+                    title={"Havuç"}
                     weight={"250 ml"}
                     price={"160 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Apple"}
+                    title={"Elma"}
                     weight={"250 ml"}
                     price={"160 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Apple-carrot"}
+                    title={"Elma-havuç"}
                     weight={"250 ml"}
                     price={"160 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Orange"}
+                    title={"Portakal"}
                     weight={"250 ml"}
                     price={"310 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Orange-apple"}
+                    title={"Elma-portakal"}
                     weight={"250 ml"}
                     price={"260 KGS"}
                     extra={""}
@@ -1240,19 +1242,19 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>Ucube sallamalar</span>
+                      <span>FREAKSHAKE</span>
                     </div>
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#FED5CAB2 " }}
-                    title={"Strawberry fantasy"}
+                    title={"Çíleklí hayaller"}
                     weight={"300 ml"}
                     price={"360 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FED5CAB2 " }}
-                    title={"Banana boom"}
+                    title={"Muz patlaması"}
                     weight={"300 ml"}
                     price={"360 KGS"}
                     extra={""}
@@ -1262,19 +1264,19 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>DETOX</span>
+                      <span>DETOKS</span>
                     </div>
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Spinach-kiwi"}
+                    title={"Ispanak-kíví"}
                     weight={"250 ml"}
                     price={"170 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Tropical"}
+                    title={"Tropíkal"}
                     weight={"250 ml"}
                     price={"280 KGS"}
                     extra={""}
@@ -1289,7 +1291,7 @@ function DrinksPage() {
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#FED5CAB2" }}
-                    title={"Strawberry-cracker"}
+                    title={"Çíleklí kraker"}
                     weight={"300 ml"}
                     price={"300 KGS"}
                     extra={""}
@@ -1303,21 +1305,21 @@ function DrinksPage() {
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FED5CAB2" }}
-                    title={"Banana"}
+                    title={"Muz"}
                     weight={"300 ml"}
                     price={"300 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FED5CAB2" }}
-                    title={"Chocolate"}
+                    title={"Çíkolata"}
                     weight={"300 ml"}
                     price={"300 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FED5CAB2" }}
-                    title={"Chocolate banana"}
+                    title={"Çíkolata ve muz"}
                     weight={"300 ml"}
                     price={"300 KGS"}
                     extra={""}
@@ -1327,7 +1329,7 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>LACTOSE-FREE MILKSHAKES</span>
+                      <span>LAKTOZSUZ MILKSHAKE</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1339,14 +1341,14 @@ function DrinksPage() {
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
-                    title={"Walnut"}
+                    title={"Cevízlí"}
                     weight={"300 ml"}
                     price={"310 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
-                    title={"Coconut and strawberry"}
+                    title={"Híndístan cevizí ve çílek"}
                     weight={"300 ml"}
                     price={"310 KGS"}
                     extra={""}
@@ -1356,7 +1358,7 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>MEŞRUBAT VE ENERJİ İÇECEKLERİ</span>
+                      <span>SOĞUK İÇECEKLER</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1400,26 +1402,26 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>SMOOTHIES</span>
+                      <span>SMOOTHIE</span>
                     </div>
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#FED5CAB2" }}
-                    title={"Berry"}
+                    title={"Meyvelí"}
                     weight={"300 ml"}
                     price={"240 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FED5CAB2" }}
-                    title={"Mango and orange"}
+                    title={"Mango ve portakal"}
                     weight={"300 ml"}
                     price={"290 KGS"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FED5CAB2" }}
-                    title={"Gut health"}
+                    title={"Bífído"}
                     weight={"250 ml"}
                     price={"260 KGS"}
                     extra={""}

@@ -3,11 +3,18 @@ export const generateL = (language) => {
     case "Русский":
       return [
         {
-          title: "НОВОГОДНЕЕ МЕНЮ",
+          title: "О нас",
+          id: 1,
+          image: "",
+          link: "/about",
+          number: 0
+        },
+        {
+          title: "КОНСТРУКТОР ЗАВТРАКА",
           id: 40,
           image:
             "https://michelle-kg.ru/media/categories/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%D0%B4%D0%BD%D0%B5%D0%B5_%D0%BC%D0%B5%D0%BD%D1%8E_RHR0V2p.jpg",
-          link: "/new",
+          link: "/construct",
           number: 1,
         },
         {
@@ -141,11 +148,18 @@ export const generateL = (language) => {
     case "Кыргызча":
       return [
         {
-          title: "Жаны Жылды",
+          title: "БИЗ ЖӨНҮНДӨ",
+          id: 1,
+          image: "",
+          link: "/about",
+          number: 0
+        },
+        {
+          title: "ЭртеҢки конструкция",
           id: 23,
           image:
             "https://michelle-kg.ru/media/kyrgyz_categories/%D0%96%D0%B0%D0%BD%D1%8B_%D0%96%D1%8B%D0%BB%D0%B4%D1%8B%D0%BA_%D0%BC%D0%B5%D0%BD%D1%8E%D1%81%D1%83_3quZDoZ.jpg",
-          link: "/new",
+          link: "/сonstruct",
           number: 1,
         },
         {
@@ -295,6 +309,13 @@ export const generateL = (language) => {
     case "English":
       return [
         {
+          title: "ABOUT US",
+          id: 1,
+          image: "",
+          link: "/about",
+          number: 0
+        },
+        {
           title: "BREAKFAST",
           id: 21,
           image: "https://michelle-kg.ru/media/categories/zavtrak_S1dZSZb.png",
@@ -302,10 +323,10 @@ export const generateL = (language) => {
           number: 2,
         },
         {
-          title: "NEW YEARS MENU",
+          title: "BREAKFAST CONSTRUCTOR",
           id: 22,
           image: "https://michelle-kg.ru/media/categories/New_Years_MENU.jpg",
-          link: "/new",
+          link: "/construct",
           number: 1,
         },
         {
@@ -432,11 +453,18 @@ export const generateL = (language) => {
     case "Türkçe":
       return [
         {
-          title: "Yılbaşı menüsü",
+          title: "HAKKIMIZDA",
+          id: 1,
+          image: "",
+          link: "/about",
+          number: 0
+        },
+        {
+          title: "KAHVALTI İNŞAATÇISI",
           id: 21,
           image:
             "https://michelle-kg.ru/media/turkish_categories/Yilbasi_Menusu_n3u2zOo.jpg",
-          link: "/new",
+          link: "/construct",
           number: 1,
         },
         {
@@ -512,7 +540,7 @@ export const generateL = (language) => {
           number: 10,
         },
         {
-          title: "GARNİTÜRLER",
+          title: "GARNİTÜR",
           id: 31,
           image:
             "https://michelle-kg.ru/media/turkish_categories/garnier_bxqNqXY.png",
@@ -568,7 +596,7 @@ export const generateL = (language) => {
           number: 17,
         },
         {
-          title: "SMOOTHIE BULMACA",
+          title: "SMOOTHIE-PUZZLE",
           id: 38,
           image:
             "https://michelle-kg.ru/media/turkish_categories/smuzi_9YKO424.png",

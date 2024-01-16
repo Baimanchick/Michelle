@@ -26,6 +26,7 @@ import WinePage from "../pages/WinePage";
 import MenuNewYear from "../pages/MenuNewYear";
 import Test from "./Test";
 import AboutUsPage from "../pages/AboutUsPage";
+import MenuBreakContruct from "../pages/MenuBreakContruct";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -72,6 +73,7 @@ function MainRoutes() {
         <Route path="/wine" element={<WinePage />} />
         <Route path="/new" element={<MenuNewYear />} />
         <Route path="/about" element={<AboutUsPage />} />
+        <Route path="/construct" element={<MenuBreakContruct/>} />
       </Route>
     </Routes>
   );

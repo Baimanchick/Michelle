@@ -38,7 +38,7 @@ import ArrowLeft from "../components/ArrowLeft";
 
 function MenuDinner() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const getCategory = localStorage.getItem("category");
+  let getCategory = localStorage.getItem("category");
 
   let [selectedCategory, setSelectedCategory] = useState(
     categories[Number(getCategory)]
@@ -74,16 +74,17 @@ function MenuDinner() {
 
     fetchDishes();
   }, []);
+
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
         return item.category === 46;
       case "English":
-        return item.category === 26;
+        return item.category === 27;
       case "Кыргызча":
         return item.category === 29;
       case "Türkçe":
-        return item.category === 26;
+        return item.category === 27;
       default:
         return false;
     }

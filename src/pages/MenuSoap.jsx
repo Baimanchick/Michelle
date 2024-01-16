@@ -22,6 +22,10 @@ import img7 from "../images/soap/7.jpg";
 import img8 from "../images/soap/8.jpg";
 import img9 from "../images/soap/9.jpg";
 import Advice from "../components/Advice";
+import imgAdviceTR from "../images/soap/card_1_breakfast (1).png"
+import imgAdviceKG from "../images/soap/kgs.png"
+import imgAdviceRU from "../images/soap/rus(4).png"
+import imgAdviceENG from "../images/soap/card_1_breakfast (3).png"
 import axios from "axios";
 import Test from "../routes/Test";
 import { useLanguage } from "../functions/languageContext";
@@ -139,7 +143,7 @@ function MenuSoap() {
             ) : selectedLanguage === "English" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
-                  <div>SOUP</div>
+                  <div>SOUPS</div>
                   <span>CREAM SOUP</span>
                 </div>
               </header>
@@ -166,7 +170,20 @@ function MenuSoap() {
               />
             ))}
           </div>
-          <div style={{ paddingBottom: "200px" }}></div>
+          <>
+            {selectedLanguage === "Русский"
+             ? (
+              <img src={imgAdviceRU} alt="img" style={{ paddingTop: "50px" }} />
+            ) : selectedLanguage === "Кыргызча" ? (
+              <img src={imgAdviceKG} alt="img" style={{ paddingTop: "50px" }} />
+            ) : selectedLanguage === "English"
+            ? (
+              <img src={imgAdviceENG} alt="img" style={{ paddingTop: "50px" }} />
+            ) : selectedLanguage === "Türkçe" ? (
+              <img src={imgAdviceTR} alt="img" style={{ paddingTop: "50px" }} />
+            ) : null}
+          </>
+          <div style={{ paddingBottom: "150px" }}></div>
         </div>
       ) : (
         <>
