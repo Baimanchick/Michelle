@@ -32,6 +32,7 @@ import Advice from "../components/Advice";
 import axios from "axios";
 import Test from "../routes/Test";
 import { useLanguage } from "../functions/languageContext";
+import ArrowLeft from "../components/ArrowLeft";
 
 function PastaPage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
