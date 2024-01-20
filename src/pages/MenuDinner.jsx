@@ -41,7 +41,6 @@ function MenuDinner() {
           `
         );
         setDishes(res.data);
-        console.log(res.data);
       } catch (error) {
         console.log(error);
       }
@@ -64,32 +63,24 @@ function MenuDinner() {
         return false;
     }
   });
-  console.log(filteredData);
 
   const sortedData = filteredData.sort((a, b) => {
     const idA = a.id;
     const idB = b.id;
 
-    if (idA === 173 || idA === 174) return 1;
-    if (idB === 173 || idB === 174) return -1;
-    if (idA === 177 || idA === 178) return 1;
-    if (idB === 178 || idB === 177) return -1;
-    if (idA === 185 || idA === 186) return 1;
-    if (idB === 186 || idB === 185) return -1;
-    if (idA === 189 || idA === 179) return 1;
-    if (idB === 179 || idB === 189) return -1;
-
-    // {
-    //   selectedLanguage === "Русский"
-    //     ? {}
-    //     : selectedLanguage === "English"
-    //     ? {}
-    //     : selectedLanguage === "Turkce"
-    //     ? {}
-    //     : selectedLanguage === "Кыргзча"
-    //     ? {}
-    //     : null;
-    // }
+    if (selectedLanguage === "Русский") {
+      if (idA === 173 || idA === 174) return 1;
+      if (idB === 173 || idB === 174) return -1;
+    } else if (selectedLanguage === "English") {
+      if (idA === 177 || idA === 178) return 1;
+      if (idB === 178 || idB === 177) return -1;
+    } else if (selectedLanguage === "Türkçe") {
+      if (idA === 178 || idA === 179) return 1;
+      if (idB === 179 || idB === 178) return -1;
+    } else if (selectedLanguage === "Кыргызча") {
+      if (idA === 189 || idA === 179) return 1;
+      if (idB === 179 || idB === 189) return -1;
+    }
 
     return 0;
   });
