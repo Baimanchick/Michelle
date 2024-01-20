@@ -28,6 +28,7 @@ import Test from "./Test";
 import AboutUsPage from "../pages/AboutUsPage";
 import MenuBreakContruct from "../pages/MenuBreakContruct";
 import PastaPage from "../pages/PastaPage";
+import DiscountPage from "../pages/DiscountPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -76,6 +77,7 @@ function MainRoutes() {
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/construct" element={<MenuBreakContruct/>} />
         <Route path="/pasta" element={<PastaPage/>} />
+        <Route path="/discount" element={<DiscountPage/>} />
       </Route>
     </Routes>
   );

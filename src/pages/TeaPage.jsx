@@ -79,7 +79,7 @@ function TeaPage() {
                   <span>ФИРМЕННЫЕ</span>
                 </div>
               </header>
-              <img className="coffe-img-2" src={imgTerRU} alt="" />
+              {/* <img className="coffe-img-2" src={imgTerRU} alt="" /> */}
               <div className="collagen-main-2">
                 <div className="collagen-container-2">
                   <div className="collagen-wrapper-left">
