@@ -7,6 +7,7 @@ import img1 from "../images/about/ru.png";
 import img2 from "../images/about/tk.png";
 import img3 from "../images/about/kg.png";
 import img4 from "../images/about/english.png";
+import ArrowLeft from "../components/ArrowLeft";
 
 function AboutUsPage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -48,7 +49,10 @@ function AboutUsPage() {
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
           <div className="menu-stick">
-            <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
+            <SliderMenu
+              onSelectCategory={handleSelectCategory}
+              categoryI={Number(getCategory)}
+            />
             <div
               style={{
                 display: "flex",
@@ -57,6 +61,7 @@ function AboutUsPage() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
 
           {selectedLanguage === "Русский" ? (
             <>
@@ -82,6 +87,10 @@ function AboutUsPage() {
                           сознательных компаний и в соответствии с этим видением
                           следуем определённым принципам:
                         </p>
+                      </div>
+                    </div>
+                    <div className="about-first">
+                      <div>
                         <p>
                           - Отказ от одноразового пластика и пластиковых бутылок
                           - Использование экологичного и бесконтактного QR-меню
@@ -168,6 +177,10 @@ function AboutUsPage() {
                           and in line with this vision, the company follows
                           certain principles to fulfill the green dream:
                         </p>
+                      </div>
+                    </div>
+                    <div className="about-first">
+                      <div>
                         <p>
                           - Avoiding the use of single-use plastic - Providing a
                           metallic QR menu instead of a paper menu - Promoting
@@ -231,7 +244,7 @@ function AboutUsPage() {
                 </div>
               </div>
             </>
-          ) : selectedLanguage === "Turkce" ? (
+          ) : selectedLanguage === "Türkçe" ? (
             <>
               <div className="about-main">
                 <div className="about-container">
@@ -255,6 +268,10 @@ function AboutUsPage() {
                           aldık ve bu vízyon doğrultusunda belírlí prensíplere
                           uymaktayız:
                         </p>
+                      </div>
+                    </div>
+                    <div className="about-first">
+                      <div>
                         <p>
                           — Tek kullanımlık plastík ve plastík şíşelerdí
                           reddetme— Ekolojík ve temassız QR-menü kullanımı —
@@ -338,6 +355,10 @@ function AboutUsPage() {
                           жана ушул көз карашка ылайык белгилүү бир принциптерди
                           карманганыбыз менен сыймыктанабыз:
                         </p>
+                      </div>
+                    </div>
+                    <div className="about-first">
+                      <div>
                         <p>
                           — Бир жолу колдонулуучу пластик жана желим
                           бөтөлкөлөрдөн баш тартуу— Экологиялык жана контактсыз
