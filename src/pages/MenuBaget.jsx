@@ -13,6 +13,7 @@ import icon8 from "../images/svgs/авакадо.svg";
 import icon9 from "../images/svgs/старбакс.svg";
 import img1 from "../images/baget/1.jpg";
 import img2 from "../images/baget/2.jpg";
+import img17 from "../images/dinner/card-17.svg";
 
 import CardSalad from "../components/CardSalad";
 import Advice from "../components/Advice";
@@ -121,14 +122,14 @@ function MenuBaget() {
             selectedLanguage === "Кыргызча" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
-                  <div>БАГЕТ</div>
+                  <div>БУРГЕР</div>
                 </div>
               </header>
             ) : selectedLanguage === "English" ||
               selectedLanguage === "Türkçe" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
-                  <div>BAGUETTES</div>
+                  <div>BURGER</div>
                 </div>
               </header>
             ) : null}
@@ -146,35 +147,19 @@ function MenuBaget() {
                 icon={item.svgs}
               />
             ))}
+            {selectedLanguage === "Русский" ? (
+              <>
+                <img
+                  style={{ marginTop: "20px", borderRadius: "10px" }}
+                  src={img17}
+                  alt=""
+                />
+              </>
+            ) : selectedLanguage === "English" ? null : selectedLanguage ===
+              "Türkçe" ? null : selectedLanguage === "Кыргзча" ? null : null}
           </div>
 
-          {selectedLanguage === "Русский" ? (
-            <Advice
-              text={
-                "Мы готовим паштет из нежного мяса курицы с добавлением ароматных трав"
-              }
-              style={{ marginTop: "20px" }}
-            />
-          ) : selectedLanguage === "English" ? (
-            <Advice
-              text={
-                "Our pate is made of tender chicken meat with the addition of herbs."
-              }
-              style={{ marginTop: "20px" }}
-            />
-          ) : selectedLanguage === "Türkçe" ? (
-            <Advice
-              text={"Ezmemiz otlar ilavesiyle yumuşak tavuk etinden yapılır."}
-              style={{ marginTop: "20px" }}
-            />
-          ) : selectedLanguage === "Кыргызча" ? (
-            <Advice
-              text={
-                "Тооктун этинен жыпар жыттуу чөптөрдү кошуп, паста даярдайбыз"
-              }
-              style={{ marginTop: "20px" }}
-            />
-          ) : null}
+          <div style={{ paddingBottom: "200px" }}></div>
         </div>
       ) : (
         <>

@@ -3,38 +3,12 @@ import "../css/soap.scss";
 import SliderMenu, { categories } from "../components/SliderMenu";
 import { useNavigate } from "react-router-dom";
 import CardSalad from "../components/CardSalad";
-import icon1 from "../images/svgs/Пшеница.svg";
-import icon2 from "../images/svgs/Листок.svg";
-import icon3 from "../images/svgs/Лук.svg";
-import icon4 from "../images/svgs/Повар.svg";
-import icon5 from "../images/svgs/докрашенный листок.svg";
-import icon6 from "../images/svgs/бицепс.svg";
-import icon7 from "../images/svgs/без молока.svg";
-import icon8 from "../images/svgs/авакадо.svg";
-import icon9 from "../images/svgs/старбакс.svg";
-import img1 from "../images/dinner/card-1.jpg";
-import img2 from "../images/dinner/card-2.jpg";
-import img3 from "../images/dinner/card-3.jpg";
-import img4 from "../images/dinner/card-4.jpg";
-import img5 from "../images/dinner/card-5.jpg";
-import img6 from "../images/dinner/card-6.jpg";
-import img7 from "../images/dinner/card-7.jpg";
-import img8 from "../images/dinner/card-8.jpg";
-import img9 from "../images/dinner/card-9.jpg";
-import img10 from "../images/dinner/card-10.jpg";
-import img11 from "../images/dinner/card-11.jpg";
-import img12 from "../images/dinner/card-12.jpg";
 import img13 from "../images/dinner/card-13.svg";
-import img14 from "../images/dinner/card-14.jpg";
-import img15 from "../images/dinner/card-15.jpg";
-import img16 from "../images/dinner/card-16.jpg";
-import img17 from "../images/dinner/card-17.svg";
-import img18 from "../images/dinner/card-18.jpg";
-import img19 from "../images/dinner/card-19.jpg";
 import axios from "axios";
 import { useLanguage } from "../functions/languageContext";
 import Test from "../routes/Test";
 import ArrowLeft from "../components/ArrowLeft";
+import Advice from "../components/Advice";
 
 function MenuDinner() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -67,6 +41,7 @@ function MenuDinner() {
           `
         );
         setDishes(res.data);
+        console.log(res.data);
       } catch (error) {
         console.log(error);
       }
@@ -80,14 +55,43 @@ function MenuDinner() {
       case "Русский":
         return item.category === 46;
       case "English":
-        return item.category === 27;
+        return item.category === 26;
       case "Кыргызча":
         return item.category === 29;
       case "Türkçe":
-        return item.category === 27;
+        return item.category === 26;
       default:
         return false;
     }
+  });
+  console.log(filteredData);
+
+  const sortedData = filteredData.sort((a, b) => {
+    const idA = a.id;
+    const idB = b.id;
+
+    if (idA === 173 || idA === 174) return 1;
+    if (idB === 173 || idB === 174) return -1;
+    if (idA === 177 || idA === 178) return 1;
+    if (idB === 178 || idB === 177) return -1;
+    if (idA === 185 || idA === 186) return 1;
+    if (idB === 186 || idB === 185) return -1;
+    if (idA === 189 || idA === 179) return 1;
+    if (idB === 179 || idB === 189) return -1;
+
+    // {
+    //   selectedLanguage === "Русский"
+    //     ? {}
+    //     : selectedLanguage === "English"
+    //     ? {}
+    //     : selectedLanguage === "Turkce"
+    //     ? {}
+    //     : selectedLanguage === "Кыргзча"
+    //     ? {}
+    //     : null;
+    // }
+
+    return 0;
   });
 
   const handleOpenMenu = () => {
@@ -178,11 +182,37 @@ function MenuDinner() {
             {selectedLanguage === "Русский" ? (
               <>
                 <img src={img13} alt="" />
-                <img src={img17} alt="" />
               </>
             ) : selectedLanguage === "English" ? null : selectedLanguage ===
               "Türkçe" ? null : selectedLanguage === "Кыргзча" ? null : null}
           </div>
+          {selectedLanguage === "Русский" ? (
+            <Advice
+              text={
+                "Мы готовим паштет из нежного мяса курицы с добавлением ароматных трав"
+              }
+              style={{ marginTop: "20px" }}
+            />
+          ) : selectedLanguage === "English" ? (
+            <Advice
+              text={
+                "Our pate is made of tender chicken meat with the addition of herbs."
+              }
+              style={{ marginTop: "20px" }}
+            />
+          ) : selectedLanguage === "Türkçe" ? (
+            <Advice
+              text={"Ezmemiz otlar ilavesiyle yumuşak tavuk etinden yapılır."}
+              style={{ marginTop: "20px" }}
+            />
+          ) : selectedLanguage === "Кыргызча" ? (
+            <Advice
+              text={
+                "Тооктун этинен жыпар жыттуу чөптөрдү кошуп, паста даярдайбыз"
+              }
+              style={{ marginTop: "20px" }}
+            />
+          ) : null}
 
           <div style={{ marginTop: "200px" }}>.</div>
         </div>
