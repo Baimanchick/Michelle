@@ -3,6 +3,7 @@ import "../css/collagen.scss";
 import { useNavigate } from "react-router-dom";
 import SliderMenu, { categories } from "../components/SliderMenu";
 import { useLanguage } from "../functions/languageContext";
+import ArrowLeft from "../components/ArrowLeft";
 
 function CollagenPage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -57,6 +58,7 @@ function CollagenPage() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
           {selectedLanguage === "Русский" ? (
             <>
               <div className="collagen-main">
@@ -194,8 +196,8 @@ function CollagenPage() {
                 <header className="collagen-header">
                   <h2>Yalnızca Michelle'de</h2>
                   <p>
-                  Kolajen, <br /> değer veren herkesin sahip olması gereken bir maddedir
-                  sağlıklı yaşam tarzı ve güzellik.
+                    Kolajen, <br /> değer veren herkesin sahip olması gereken
+                    bir maddedir sağlıklı yaşam tarzı ve güzellik.
                   </p>
                 </header>
                 <div className="collagen-container">
@@ -203,8 +205,8 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                        korunmasında çok önemli olan hayati bir proteindir.
-                        vücudun genel sağlığı.
+                          korunmasında çok önemli olan hayati bir proteindir.
+                          vücudun genel sağlığı.
                         </p>
                       </div>
                     </div>
@@ -213,9 +215,9 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                        Kolajenin birincil işlevi cildi korumaktır.
-                        genç ve sağlam görünmenin yanı sıra eklemlenmeyi de teşvik ediyor
-                        ve kas-iskelet sistemi sağlığı.
+                          Kolajenin birincil işlevi cildi korumaktır. genç ve
+                          sağlam görünmenin yanı sıra eklemlenmeyi de teşvik
+                          ediyor ve kas-iskelet sistemi sağlığı.
                         </p>
                       </div>
                     </div>
@@ -224,10 +226,10 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                        Vücuttaki optimum su seviyesinin korunmasına yardımcı olur,
-                        cilt yenilenmesini hızlandırır, ağrıyı azaltır, azaltır
-                        saç ve tırnakların kırılganlığını artırır ve diğer birçok
-                        faydalar.
+                          Vücuttaki optimum su seviyesinin korunmasına yardımcı
+                          olur, cilt yenilenmesini hızlandırır, ağrıyı azaltır,
+                          azaltır saç ve tırnakların kırılganlığını artırır ve
+                          diğer birçok faydalar.
                         </p>
                       </div>
                     </div>
@@ -236,9 +238,9 @@ function CollagenPage() {
               </div>
               <div className="collagen-title">
                 <div>
-                Kolajenin avantajlarını bugün <br /> deneyimleyin ve hissedin
-                <br />
-                hayatınıza getirebileceği fark!
+                  Kolajenin avantajlarını bugün <br /> deneyimleyin ve hissedin
+                  <br />
+                  hayatınıza getirebileceği fark!
                 </div>
               </div>
               <div style={{ paddingBottom: "300px" }}>
@@ -269,7 +271,8 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                        Коллаген негизги ролду ойнойт белок болуп саналат биздин денебиз.
+                          Коллаген негизги ролду ойнойт белок болуп саналат
+                          биздин денебиз.
                         </p>
                       </div>
                     </div>
@@ -278,7 +281,9 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                        Коллагендин негизги күчү - анын колдоо жөндөмдүүлүгү теринин өңү жана жаштар, ошондой эле биргелешкен ден соолук жана таяныч-кыймыл аппараты.
+                          Коллагендин негизги күчү - анын колдоо жөндөмдүүлүгү
+                          теринин өңү жана жаштар, ошондой эле биргелешкен ден
+                          соолук жана таяныч-кыймыл аппараты.
                         </p>
                       </div>
                     </div>
@@ -287,7 +292,10 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                        Коллагендин аркасында организмдеги суунун оптималдуу деңгээли сакталат, теринин регенерация процесстери тездетет, оору азаят, чачтын жана тырмактардын морттугу азаят жана башка көптөгөн нерселер!
+                          Коллагендин аркасында организмдеги суунун оптималдуу
+                          деңгээли сакталат, теринин регенерация процесстери
+                          тездетет, оору азаят, чачтын жана тырмактардын
+                          морттугу азаят жана башка көптөгөн нерселер!
                         </p>
                       </div>
                     </div>
@@ -296,7 +304,7 @@ function CollagenPage() {
               </div>
               <div className="collagen-title">
                 <div>
-                Коллагендин <br /> бардык артыкчылыктарын сезиңиз!
+                  Коллагендин <br /> бардык артыкчылыктарын сезиңиз!
                 </div>
               </div>
               <div style={{ paddingBottom: "300px" }}>

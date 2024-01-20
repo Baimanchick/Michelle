@@ -18,6 +18,7 @@ import CardSalad from "../components/CardSalad";
 import axios from "axios";
 import Test from "../routes/Test";
 import { useLanguage } from "../functions/languageContext";
+import ArrowLeft from "../components/ArrowLeft";
 
 function MenuPlat() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -113,6 +114,8 @@ function MenuPlat() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
+
           <>
             {selectedLanguage === "Русский" ||
             selectedLanguage === "Кыргызча" ? (
@@ -121,8 +124,7 @@ function MenuPlat() {
                   <div>ПЛЭТТЕРЫ</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English"
-            ? (
+            ) : selectedLanguage === "English" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>PLATTERS</div>

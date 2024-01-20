@@ -35,6 +35,7 @@ import Advice from "../components/Advice";
 import axios from "axios";
 import Test from "../routes/Test";
 import { useLanguage } from "../functions/languageContext";
+import ArrowLeft from "../components/ArrowLeft";
 
 function MenuHotMeal() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -131,9 +132,9 @@ function MenuHotMeal() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
           <>
-            {selectedLanguage === "Русский"
-            ? (
+            {selectedLanguage === "Русский" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ГОРЯЧИЕ БЛЮДА</div>
@@ -147,8 +148,7 @@ function MenuHotMeal() {
                   <p>ДАМДУУ</p>
                 </div>
               </header>
-            ) : selectedLanguage === "English"
-            ? (
+            ) : selectedLanguage === "English" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>MAIN DISHES EXQUISITE</div>
@@ -196,9 +196,7 @@ function MenuHotMeal() {
               />
             ) : selectedLanguage === "Türkçe" ? (
               <Advice
-                text={
-                  "Tariflerimizde %35 yağlı doğal sıvı krema kullanıyoruz."
-                }
+                text={"Tariflerimizde %35 yağlı doğal sıvı krema kullanıyoruz."}
               />
             ) : selectedLanguage === "Кыргызча" ? (
               <>

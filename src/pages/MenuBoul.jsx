@@ -21,6 +21,7 @@ import Advice from "../components/Advice";
 import { useLanguage } from "../functions/languageContext";
 import axios from "axios";
 import Test from "../routes/Test";
+import ArrowLeft from "../components/ArrowLeft";
 
 function MenuBoul() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -116,6 +117,7 @@ function MenuBoul() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
 
           <>
             {selectedLanguage === "Русский" ||
@@ -125,8 +127,7 @@ function MenuBoul() {
                   <div>ПОКЕ-БОУЛ</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English"
-            ? (
+            ) : selectedLanguage === "English" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>BOWLS</div>

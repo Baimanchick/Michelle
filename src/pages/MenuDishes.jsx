@@ -5,6 +5,7 @@ import axios from "axios";
 import { useLanguage } from "../functions/languageContext";
 import Test from "../routes/Test";
 import SliderMenu, { categories } from "../components/SliderMenu";
+import ArrowLeft from "../components/ArrowLeft";
 
 function MenuDishes() {
   const [isLoading, setIsLoading] = useState(true);
@@ -14,7 +15,9 @@ function MenuDishes() {
 
   let getCategory = localStorage.getItem("category");
 
-  const [selectedCategory, setSelectedCategory] = useState(categories[Number(getCategory)]);
+  const [selectedCategory, setSelectedCategory] = useState(
+    categories[Number(getCategory)]
+  );
   const [categoryChange, setCategoryChange] = useState(false);
 
   useEffect(() => {
@@ -42,7 +45,7 @@ function MenuDishes() {
 
     fetchDishes();
   }, []);
-  
+
   const filteredData = dishes.filter((item) => {
     switch (selectedLanguage) {
       case "Русский":
@@ -80,8 +83,8 @@ function MenuDishes() {
 
   const handleSelectCategory = (category) => {
     setSelectedCategory(category);
-    getCategory = category.id
-    localStorage.setItem("category", category.id)
+    getCategory = category.id;
+    localStorage.setItem("category", category.id);
     setCategoryChange(true);
   };
 
@@ -90,7 +93,10 @@ function MenuDishes() {
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
           <div className="menu-stick">
-            <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
+            <SliderMenu
+              onSelectCategory={handleSelectCategory}
+              categoryI={Number(getCategory)}
+            />
             <div
               style={{
                 display: "flex",
@@ -99,8 +105,9 @@ function MenuDishes() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
           <>
-            { selectedLanguage === "Кыргызча" ? (
+            {selectedLanguage === "Кыргызча" ? (
               <header className="menu-header">
                 <div className="menu-title-container">
                   <hr />
@@ -112,18 +119,17 @@ function MenuDishes() {
                 </div>
               </header>
             ) : selectedLanguage === "Русский" ? (
-                <header className="menu-header">
-                  <div className="menu-title-container">
-                    <hr />
-                    <h2>КЛАССИЧЕСКИЙ</h2>
-                    <hr />
-                  </div>
-                  <div className="menu-title-span">
-                    <span>НА НОВЫЙ ЛАД</span>
-                  </div>
-                </header>
-            ) : selectedLanguage === "English"
-              ? (
+              <header className="menu-header">
+                <div className="menu-title-container">
+                  <hr />
+                  <h2>КЛАССИЧЕСКИЙ</h2>
+                  <hr />
+                </div>
+                <div className="menu-title-span">
+                  <span>НА НОВЫЙ ЛАД</span>
+                </div>
+              </header>
+            ) : selectedLanguage === "English" ? (
               <header className="menu-header">
                 <div className="menu-title-container">
                   <hr />

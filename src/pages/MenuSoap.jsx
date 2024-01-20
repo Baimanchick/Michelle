@@ -29,6 +29,7 @@ import imgAdviceENG from "../images/soap/card_1_breakfast (3).png"
 import axios from "axios";
 import Test from "../routes/Test";
 import { useLanguage } from "../functions/languageContext";
+import ArrowLeft from "../components/ArrowLeft";
 
 function MenuSoap() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -125,9 +126,9 @@ function MenuSoap() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
           <>
-            {selectedLanguage === "Русский"
-             ? (
+            {selectedLanguage === "Русский" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>СУПЫ</div>
@@ -139,8 +140,7 @@ function MenuSoap() {
                   <div>ШОРПОЛОР</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English"
-            ? (
+            ) : selectedLanguage === "English" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>SOUPS</div>

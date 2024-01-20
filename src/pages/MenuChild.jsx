@@ -24,6 +24,7 @@ import Advice from "../components/Advice";
 import { useLanguage } from "../functions/languageContext";
 import axios from "axios";
 import Test from "../routes/Test";
+import ArrowLeft from "../components/ArrowLeft";
 
 function MenuChild() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -127,10 +128,10 @@ function MenuChild() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
 
           <>
-            {selectedLanguage === "Русский"
-            ? (
+            {selectedLanguage === "Русский" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ДЕТСКОЕ МЕНЮ</div>
@@ -142,8 +143,7 @@ function MenuChild() {
                   <div>БАЛДАР МЕНЮСУ</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English"
-            ? (
+            ) : selectedLanguage === "English" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>KID'S MENU</div>

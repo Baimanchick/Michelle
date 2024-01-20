@@ -34,12 +34,15 @@ import img19 from "../images/dinner/card-19.jpg";
 import axios from "axios";
 import { useLanguage } from "../functions/languageContext";
 import Test from "../routes/Test";
+import ArrowLeft from "../components/ArrowLeft";
 
 function MenuDinner() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   let getCategory = localStorage.getItem("category");
 
-  let [selectedCategory, setSelectedCategory] = useState(categories[Number(getCategory)]);
+  let [selectedCategory, setSelectedCategory] = useState(
+    categories[Number(getCategory)]
+  );
   const [categoryChange, setCategoryChange] = useState(false);
   const [notF, setNotF] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -93,8 +96,8 @@ function MenuDinner() {
 
   const handleSelectCategory = (category) => {
     setSelectedCategory(category);
-    getCategory = category.id
-    localStorage.setItem("category", category.id)
+    getCategory = category.id;
+    localStorage.setItem("category", category.id);
     setCategoryChange(true);
   };
 
@@ -115,7 +118,10 @@ function MenuDinner() {
       {windowWidth <= 1000 ? (
         <div className="menu-main-content">
           <div className="menu-stick">
-            <SliderMenu onSelectCategory={handleSelectCategory} categoryI={Number(getCategory)} />
+            <SliderMenu
+              onSelectCategory={handleSelectCategory}
+              categoryI={Number(getCategory)}
+            />
             <div
               style={{
                 display: "flex",
@@ -124,9 +130,9 @@ function MenuDinner() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
           <>
-            {selectedLanguage === "Русский"
-            ? (
+            {selectedLanguage === "Русский" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>РОЛЛЫ / БАГЕТ / БУТЕРБРОДЫ</div>
@@ -138,8 +144,7 @@ function MenuDinner() {
                   <div>РОЛЛ / БАГЕТ / БУТЕРБРОДТОР</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English"
-            ? (
+            ) : selectedLanguage === "English" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ROLLS / BAGUETTE / SANDWICHES</div>

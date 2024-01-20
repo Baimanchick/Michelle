@@ -19,6 +19,7 @@ import Advice from "../components/Advice";
 import axios from "axios";
 import Test from "../routes/Test";
 import { useLanguage } from "../functions/languageContext";
+import ArrowLeft from "../components/ArrowLeft";
 
 function MenuBaget() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -113,6 +114,7 @@ function MenuBaget() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
 
           <>
             {selectedLanguage === "Русский" ||
@@ -162,9 +164,7 @@ function MenuBaget() {
             />
           ) : selectedLanguage === "Türkçe" ? (
             <Advice
-              text={
-                "Ezmemiz otlar ilavesiyle yumuşak tavuk etinden yapılır."
-              }
+              text={"Ezmemiz otlar ilavesiyle yumuşak tavuk etinden yapılır."}
               style={{ marginTop: "20px" }}
             />
           ) : selectedLanguage === "Кыргызча" ? (

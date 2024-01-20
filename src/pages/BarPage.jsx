@@ -6,6 +6,7 @@ import TeaSquare from "../components/TeaSquare";
 import img1 from "../images/drinks/1.png";
 import { useLanguage } from "../functions/languageContext";
 import SmuziSquaer from "../components/SmuziSquaer";
+import ArrowLeft from "../components/ArrowLeft";
 
 function BarPage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -61,6 +62,7 @@ function BarPage() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
           {selectedLanguage === "Русский" ? (
             <div className="drinks-main">
               <header
