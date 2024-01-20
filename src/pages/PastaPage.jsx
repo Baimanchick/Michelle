@@ -128,6 +128,7 @@ function PastaPage() {
               }}
             ></div>
           </div>
+          <ArrowLeft />
           <>
             {selectedLanguage === "Русский" ||
             selectedLanguage === "Кыргызча" ? (
