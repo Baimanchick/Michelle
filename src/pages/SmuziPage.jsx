@@ -283,31 +283,31 @@ function SmuziPage() {
               </header>
               <div className="smuzi-main">
                 <SmuziSquaer
-                  title={"Yogurt"}
+                  title={"Yoğurt"}
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <SmuziSquaer
-                  title={"Fresh apple juice"}
+                  title={"Elmalı fresh"}
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <SmuziSquaer
-                  title={"Milk"}
+                  title={"Süt"}
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <SmuziSquaer
-                  title={"Fresh carrot juice"}
+                  title={"Havuçlu fresh"}
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <SmuziSquaer
-                  title={"Water"}
+                  title={"Su"}
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <SmuziSquaer
-                  title={"Fresh apple-carrot juice"}
+                  title={"Elma-havuçlu fresh"}
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <SmuziSquaer
-                  title={"Gracio juice"}
+                  title={"Gracio meyve suyu çeşítí"}
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <header className="tea-header">
@@ -316,47 +316,47 @@ function SmuziPage() {
                   </div>
                 </header>
                 <SmuziSquaer
-                  title={"Spinach"}
+                  title={"Ispanak"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Cucumber"}
+                  title={"Salatalık"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Mint"}
+                  title={"Nane"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Iceberg lettuce"}
+                  title={"Marul"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Lemon"}
+                  title={"Límon"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Apple"}
+                  title={"Elma"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Kiw"}
+                  title={"Kíví"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Strawberry"}
+                  title={"Çílek"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Raspberry"}
+                  title={"Ahududu"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Blackcurrant"}
+                  title={"Frenk üzümü"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Banana"}
+                  title={"Muz"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 {/*  */}

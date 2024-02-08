@@ -310,7 +310,7 @@ function TeaPage() {
                   <span>Special Recipes</span>
                 </div>
               </header>
-              <img className="coffe-img-2" src={imgTerEN} alt="" />
+              {/* <img className="coffe-img-2" src={imgTerEN} alt="" /> */}
               <div className="collagen-main-2">
                 <div className="collagen-container-2">
                   <div className="collagen-wrapper-left">
@@ -541,7 +541,7 @@ function TeaPage() {
                   <span>Özel Tarifler</span>
                 </div>
               </header>
-              <img className="coffe-img-2" src={imgTerTR} alt="" />
+              {/* <img className="coffe-img-2" src={imgTerTR} alt="" /> */}
 
               <header className="menu-header" style={{ paddingBottom: "30px" }}>
                 <div className="menu-title-container">
@@ -781,7 +781,7 @@ function TeaPage() {
                   <span>ФИРМЕННЫЙ</span>
                 </div>
               </header>
-              <img className="coffe-img-2" src={imgTerKG} alt="" />
+              {/* <img className="coffe-img-2" src={imgTerKG} alt="" /> */}
 
               <div className="collagen-main-2">
                 <div className="collagen-container-2">

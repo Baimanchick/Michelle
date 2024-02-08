@@ -905,7 +905,7 @@ function BarPage() {
               <>
                 <TeaSquare
                   style={{ backgroundColor: "#FEEABCE5" }}
-                  title={"Spanish Sangria"}
+                  title={"İspanyol Sangria"}
                   weight={"1 l"}
                   price={"565 KGS"}
                   extra={""}
@@ -1004,7 +1004,7 @@ function BarPage() {
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#FED5CAB2" }}
-                  title={"Kyrgyzstan"}
+                  title={"Kırgızístan"}
                   weight={"50 ml"}
                   price={"240 KGS"}
                   extra={""}

@@ -75,7 +75,7 @@ function DrinksPage() {
                     <span>ГОРЯЧИЙ МИКС</span>
                   </div>
                 </header>
-                <img className="coffe-img-2" src={imgTerRU} alt="" />
+                {/* <img className="coffe-img-2" src={imgTerRU} alt="" /> */}
 
                 <>
                   <TeaSquare
@@ -529,7 +529,7 @@ function DrinksPage() {
                     <span>HOT MIX</span>
                   </div>
                 </header>
-                <img className="coffe-img-2" src={imgTerEN} alt="" />
+                {/* <img className="coffe-img-2" src={imgTerEN} alt="" /> */}
 
                 <>
                   <TeaSquare
@@ -984,7 +984,7 @@ function DrinksPage() {
                     <span>SICAK KARIŞIM</span>
                   </div>
                 </header>
-                <img className="coffe-img-2" src={imgTerTR} alt="" />
+                {/* <img className="coffe-img-2" src={imgTerTR} alt="" /> */}
 
                 <>
                   <TeaSquare
@@ -1438,7 +1438,7 @@ function DrinksPage() {
                     <span>ЫСЫК МИКС</span>
                   </div>
                 </header>
-                <img className="coffe-img-2" src={imgTerKG} alt="" />
+                {/* <img className="coffe-img-2" src={imgTerKG} alt="" /> */}
 
                 <>
                   <TeaSquare
