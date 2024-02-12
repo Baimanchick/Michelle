@@ -103,7 +103,7 @@ function MenuCoffe() {
 
           {selectedLanguage === "Русский" ? (
             <div className="square-main-content">
-              <img className="coffe-img-2" src={img2} alt="" />
+              {/* <img className="coffe-img-2" src={img2} alt="" /> */}
               <Square title={"Эспрессо"} weight={"40 мл"} price={"175 с"} />
               <Square
                 title={"Американо"}
@@ -188,7 +188,7 @@ function MenuCoffe() {
             </div>
           ) : selectedLanguage === "English" ? (
             <div className="square-main-content">
-              <img className="coffe-img-2" src={imgTerEN} alt="" />
+              {/* <img className="coffe-img-2" src={imgTerEN} alt="" /> */}
               <Square title={"Espresso"} weight={"40 ml"} price={"175 KGS"} />
               <Square
                 title={"Americano"}
@@ -291,7 +291,7 @@ function MenuCoffe() {
             </div>
           ) : selectedLanguage === "Türkçe" ? (
             <div className="square-main-content">
-              <img className="coffe-img-2" src={imgTerTR} alt="" />
+              {/* <img className="coffe-img-2" src={imgTerTR} alt="" /> */}
               <Square title={"Espresso"} weight={"40 ml"} price={"175 KGS"} />
               <Square
                 title={"Americano"}
@@ -315,19 +315,19 @@ function MenuCoffe() {
                 price={"260 KGS"}
               />
               <LongSqaure
-                title={"Latte creme brulee marshmallow "}
+                title={"Latte krem-brüle marşmelov"}
                 weight={"200 ml"}
                 price={"340 KGS"}
                 squareI={squareI}
               />
               <LongSqaure
-                title={"Almond latte with whipped"}
+                title={"Çırpılmış kremalı badem latte"}
                 weight={"200 ml"}
                 price={"340 KGS"}
                 squareI={squareI}
               />
               <LongSqaure
-                title={"Cream banana-caramel"}
+                title={"Muz ve karamellí kapuccino"}
                 weight={"200/400 ml"}
                 price={"230/280 KGS"}
                 squareI={squareI}
@@ -359,7 +359,7 @@ function MenuCoffe() {
                 squareI={squareI}
               />
               <LongSqaure
-                title={"Bumble coffee with orange juice/ fresh orange juice"}
+                title={"Portakal suyunda / freshínde bumble coffee"}
                 weight={"250 ml"}
                 price={"210/310 KGS"}
                 squareI={squareI}
@@ -385,7 +385,7 @@ function MenuCoffe() {
                 price={"310 KGS"}
               />
               <LongSqaure
-                title={"Affogato / with whiskey"}
+                title={"Affogato alkollü / alkolsüz"}
                 weight={"200 ml"}
                 price={"360/550 KGS"}
                 squareI={squareI}
@@ -394,7 +394,7 @@ function MenuCoffe() {
             </div>
           ) : selectedLanguage === "Кыргызча" ? (
             <div className="square-main-content">
-              <img className="coffe-img-2" src={imgTerKG} alt="" />
+              {/* <img className="coffe-img-2" src={imgTerKG} alt="" /> */}
               <Square title={"Эспрессо"} weight={"40 мл"} price={"175 с"} />
               <Square
                 title={"Американо"}

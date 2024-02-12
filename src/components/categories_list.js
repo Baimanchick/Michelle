@@ -142,9 +142,17 @@ export const generateL = (language) => {
           id: 58,
           image: "https://michelle-kg.ru/media/categories/wine_pVVvcoX.png",
           link: "/wine",
-          number: 20,
+
+          number: 20
         },
-      ];
+        {
+          title: "Скидка 25% кофе и чай",
+          id: 60,
+          image: "https://michelle-kg.ru/media/categories/Group_166.jpg",
+          link: "/discount",
+          number: 21
+        }
+      ] 
     case "Кыргызча":
       return [
         {
@@ -302,9 +310,17 @@ export const generateL = (language) => {
           image:
             "https://michelle-kg.ru/media/kyrgyz_categories/wine_2lo69TZ.png",
           link: "/wine",
-          number: 20,
+
+          number: 20
         },
-      ];
+        {
+          title: "25% Скидка",
+          id: 43,
+          image: "https://michelle-kg.ru/media/kyrgyz_categories/Group_166.jpg",
+          link: "/discount",
+          number: 21
+        }
+      ]
     case "English":
       return [
         {
@@ -447,9 +463,17 @@ export const generateL = (language) => {
           id: 39,
           image: "https://michelle-kg.ru/media/categories/wine_5JNFfsk.png",
           link: "/wine",
-          number: 20,
+
+          number: 20
         },
-      ];
+        {
+          title: "DISCOUNT 25%",
+          id: 41,
+          image: "https://michelle-kg.ru/media/categories/Group_166_paJQfDd.jpg",
+          link: "/discount",
+          number: 21
+        }
+      ];      
     case "Türkçe":
       return [
         {
@@ -608,9 +632,17 @@ export const generateL = (language) => {
           image:
             "https://michelle-kg.ru/media/turkish_categories/wine_K4Ty6yg.png",
           link: "/wine",
-          number: 20,
+
+          number: 20
         },
-      ];
+        {
+          title: "25% İNDİRİM",
+          id: 41,
+          image: "https://michelle-kg.ru/media/turkish_categories/Group_166.jpg",
+          link: "/discount",
+          number: 21
+        }
+      ];      
     default:
       return [];
   }

@@ -678,40 +678,40 @@ function WinePage() {
                   title1={"Stranero Dolce "}
                   price1={""}
                   price2={"2515 KGS"}
-                  title2={"Red sweet (Italy)"}
+                  title2={"Kırmızı tatlı (İtalya)"}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "The aroma emanates hints of vanilla, mature sweet cherries, and honeyed plums."
+                    "Aromada vanilya, olgun tatlı kiraz ve bal erik notaları ortaya çıkar."
                   }
-                  text2={"Grape variety: Merlot, Cabernet Sauvignon"}
+                  text2={"Üzüm çeşidi: Merlot, Cabernet Sauvignon"}
                   style={{ backgroundColor: "#FEE2DA" }}
                 />
                 <WineSquare
                   title1={"Chianti Priore DOCG"}
                   price1={""}
                   price2={"2115 KGS"}
-                  title2={"Red dry (Italy)"}
+                  title2={"Kuru kırmızı (İtalya)"}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "Ruby red wine with dark purple and lilac reflections has an intense and persistent aroma. The top notes are of violet, cherry, and red fruits, followed by subtle spices."
+                    "Koyu mor ve mor yansımaları olan yakut kırmızısı şarap. Koku yoğun ve şaşırtıcı derecede dayanıklıdır. İlk notalarda menekşe, kiraz ve kırmızı meyveler bulunur. Sonra baharatın incelikleri hissedilir."
                   }
-                  text2={"Grape variety: Sangiovese, Cabernet Sauvignon"}
+                  text2={"Üzüm çeşidi: Sangiovese, Cabernet Sauvignon"}
                   style={{ backgroundColor: "#FEE2DA" }}
                 />
                 <WineSquare
                   title1={"Bordeaux rouge Marquis des Dougles"}
                   price1={""}
                   price2={"2315 KGS"}
-                  title2={"Red dry (France)"}
+                  title2={"RKuru kırmızı (Fransa)"}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "The wine is refined with delicate aromas of black and red fruits. The palate is well-balanced, powerful, and tannic."
+                    "Siyah ve kırmızı meyvelerin narin aroması bu şarabı çok rafine eder Tadı güçlü ve dengelidir."
                   }
                   text2={
-                    "Grape variety: Cabernet Sauvignon, Cabernet Franc, Merlot "
+                    "Üzüm çeşidi: Cabernet Sauvignon, Cabernet Franc, Merlot"
                   }
                   style={{ backgroundColor: "#FEE2DA" }}
                 />
@@ -723,72 +723,72 @@ function WinePage() {
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "Multifaceted and intense aroma with hints of cherry and geranium. An elegant and harmonious wine with a tobacco finish."
+                    "Kiraz ve sardunya notaları ile çok yönlü ve yoğun bir aroma. Zarif ve uyumlu bir şarap tütün sonrası tat ile."
                   }
-                  text2={"Grape variety: Sangiovese, Cabernet Sauvignon"}
+                  text2={"Üzüm çeşidi: Sangiovese, Cabernet Sauvignon"}
                   style={{ backgroundColor: "#FEE2DA" }}
                 />
                 <WineSquare
                   title1={"Bearjolais "}
                   price1={""}
                   price2={"2915 KGS"}
-                  title2={"Red dry (France)"}
+                  title2={"Kuru kırmızı (Fransa) "}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "Seductive and fruity with a crunchy texture. Offers aromas of red and black fruit with subtle tannins."
+                    "Baştan çıkarıcı, meyveli ve çıtır. Çok ince tanenlerle kırmızı ve siyah meyvelerin lezzetlerini sunar."
                   }
-                  text2={"Grape variety: Gamay"}
+                  text2={"Üzüm çeşidi: Gamay"}
                   style={{ backgroundColor: "#FEE2DA" }}
                 />
                 <WineSquare
                   title1={"Cotes-du-Rhone"}
                   price1={""}
                   price2={"2015 KGS"}
-                  title2={"Red dry (France)"}
+                  title2={"Kuru kırmızı (Fransa) "}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "Medium-intensity aromas of ripe dark fruits such as plums and blackberries, accompanied by spicy notes. The taste is characterized by flavors of black cherry, black currant, blueberry, and licorice, with a strong and long-lasting aftertaste."
+                    "Olgun koyu renkli meyvelerin, eriklerin, böğürtlenlerin, baharatların orta yoğunlukta aromaları. Tadı - siyah kiraz, siyah frenk üzümü, yaban mersini, meyankökü. Güçlü ve uzun süreli tatlar."
                   }
-                  text2={"Grape variety: Shiraz/Syrah, Grenache, Mourvedre"}
+                  text2={"Üzüm çeşidi: Shiraz/Syrah, Grenache, Mourvedre"}
                   style={{ backgroundColor: "#FEE2DA" }}
                 />
                 <WineSquare
                   title1={"Appassionante rosso"}
                   price1={""}
                   price2={"3015 KGS"}
-                  title2={"Red dry (Italy)"}
+                  title2={"Kuru kırmızı  (İtalya) "}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "The taste notes include red fruits followed by a finish of cocoa and cinnamon."
+                    "Kırmızı meyvelerin notaları ve kakao ile tarçının tat sonrası."
                   }
-                  text2={"Grape variety: Merlot, Corvina, Sangiovese"}
+                  text2={"Üzüm çeşidi: Merlot, Corvina, Sangiovese"}
                   style={{ backgroundColor: "#FEE2DA" }}
                 />
                 <WineSquare
                   title1={"Arome de France  "}
                   price1={"360 KGS"}
                   price2={"1715 KGS"}
-                  title2={"Red semi-sweet (France)"}
+                  title2={"Kırmızı yarı tatlı (Fransa) "}
                   weight1={" 150 ml"}
                   weight2={" 750 ml"}
-                  text1={"Light red wine with the taste of ripe currants.."}
-                  text2={"Grape variety: Grenache"}
+                  text1={"Olgun kuş üzümü aromalı hafif kırmızı şarap."}
+                  text2={"Üzüm çeşidi: Grenache"}
                   style={{ backgroundColor: "#FEE2DA" }}
                 />
                 <WineSquare
                   title1={"Kindzmarauli Marani   "}
                   price1={"400 KGS"}
                   price2={"1915 KGS"}
-                  title2={"Red semi-sweet (Georgia)"}
+                  title2={"Kırmızı yarı tatlı (Gürcístan)"}
                   weight1={" 150 ml"}
                   weight2={" 750 ml"}
                   text1={
-                    "Delicate, full-bodied taste with a velvety texture and a typical varietal aroma. The fresh scent carries varietal tones, hints of cherry pit, and black currant."
+                    "Narin, tam, kadifemsi bir tat ve tipik bir çeşit buket. Aroma taze, kiraz çekirdeği ve siyah frenk üzümü"
                   }
-                  text2={"Grape variety: Sappers"}
+                  text2={"Üzüm çeşidi: Sappers"}
                   style={{ backgroundColor: "#FEE2DA" }}
                 />
                 <header
@@ -796,85 +796,85 @@ function WinePage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>WHITE WINES</span>
+                    <span>BEYAZ ŞARAP</span>
                   </div>
                 </header>
                 <WineSquare
-                  title1={"Petit Chablis    "}
+                  title1={"Petit Chablis"}
                   price1={""}
                   price2={"3115 KGS"}
-                  title2={"White dry (France)"}
+                  title2={"Beyaz kuru (Fransa)"}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "Light in body, this flavor profile has citrus notes and bright acidity, followed by a tropical fruit aftertaste."
+                    "Hafif, narenciye notaları ile, tropikal meyvelerin tadına sahip parlak bir asitlik."
                   }
-                  text2={"Grape variety: Chardonnay"}
+                  text2={"Üzüm çeşidi: Chardonnay"}
                   style={{ backgroundColor: "#FFFAE6" }}
                 />
                 <WineSquare
                   title1={"Sauivignon Blanc"}
                   price1={""}
                   price2={"1815 KGS"}
-                  title2={"White dry (Italy)"}
+                  title2={"Beyaz kuru (İtalya)"}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "The wine has a pleasant fruity flavor, which is not too strong. It has a smooth and creamy texture with a rich taste."
+                    "Meyveli, yumuşak ve zengin bir tada sahip."
                   }
-                  text2={"Grape variety: Sauvignon blanc"}
+                  text2={"Üzüm çeşidi: Sauvignon blanc"}
                   style={{ backgroundColor: "#FFFAE6" }}
                 />
                 <WineSquare
                   title1={"Lya Toscano Bianco "}
                   price1={""}
                   price2={"2315 KGS"}
-                  title2={"White dry (Italy)"}
+                  title2={"Beyaz kuru (İtalya)"}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "The taste is refreshing with bright citrus notes. The aftertaste is juicy with flavors of peach, pear, and melon."
+                    "Parlak narenciye notalarıyla ferahlatıcı bir tada sahip. Şeftali, armut veya kavun gibi meyveleri hissedebilirsiniz."
                   }
-                  text2={"Grape variety: Chardonnay. Mavasia. Trebiano Toscano"}
+                  text2={"Üzüm çeşidi: Chardonnay. Mavasia. Trebiano Toscano"}
                   style={{ backgroundColor: "#FFFAE6" }}
                 />
                 <WineSquare
                   title1={"Pinot Grigio   "}
                   price1={""}
                   price2={"2915 KGS"}
-                  title2={"White dry (Italy)"}
+                  title2={"Beyaz kuru (İtalya)"}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "The scent is mainly characterized by the scent of green apples, lime, and hints of pear and honey."
+                    "Kokuda yeşil elma, misket limon, armut ve bal notaları vardır."
                   }
-                  text2={"Grape variety: Pinot Gris"}
+                  text2={"Üzüm çeşidi: Pinot Gris"}
                   style={{ backgroundColor: "#FFFAE6" }}
                 />
                 <WineSquare
                   title1={"Arome de France "}
                   price1={"360 KGS"}
                   price2={"1715 KGS"}
-                  title2={"White semi-sweet (France)"}
+                  title2={"Beyaz yarı tatlı (Fransa) "}
                   weight1={" 150 ml"}
                   weight2={" 750 ml"}
                   text1={
-                    "The wine has a fruity aroma with subtle floral notes."
+                    "Meyveli notalara ve narin çiçek kokusuna sahip şarap."
                   }
-                  text2={"Grape variety: Chardonnay"}
+                  text2={"Üzüm çeşidi: Chardonnay"}
                   style={{ backgroundColor: "#FFFAE6" }}
                 />
                 <WineSquare
                   title1={"Tsinandali Marani "}
                   price1={"330 KGS"}
                   price2={"1515 KGS"}
-                  title2={"White dry (Georgia)"}
+                  title2={"Beyaz kuru (Gürcístan)"}
                   weight1={" 150 ml"}
                   weight2={" 750 ml"}
                   text1={
-                    "The wine's aroma is dominated by tones of lime, grapefruit, orange blossom, melon, peach, and bread crust."
+                    "Şarabın aroması parlak ve hafif. Мisket limon tonları, portakal çiçeği, greyfurt, kavun ve şeftali notalarının yanı sıra ekmek kabuğunun enfes nüansları vardır."
                   }
-                  text2={"Grape variety: Rkatsiteli and Mtsvane"}
+                  text2={"Üzüm çeşidi: Rkatsiteli and Mtsvane"}
                   style={{ backgroundColor: "#FFFAE6" }}
                 />
                 <header
@@ -882,33 +882,33 @@ function WinePage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>PINK WINES</span>
+                    <span>GÜL ŞARABI</span>
                   </div>
                 </header>
                 <WineSquare
                   title1={"Maria carlotta    "}
                   price1={""}
                   price2={"2215 KGS"}
-                  title2={"Dry rose (Italy)"}
+                  title2={"Kuru gül şarabı (İtalya) "}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "An interesting combination of flavors with hints of red cherry and sweet citrus, finishing with a light tannin. A refreshing and fruity wine."
+                    "Kırmızı kiraz ve tatlı narenciye lezzetlerinin ilginç bir kombinasyonu. Çok ferahlatıcı, meyveli şarap"
                   }
-                  text2={"Grape variety: Cabernet Sauvignon, Sangiovese"}
+                  text2={"Üzüm çeşidi: Cabernet Sauvignon, Sangiovese"}
                   style={{ backgroundColor: "#FFF4F1" }}
                 />
                 <WineSquare
                   title1={"Arome de France"}
                   price1={"360 KGS"}
                   price2={"1715 KGS"}
-                  title2={"Rose semi-sweet (France)"}
+                  title2={"Yarı tatli gül şarabı (Fransa)"}
                   weight1={" 150 ml"}
                   weight2={" 750 ml"}
                   text1={
-                    "The wine's aroma is characterized by fruity notes and a delicate floral scent."
+                    "Meyveli notalara ve narin çiçek kokusuna sahip şarap."
                   }
-                  text2={"Grape variety: Merlot "}
+                  text2={"Üzüm çeşidi: Merlot"}
                   style={{ backgroundColor: "#FFF4F1" }}
                 />
                 <header
@@ -916,46 +916,46 @@ function WinePage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>SPARKLING WINES</span>
+                    <span>KÖPÜKLÜ ŞARAP</span>
                   </div>
                 </header>
                 <WineSquare
                   title1={"Mionetto Prosecco "}
                   price1={""}
                   price2={"1815 KGS"}
-                  title2={"Sparkling white dry (Italy)"}
+                  title2={"Köpüklü beyaz kuru (İtalya)"}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "The wine has a creamy texture and a long, dry, sweet aftertaste with light mineral nuances. The aroma of the wine exudes notes of Golden apples, pears, vanilla, minerals, citrus, and tropical fruits. "
+                    "Şarabın kremalı dokusu ve hafif mineral nüansları olan uzun, kuru, tatlı bir tada sahiptir. Şarabın aroması elma, armut, vanilya, mineral, narenciye ve tropikal meyvelerin notalarını yayar. "
                   }
-                  text2={"Grape variety: Glera"}
+                  text2={"Üzüm çeşidi: Glera"}
                   style={{ backgroundColor: "#FFFCF1" }}
                 />
                 <WineSquare
                   title1={"Martini Asti D.O.C.G. "}
                   price1={""}
                   price2={"3315 KGS"}
-                  title2={"Sparkling white sweet (Italy)"}
+                  title2={"Köpüklü beyaz tatli (İtalya)"}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "Sweet hints of apple, peach, orange, and honey with a light round aftertaste."
+                    "Tatlı, elma, şeftali, portakal ve bal ipuçlarıyla. Tadı hafif ve yuvarlaktır."
                   }
-                  text2={"СGrape variety: White Muscat"}
+                  text2={"Üzüm çeşidi: Белый Мускат"}
                   style={{ backgroundColor: "#FFFCF1" }}
                 />
                 <WineSquare
                   title1={"Martini Prosecco D.O.C.  "}
                   price1={""}
                   price2={"3315 KGS"}
-                  title2={"Sparkling white dry wine (Italy)"}
+                  title2={"Köpüklü beyaz kuru (İtalya)"}
                   weight1={""}
                   weight2={" 750 ml"}
                   text1={
-                    "The wine has a fruity aroma with fresh apple and pear notes and a hint of floral tones."
+                    "Şarap taze elmaların motiflerine, çiçek tonlarına sahiptir. Armutların canlı bir şekilde hissedildiği çekici bir meyveli aroması vardır."
                   }
-                  text2={"Grape variety: Glera"}
+                  text2={"Üzüm çeşidi: Glera"}
                   style={{ backgroundColor: "#FFFCF1" }}
                 />
               </>
