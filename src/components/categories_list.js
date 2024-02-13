@@ -164,7 +164,7 @@ export const generateL = (language) => {
           number: 1,
         },
         {
-          title: "ЭртеҢ тамак",
+          title: "Эртеңки тамак",
           id: 24,
           image:
             "https://michelle-kg.ru/media/kyrgyz_categories/zavtrak_G4Rc43v.png",
