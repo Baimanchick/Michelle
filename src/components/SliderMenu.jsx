@@ -26,11 +26,10 @@ export default function SliderMenu({ onSelectCategory, categoryI }) {
         categories = generateL(selectedL);
       }
 
-      // Assuming categoryI is a valid category id
       setSelectedCategory(
         categories.find((category) => category.id === categoryI)
       );
-      setLoading(false); // Update loading state
+      setLoading(false);
     };
 
     fetchData();
