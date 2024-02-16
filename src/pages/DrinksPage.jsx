@@ -10,6 +10,7 @@ import imgTerTR from "../images/drinks/termos_TR.png";
 import imgTerEN from "../images/drinks/termos_mobile_EN.png";
 import imgTerRU from "../images/coffe/image-2.png";
 import ArrowLeft from "../components/ArrowLeft";
+import imgAdvice from "../images/else/kletchatka.png";
 
 function DrinksPage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -1434,7 +1435,7 @@ function DrinksPage() {
               <div className="drinks-main">
                 <header className="tea-header">
                   <div className="tea-header-title">
-                    <h2>СУУЛАР</h2>
+                    <h2>СУУСУНДУКТАР</h2>
                     <span>ЫСЫК МИКС</span>
                   </div>
                 </header>
@@ -1471,10 +1472,10 @@ function DrinksPage() {
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
-                    title={"Глинтвейн безалкогольный"}
+                    title={"Глинтвейн алкоголсуз"}
                     weight={"200 мл"}
                     price={"210 с"}
-                    extra={"вишня / яблоко / гранат"}
+                    extra={"алча / алма / анар"}
                   />
                   <div
                     style={{ margin: "35px 0px 35px 0px" }}
@@ -1494,28 +1495,28 @@ function DrinksPage() {
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Классический"}
+                    title={"Классикалык"}
                     weight={"400 мл/1л"}
                     price={"190/290 с"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Тропический"}
+                    title={"Тропикалык"}
                     weight={"400 мл/1л"}
                     price={"230/400 с"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Груша-лимон"}
+                    title={"Алмурут-лимон"}
                     weight={"400 мл/1л"}
                     price={"230/330 с"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Яблоко-киви"}
+                    title={"Алма-киви"}
                     weight={"400 мл/1л"}
                     price={"230/330 с"}
                     extra={""}
@@ -1529,21 +1530,21 @@ function DrinksPage() {
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Фирменный Мишель"}
+                    title={"Фирмалык Мишель"}
                     weight={"400 мл/1л"}
                     price={"280/450 с"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Малиновый"}
+                    title={"Дан куурай менен"}
                     weight={"400 мл/1л"}
                     price={"280/450 с"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Вишнёвый"}
+                    title={"Алча менен"}
                     weight={"400 мл/1л"}
                     price={"280/450 с"}
                     extra={"280/450 с"}
@@ -1569,7 +1570,7 @@ function DrinksPage() {
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
-                    title={"Классический"}
+                    title={"Классикалык"}
                     weight={"200 мл"}
                     price={"260 C"}
                     extra={""}
@@ -1603,35 +1604,35 @@ function DrinksPage() {
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Родниковая вода Легенда"}
+                    title={"Легенда булак суусу"}
                     weight={"1 л"}
                     price={"70 С"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Витаминная вода лимон+огурец"}
+                    title={"Витаминдүү суу лимон+бадыраң"}
                     weight={"1 л"}
                     price={"160 С"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Витаминная вода лайм+мята"}
+                    title={"Витаминдүү суу лайм+жалбыз"}
                     weight={"1 л"}
                     price={"170 С"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Витаминная вода розмарин+имбирь"}
+                    title={"Витаминдүү суу  розмарин+имбирь"}
                     weight={"1 л"}
                     price={"170 С"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Лимонная вода"}
+                    title={"Лимондуу суу"}
                     weight={"1 л"}
                     price={"160 С"}
                     extra={""}
@@ -1660,21 +1661,21 @@ function DrinksPage() {
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Морковь"}
+                    title={"Сабиз"}
                     weight={"250 мл"}
                     price={"160 С"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Яблоко"}
+                    title={"Алма"}
                     weight={"250 мл"}
                     price={"160 С"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Яблоко-морковь"}
+                    title={"Алма-сабиз"}
                     weight={"250 мл"}
                     price={"160 С"}
                     extra={""}
@@ -1688,7 +1689,7 @@ function DrinksPage() {
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Апельсин-яблоко"}
+                    title={"Апельсин-алма"}
                     weight={"250 мл"}
                     price={"260 с"}
                     extra={""}
@@ -1698,19 +1699,19 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>ФРИКШЕЙКИ</span>
+                      <span>ФРИКШЕЙКТЕР</span>
                     </div>
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#FED5CAB2 " }}
-                    title={"Клубничная фантазия"}
+                    title={"Кулпунайлуу кыял"}
                     weight={"300 мл"}
                     price={"360 с"}
                     extra={""}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FED5CAB2 " }}
-                    title={"Банановый бум"}
+                    title={"Банан бум"}
                     weight={"300 мл"}
                     price={"360 с"}
                     extra={""}
@@ -1732,12 +1733,12 @@ function DrinksPage() {
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Тропический"}
+                    title={"Тропикалык"}
                     weight={"250 мл"}
                     price={"280 с"}
                     extra={""}
                   />
-                  <img className="tea-img" src={img1} alt="" />
+                  <img className="tea-img" src={imgAdvice} alt="" />
                   <header
                     style={{ margin: "35px 0px 35px 0px" }}
                     className="tea-header"
@@ -1748,7 +1749,7 @@ function DrinksPage() {
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#FED5CAB2" }}
-                    title={"Клубничный крекер"}
+                    title={"Кулпунайлуу крекер"}
                     weight={"300 мл"}
                     price={"300 с"}
                     extra={""}
@@ -1798,7 +1799,7 @@ function DrinksPage() {
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
-                    title={"Ореховый"}
+                    title={"Жаңгак менен"}
                     weight={"300 мл"}
                     price={"310 с"}
                     extra={""}
