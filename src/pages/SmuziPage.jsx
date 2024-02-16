@@ -418,7 +418,7 @@ function SmuziPage() {
                 />
                 <header className="tea-header">
                   <div className="tea-header-title">
-                    <span>Смоузиңизге кошуңуз:</span>
+                    <span>Смузиңизге кошуңуз:</span>
                   </div>
                 </header>
                 <SmuziSquaer
