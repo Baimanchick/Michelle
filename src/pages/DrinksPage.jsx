@@ -1435,7 +1435,7 @@ function DrinksPage() {
               <div className="drinks-main">
                 <header className="tea-header">
                   <div className="tea-header-title">
-                    <h2>СУУСУНДУКТАР</h2>
+                    <h2>СУУСЛАР</h2>
                     <span>ЫСЫК МИКС</span>
                   </div>
                 </header>
