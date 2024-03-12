@@ -526,7 +526,7 @@ function DrinksPage() {
               <div className="drinks-main">
                 <header className="tea-header">
                   <div className="tea-header-title">
-                    <h2>DRINKS</h2>
+                    <h2>BEVERAGES</h2>
                     <span>HOT MIX</span>
                   </div>
                 </header>
