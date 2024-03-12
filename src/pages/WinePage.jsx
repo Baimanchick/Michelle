@@ -371,7 +371,7 @@ function WinePage() {
                 className="tea-header"
               >
                 <div className="tea-header-title">
-                  <h2>Wine map</h2>
+                  <h2>WINE LIST</h2>
                   <span>Red Wine</span>
                 </div>
               </header>
