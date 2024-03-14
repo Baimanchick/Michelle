@@ -137,7 +137,7 @@ function MenuBoul() {
             ) : selectedLanguage === "Türkçe" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
-                  <div>KASELER</div>
+                  <div>POKE-BOWL</div>
                   <span>DENGELİ BESLENME</span>
                 </div>
               </header>
