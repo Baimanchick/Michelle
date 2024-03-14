@@ -149,8 +149,8 @@ function MenuDinner() {
             ) : selectedLanguage === "Türkçe" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
-                  <div>RULO / BAGET / SANDVİÇ</div>
-                  <span>Parmak yalamak iyi</span>
+                  <div>RULOLAR / BAGET / SANDVİÇLER</div>
+                  <span>ÇOK LEZZETLİ</span>
                 </div>
               </header>
             ) : null}
