@@ -133,7 +133,7 @@ function MenuPlat() {
             ) : selectedLanguage === "Türkçe" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
-                  <div>TABAKLAR</div>
+                  <div>MEZELER</div>
                 </div>
               </header>
             ) : null}
