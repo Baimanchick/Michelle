@@ -138,11 +138,17 @@ function PastaPage() {
                   <div>ПАСТА</div>
                 </div>
               </header>
-            ) : selectedLanguage === "English" ||
-              selectedLanguage === "Türkçe" ? (
+            ) : selectedLanguage === "English" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>PASTA</div>
+                </div>
+              </header>
+            )
+            : selectedLanguage === "Türkçe" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>MAKARNA</div>
                 </div>
               </header>
             ) : null}
