@@ -150,8 +150,8 @@ function MenuSoap() {
             ) : selectedLanguage === "Türkçe" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
-                  <div>ÇORBA</div>
-                  <span>KREMALI ÇORBA</span>
+                  <div>ÇORBALAR</div>
+                  <span>KREMALI</span>
                 </div>
               </header>
             ) : null}
