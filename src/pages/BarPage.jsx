@@ -1313,13 +1313,13 @@ function BarPage() {
               >
                 <div className="tea-header-title">
                   <h2>БАР</h2>
-                  <span>КОКТЕЙЛ</span>
+                  <span>КОКТЕЙЛДЕР</span>
                 </div>
               </header>
               <>
                 <TeaSquare
                   style={{ backgroundColor: "#FEEABCE5" }}
-                  title={"Испанская сангрия"}
+                  title={"Испаниялык сангрия"}
                   weight={"1 л"}
                   price={"565 с"}
                   extra={""}
@@ -1354,7 +1354,7 @@ function BarPage() {
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#FEEABCE5" }}
-                  title={"Джин Тоник Розовый"}
+                  title={"Джин Тоник Кызгылт"}
                   weight={"250 мл"}
                   price={"400 с"}
                   extra={""}
@@ -1464,7 +1464,7 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>ПИВО</span>
+                    <span>СЫРА</span>
                   </div>
                 </header>
                 <TeaSquare
@@ -1497,7 +1497,7 @@ function BarPage() {
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#FEEABCE5" }}
-                  title={"Фильтрованное / Нефильтрованное"}
+                  title={"Фильтрленген / Фильтрленбеген"}
                   weight={"330/500 МЛ"}
                   price={"110/160 с"}
                   extra={""}
@@ -1529,7 +1529,7 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>АПЕРИТИВЫ</span>
+                    <span>АПЕРИТИВДЕР</span>
                   </div>
                 </header>
                 <TeaSquare
@@ -1585,7 +1585,7 @@ function BarPage() {
                 />
                 <TeaSquare
                   style={{ backgroundColor: "#E6EBDC99" }}
-                  title={"Гордонс розовый"}
+                  title={"Гордонс кызгылт"}
                   weight={"50 мл"}
                   price={"280 с"}
                   extra={""}
@@ -1602,23 +1602,23 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>СНЕКИ</span>
+                    <span>СНЕКТЕР</span>
                   </div>
                 </header>
                 <div className="smuzi-main">
                   <SmuziSquaer
                     style={{ backgroundColor: "#FFFAE6" }}
-                    title={"Фисташки"}
+                    title={"Мисте"}
                     price={"190 с"}
                   />
                   <SmuziSquaer
                     style={{ backgroundColor: "#FFFAE6" }}
-                    title={"Миндаль"}
+                    title={"Бадам"}
                     price={"180 с"}
                   />
                   <SmuziSquaer
                     style={{ backgroundColor: "#FFFAE6" }}
-                    title={"Соленый арахис"}
+                    title={"Туздуу жержаңгак"}
                     price={"100 с"}
                   />
                   <SmuziSquaer
@@ -1628,7 +1628,7 @@ function BarPage() {
                   />
                   <SmuziSquaer
                     style={{ backgroundColor: "#FFFAE6" }}
-                    title={"Кириешки"}
+                    title={"Кириешкилер"}
                     price={"60 с"}
                   />
                   <SmuziSquaer
@@ -1638,7 +1638,7 @@ function BarPage() {
                   />
                   <SmuziSquaer
                     style={{ backgroundColor: "#FFFAE6" }}
-                    title={"Жареный чечил"}
+                    title={"Куурулган чечил"}
                     price={"60 с"}
                   />
                   <SmuziSquaer
@@ -1652,13 +1652,13 @@ function BarPage() {
                   className="tea-header"
                 >
                   <div className="tea-header-title">
-                    <span>СИГАРЕТЫ</span>
+                    <span>ТАМЕКИЛЕР</span>
                   </div>
                 </header>
                 <div className="smuzi-main">
                   <SmuziSquaer
                     style={{ backgroundColor: "#FFFAE6" }}
-                    title={"Айкос стики"}
+                    title={"Айкос стиктери"}
                     price={"330 с"}
                   />
                   <SmuziSquaer
@@ -1693,7 +1693,7 @@ function BarPage() {
                 <div className="smuzi-main">
                   <SmuziSquaer
                     style={{ backgroundColor: "#FFFAE6" }}
-                    title={"Мёд"}
+                    title={"Бал"}
                     price={"80 с"}
                   />
                   <SmuziSquaer
@@ -1713,7 +1713,7 @@ function BarPage() {
                   />
                   <SmuziSquaer
                     style={{ backgroundColor: "#FFFAE6" }}
-                    title={"Зажигалка"}
+                    title={"Күйгүзгүч"}
                     price={"60 с"}
                   />
                 </div>
