@@ -384,7 +384,7 @@ function SmuziPage() {
               <header className="tea-header">
                 <div className="tea-header-title">
                   <h2>СМУЗИ-ПАЗЛ</h2>
-                  <span>Тандоо үчүн негиз</span>
+                  <span>Негизин тандаса болот</span>
                 </div>
               </header>
               <div className="smuzi-main">
@@ -393,32 +393,32 @@ function SmuziPage() {
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <SmuziSquaer
-                  title={"Яблочный фреш"}
+                  title={"Алма фреши"}
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <SmuziSquaer
-                  title={"Молоко"}
+                  title={"Сүт"}
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <SmuziSquaer
-                  title={"Морковный фреш"}
+                  title={"Сабиз фреши"}
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <SmuziSquaer
-                  title={"Вода"}
+                  title={"Суу"}
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <SmuziSquaer
-                  title={"Яблочно-морковный фреш"}
+                  title={"Алма-сабиз фреши"}
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <SmuziSquaer
-                  title={"Сок Gracio в ассортименте"}
+                  title={"Gracio ширеси ассортиментте"}
                   style={{ backgroundColor: "#FBCB001A" }}
                 />
                 <header className="tea-header">
                   <div className="tea-header-title">
-                    <span>Смузиңизге кошуңуз:</span>
+                    <span>Смузиңизге кошсоңуз болот:</span>
                   </div>
                 </header>
                 <SmuziSquaer
@@ -426,15 +426,15 @@ function SmuziPage() {
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Огурец"}
+                  title={"Бадыраң"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Мята"}
+                  title={"Жалбыз"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Айсберг салат"}
+                  title={"Айсберг салаты"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
@@ -442,7 +442,7 @@ function SmuziPage() {
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Яблоко"}
+                  title={"Алма"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
@@ -450,15 +450,15 @@ function SmuziPage() {
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Клубника"}
+                  title={"Кулпунай"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Малина"}
+                  title={"Дан куурай"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
-                  title={"Смородина"}
+                  title={"Карагат"}
                   style={{ backgroundColor: "#FFF" }}
                 />
                 <SmuziSquaer
