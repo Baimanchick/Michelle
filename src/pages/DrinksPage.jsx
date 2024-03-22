@@ -1435,7 +1435,7 @@ function DrinksPage() {
               <div className="drinks-main">
                 <header className="tea-header">
                   <div className="tea-header-title">
-                    <h2>СУУСЛАР</h2>
+                    <h2 style={{ fontSize: "38px" }}>СУУСУНДУКТАР</h2>
                     <span>ЫСЫК МИКС</span>
                   </div>
                 </header>
@@ -1454,21 +1454,21 @@ function DrinksPage() {
                     title={"Матча"}
                     weight={"400 мл"}
                     price={"300 с"}
-                    extra={"зелёная / голубая"}
+                    extra={"көк / көгүлтүр"}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
                     title={"Какао"}
                     weight={"200 мл"}
                     price={"170/190 С"}
-                    extra={"классический / на основе бельгийского шоколада"}
+                    extra={"классикалык / бельгия шоколады негизинде"}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
                     title={"Глинтвейн"}
                     weight={"200 мл"}
                     price={"380 с"}
-                    extra={"красный / белый"}
+                    extra={"кызыл / ак"}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FEEABCE5" }}
@@ -1490,7 +1490,7 @@ function DrinksPage() {
                   </div>
                   <header className="tea-header">
                     <div className="tea-header-title">
-                      <span>УЙ ЛИМОНАДЫ</span>
+                      <span>ҮЙ ЛИМОНАДДАРЫ</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1565,7 +1565,7 @@ function DrinksPage() {
                   </div>
                   <header className="tea-header">
                     <div className="tea-header-title">
-                      <span>ЫСЫК БЕЛГИЯЛЫК ШОКОЛАД</span>
+                      <span>БЕЛЬГИЯ ЫСЫК ШОКОЛАДЫ</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1599,7 +1599,7 @@ function DrinksPage() {
                   </div>
                   <header className="tea-header">
                     <div className="tea-header-title">
-                      <span>ЖАШОО СУУСУ</span>
+                      <span>Дем берүүчү суу</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1656,7 +1656,7 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>ФРЕШИ</span>
+                      <span>ФРЕШТЕР</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1744,7 +1744,7 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>МИЛКШЕЙК</span>
+                      <span>МИЛКШЕЙКТЕР</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1787,7 +1787,7 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>ЛАКТОЗАСЫ ЖОК СҮТКӨЛҮҮЛӨР</span>
+                      <span>ЛАКТОЗАСЫЗ МИЛКШЕЙКТЕР</span>
                     </div>
                   </header>
                   <TeaSquare
@@ -1816,12 +1816,12 @@ function DrinksPage() {
                     className="tea-header"
                   >
                     <div className="tea-header-title">
-                      <span>МУЗДАК ИЧИМДИК</span>
+                      <span>САЛКЫНДАТУУЧУ СУУСУНДУКТАР</span>
                     </div>
                   </header>
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
-                    title={"Сок Gracio"}
+                    title={"Gracio ширеси"}
                     weight={"250 мл/1 л"}
                     price={"90/310 с"}
                     extra={""}
@@ -1831,14 +1831,14 @@ function DrinksPage() {
                     title={"Кока-Кола/Фанта"}
                     weight={"250 мл"}
                     price={"130 с"}
-                    extra={"стекло"}
+                    extra={"айнек"}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
                     title={"Кока-Кола"}
                     weight={"250 мл/1 л"}
                     price={"90/170 с"}
-                    extra={"розлив"}
+                    extra={"куюу"}
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#E6EBDC99" }}
@@ -1872,7 +1872,7 @@ function DrinksPage() {
                   />
                   <TeaSquare
                     style={{ backgroundColor: "#FED5CAB2" }}
-                    title={"Манго и апельсин"}
+                    title={"Манго жана апельсин"}
                     weight={"300 мл"}
                     price={"290 с"}
                     extra={""}
