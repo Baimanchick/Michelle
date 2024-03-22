@@ -118,11 +118,17 @@ function MenuBaget() {
           <ArrowLeft />
 
           <>
-            {selectedLanguage === "Русский" ||
-            selectedLanguage === "Кыргызча" ? (
+            {selectedLanguage === "Русский" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>БУРГЕР</div>
+                </div>
+              </header>
+            ) :
+            selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>БУРГЕРЛЕР</div>
                 </div>
               </header>
             ) : selectedLanguage === "English" ||
