@@ -136,7 +136,7 @@ function MenuDinner() {
             ) : selectedLanguage === "Кыргызча" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
-                  <div>РОЛЛ / БАГЕТ / БУТЕРБРОДТОР</div>
+                  <div>РОЛЛДОР / БАГЕТТЕР /БУТЕРБРОДДОР</div>
                 </div>
               </header>
             ) : selectedLanguage === "English" ? (
