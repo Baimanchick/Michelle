@@ -145,7 +145,7 @@ function MenuHotMeal() {
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ЫСЫК ТАМАКТАР</div>
-                  <p>ДАМДУУ</p>
+                  <p>Өзгөчө даам менен</p>
                 </div>
               </header>
             ) : selectedLanguage === "English" ? (
