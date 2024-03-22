@@ -83,7 +83,7 @@ function MenuCoffe() {
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>КОФЕ</div>
-                  <span>КАТЫШУУ КОФЕ</span>
+                  <span>СЕРГИТҮҮЧҮ КОФЕ</span>
                 </div>
               </header>
             ) : selectedLanguage === "English" ? (
@@ -129,13 +129,13 @@ function MenuCoffe() {
                 squareI={squareI}
               />
               <LongSqaure
-                title={"Миндальный латте со взбитыми сливками"}
+                title={"Каймак менен бадам латте"}
                 weight={"200 мл"}
                 price={"340 c"}
                 squareI={squareI}
               />
               <LongSqaure
-                title={"Бананово-карамельный капучино"}
+                title={"Банан-карамельдүү капучино"}
                 weight={"200/400 мл"}
                 price={"230/280 с"}
                 squareI={squareI}
@@ -163,7 +163,7 @@ function MenuCoffe() {
                 squareI={squareI}
               />
               <LongSqaure
-                title={"Бамбл кофе на апельсиновом соке/фреше"}
+                title={"Апельсин ширесинде жасалган бамбл кофе"}
                 weight={"250 мл"}
                 price={"210/310 с"}
                 squareI={squareI}
@@ -177,7 +177,7 @@ function MenuCoffe() {
               <Square title={"Айриш кофе"} weight={"250 мл"} price={"310 с"} />
               <Square title={"Фреш кофе"} weight={"200 мл"} price={"310 с"} />
               <LongSqaure
-                title={"Аффогато безалкольный/ алкогольный"}
+                title={"Аффогато алколдуу/ алкоголсуз"}
                 weight={"200 мл"}
                 price={"360/550 с"}
                 squareI={squareI}
