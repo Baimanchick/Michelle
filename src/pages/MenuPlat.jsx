@@ -117,11 +117,17 @@ function MenuPlat() {
           <ArrowLeft />
 
           <>
-            {selectedLanguage === "Русский" ||
-            selectedLanguage === "Кыргызча" ? (
+            {selectedLanguage === "Русский" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ПЛЭТТЕРЫ</div>
+                </div>
+              </header>
+            ) :
+              selectedLanguage === "Кыргызча" ? (
+              <header className="menu-salad-header">
+                <div className="menu-salad-title-container">
+                  <div>ЗАКУСКАЛАР</div>
                 </div>
               </header>
             ) : selectedLanguage === "English" ? (
