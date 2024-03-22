@@ -115,7 +115,7 @@ function MenuDishes() {
                   <hr />
                 </div>
                 <div className="menu-title-span">
-                  <span>ЖАНЫ ЖОЛ МЕНЕН</span>
+                  <span>Жаңыланган</span>
                 </div>
               </header>
             ) : selectedLanguage === "Русский" ? (
