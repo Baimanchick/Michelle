@@ -137,7 +137,7 @@ function MenuGar() {
             ) : selectedLanguage === "Кыргызча" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
-                  <div>ГАРНИРЛЕР</div>
+                  <div>ГАРНИРДЕР</div>
                 </div>
               </header>
             ) : selectedLanguage === "English" ? (
