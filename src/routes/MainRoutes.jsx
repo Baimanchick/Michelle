@@ -1,56 +1,41 @@
 import React, { useEffect } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
-import HomePage from "../pages/HomePage";
-import MenuDishes from "../pages/MenuDishes";
-import MenuPage from "../pages/MenuPage";
-import NotF from "../pages/NotF";
-import MenuSalad from "../pages/MenuSalad";
-import MenuPlat from "../pages/MenuPlat";
-import MenuBaget from "../pages/MenuBaget";
-import MenuCoffe from "../pages/MenuCoffe";
-import MenuSoap from "../pages/MenuSoap";
-import MenuDinner from "../pages/MenuDinner";
-import MenuHotMeal from "../pages/MenuHotMeal";
-import MenuPizza from "../pages/MenuPizza";
-import MenuBoul from "../pages/MenuBoul";
-import MenuGar from "../pages/MenuGar";
-import MenuChild from "../pages/MenuChild";
-import NotFounedPage from "../pages/NotFounedPage";
-import CollagenPage from "../pages/CollagenPage";
-import TeaPage from "../pages/TeaPage";
-import DrinksPage from "../pages/DrinksPage";
-import SmuziPage from "../pages/SmuziPage";
-import BarPage from "../pages/BarPage";
-import WinePage from "../pages/WinePage";
-import MenuNewYear from "../pages/MenuNewYear";
-import Test from "./Test";
-import AboutUsPage from "../pages/AboutUsPage";
-import MenuBreakContruct from "../pages/MenuBreakContruct";
-import PastaPage from "../pages/PastaPage";
-import DiscountPage from "../pages/DiscountPage";
+import { lazy } from "react";
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
+const HomePage = lazy(() => import("../pages/HomePage"));
+const MenuDishes = lazy(() => import("../pages/MenuDishes"));
+const MenuPage = lazy(() => import("../pages/MenuPage"));
+const NotF = lazy(() => import("../pages/NotF"));
+const MenuSalad = lazy(() => import("../pages/MenuSalad"));
+const MenuPlat = lazy(() => import("../pages/MenuPlat"));
+const MenuBaget = lazy(() => import("../pages/MenuBaget"));
+const MenuCoffe = lazy(() => import("../pages/MenuCoffe"));
+const MenuSoap = lazy(() => import("../pages/MenuSoap"));
+const MenuDinner = lazy(() => import("../pages/MenuDinner"));
+const MenuHotMeal = lazy(() => import("../pages/MenuHotMeal"));
+const MenuPizza = lazy(() => import("../pages/MenuPizza"));
+const MenuBoul = lazy(() => import("../pages/MenuBoul"));
+const MenuGar = lazy(() => import("../pages/MenuGar"));
+const MenuChild = lazy(() => import("../pages/MenuChild"));
+const NotFounedPage = lazy(() => import("../pages/NotF"));
+const CollagenPage = lazy(() => import("../pages/CollagenPage"));
+const TeaPage = lazy(() => import("../pages/TeaPage"));
+const DrinksPage = lazy(() => import("../pages/DrinksPage"));
+const SmuziPage = lazy(() => import("../pages/SmuziPage"));
+const BarPage = lazy(() => import("../pages/BarPage"));
+const WinePage = lazy(() => import("../pages/WinePage"));
+const MenuNewYear = lazy(() => import("../pages/MenuNewYear"));
+const AboutUsPage = lazy(() => import("../pages/AboutUsPage"));
+const MenuBreakContruct = lazy(() => import("../pages//MenuBreakContruct"));
+const PastaPage = lazy(() => import("../pages/PastaPage"));
+const DiscountPage = lazy(() => import("../pages/DiscountPage"));
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-}
 
 function MainRoutes() {
   return (
     <Routes>
-      <Route
-        element={
-          <>
-            <ScrollToTop />
-            <MainLayout />
-          </>
-        }
-      >
+      <Route element={<MainLayout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/categories" element={<MenuPage />} />
         <Route path="/menu" element={<MenuDishes />} />
