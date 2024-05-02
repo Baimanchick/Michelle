@@ -3,6 +3,7 @@ import "../css/home.scss";
 import logoHome from "../images/else/Michelle Vector.svg";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "../functions/languageContext";
+import { Analytics } from "@vercel/analytics/react";
 
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -73,8 +74,8 @@ function HomePage() {
                     color: selectedLanguage === "Русский" ? "#f2cf11" : "#fff",
                   }}
                   onClick={() => {
-                    handleLanguageClick("Русский")
-                    navigate("/categories")
+                    handleLanguageClick("Русский");
+                    navigate("/categories");
                   }}
                 >
                   Русский
@@ -84,8 +85,8 @@ function HomePage() {
                     color: selectedLanguage === "Кыргызча" ? "#f2cf11" : "#fff",
                   }}
                   onClick={() => {
-                    handleLanguageClick("Кыргызча")
-                    navigate("/categories")
+                    handleLanguageClick("Кыргызча");
+                    navigate("/categories");
                   }}
                 >
                   Кыргызча
@@ -95,8 +96,8 @@ function HomePage() {
                     color: selectedLanguage === "English" ? "#f2cf11" : "#fff",
                   }}
                   onClick={() => {
-                    handleLanguageClick("English")
-                    navigate("/categories")
+                    handleLanguageClick("English");
+                    navigate("/categories");
                   }}
                 >
                   English
@@ -105,10 +106,9 @@ function HomePage() {
                   style={{
                     color: selectedLanguage === "Türkçe" ? "#f2cf11" : "#fff",
                   }}
-
                   onClick={() => {
-                    handleLanguageClick("Türkçe")
-                    navigate("/categories")
+                    handleLanguageClick("Türkçe");
+                    navigate("/categories");
                   }}
                 >
                   Türkçe
@@ -127,6 +127,7 @@ function HomePage() {
           )}
         </>
       )}
+      <Analytics />
     </div>
   );
 }

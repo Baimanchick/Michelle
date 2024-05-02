@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import { Outlet } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
-
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -21,6 +20,7 @@ function MainLayout() {
       <Suspense>
         <Outlet />
       </Suspense>
+      <ScrollToTop />
     </div>
   );
 }
