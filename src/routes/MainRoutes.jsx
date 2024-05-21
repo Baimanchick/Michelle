@@ -4,6 +4,7 @@ import MainLayout from "../layouts/MainLayout";
 import { lazy } from "react";
 
 const HomePage = lazy(() => import("../pages/HomePage"));
+const BagetPage = lazy(() => import("../pages/BagetPage"));
 const MenuDishes = lazy(() => import("../pages/MenuDishes"));
 const MenuPage = lazy(() => import("../pages/MenuPage"));
 const NotF = lazy(() => import("../pages/NotF"));
@@ -43,6 +44,7 @@ function MainRoutes() {
         <Route path="/salad" element={<MenuSalad />} />
         <Route path="/plat" element={<MenuPlat />} />
         <Route path="/baget" element={<MenuBaget />} />
+        <Route path="/bagets" element={<BagetPage />} />
         <Route path="/coffe" element={<MenuCoffe />} />
         <Route path="/soap" element={<MenuSoap />} />
         <Route path="/dinner" element={<MenuDinner />} />

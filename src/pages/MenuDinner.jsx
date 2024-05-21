@@ -108,6 +108,9 @@ function MenuDinner() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  console.log(filteredData);
+
   return (
     <>
       {windowWidth <= 1000 ? (
@@ -131,12 +134,18 @@ function MenuDinner() {
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>РОЛЛЫ / БАГЕТ / БУТЕРБРОДЫ</div>
+                  <span>Finger licking good</span>
                 </div>
               </header>
             ) : selectedLanguage === "Кыргызча" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
-                  <div>РОЛЛДОР / БАГЕТТЕР /БУТЕРБРОДДОР</div>
+                  <div>РОЛЛДОР / БАГЕТЫ /БУТЕРБРОДДОР</div>
+                  <div className="menu-title-container">
+                    <hr style={{ width: "auto" }} />
+                    <h2 style={{ margin: "10px 0px 0px 0px", fontSize: "17px" }}>абдан даамдуу</h2>
+                    <hr style={{ width: "auto" }} />
+                  </div>
                 </div>
               </header>
             ) : selectedLanguage === "English" ? (
@@ -157,17 +166,19 @@ function MenuDinner() {
           </>
 
           <div className="salad-flex">
-            {filteredData.map((item) => (
-              <Test
-                key={item.id}
-                data={item}
-                title={item.title}
-                img={item.image}
-                text={item.text}
-                weight={item.weight}
-                price={item.price}
-                icon={item.svgs}
-              />
+            {filteredData.map((item, index) => (
+              <div key={index}>
+                <Test
+                  key={item.id}
+                  data={item}
+                  title={item.title}
+                  img={item.image}
+                  text={item.text}
+                  weight={item.weight}
+                  price={item.price}
+                  icon={item.svgs}
+                />
+              </div>
             ))}
 
             {selectedLanguage === "Русский" ? (

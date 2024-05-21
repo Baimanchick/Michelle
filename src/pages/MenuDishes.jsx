@@ -107,11 +107,12 @@ function MenuDishes() {
           </div>
           <ArrowLeft />
           <>
+            <h1 style={{ fontSize: "25px", textAlign: "center", marginBottom: "0px", fontWeight: "300", marginTop: "30px"}}>ЭРТЕҢ МЕНЕНКИ ТАМАК</h1>
             {selectedLanguage === "Кыргызча" ? (
               <header className="menu-header">
                 <div className="menu-title-container">
                   <hr />
-                  <h2>КЛАССИКАЛЫК</h2>
+                  <h2 style={{ margin: "10px 0px 0px 0px" }}>КЛАССИКАЛЫК</h2>
                   <hr />
                 </div>
                 <div className="menu-title-span">
@@ -122,7 +123,7 @@ function MenuDishes() {
               <header className="menu-header">
                 <div className="menu-title-container">
                   <hr />
-                  <h2>КЛАССИЧЕСКИЙ</h2>
+                  <h2 style={{ marginBottom: "0px" }}>КЛАССИЧЕСКИЙ</h2>
                   <hr />
                 </div>
                 <div className="menu-title-span">
@@ -133,7 +134,7 @@ function MenuDishes() {
               <header className="menu-header">
                 <div className="menu-title-container">
                   <hr />
-                  <h2>Classic</h2>
+                  <h2 style={{ marginBottom: "0px" }}>Classic</h2>
                   <hr />
                 </div>
               </header>
@@ -141,26 +142,70 @@ function MenuDishes() {
               <header className="menu-header">
                 <div className="menu-title-container">
                   <hr />
-                  <h2>Kahvaltı</h2>
+                  <h2 style={{ marginBottom: "0px" }}>Kahvaltı</h2>
                   <hr />
                 </div>
               </header>
             ) : null}
           </>
 
-          <div className="menu-container">
-            <div className="salad-flex">
-              {filteredData.map((item) => (
-                <Test
-                  key={item.id}
-                  data={item}
-                  title={item.title}
-                  img={item.image}
-                  text={item.text}
-                  weight={item.weight}
-                  price={item.price}
-                  icon={item.svgs}
-                />
+          <div className="menu-container" style={{ marginTop: "10px" }}>
+            <div className="salad-flex" style={{ justifyContent: "space-between" }}>
+              {filteredData.map((item, index) => (
+                <div key={index} style={ index === 0 || index === 3 || index === 7 || index === 10 || index === 14 || index === 14 || index === 17 || index === 20 || index === 24 ? { display: "contents" } : {}}>
+                  <div className="header-title-for-dishes">
+                    <div className="category-title-for-dishes">{ index === 0 ? "БОТКО" : index === 3 ? "КУЙМАК" : index === 7 ? "ЭТ менен ЖУМУРТКА" : index === 10 ? 
+                    <header className="menu-header">
+                      <div className="menu-title-container">
+                        <hr />
+                        <h2 style={{ marginBottom: "0px" }}>КЫЗЫКТУУ</h2>
+                        <hr />
+                      </div>
+                    </header> : index === 14 ? 
+                      <header className="menu-header">
+                      <div className="menu-title-container">
+                        <hr />
+                        <h2 style={{ marginBottom: "0px" }}>ПАЙДАЛУУ</h2>
+                        <hr />
+                      </div>
+                    </header>
+                    : index === 17 ? 
+                    <header className="menu-header">
+                      <div className="menu-title-container">
+                        <hr />
+                        <h2 style={{ marginBottom: "0px" }}>КЕТО</h2>
+                        <hr />
+                      </div>
+                    </header>
+                    : index === 20 ? 
+                    <header className="menu-header">
+                      <div className="menu-title-container">
+                        <hr />
+                        <h2 style={{ marginBottom: "0px" }}>КЫЗЫКТУУ</h2>
+                        <hr />
+                      </div>
+                    </header>
+                    : index === 24 ? 
+                    <header className="menu-header">
+                      <div className="menu-title-container">
+                        <hr />
+                        <h2 style={{ marginBottom: "0px" }}>ТАТТУУ</h2>
+                        <hr />
+                      </div>
+                    </header>
+                    : "" }</div>
+                      <div className="category-small" style={ index === 0 || index === 7 ? { display: "none" } : {} }>{ index === 0 ? "" : index === 3 ? <span style={{ color: "#E1A304", fontWeight: "300" }}>БУУДАЙДАН ЖАНА КАРА КҮРҮЧТӨН</span> : index === 7 ? "" : index === 10 ? <span style={{ color: "#E1A304" }}>ЖАҢЫ ДҮЙНӨНҮ АЧЫҢЫЗ</span> : index === 14 ? <span style={{ color: "#E1A304", fontWeight: "300" }}>ФОРМАНЫ САКТОО ҮЧҮН</span> : index === 17 ? <span style={{ color: "#E1A304", fontWeight: "300" }}>ИДЕАЛГА УМТУЛГАНДАР ҮЧҮН</span> : index === 20 ? <span style={{ color: "#E1A304", fontWeight: "300" }}>Маанай үчүн</span> : index === 24 ? <span style={{ color: "#E1A304", fontWeight: "300" }}>Дүйнөлүк</span> : "" }</div>
+                  </div>
+                  <Test
+                    data={item}
+                    title={item.title}
+                    img={item.image}
+                    text={item.text}
+                    weight={item.weight}
+                    price={item.price}
+                    icon={item.svgs}
+                  />
+                </div>
               ))}
             </div>
           </div>

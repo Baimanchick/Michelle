@@ -35,6 +35,7 @@ function MenuBoul() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [dishes, setDishes] = useState([]);
   const { selectedLanguage, setSelectedLanguage } = useLanguage();
+
   useEffect(() => {
     const fetchDishes = async () => {
       try {
