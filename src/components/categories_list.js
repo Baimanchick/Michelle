@@ -151,7 +151,15 @@ export const generateL = (language) => {
           image: "https://michelle-kg.ru/media/categories/Group_166.jpg",
           link: "/discount",
           number: 21
+        },
+        {
+          title: "БАГЕТЫ",
+          id: 61,
+          image: "https://michelle-kg.ru/media/categories/1.jpg",
+          link: "/bagets",
+          number: null
         }
+        
       ] 
     case "Кыргызча":
       return [
@@ -319,6 +327,13 @@ export const generateL = (language) => {
           image: "https://michelle-kg.ru/media/kyrgyz_categories/Group_166.jpg",
           link: "/discount",
           number: 21
+        },
+        {
+          title: "БАГЕТТЕР",
+          id: 44,
+          image: "https://michelle-kg.ru/media/kyrgyz_categories/1.jpg",
+          link: "/bagets",
+          number: 5
         }
       ]
     case "English":
@@ -472,6 +487,13 @@ export const generateL = (language) => {
           image: "https://michelle-kg.ru/media/categories/Group_166_paJQfDd.jpg",
           link: "/discount",
           number: 21
+        },
+        {
+          title: "BAGUETTES",
+          id: 42,
+          image: "https://michelle-kg.ru/media/categories/1_5pUTdEB.jpg",
+          link: "/bagets",
+          number: 5
         }
       ];      
     case "Türkçe":
@@ -641,6 +663,13 @@ export const generateL = (language) => {
           image: "https://michelle-kg.ru/media/turkish_categories/Group_166.jpg",
           link: "/discount",
           number: 21
+        },
+        {
+          title: "BAGETLER",
+          id: 42,
+          image: "https://michelle-kg.ru/media/turkish_categories/1.jpg",
+          link: "/bagets",
+          number: 5
         }
       ];      
     default:

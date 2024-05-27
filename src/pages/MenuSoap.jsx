@@ -132,12 +132,14 @@ function MenuSoap() {
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>СУПЫ</div>
+                  <span>КРЕМОВЫЕ</span>
                 </div>
               </header>
             ) : selectedLanguage === "Кыргызча" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ШОРПОЛОР</div>
+                  <span>каймактуу</span>
                 </div>
               </header>
             ) : selectedLanguage === "English" ? (
@@ -156,18 +158,36 @@ function MenuSoap() {
               </header>
             ) : null}
           </>
-          <div className="salad-flex">
-            {filteredData.map((item) => (
-              <Test
-                key={item.id}
-                data={item}
-                title={item.title}
-                img={item.image}
-                text={item.text}
-                weight={item.weight}
-                price={item.price}
-                icon={item.svgs}
-              />
+          <div className="salad-flex" style={{ justifyContent: "space-between" }}>
+            {filteredData.map((item, index) => (
+              <div key={index} style={ index === 1 || index === 3 ? { display: "contents" } : {} }>
+                { index === 3 ? (
+                  <header className="menu-header">
+                    <div className="menu-title-container">
+                      <hr style={{ width: "100%" }} />
+                      <h2 style={{ margin: "10px 0px 0px 0px" }}>ШОРПОДО ЖАСАЛГАН</h2>
+                      <hr style={{ width: "100%" }} />
+                    </div>
+                    {/* <div className="menu-title-span">
+                      <span>Жаңыланган</span>
+                    </div> */}
+                  </header>
+                ) : (null) }
+                <Test
+                  data={item}
+                  title={item.title}
+                  img={item.image}
+                  text={item.text}
+                  weight={item.weight}
+                  price={item.price}
+                  icon={item.svgs}
+                />
+                { index === 1 ? (
+                  <Advice
+                    text={"Каймактуу шорполорду каймак кошпой бере алабыз"}
+                  />
+                ) : (null) }
+              </div>
             ))}
           </div>
           <>

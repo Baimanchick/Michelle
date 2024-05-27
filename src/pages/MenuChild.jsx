@@ -2,24 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../css/soap.scss";
 import SliderMenu, { categories } from "../components/SliderMenu";
 import { useNavigate } from "react-router-dom";
-import CardSalad from "../components/CardSalad";
-import icon1 from "../images/svgs/Пшеница.svg";
-import icon2 from "../images/svgs/Листок.svg";
-import icon3 from "../images/svgs/Лук.svg";
-import icon4 from "../images/svgs/Повар.svg";
-import icon5 from "../images/svgs/докрашенный листок.svg";
-import icon6 from "../images/svgs/бицепс.svg";
-import icon7 from "../images/svgs/без молока.svg";
-import icon8 from "../images/svgs/авакадо.svg";
-import icon9 from "../images/svgs/старбакс.svg";
-import img1 from "../images/child/1.jpg";
-import img2 from "../images/child/2.jpg";
-import img3 from "../images/child/3.jpg";
-import img4 from "../images/child/4.jpg";
-import img5 from "../images/child/5.jpg";
-import img6 from "../images/child/6.jpg";
-import img7 from "../images/child/7.jpg";
-import img8 from "../images/child/8.jpg";
 import Advice from "../components/Advice";
 import { useLanguage } from "../functions/languageContext";
 import axios from "axios";
@@ -174,6 +156,43 @@ function MenuChild() {
                   />
                 ))}
               </div>
+              {selectedLanguage === "Русский" ? (
+                <>
+                  <Advice
+                    text={
+                      "Наша эко-посуда для детей выполнена полностью из натурального бамбука"
+                    }
+                    style={{ marginTop: "20px" }}
+                  />
+                </>
+              ) : selectedLanguage === "English" ? (
+                <>
+                  <Advice
+                    text={
+                      "Our tableware for kids is crafted from 100% natural bamboo, making it an eco-friendly and sustainable option."
+                    }
+                    style={{ marginTop: "20px" }}
+                  />
+                </>
+              ) : selectedLanguage === "Türkçe" ? (
+                <>
+                  <Advice
+                    text={
+                      "Çocuklar íçín eko-bulaşıklarımız tamamen doğal bambudan yapılmıştır"
+                    }
+                    style={{ marginTop: "20px" }}
+                  />
+                </>
+              ) : selectedLanguage === "Кыргызча" ? (
+                <>
+                  <Advice
+                    text={
+                      "Балдар үчүн эко-идиш-аяктарыбыз толугу менен табигый бамбуктан жасалган"
+                    }
+                    style={{ marginTop: "20px" }}
+                  />
+                </>
+              ) : null}
             </>
           </div>
         </div>

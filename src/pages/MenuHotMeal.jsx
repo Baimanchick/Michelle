@@ -2,40 +2,13 @@ import React, { useEffect, useState } from "react";
 import "../css/menu.scss";
 import SliderMenu, { categories } from "../components/SliderMenu";
 import { useNavigate } from "react-router-dom";
-import icon1 from "../images/svgs/Пшеница.svg";
-import icon2 from "../images/svgs/Листок.svg";
-import icon3 from "../images/svgs/Лук.svg";
-import icon4 from "../images/svgs/Повар.svg";
-import icon5 from "../images/svgs/докрашенный листок.svg";
-import icon6 from "../images/svgs/бицепс.svg";
-import icon7 from "../images/svgs/без молока.svg";
-import icon8 from "../images/svgs/авакадо.svg";
-import icon9 from "../images/svgs/старбакс.svg";
-import img1 from "../images/hot/1.jpg";
-import img2 from "../images/hot/2.jpg";
-import img3 from "../images/hot/3.jpg";
-import img4 from "../images/hot/4.jpg";
-import img5 from "../images/hot/5.jpg";
-import img6 from "../images/hot/6.jpg";
-import img7 from "../images/hot/7.jpg";
-import img8 from "../images/hot/8.jpg";
-import img9 from "../images/hot/9.jpg";
 import img10 from "../images/hot/10.svg";
-import img11 from "../images/hot/11.jpg";
-import img12 from "../images/hot/12.jpg";
-import img13 from "../images/hot/13.jpg";
-import img14 from "../images/hot/14.jpg";
-import img15 from "../images/hot/15.jpg";
-import img16 from "../images/hot/16.jpg";
-import img17 from "../images/hot/17.jpg";
-import img18 from "../images/hot/18.jpg";
-
-import CardSalad from "../components/CardSalad";
 import Advice from "../components/Advice";
 import axios from "axios";
 import Test from "../routes/Test";
 import { useLanguage } from "../functions/languageContext";
 import ArrowLeft from "../components/ArrowLeft";
+import { ReactComponent as AdviceSVG } from "../images/dinner/advice-soup.svg"
 
 function MenuHotMeal() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -138,14 +111,14 @@ function MenuHotMeal() {
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ГОРЯЧИЕ БЛЮДА</div>
-                  <p>ИЗЫСКАННЫЕ</p>
+                  <span>ИЗЫСКАННЫЕ</span>
                 </div>
               </header>
             ) : selectedLanguage === "Кыргызча" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ЫСЫК ТАМАКТАР</div>
-                  <p>Өзгөчө даам менен</p>
+                  <span>Өзгөчө даам менен</span>
                 </div>
               </header>
             ) : selectedLanguage === "English" ? (
@@ -166,17 +139,21 @@ function MenuHotMeal() {
             <div className="menu-salad-title-container"></div>
           </header>
           <div className="salad-flex">
-            {filteredData.map((item) => (
-              <Test
-                key={item.id}
-                data={item}
-                title={item.title}
-                img={item.image}
-                text={item.text}
-                weight={item.weight}
-                price={item.price}
-                icon={item.svgs}
-              />
+            {filteredData.map((item, index) => (
+              <div key={index} style={ index === 6 ? { display: "contents" } : {} }>
+                <Test
+                  data={item}
+                  title={item.title}
+                  img={item.image}
+                  text={item.text}
+                  weight={item.weight}
+                  price={item.price}
+                  icon={item.svgs}
+                />
+                { index === 6 ? (
+                  <AdviceSVG/>
+                ) : (null) }
+              </div>
             ))}
 
             {selectedLanguage === "Русский" ? (

@@ -283,7 +283,7 @@
   }
 
   .card-menu-nav-block-title {
-    max-width: 90px;
+    /* max-width: 90px; */
     font-size: 13px;
     text-align: center;
     margin-top: 5px;

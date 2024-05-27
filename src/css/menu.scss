@@ -212,6 +212,13 @@
     font-family: "Roboto", sans-serif;
     font-weight: bold;
   }
+  .header-title-for-dishes {
+    width: 100%;
+    text-align: center;
+  }
+  .category-small {
+    height: max-content;
+  }
 }
 
 @media screen and (max-width: 415px) {

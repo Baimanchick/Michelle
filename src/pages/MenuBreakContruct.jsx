@@ -1301,7 +1301,7 @@ function MenuBreakContruct() {
                       style={{ background: "#FBCB001A" }}
                     >
                       <div className="veg-p">
-                        <div className="veg-title">Көгөргөн сыр</div>
+                        <div className="veg-title">Көк сыр</div>
                         <div className="veg-price">130 c</div>
                       </div>
                       <div className="veg-weight">30 г</div>
