@@ -6,12 +6,11 @@ import Square from "../components/Square";
 import squareI from "../images/coffe/Vector.svg";
 import LongSqaure from "../components/LongSquare";
 import img1 from "../images/coffe/image-1.png";
+import imgEN from "../images/coffe/card_1_breakfast.png";
+import imgTR from "../images/coffe/Frame 5.jpg";
+import imgKG from "../images/coffe/Frame 5.png";
 import img2 from "../images/coffe/image-2.png";
 import img3 from "../images/coffe/card_1_breakfast.png";
-import imgTerKG from "../images/drinks/termos_kg.png";
-import imgTerTR from "../images/drinks/termos_TR.png";
-import imgTerEN from "../images/drinks/termos_mobile_EN.png";
-import imgTerRU from "../images/coffe/image-2.png";
 import ArrowLeft from "../components/ArrowLeft";
 import imgMilkTR from "../images/else/card_1_breakfast (2).png"
 
@@ -420,13 +419,13 @@ function MenuCoffe() {
                 squareI={squareI}
               />
               <LongSqaure
-                title={"Миндальный латте со взбитыми сливками"}
+                title={"Каймак менен бадам латте "}
                 weight={"200 мл"}
                 price={"340 c"}
                 squareI={squareI}
               />
               <LongSqaure
-                title={"Бананово-карамельный капучино"}
+                title={"Банан-карамельдүү капучино"}
                 weight={"200/400 мл"}
                 price={"230/280 с"}
                 squareI={squareI}
@@ -454,7 +453,7 @@ function MenuCoffe() {
                 squareI={squareI}
               />
               <LongSqaure
-                title={"Бамбл кофе на апельсиновом соке/фреше"}
+                title={"Апельсин ширесинде жасалган бамбл кофе"}
                 weight={"250 мл"}
                 price={"210/310 с"}
                 squareI={squareI}
@@ -468,13 +467,21 @@ function MenuCoffe() {
               <Square title={"Айриш кофе"} weight={"250 мл"} price={"310 с"} />
               <Square title={"Фреш кофе"} weight={"200 мл"} price={"310 с"} />
               <LongSqaure
-                title={"Аффогато безалкольный/ алкогольный"}
+                title={"Аффогато алколдуу/ алкоголсуз"}
                 weight={"200 мл"}
                 price={"360/550 с"}
                 squareI={squareI}
               />
               <div className="menu-coffe-images">
-                <img className="coffe-img" src={img1} alt="" />
+                { selectedLanguage === "Русский" ? (
+                  <img className="coffe-img" src={img1} alt="" />
+                ) : selectedLanguage === "English" ? (
+                  <img className="coffe-img" src={imgEN} alt="" />
+                ) : selectedLanguage === "Türkçe" ? (
+                  <img className="coffe-img" src={imgTR} alt=""/>
+                ) : selectedLanguage === "Кыргызча" ? (
+                  <img className="coffe-img" src={imgKG} alt="" />
+                ) : "" }
               </div>
             </div>
           ) : null}

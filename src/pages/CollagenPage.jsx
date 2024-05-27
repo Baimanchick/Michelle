@@ -263,7 +263,7 @@ function CollagenPage() {
                 <header className="collagen-header">
                   <h2>КОЛЛАГЕН</h2>
                   <p>
-                    сергек жашоо жана сулуулук <br /> бардык билгендер үчүн!
+                    Сергек жашоо образын жана <br/> сулуулукту сүйгөндөр үчүн!
                   </p>
                 </header>
                 <div className="collagen-container">
@@ -271,8 +271,7 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                          Коллаген негизги ролду ойнойт белок болуп саналат
-                          биздин денебиз.
+                          Коллаген — бул биздин организмде негизги ролду ойногон белок. 
                         </p>
                       </div>
                     </div>
@@ -281,9 +280,7 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                          Коллагендин негизги күчү - анын колдоо жөндөмдүүлүгү
-                          теринин өңү жана жаштар, ошондой эле биргелешкен ден
-                          соолук жана таяныч-кыймыл аппараты.
+                          Коллагендин негизги күчү — теринин тонусун жана жаштыгын, ошондой эле муундардын жана таяныч-кыймыл аппаратынын ден-соолугун сактайт.
                         </p>
                       </div>
                     </div>
@@ -292,10 +289,7 @@ function CollagenPage() {
                     <div className="collagen-rectangle-container">
                       <div className="collagen-rectangle-title">
                         <p>
-                          Коллагендин аркасында организмдеги суунун оптималдуу
-                          деңгээли сакталат, теринин регенерация процесстери
-                          тездетет, оору азаят, чачтын жана тырмактардын
-                          морттугу азаят жана башка көптөгөн нерселер!
+                          Коллагендин аркасы менен денедеги суунун оптималдуу деңгээли сакталат, теринин регенерация процесстери тездейт, оору синдрому азаят, чачтын, тырмактын морттугу ж.б. азаят!
                         </p>
                       </div>
                     </div>
@@ -304,14 +298,14 @@ function CollagenPage() {
               </div>
               <div className="collagen-title">
                 <div>
-                  Коллагендин <br /> бардык артыкчылыктарын сезиңиз!
+                  Коллагендин пайдасын <br/> сезип көрүңүз!
                 </div>
               </div>
               <div style={{ paddingBottom: "300px" }}>
                 <div className="collagen-main-2">
                   <div className="collagen-container-2">
                     <div className="collagen-wrapper-left">
-                      + сулуулук, жаштык жана ден соолук үчүн коллаген кошуу
+                      + сулуулук, жаштык жана ден-соолук үчүн коллагенди кошуңуз
                     </div>
                     <div className="collagen-wrapper-right">
                       <span>20г</span>

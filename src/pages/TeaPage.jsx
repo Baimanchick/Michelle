@@ -5,10 +5,6 @@ import SliderMenu, { categories } from "../components/SliderMenu";
 import TeaSquare from "../components/TeaSquare";
 import img1 from "../images/tea/1.png";
 import img2 from "../images/tea/EnBardak.png";
-import imgTerKG from "../images/drinks/termos_kg.png";
-import imgTerTR from "../images/drinks/termos_TR.png";
-import imgTerEN from "../images/drinks/termos_mobile_EN.png";
-import imgTerRU from "../images/coffe/image-2.png";
 import ArrowLeft from "../components/ArrowLeft";
 import imgAdvice from "../images/else/advice-soup.png"
 import imgAdviceTR from "../images/tea/advice-soup (2).png"

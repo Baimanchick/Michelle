@@ -136,12 +136,22 @@ function PastaPage() {
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>ПАСТА</div>
+                  <div className="menu-title-container">
+                    <hr style={{ width: "auto" }} />
+                    <h2 style={{ margin: "10px 0px 0px 0px", fontSize: "17px" }}>BELLISSIMO</h2>
+                    <hr style={{ width: "auto" }} />
+                  </div>
                 </div>
               </header>
             ) : selectedLanguage === "English" ? (
               <header className="menu-salad-header">
                 <div className="menu-salad-title-container">
                   <div>PASTA</div>
+                  <div className="menu-title-container">
+                    <hr style={{ width: "auto" }} />
+                    <h2 style={{ margin: "10px 0px 0px 0px", fontSize: "17px" }}>BELLISSIMO</h2>
+                    <hr style={{ width: "auto" }} />
+                  </div>
                 </div>
               </header>
             )
@@ -154,31 +164,62 @@ function PastaPage() {
             ) : null}
           </>
           <div className="salad-flex">
-            {filteredData.map((item) => (
-              <Test
-                key={item.id}
-                data={item}
-                title={item.title}
-                img={item.image}
-                text={item.text}
-                weight={item.weight}
-                price={item.price}
-                icon={item.svgs}
-              />
+            {filteredData.map((item, index) => (
+              <div key={index} style={ index === 2 ? { display: "contents" }: {} }>
+                { index === 2 ? (
+                  selectedLanguage === "Русский" ? (
+                    <>
+                      <Advice
+                        text={
+                          "Нашу пасту мы готовим Al Dente — дословный перевод с итальянского «на зубок», что подразумевает лёгкое прилипание пасты к зубам. Правильно сваренная паста Al Dente сохраняет внутреннюю твёрдость, а снаружи она мягкая."
+                        }
+                      />
+                    </>
+                  ) : selectedLanguage === "English" ? (
+                    <>
+                      <Advice
+                        text={
+                          "Our pasta is cooked al dente, retaining its inner hardness while being soft on the outside."
+                        }
+                      />
+                    </>
+                  ) : selectedLanguage === "Türkçe" ? (
+                    <>
+                      <Advice
+                        text={
+                          "Makarnalarimızı Al Dente hazırlıyoruz - İtalyanca'dan 'díşe' kelímesínín tam anlamıyla bír çevírísí, bu da makarnanın díşlere kolayca yapışması anlamına gelíyor. Düzgün bír şekílde kaynatılmış Al Dente makarna íç sertlíğíní korur ve dış kısmı yumuşaktır."
+                        }
+                      />
+                    </>
+                  ) : selectedLanguage === "Кыргызча" ? (
+                    <>
+                      <Advice
+                        text={
+                          "Биз пастаны Al Dente даярдайбыз - итальян тилинен сөзмө-сөз 'тишке' деп которулат жана пастанын тишке оңой жабышышын билдирет. Туура бышырылган Al Dente пастасы ички катуулугун сактайт, ал эми сырты жумшак болот."
+                        }
+                      />
+                    </>
+                  ) : null
+                ) : (null) }
+                <Test
+                  data={item}
+                  title={item.title}
+                  img={item.image}
+                  text={item.text}
+                  weight={item.weight}
+                  price={item.price}
+                  icon={item.svgs}
+                />
+              </div>
             ))}
           </div>
           {selectedLanguage === "Русский" ? (
             <>
               <Advice
                 text={
-                  "Спагетти мы можем приготовить из безглютеновой лапши. Глютен (содержится в пшенице) мешает работе ворсинок кишечника, отвечающих за функцию всасывания витаминов и полезных минералов из пищи! Приготовление безглютеновых позиций занимает больше стандартного времени."
-                }
-                style={{ marginTop: "20px" }}
-              />
-              <Advice
-                text={
                   "Нашу пасту мы готовим Al Dente — дословный перевод с итальянского «на зубок», что подразумевает лёгкое прилипание пасты к зубам. Правильно сваренная паста Al Dente сохраняет внутреннюю твёрдость, а снаружи она мягкая."
                 }
+                style={{ marginTop: "20px" }}
               />
               <Advice
                 text={
@@ -190,48 +231,28 @@ function PastaPage() {
             <>
               <Advice
                 text={
-                  "Our pasta is cooked al dente, retaining its inner hardness while being soft on the outside."
-                }
-                style={{ marginTop: "20px" }}
-              />
-              <Advice
-                text={
                   "We can prepare gluten-free spaghetti for you. However, please note that it will take longer to prepare."
                 }
+                style={{ marginTop: "20px" }}
               />
             </>
           ) : selectedLanguage === "Türkçe" ? (
             <>
               <Advice
                 text={
-                  "Makarnamız al dente olarak pişirilir, içi yumuşak, dışı yumuşak olur.."
-                }
-                style={{ marginTop: "20px" }}
-              />
-              <Advice
-                text={
                   "Sizin için glutensiz spagetti hazırlayabiliriz. Ancak hazırlanmanın daha uzun süreceğini lütfen unutmayın."
                 }
+                style={{ marginTop: "20px" }}
               />
             </>
           ) : selectedLanguage === "Кыргызча" ? (
             <>
               <Advice
                 text={
-                  "Глютенсиз кесмеден спагетти жасай алабыз. Глютен (буудайда кездешет) тамак-аштан витаминдерди жана пайдалуу минералдарды сиңирүүгө жооп берген ичеги виллинин иштешине тоскоол болот! Глютенсиз азыктарды бышыруу үчүн адаттагыдан көп убакыт талап кылынат."
+                  "Спагеттини биз глютенсиз камырдан жасай алабыз. Глютен (буудайда кездешет) тамак-аштан витаминдерди жана пайдалуу минералдарды сиңирүү функциясы үчүн жооптуу ичеги түктөрүнүн иштешине тоскоол болот. Глютенсиз позицияларды бышыруу стандарттуу убакыттан көбүрөөк убакытты алат."
                 }
                 style={{ marginTop: "20px" }}
               />
-              <Advice
-                text={
-                  "Биз макаронубузду даярдайбыз Al Dente - италия тилинен 'тишке' сөзмө-сөз котормосу, паста тишке оңой жабышат дегенди билдирет. Туура бышырылган Al Dente макаронунун ичи катуу, бирок сырты жумшак бойдон калат."
-                }
-              />
-              {/* <Advice
-                text={
-                  "Глютенсиз кесмеден спагетти жасай алабыз. Глютен (буудайда кездешет) тамак-аштан витаминдерди жана пайдалуу минералдарды сиңирүүгө жооп берген ичеги виллинин иштешине тоскоол болот! Глютенсиз азыктарды бышыруу үчүн адаттагыдан көп убакыт талап кылынат."
-                }
-              /> */}
             </>
           ) : null}
 
