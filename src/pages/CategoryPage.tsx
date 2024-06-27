@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { RootState } from '../store/store';
 import { fetchCategory } from '../store/features/category/categoriesSlice';
 import { useAppDispatch, useAppSelector } from '../hooks/hooks';
@@ -8,6 +8,7 @@ import { Flex } from 'antd';
 const CategoryPage = () => {
     const dispatch = useAppDispatch();
     const categories = useAppSelector((state: RootState) => state.category.category);
+    const [loading, setLoading] = useState(true);
     const sortCategoriesById = (categories: any) => {
         return [...categories].sort((a, b) => a.id - b.id);
     };
@@ -15,7 +16,13 @@ const CategoryPage = () => {
     const sortedCategories = sortCategoriesById(categories);
 
     useEffect(() => {
-        dispatch(fetchCategory());
+        const fetchData = async () => {
+            setLoading(true);
+            await dispatch(fetchCategory());
+            setLoading(false);
+        };
+
+        fetchData();
     }, [dispatch]);
 
 
@@ -28,6 +35,7 @@ const CategoryPage = () => {
             <Flex style={{ paddingLeft: '10px', paddingRight: '10px' }} justify={'center'}>
                 <CategoryList
                     categories={sortedCategories}
+                    loading={loading}
                     grid={{
                         gutter: 10,
                         column: 3,
