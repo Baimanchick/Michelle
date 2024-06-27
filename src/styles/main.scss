@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Trajan Pro";
+    src: url("./fonts/Trajan\ Pro\ 3\ Regular.otf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trajan Pro';
+}
+
+body {
+    background-color: #f9ede6;
+}
+
+html {
+    position: relative;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-main-content {
+    padding: 20px;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.title-container {
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+
+    .error-title {
+        font-size: 22px;
+        max-width: 1200px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.main-image {
+    background-image: url("../assets/home/main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 30px 0px 30px 0px;
+}
+
+:where(.css-dev-only-do-not-override-j9bb5n).ant-spin .ant-spin-dot-item {
+    background-color: #E1A304 !important;
+}
+
+.back-main {
+    height: auto;
+    position: fixed;
+    z-index: 99;
+    top: 30px;
+    left: 17.5px;
+}
+
+.back-container {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px 0px #04111f26;
+}
+
+.icon-back {
+    font-size: 30px;
+}

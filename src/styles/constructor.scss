@@ -1,0 +1,107 @@
+.yellow-block {
+    width: 100%;
+    z-index: 2;
+    height: 30px;
+    background: linear-gradient(0deg, rgba(251, 203, 0, 0.10) 0%, rgba(251, 203, 0, 0.10) 100%), linear-gradient(180deg, rgba(255, 246, 246, 0.00) 51.72%, rgba(255, 250, 250, 0.74) 62.75%, #FFFAFA 74.12%), #FFFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.constructor_header {
+    margin-top: 80px;
+}
+
+.main-img-contr {
+    width: 100%;
+}
+
+.block-dob {
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(0deg, rgba(251, 203, 0, 0.10) 0%, rgba(251, 203, 0, 0.10) 100%), linear-gradient(180deg, rgba(255, 246, 246, 0.00) 51.72%, rgba(255, 250, 250, 0.74) 62.75%, #FFFAFA 74.12%), #FFFAFA;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 40px;
+}
+
+.dob>h3 {
+    font-size: 14px;
+    font-weight: 300;
+    width: 66px;
+}
+
+.dob {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vegetables-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.d-f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.veg-block {
+    width: 175px;
+    background: linear-gradient(0deg, rgba(129, 153, 80, 0.20) 0%, rgba(129, 153, 80, 0.20) 100%), linear-gradient(180deg, rgba(255, 246, 246, 0.00) 51.72%, rgba(255, 250, 250, 0.74) 62.75%, #FFFAFA 74.12%), #FFF;
+    height: auto;
+    border-radius: 5px;
+    padding: 15px 15px 5px 15px;
+    font-weight: 100;
+    margin-top: 20px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.veg-p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+.veg-title {
+    width: 5px;
+    font-weight: 300;
+}
+
+.veg-price {
+    color: #81B0B0;
+    font-size: 14px;
+}
+
+.veg-weight {
+    color: #E1A304;
+    font-size: 13px;
+}
+
+.menu-title-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-title-container hr {
+    flex-grow: 1;
+    height: 1px;
+    margin: 0 10px;
+    border: none;
+    background-color: #000;
+}
+
+.menu-title-container>h2 {
+    color: #81b0b0;
+    font-size: 26px;
+}

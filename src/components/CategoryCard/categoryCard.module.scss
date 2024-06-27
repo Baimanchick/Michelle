@@ -1,0 +1,33 @@
+.CardCustom {
+    width: 100% !important;
+    height: 175px !important;
+    border: none !important;
+    background-color: #fff !important;
+}
+
+.image {
+    object-fit: cover;
+    height: 135px !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.CustomTitle {
+    font-size: 12px !important;
+    margin: 0px !important;
+    background-color: #fff !important;
+    width: auto;
+    text-align: center;
+}
+
+.CustomBody {
+    padding: 0px !important;
+}
+
+.TitleFlex {
+    background-color: #fff !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 38px !important;
+    width: 100%;
+}

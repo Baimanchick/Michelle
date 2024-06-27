@@ -1,0 +1,73 @@
+.cardCustom {
+    width: 100% !important;
+
+    @media screen and (max-width: 750px) {
+        width: 200px !important;
+    }
+
+    @media screen and (max-width: 595px) {
+        width: 165px !important;
+
+    }
+
+    background-color: #fffafabd !important;
+    overflow: hidden !important;
+    box-shadow: 0px 1px 2px 0px #04111f26 !important;
+}
+
+.bodyCustom {
+    padding: 5px 10px 10px 10px !important;
+    position: relative !important;
+}
+
+.image {
+    width: 165px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 11px;
+    color: #323232;
+    z-index: 2;
+}
+
+.weight {
+    color: #81B0B0;
+    font-size: 8px;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.text {
+    color: #323232;
+    font-weight: 250;
+    font-size: 8px;
+    margin-top: 5px;
+    z-index: 2;
+}
+
+.price {
+    font-size: 12px;
+    color: #81B0B0;
+    z-index: 2;
+}
+
+.white_block {
+    background: linear-gradient(183deg, #f2dbca00 44.95%, #f2dbca1a 69.39%), linear-gradient(180deg, #fff6f600 51.72%, #fffafabd 62.75%, snow 100.12%);
+    height: 165px;
+    width: 100%;
+    position: absolute;
+    top: -124px;
+    left: 0;
+    z-index: 1;
+}
+
+.svg {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
